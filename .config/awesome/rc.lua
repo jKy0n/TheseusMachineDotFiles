@@ -20,10 +20,13 @@ local common = require("awful.widget.common")
 local free_focus = true
 local function custom_focus_filter(c) return free_focus and awful.client.focus.filter(c) end
 
+
 local lain = require "lain"
 local mycpu = lain.widget.cpu()
 local mymem = lain.widget.mem()
--- local mytemp = lain.widget.temp()
+local mytemp = lain.widget.temp()
+
+
 
 local volume_widget = require('awesome-wm-widgets.volume-widget.volume')
 local todo_widget = require("awesome-wm-widgets.todo-widget.todo")
@@ -143,6 +146,10 @@ mytextclock = wibox.widget.textclock()
 tbox_separator_pipe = wibox.widget.textbox (" | ")
 tbox_separator_space = wibox.widget.textbox (" ")
 
+tbox_gpu_label = wibox.widget.textbox ("GPU: ")
+tbox_MHz_label = wibox.widget.textbox ("MHz")
+tbox_separator_Celsius = wibox.widget.textbox ("ºC")
+
 
 local cpu = lain.widget.cpu {
     settings = function()
@@ -156,6 +163,16 @@ local mem = lain.widget.mem {
         widget:set_markup("RAM " .. mem_now.perc .. "%")
     end
 }
+
+
+local temp = lain.widget.temp {
+    settings = function()
+        widget:set_markup("TEMP " .. temp_value .. "ºC")
+    end
+}
+
+
+
 
 local cw = calendar_widget({
     theme = 'outrun',
@@ -271,15 +288,30 @@ awful.screen.connect_for_each_screen(function(s)
             layout = wibox.layout.fixed.horizontal,
 --            mylauncher,
             s.mylayoutbox,
-            s.mytaglist,
-            s.mypromptbox,
-
-
             tbox_separator_space,
+            tbox_separator_space,
+            s.mytaglist,
+            tbox_separator_space,
+            s.mypromptbox,
+            tbox_separator_space,
+
+
             cpu.widget,
+            tbox_separator_space,
+            awful.widget.watch('bash -c "cat /sys/class/hwmon/hwmon1/device/hwmon/hwmon1/temp1_input"', 1,
+                    function(widget, s) widget:set_text(tonumber(s)/1000) end),
+            tbox_separator_Celsius,
             tbox_separator_pipe,
             mem.widget,
+            tbox_separator_pipe,
+            tbox_gpu_label,
+            awful.widget.watch('bash -c "cat /sys/class/hwmon/hwmon3/freq1_input"', 1,
+            function(widget, s) widget:set_text(tonumber(s)/1000000) end),
+            tbox_MHz_label,
             tbox_separator_space,
+            awful.widget.watch('bash -c "cat /sys/class/hwmon/hwmon3/temp1_input"', 1,
+                    function(widget, s) widget:set_text(tonumber(s)/1000) end),
+            tbox_separator_Celsius,
 
         },
 
@@ -297,6 +329,7 @@ awful.screen.connect_for_each_screen(function(s)
             wibox.widget.systray(),
             tbox_separator_space,
             tbox_separator_space,
+
 
            weather_widget({
               api_key='3adf0fe30d03af8c1d09c7dda3b196dd',
@@ -622,7 +655,7 @@ awful.rules.rules = {
     { rule_any = { name = {"google chrome", "google-chrome-stable", "Google Chrome"} },
       properties = { floating = true,
                     placement = awful.placement.centered,
-                    tag = screen[3].tags[1]       },},
+                    tag = screen[3].tags[2]       },},
 
 
     { rule = { class = "Thunar" },
@@ -654,6 +687,11 @@ awful.rules.rules = {
                     tag = screen[1].tags[3]       },},
 
     { rule = { name = "MultiMC" },
+      properties = { floating = true,
+                    placement = awful.placement.centered,
+                    tag = screen[1].tags[3]       },},
+
+    { rule = { name = "Prism Launcher" },
       properties = { floating = true,
                     placement = awful.placement.centered,
                     tag = screen[1].tags[3]       },},
