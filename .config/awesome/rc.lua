@@ -27,7 +27,6 @@ local mymem = lain.widget.mem()
 local mytemp = lain.widget.temp()
 
 
-
 local volume_widget = require('awesome-wm-widgets.volume-widget.volume')
 local todo_widget = require("awesome-wm-widgets.todo-widget.todo")
 local weather_widget = require("awesome-wm-widgets.weather-widget.weather")
@@ -35,11 +34,7 @@ local calendar_widget = require("awesome-wm-widgets.calendar-widget.calendar")
 local logout_menu_widget = require("awesome-wm-widgets.logout-menu-widget.logout-menu")
 
 
-
-
-
-
-
+-- local vicious = require("vicious")
 
 
 
@@ -165,11 +160,14 @@ local mem = lain.widget.mem {
 }
 
 
-local temp = lain.widget.temp {
+local temp = lain.widget.temp({
     settings = function()
-        widget:set_markup("TEMP " .. temp_value .. "ºC")
+        widget:set_markup("Temp " .. coretemp_now .. "°C ")
     end
-}
+})
+
+
+
 
 
 
@@ -321,6 +319,7 @@ awful.screen.connect_for_each_screen(function(s)
             layout = wibox.layout.fixed.horizontal,
 --            mykeyboardlayout,
 
+            temp.widget,
             todo_widget(),
             tbox_separator_space,
             volume_widget(),
