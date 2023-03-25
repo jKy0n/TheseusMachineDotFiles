@@ -115,6 +115,7 @@ myawesomemenu = {
 }
 
 mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesome_icon },
+                                    { "Apps" },
                                     { "open terminal", terminal }
                                   }
                         })
@@ -173,15 +174,18 @@ local temp = lain.widget.temp({
 
 
 local cw = calendar_widget({
-    theme = 'outrun',
-    placement = 'bottom_right',
+    theme = 'naughty',
+    placement = 'top_right',
     start_sunday = true,
     radius = 8,
 --  with customized next/previous (see table above)
     previous_month_button = 1,
     next_month_button = 3,
 })
-
+mytextclock:connect_signal("button::press",
+    function(_, _, _, button)
+        if button == 1 then cw.toggle() end
+    end)
 
 ------------------------------------------------
 
@@ -277,7 +281,7 @@ awful.screen.connect_for_each_screen(function(s)
    }
 
     -- Create the wibox
-    s.mywibox = awful.wibar({ position = "top", screen = s, opacity = 0.8 })
+    s.mywibox = awful.wibar({ position = "top", screen = s, opacity = 0.8, border_width = 3, shape = gears.shape.rounded_rect 	 })
 
     -- Add widgets to the wibox
     s.mywibox:setup {
@@ -294,22 +298,6 @@ awful.screen.connect_for_each_screen(function(s)
             tbox_separator_space,
 
 
-            cpu.widget,
-            tbox_separator_space,
-            awful.widget.watch('bash -c "cat /sys/class/hwmon/hwmon1/device/hwmon/hwmon1/temp1_input"', 1,
-                    function(widget, s) widget:set_text(tonumber(s)/1000) end),
-            tbox_separator_Celsius,
-            tbox_separator_pipe,
-            mem.widget,
-            tbox_separator_pipe,
-            tbox_gpu_label,
-            awful.widget.watch('bash -c "cat /sys/class/hwmon/hwmon3/freq1_input"', 1,
-            function(widget, s) widget:set_text(tonumber(s)/1000000) end),
-            tbox_MHz_label,
-            tbox_separator_space,
-            awful.widget.watch('bash -c "cat /sys/class/hwmon/hwmon3/temp1_input"', 1,
-                    function(widget, s) widget:set_text(tonumber(s)/1000) end),
-            tbox_separator_Celsius,
 
         },
 
@@ -319,7 +307,22 @@ awful.screen.connect_for_each_screen(function(s)
             layout = wibox.layout.fixed.horizontal,
 --            mykeyboardlayout,
 
-            temp.widget,
+            cpu.widget,
+            tbox_separator_space,
+            awful.widget.watch('bash -c "cat /sys/class/hwmon/hwmon4/temp1_input"', 1,
+            function(widget, s) widget:set_text(tonumber(s)/1000) end),
+            tbox_separator_Celsius,
+            tbox_separator_pipe,
+            mem.widget,
+            tbox_separator_pipe,
+            tbox_gpu_label,
+            awful.widget.watch('bash -c "cat /sys/class/hwmon/hwmon5/freq1_input"', 1,
+            function(widget, s) widget:set_text(tonumber(s)/1000000) end),
+            tbox_MHz_label,
+            tbox_separator_space,
+            awful.widget.watch('bash -c "cat /sys/class/hwmon/hwmon5/temp1_input"', 1,
+            function(widget, s) widget:set_text(tonumber(s)/1000) end),
+            tbox_separator_Celsius,
             todo_widget(),
             tbox_separator_space,
             volume_widget(),
@@ -348,13 +351,8 @@ awful.screen.connect_for_each_screen(function(s)
             --     show_daily_forecast = true,
             -- }),
 
+            mytextclock,
 
-           mytextclock, -- = wibox.widget.textclock(),
---             mytextclock:connect_signal("button::press",
---     function(_, _, _, button)
---         if button == 1 then cw.toggle() end
---    end),
---            tbox_separator_space,
             logout_menu_widget{
                  font = 'sans 9',
                  onlock = function() awful.spawn.with_shell('i3lock-fancy') end
@@ -487,7 +485,6 @@ globalkeys = gears.table.join(
 
     awful.key({ modkey, }, "p",
           function () awful.util.spawn("rofi -config ~/.config/rofi/config -show combi -combi-modi \"window,run\" -modi combi -theme ~/.config/rofi/config.rasi") end)
-
 )
 
 clientkeys = gears.table.join(
@@ -511,7 +508,7 @@ clientkeys = gears.table.join(
 
 
 
-    awful.key({ }, "Print", function () awful.util.spawn("gnome-screenshot -i") end),
+    awful.key({ }, "Print", function () awful.util.spawn("flameshot launcher") end),
 
     awful.key({ modkey, "Shift"   }, "c",      function (c) c:kill()                         end,
               {description = "close", group = "client"}),
@@ -642,19 +639,19 @@ awful.rules.rules = {
     },
 
 
---    { rule = { class = "yakuake" },
---      properties = { floating = true, ontop = true, focus = true },
---      callback = function(c)
---          c:geometry({x=100, y=25})
---          free_focus = false
---          c:connect_signal("unmanage", function() free_focus = true end)
---      end },
+    { rule = { class = "yakuake" },
+     properties = { floating = true, ontop = true, focus = true },
+     callback = function(c)
+         c:geometry({x=1450, y=25})
+         free_focus = false
+         c:connect_signal("unmanage", function() free_focus = true end)
+     end },
 
 
     { rule_any = { name = {"google chrome", "google-chrome-stable", "Google Chrome"} },
       properties = { floating = true,
                     placement = awful.placement.centered,
-                    tag = screen[3].tags[2]       },},
+                    tag = screen[2].tags[2]       },},
 
 
     { rule = { class = "Thunar" },
@@ -667,17 +664,17 @@ awful.rules.rules = {
     { rule = { class = "discord" },
       properties = { floating = true,
                     placement = awful.placement.centered,
-                    tag = screen[2].tags[1]       },},
+                    tag = screen[3].tags[1]       },},
 
     { rule = { name = "Rambox" },
       properties = { floating = true,
                     placement = awful.placement.centered,
-                    tag = screen[2].tags[1]       },},
+                    tag = screen[3].tags[1]       },},
 
     { rule_any = { class = {"spotify", "Spotify"} },
       properties = { floating = true,
                     placement = awful.placement.centered,
-                    tag = screen[2].tags[2]       },},
+                    tag = screen[3].tags[2]       },},
 
 
     { rule = { name = "Steam" },
@@ -685,7 +682,7 @@ awful.rules.rules = {
                     placement = awful.placement.centered,
                     tag = screen[1].tags[3]       },},
 
-    { rule = { name = "MultiMC" },
+    { rule = { name = "prismlauncher" },
       properties = { floating = true,
                     placement = awful.placement.centered,
                     tag = screen[1].tags[3]       },},
@@ -792,31 +789,31 @@ client.connect_signal("request::titlebars", function(c)
     )
 
 
-    awful.titlebar(c) : setup {
-        { -- Left
-        awful.titlebar.widget.closebutton    (c),
-        awful.titlebar.widget.maximizedbutton(c),
-        awful.titlebar.widget.floatingbutton (c),
---            awful.titlebar.widget.stickybutton   (c),
---            awful.titlebar.widget.ontopbutton    (c),
-
-        layout = wibox.layout.fixed.horizontal(),
-        },
-        { -- Middle
-            { -- Title
-                align  = "center",
-                widget = awful.titlebar.widget.titlewidget(c)
-            },
-            buttons = buttons,
-            layout  = wibox.layout.flex.horizontal
-        },
-        { -- Right
-            awful.titlebar.widget.iconwidget(c),
-            buttons = buttons,
-            layout  = wibox.layout.fixed.horizontal
-        },
-        layout = wibox.layout.align.horizontal
-    }
+--     awful.titlebar(c) : setup {
+--         { -- Left
+--         awful.titlebar.widget.closebutton    (c),
+--         awful.titlebar.widget.maximizedbutton(c),
+--         awful.titlebar.widget.floatingbutton (c),
+-- --            awful.titlebar.widget.stickybutton   (c),
+-- --            awful.titlebar.widget.ontopbutton    (c),
+--
+--         layout = wibox.layout.fixed.horizontal(),
+--         },
+--         { -- Middle
+--             { -- Title
+--                 align  = "center",
+--                 widget = awful.titlebar.widget.titlewidget(c)
+--             },
+--             buttons = buttons,
+--             layout  = wibox.layout.flex.horizontal
+--         },
+--         { -- Right
+--             awful.titlebar.widget.iconwidget(c),
+--             buttons = buttons,
+--             layout  = wibox.layout.fixed.horizontal
+--         },
+--         layout = wibox.layout.align.horizontal
+--     }
 end)
 
 -- Enable sloppy focus, so that focus follows mouse.
@@ -832,9 +829,12 @@ end)
 
 
 
-beautiful.useless_gap = 3
+beautiful.useless_gap = 2
+beautiful.tasklist_shape_focus = gears.shape.rounded_rect
+beautiful.taglist_shape_focus = gears.shape.rounded_rect
+
 
 gears.wallpaper.maximized("/home/jkyon/Pictures/Wallpapers/LinuxWallpapers/multi-monitor-wallpapers.jpg", s)
 
 awful.spawn.with_shell("picom --daemon --config $HOME/.config/picom/picom.conf")
--- }}}
+awful.spawn.with_shell("yakuake")
