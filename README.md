@@ -3,7 +3,7 @@
 It's all about my PC
 
 
-![Neofetch](/home/jkyon/.dotfiles/midia/Neofetch.png)
+![Neofetch](https://github.com/jKy0n/TheseusMachineDotFiles/blob/main/midia/Neofetch.png)
 
 ## Operational System:
 
@@ -18,7 +18,7 @@ It's all about my PC
 - Init: systemd
 
 
-![Theseus Machine](/home/jkyon/.dotfiles/midia/TheseusMachine.jpg)
+![Theseus Machine](https://github.com/jKy0n/TheseusMachineDotFiles/blob/main/midia/TheseusMachine.jpg)
 
 
 ## Hardware:
@@ -39,7 +39,7 @@ It's all about my PC
 - (and a lot of RGBs ヾ(✪‿✪)ｼ )
 
 
-![Peripherals](/home/jkyon/.dotfiles/midia/myDesktop.png)
+![Peripherals](https://github.com/jKy0n/TheseusMachineDotFiles/blob/main/midia/myDesktop.png)
 
 
 ## Monitors:
