@@ -1,17 +1,17 @@
 /*Dracula theme based on the Purple official rofi theme*/
 
 * {
-    font: "MesloLGS NF 12";
-    foreground: #f8f8f2;
-    background-color: #282a36;
-    active-background: #6272a4;
-    urgent-background: #ff5555;
-    urgent-foreground: #282a36;
-    selected-background: @active-background;
+    font: "Noto Sans SemiBold 12";
+    foreground: #f8f8f2;           
+    background-color: #282a36;     
+    active-background: #9F7DF6;    
+    urgent-background: #ff5555;    
+    urgent-foreground: #232323;    
+    selected-background: #9F7DF6;
     selected-urgent-background: @urgent-background;
     selected-active-background: @active-background;
     separatorcolor: @active-background;
-    bordercolor: @active-background;
+    bordercolor: #9F7DF6;
 }
 
 #window {

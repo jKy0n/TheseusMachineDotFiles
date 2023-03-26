@@ -3,7 +3,7 @@
 It's all about my PC
 
 
-![Neofetch](https://github.com/jKy0n/TheseusMachineDotFiles/blob/main/midia/Neofetch.png)
+![Neofetch](https://github.com/jKy0n/TheseusMachineDotFiles/blob/main/midia/Neofetch-26-Mar-2023.png)
 
 ## Operational System:
 
@@ -18,7 +18,7 @@ It's all about my PC
 - Init: systemd
 
 
-![Theseus Machine](https://github.com/jKy0n/TheseusMachineDotFiles/blob/main/midia/TheseusMachine.jpg)
+![Theseus Machine](https://github.com/jKy0n/TheseusMachineDotFiles/blob/main/midia/TheseusMachineRainbowMode.jpg)
 
 
 ## Hardware:

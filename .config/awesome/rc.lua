@@ -33,7 +33,6 @@ local weather_widget = require("awesome-wm-widgets.weather-widget.weather")
 local calendar_widget = require("awesome-wm-widgets.calendar-widget.calendar")
 local logout_menu_widget = require("awesome-wm-widgets.logout-menu-widget.logout-menu")
 
-
 -- local vicious = require("vicious")
 
 
@@ -41,6 +40,24 @@ local logout_menu_widget = require("awesome-wm-widgets.logout-menu-widget.logout
 -- Enable hotkeys help widget for VIM and other apps
 -- when client with a matching name is opened:
 require("awful.hotkeys_popup.keys")
+
+    --- Notifications ---
+
+
+--     naughty.config.defaults.ontop = true
+--   --  naughty.config.defaults.icon_size = dpi(32)
+--     naughty.config.defaults.timeout = 10
+--     naughty.config.defaults.hover_timeout = 300
+--   --  naughty.config.defaults.title = 'System Notification Title'
+--    -- naughty.config.defaults.margin = dpi(16)
+--     --naughty.config.defaults.border_width = 0
+--     naughty.config.defaults.position = 'top_middle'
+--     naughty.config.defaults.shape = function(cr, w, h)
+--       gears.shape.rounded_rect(cr, w, h, dpi(6))
+--     end
+
+
+
 
 -- {{{ Error handling
 -- Check if awesome encountered an error during startup and fell back to
@@ -369,6 +386,7 @@ awful.screen.connect_for_each_screen(function(s)
         { -- Left widgets
             layout = wibox.layout.fixed.horizontal,
 --            mylauncher,
+            tbox_separator_space,
             s.mylayoutbox,
             tbox_separator_space,
             tbox_separator_space,
@@ -385,6 +403,9 @@ awful.screen.connect_for_each_screen(function(s)
             layout = wibox.layout.fixed.horizontal,
 --            mykeyboardlayout,
 
+            tbox_separator_space,
+            tbox_separator_space,
+            tbox_separator_space,
             cpu.widget,
             tbox_separator_space,
             awful.widget.watch('bash -c "cat /sys/class/hwmon/hwmon4/temp1_input"', 1,
@@ -401,6 +422,7 @@ awful.screen.connect_for_each_screen(function(s)
             awful.widget.watch('bash -c "cat /sys/class/hwmon/hwmon5/temp1_input"', 1,
             function(widget, s) widget:set_text(tonumber(s)/1000) end),
             tbox_separator_Celsius,
+            tbox_separator_space,
             todo_widget(),
             tbox_separator_space,
             volume_widget(),
@@ -408,8 +430,6 @@ awful.screen.connect_for_each_screen(function(s)
             tbox_separator_space,
             wibox.widget.systray(),
             tbox_separator_space,
-            tbox_separator_space,
-
 
            weather_widget({
               api_key='3adf0fe30d03af8c1d09c7dda3b196dd',
@@ -430,11 +450,13 @@ awful.screen.connect_for_each_screen(function(s)
             -- }),
 
             mytextclock,
+            tbox_separator_space,
 
             logout_menu_widget{
                  font = 'sans 9',
                  onlock = function() awful.spawn.with_shell('i3lock-fancy') end
-            }
+            },
+            tbox_separator_space
         },
     }
 
@@ -764,7 +786,7 @@ awful.rules.rules = {
                     placement = awful.placement.centered,
                     tag = screen[1].tags[3]       },},
 
-    { rule_any = { class = {"Steam - News"} },
+    { rule_any = { class = {" - News"} },
       properties = { floating = true,
                     placement = awful.placement.centered,
                     tag = screen[1].tags[3]       },},
@@ -791,14 +813,24 @@ awful.rules.rules = {
 
     { rule = { class = "Timeshift" },
       properties = { floating = true,
-                    placement = awful.placement.centered,
-                    tag = screen[1].tags[1]       },},
+                    placement = awful.placement.centered },},
 
 
-    { rule_any = { class = {"mupdf"} },
+    { rule = { name = "MuPDF" },
       properties = { floating = true,
-                    placement = awful.placement.centered,
-                    tag = screen[1].tags[1]       },},
+                    placement = awful.placement.centered },},
+
+    { rule = { name = "Customize Look and Feel" },
+      properties = { floating = true,
+                    placement = awful.placement.centered },},
+
+    { rule = { name = "KDE Connect" },
+      properties = { floating = true,
+                    placement = awful.placement.centered },},
+
+    { rule = { name = "OpenRGB" },
+      properties = { floating = true,
+                    placement = awful.placement.centered },},
 
 
 
@@ -925,6 +957,7 @@ end)
 beautiful.useless_gap = 2
 beautiful.tasklist_shape_focus = gears.shape.rounded_rect
 beautiful.taglist_shape_focus = gears.shape.rounded_rect
+beautiful.notification_shape = gears.shape.rounded_rect
 
 
 gears.wallpaper.maximized("/home/jkyon/Pictures/Wallpapers/LinuxWallpapers/multi-monitor-wallpapers.jpg", s)
