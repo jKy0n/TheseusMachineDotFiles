@@ -69,7 +69,7 @@ end
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
-beautiful.init(gears.filesystem.get_themes_dir() .. "default/theme.lua")
+beautiful.init("/home/jkyon/.dotfiles/.config/awesome/themes/default/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
 terminal = "alacritty"
@@ -147,6 +147,8 @@ tbox_MHz_label = wibox.widget.textbox ("MHz")
 tbox_separator_Celsius = wibox.widget.textbox ("ºC")
 
 
+
+
 local cpu = lain.widget.cpu {
     settings = function()
         widget:set_markup("CPU " .. cpu_now.usage .. "%")
@@ -166,9 +168,6 @@ local temp = lain.widget.temp({
         widget:set_markup("Temp " .. coretemp_now .. "°C ")
     end
 })
-
-
-
 
 
 
@@ -243,6 +242,85 @@ local function set_wallpaper(s)
     end
 end
 
+
+    ------------------  Tags  ------------------
+
+awful.tag.add(" System ", {
+--    icon = "/home/jkyon/.dotfiles/.config/awesome/icons/system.png",
+    layout = awful.layout.suit.tile,
+    screen = 1,
+    selected = true
+})
+
+awful.tag.add(" Media ", {
+--    icon = "/home/jkyon/.dotfiles/.config/awesome/icons/system.png",
+    layout = awful.layout.suit.tile,
+    screen = 1,
+    selected = false
+})
+
+awful.tag.add(" Games ", {
+--    icon = "/home/jkyon/.dotfiles/.config/awesome/icons/system.png",
+    layout = awful.layout.suit.tile,
+    screen = 1,
+    selected = false
+})
+
+awful.tag.add(" Free =) ", {
+--    icon = "/home/jkyon/.dotfiles/.config/awesome/icons/system.png",
+    layout = awful.layout.suit.tile,
+    screen = 1,
+    selected = false
+})
+
+    ------------------ Second Monitor ------------------
+
+awful.tag.add(" Search ", {
+--    icon = "/home/jkyon/.dotfiles/.config/awesome/icons/system.png",
+    layout = awful.layout.suit.tile,
+    screen = 2,
+    selected = true
+})
+
+awful.tag.add(" Media ", {
+--    icon = "/home/jkyon/.dotfiles/.config/awesome/icons/system.png",
+    layout = awful.layout.suit.tile,
+    screen = 2,
+    selected = false
+})
+
+awful.tag.add(" Free =) ", {
+--    icon = "/home/jkyon/.dotfiles/.config/awesome/icons/system.png",
+    layout = awful.layout.suit.tile,
+    screen = 2,
+    selected = false
+})
+
+        ------------------ Third Monitor ------------------
+
+awful.tag.add(" Chat ", {
+--    icon = "/home/jkyon/.dotfiles/.config/awesome/icons/system.png",
+    layout = awful.layout.suit.tile,
+    screen = 3,
+    selected = false
+})
+
+awful.tag.add(" Music ", {
+--    icon = "/home/jkyon/.dotfiles/.config/awesome/icons/system.png",
+    layout = awful.layout.suit.tile,
+    screen = 3,
+    selected = false
+})
+
+awful.tag.add(" Monitor ", {
+--    icon = "/home/jkyon/.dotfiles/.config/awesome/icons/system.png",
+    layout = awful.layout.suit.tile,
+    screen = 3,
+    selected = true
+})
+
+        ---------------------------------------
+
 -- Re-set wallpaper when a screen's geometry changes (e.g. different resolution)
 screen.connect_signal("property::geometry", set_wallpaper)
 
@@ -250,8 +328,10 @@ awful.screen.connect_for_each_screen(function(s)
     -- Wallpaper
     set_wallpaper(s)
 
+
     -- Each screen has its own tag table.
-    awful.tag({ " 1 ", " 2 ", " 3 ", " 4 " }, s, awful.layout.layouts[1])
+--    awful.tag({ " 1 ", " 2 ", " 3 ", " 4 " }, s, awful.layout.layouts[1])
+
 
     -- Create a promptbox for each screen
     s.mypromptbox = awful.widget.prompt()
@@ -296,8 +376,6 @@ awful.screen.connect_for_each_screen(function(s)
             tbox_separator_space,
             s.mypromptbox,
             tbox_separator_space,
-
-
 
         },
 
@@ -643,13 +721,12 @@ awful.rules.rules = {
      properties = { floating = true, ontop = true, focus = true },
      callback = function(c)
          c:geometry({x=1450, y=25})
-         free_focus = false
          c:connect_signal("unmanage", function() free_focus = true end)
      end },
 
 
     { rule_any = { name = {"google chrome", "google-chrome-stable", "Google Chrome"} },
-      properties = { floating = true,
+      properties = { floating = false,
                     placement = awful.placement.centered,
                     tag = screen[2].tags[2]       },},
 
@@ -662,27 +739,32 @@ awful.rules.rules = {
 
 
     { rule = { class = "discord" },
-      properties = { floating = true,
+      properties = { floating = false,
                     placement = awful.placement.centered,
                     tag = screen[3].tags[1]       },},
 
     { rule = { name = "Rambox" },
-      properties = { floating = true,
+      properties = { floating = false,
                     placement = awful.placement.centered,
                     tag = screen[3].tags[1]       },},
 
     { rule_any = { class = {"spotify", "Spotify"} },
-      properties = { floating = true,
+      properties = { floating = false,
                     placement = awful.placement.centered,
                     tag = screen[3].tags[2]       },},
 
 
     { rule = { name = "Steam" },
+      properties = { floating = false,
+                    placement = awful.placement.centered,
+                    tag = screen[1].tags[3]       },},
+
+    { rule_any = { class = {"Friends List"} },
       properties = { floating = true,
                     placement = awful.placement.centered,
                     tag = screen[1].tags[3]       },},
 
-    { rule = { name = "prismlauncher" },
+    { rule_any = { class = {"Steam - News"} },
       properties = { floating = true,
                     placement = awful.placement.centered,
                     tag = screen[1].tags[3]       },},
@@ -692,8 +774,13 @@ awful.rules.rules = {
                     placement = awful.placement.centered,
                     tag = screen[1].tags[3]       },},
 
+    -- { rule_any = { class = {"prismlauncher", "Prism Launcher"} },
+    --   properties = { floating = true,
+    --                 placement = awful.placement.centered,
+    --                 tag = screen[1].tags[3]       },},
+
     { rule_any = { class = {"Heroic Games Launcher", "heroic"} },
-      properties = { floating = true,
+      properties = { floating = false,
                     placement = awful.placement.centered,
                     tag = screen[1].tags[3]       },},
 
@@ -703,6 +790,12 @@ awful.rules.rules = {
                     tag = screen[1].tags[3]       },},
 
     { rule = { class = "Timeshift" },
+      properties = { floating = true,
+                    placement = awful.placement.centered,
+                    tag = screen[1].tags[1]       },},
+
+
+    { rule_any = { class = {"mupdf"} },
       properties = { floating = true,
                     placement = awful.placement.centered,
                     tag = screen[1].tags[1]       },},
