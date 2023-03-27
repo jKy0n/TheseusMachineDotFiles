@@ -277,7 +277,7 @@ awful.tag.add(" Media ", {
 })
 
 awful.tag.add(" Games ", {
---    icon = "/home/jkyon/.dotfiles/.config/awesome/icons/system.png",
+--    icon = "/home/jkyon/.dotfiles/.config/awesome/icons/input-gaming.svg.png",
     layout = awful.layout.suit.tile,
     screen = 1,
     selected = false
