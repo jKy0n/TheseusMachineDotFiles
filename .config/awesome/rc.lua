@@ -26,6 +26,9 @@ local mycpu = lain.widget.cpu()
 local mymem = lain.widget.mem()
 local mytemp = lain.widget.temp()
 
+local cpu_widget = require("awesome-wm-widgets.cpu-widget.cpu-widget")
+local ram_widget = require("awesome-wm-widgets.ram-widget.ram-widget")
+
 
 local volume_widget = require('awesome-wm-widgets.volume-widget.volume')
 local todo_widget = require("awesome-wm-widgets.todo-widget.todo")
@@ -157,6 +160,7 @@ mytextclock = wibox.widget.textclock()
 
 
 tbox_separator_pipe = wibox.widget.textbox (" | ")
+tbox_separator_dash = wibox.widget.textbox (" - ")
 tbox_separator_space = wibox.widget.textbox (" ")
 
 tbox_gpu_label = wibox.widget.textbox ("GPU: ")
@@ -405,33 +409,41 @@ awful.screen.connect_for_each_screen(function(s)
 
             tbox_separator_space,
             tbox_separator_space,
+            cpu_widget(),
+            tbox_separator_space,
             tbox_separator_space,
             cpu.widget,
             tbox_separator_space,
-            awful.widget.watch('bash -c "cat /sys/class/hwmon/hwmon4/temp1_input"', 1,
-            function(widget, s) widget:set_text(tonumber(s)/1000) end),
+            tbox_separator_dash,
+            tbox_separator_space,
+            awful.widget.watch('bash -c "cat /sys/class/hwmon/hwmon3/temp1_input"', 1,
+            function(widget, s) widget:set_text(tonumber(s)//1000) end),
             tbox_separator_Celsius,
             tbox_separator_pipe,
             mem.widget,
+            ram_widget({ color_used = '#9F7DF6', color_buf = '#292a44' }),
             tbox_separator_pipe,
             tbox_gpu_label,
             awful.widget.watch('bash -c "cat /sys/class/hwmon/hwmon5/freq1_input"', 1,
-            function(widget, s) widget:set_text(tonumber(s)/1000000) end),
+            function(widget, s) widget:set_text(tonumber(s)//1000000) end),
             tbox_MHz_label,
             tbox_separator_space,
+            tbox_separator_dash,
+            tbox_separator_space,
             awful.widget.watch('bash -c "cat /sys/class/hwmon/hwmon5/temp1_input"', 1,
-            function(widget, s) widget:set_text(tonumber(s)/1000) end),
+            function(widget, s) widget:set_text(tonumber(s)//1000) end),
             tbox_separator_Celsius,
+            tbox_separator_pipe,
+            tbox_separator_space,
+            volume_widget({ widget_type = 'arc' , thickness = 2 }),
             tbox_separator_space,
             todo_widget(),
-            tbox_separator_space,
-            volume_widget(),
             tbox_separator_space,
             tbox_separator_space,
             wibox.widget.systray(),
             tbox_separator_space,
 
-           weather_widget({
+            weather_widget({
               api_key='3adf0fe30d03af8c1d09c7dda3b196dd',
               coordinates = {24.012499355220648, -46.403999855263514},
               }),
@@ -453,8 +465,8 @@ awful.screen.connect_for_each_screen(function(s)
             tbox_separator_space,
 
             logout_menu_widget{
-                 font = 'sans 9',
-                 onlock = function() awful.spawn.with_shell('i3lock-fancy') end
+                 font = 'Noto Sans semibold 9',
+--                 onlock = function() awful.spawn.with_shell('i3lock-fancy') end
             },
             tbox_separator_space
         },
@@ -781,7 +793,7 @@ awful.rules.rules = {
                     placement = awful.placement.centered,
                     tag = screen[1].tags[3]       },},
 
-    { rule_any = { class = {"Friends List"} },
+    { rule_any = { name = {"Friends List"} },
       properties = { floating = true,
                     placement = awful.placement.centered,
                     tag = screen[1].tags[3]       },},
