@@ -2,9 +2,11 @@
 static const Block blocks[] = {
 	/*Icon*/	/*Command*/		/*Update Interval*/	/*Update Signal*/
 
-	{"CPU:", "sensors | awk '/Tctl:/ {print $2}'",	1,		0},
-	{"Mem:", "free -h | awk '/^Mem/ { print $3\"/\"$2 }' | sed s/i//g",	30,		0},
-	{"", "date '+%a, %d %b - %H:%M'",									5,		0},
+	{"CPU: ", "/home/jkyon/ShellScript/dwmBlocksCpuUsage",					1,		0},
+	{"Temp: ", "sensors | awk '/Tctl:/ { print $2 }'",						1,		0},
+	{"Mem: ", "free -h | awk '/^Mem/ { print $3 }' | sed s/i//g",			5,		0},
+	{"Vol: ", "pactl get-sink-volume @DEFAULT_SINK@ | awk '{print $5}'",		5,		0},
+	{"", "date '+%a, %d %b - %H:%M '",										5,		0},
 
 };
 
