@@ -3,19 +3,13 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
-HISTSIZE=5000
+HISTSIZE=10000
 SAVEHIST=10000
 setopt autocd beep extendedglob nomatch notify
 bindkey -e
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/jkyon/.zshrc'
-
-autoload -Uz compinit
-compinit
-# End of lines added by compinstall
-SAVEHIST=10000
-HISTFILE=~/.zsh_history
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
@@ -31,6 +25,7 @@ fi
 autoload -Uz compinit
 compinit
 setopt COMPLETE_ALIASES
+# End of lines added by compinstall
 
 zstyle ':completion:*' matcher-list '' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' \
 '+l:|?=** r:|?=**'
