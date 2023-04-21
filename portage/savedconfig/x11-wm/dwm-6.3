@@ -17,11 +17,13 @@ static const int showsystray        = 1;     	/* 0 means no systray */
 static const int showbar            = 1;     	/* 0 means no bar */
 static const int topbar             = 1;     	/* 0 means bottom bar */
 
-static const char *fonts[]          = { "meslo:bold:size=10","FontAwesome:bold:size=14:antialias=true:autohint=true"  };
-static const char dmenufont[]       = 	"meslo:bold:size=10";
+// static const char *fonts[]          = { "meslo:bold:size=10","FontAwesome:bold:size=14:antialias=true:autohint=true"  };
+// static const char dmenufont[]       = 	"meslo:bold:size=10";
+static const char *fonts[]          = { "MesloLGS NF:bold:size=10","FontAwesome:bold:size=14:antialias=true:autohint=true"  };
+static const char dmenufont[]       = 	"MesloLGS NF:bold:size=10";
 
-// static unsigned int baralpha        = 0xd0;
-// static unsigned int borderalpha     = OPAQUE;
+// static unsigned int baralpha        = 0xd0;			// Alpha Patch
+// static unsigned int borderalpha     = OPAQUE;		// Alpha Patch
 
 static const int vertpad            = 5;       /* vertical padding of bar */
 static const int sidepad            = 5;       /* horizontal padding of bar */
@@ -54,13 +56,14 @@ static const Rule rules[] = {
 	
 	{ "discord",  NULL, 	  NULL,		  1,			0,            2 },
 	{ "rambox",   NULL, 	  NULL,		  1,			0,            2 },
-	{ "PrismLauncher",  NULL, NULL,		  3,			1,            0 },
+	{ "PrismLauncher",  NULL, NULL,		  8,			1,            0 },
 	
-	{ "Steam",    NULL, 	  NULL,		  3,			0,            0 },
-	{ NULL,    	  NULL,  	  "Friends List",  3,		0,            0 },
+	{ "Steam",    NULL, 	  NULL,		  8,			0,            0 },
+	{ NULL,    	  NULL,  	  "Friends List",  8,		0,            0 },
 
 	{ "Timeshift", NULL, 	  NULL,		  0,			1,            0 },
 	{ NULL,  	   NULL, 	  "MuPDF",	  0,			1,            0 },
+	{ "feh",  	   NULL, 	  NULL,	  	  0,			1,            0 },
 	{ "Lxappearance",  NULL,  NULL,		  0,			1,            0 },
 	{ "openrgb",   NULL, 	  NULL,		  0,			1,            0 },
 
