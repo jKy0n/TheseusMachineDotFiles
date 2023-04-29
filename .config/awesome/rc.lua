@@ -340,6 +340,13 @@ awful.tag.add(" Monitor ", {
     selected = true
 })
 
+awful.tag.add(" Free =) ", {
+--    icon = "/home/jkyon/.dotfiles/.config/awesome/icons/system.png",
+    layout = awful.layout.suit.tile,
+    screen = 3,
+    selected = true
+})
+
         ---------------------------------------
 
 -- Re-set wallpaper when a screen's geometry changes (e.g. different resolution)
@@ -409,27 +416,38 @@ awful.screen.connect_for_each_screen(function(s)
 
             tbox_separator_space,
             tbox_separator_space,
-            cpu_widget(),
+            wibox.widget.textbox('  '),
+            awful.widget.watch('bash -c "sh /home/jkyon/ShellScript/dwmBlocksUpdates"', 7200),
             tbox_separator_space,
+            tbox_separator_pipe,
             tbox_separator_space,
+            wibox.widget.textbox('  '),
             cpu.widget,
+            -- tbox_separator_space,
+            -- tbox_separator_dash,
             tbox_separator_space,
-            tbox_separator_dash,
-            tbox_separator_space,
-            awful.widget.watch('bash -c "cat /sys/class/hwmon/hwmon3/temp1_input"', 1,
+            wibox.widget.textbox('  '),
+            awful.widget.watch('bash -c "cat /sys/class/hwmon/hwmon2/temp1_input"', 1,
             function(widget, s) widget:set_text(tonumber(s)//1000) end),
             tbox_separator_Celsius,
             tbox_separator_pipe,
+            tbox_separator_space,
+            cpu_widget(),
+            tbox_separator_space,
+            tbox_separator_pipe,
+            wibox.widget.textbox('  '),
             mem.widget,
             ram_widget({ color_used = '#9F7DF6', color_buf = '#292a44' }),
             tbox_separator_pipe,
+            wibox.widget.textbox('  '),
             tbox_gpu_label,
             awful.widget.watch('bash -c "cat /sys/class/hwmon/hwmon5/freq1_input"', 1,
             function(widget, s) widget:set_text(tonumber(s)//1000000) end),
             tbox_MHz_label,
+            -- tbox_separator_space,
+            -- tbox_separator_dash,
             tbox_separator_space,
-            tbox_separator_dash,
-            tbox_separator_space,
+            wibox.widget.textbox('  '),
             awful.widget.watch('bash -c "cat /sys/class/hwmon/hwmon5/temp1_input"', 1,
             function(widget, s) widget:set_text(tonumber(s)//1000) end),
             tbox_separator_Celsius,
@@ -445,7 +463,7 @@ awful.screen.connect_for_each_screen(function(s)
 
             weather_widget({
               api_key='3adf0fe30d03af8c1d09c7dda3b196dd',
-              coordinates = {24.012499355220648, -46.403999855263514},
+              coordinates = {24.0124, -46.4039},
               }),
 
             --  weather_curl_widget({
@@ -619,8 +637,10 @@ clientkeys = gears.table.join(
         awful.key({}, "XF86AudioStop", function() awful.util.spawn("dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Pause") end),
 
 
-
     awful.key({ }, "Print", function () awful.util.spawn("flameshot launcher") end),
+
+    awful.key({ modkey, "Control" }, "Escape", function () awful.util.spawn("loginctl suspend") end),
+    
 
     awful.key({ modkey, "Shift"   }, "c",      function (c) c:kill()                         end,
               {description = "close", group = "client"}),
@@ -708,9 +728,6 @@ for i = 1, 9 do
                   {description = "toggle focused client on tag #" .. i, group = "tag"})
     )
 end
-
-
-
 
 
 
@@ -807,11 +824,6 @@ awful.rules.rules = {
       properties = { floating = true,
                     placement = awful.placement.centered,
                     tag = screen[1].tags[3]       },},
-
-    -- { rule_any = { class = {"prismlauncher", "Prism Launcher"} },
-    --   properties = { floating = true,
-    --                 placement = awful.placement.centered,
-    --                 tag = screen[1].tags[3]       },},
 
     { rule_any = { class = {"Heroic Games Launcher", "heroic"} },
       properties = { floating = false,
@@ -964,15 +976,10 @@ end)
 -- jKyon Adds
 
 
-
-
 beautiful.useless_gap = 2
 beautiful.tasklist_shape_focus = gears.shape.rounded_rect
 beautiful.taglist_shape_focus = gears.shape.rounded_rect
 beautiful.notification_shape = gears.shape.rounded_rect
 
 
-gears.wallpaper.maximized("/home/jkyon/Pictures/Wallpapers/LinuxWallpapers/multi-monitor-wallpapers.jpg", s)
-
-awful.spawn.with_shell("picom --daemon --config $HOME/.config/picom/picom.conf")
-awful.spawn.with_shell("yakuake")
+awful.spawn.with_shell("sh /home/jkyon/.dotfiles/.config/awesome/AwesomeWMstartupApps.sh")

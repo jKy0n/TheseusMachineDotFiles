@@ -13,7 +13,7 @@ local gears = require("gears")
 
 local theme = {}
                                             --  Defaults
-theme.font          = "Noto Sans SemiBold 8"              --  "sans 8" 
+theme.font          = "MesloLGS NF Bold 8"              --  "Noto Sans SemiBold 8" 
 
 theme.bg_normal     = "#232323"             -- "#222222"
 theme.bg_focus      = "#9F7DF6"             -- "#535d6c"         
