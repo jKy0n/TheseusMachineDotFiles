@@ -190,8 +190,48 @@ local temp = lain.widget.temp({
     end
 })
 
+-------------------  Tags Manipulation Functions  -------------------
+---------------------------------------------------------------------
 
+local function add_tag()
+    awful.tag.add("NewTag", {
+        screen = awful.screen.focused(),
+        layout = awful.layout.suit.tile,
+        volatile = true
+    }):view_only()
+end 
 
+local function delete_tag()
+    local t = awful.screen.focused().selected_tag
+    if not t then return end
+    t:delete()
+end
+
+local function rename_tag()
+    awful.prompt.run {
+        prompt       = "New tag name: ",
+        textbox      = awful.screen.focused().mypromptbox.widget,
+        exe_callback = function(new_name)
+            if not new_name or #new_name == 0 then return end
+
+            local t = awful.screen.focused().selected_tag
+            if t then
+                t.name = new_name
+            end
+        end
+    }
+end
+
+local function move_to_new_tag()
+    local c = client.focus
+    if not c then return end
+
+    local t = awful.tag.add(c.class,{screen= c.screen, volatile = true })
+    c:tags({t})
+    t:view_only()
+end
+
+---------------------------------------------------------------------
 
 local cw = calendar_widget({
     theme = 'naughty',
@@ -287,12 +327,12 @@ awful.tag.add(" Games ", {
     selected = false
 })
 
-awful.tag.add(" Free =) ", {
---    icon = "/home/jkyon/.dotfiles/.config/awesome/icons/system.png",
-    layout = awful.layout.suit.tile,
-    screen = 1,
-    selected = false
-})
+-- awful.tag.add(" Free =) ", {
+-- --    icon = "/home/jkyon/.dotfiles/.config/awesome/icons/system.png",
+--     layout = awful.layout.suit.tile,
+--     screen = 1,
+--     selected = false
+-- })
 
     ------------------ Second Monitor ------------------
 
@@ -310,12 +350,12 @@ awful.tag.add(" Media ", {
     selected = false
 })
 
-awful.tag.add(" Free =) ", {
---    icon = "/home/jkyon/.dotfiles/.config/awesome/icons/system.png",
-    layout = awful.layout.suit.tile,
-    screen = 2,
-    selected = false
-})
+-- awful.tag.add(" Free =) ", {
+-- --    icon = "/home/jkyon/.dotfiles/.config/awesome/icons/system.png",
+--     layout = awful.layout.suit.tile,
+--     screen = 2,
+--     selected = false,
+-- })
 
         ------------------ Third Monitor ------------------
 
@@ -340,12 +380,12 @@ awful.tag.add(" Monitor ", {
     selected = true
 })
 
-awful.tag.add(" Free =) ", {
---    icon = "/home/jkyon/.dotfiles/.config/awesome/icons/system.png",
-    layout = awful.layout.suit.tile,
-    screen = 3,
-    selected = true
-})
+-- awful.tag.add(" Free =) ", {
+-- --    icon = "/home/jkyon/.dotfiles/.config/awesome/icons/system.png",
+--     layout = awful.layout.suit.tile,
+--     screen = 3,
+--     selected = false
+-- })
 
         ---------------------------------------
 
@@ -357,8 +397,12 @@ awful.screen.connect_for_each_screen(function(s)
     set_wallpaper(s)
 
 
-    -- Each screen has its own tag table.
---    awful.tag({ " 1 ", " 2 ", " 3 ", " 4 " }, s, awful.layout.layouts[1])
+--     -- Each screen has its own tag table.
+--    awful.tag(
+--         { " 1 ", " 2 ", " 3 ", " 4 ", " 5 ", " 6 " }, 
+--         s, 
+--         awful.layout.layouts[1]
+--     )
 
 
     -- Create a promptbox for each screen
@@ -427,9 +471,8 @@ awful.screen.connect_for_each_screen(function(s)
             -- tbox_separator_dash,
             tbox_separator_space,
             wibox.widget.textbox('  '),
-            awful.widget.watch('bash -c "cat /sys/class/hwmon/hwmon2/temp1_input"', 1,
-            function(widget, s) widget:set_text(tonumber(s)//1000) end),
-            tbox_separator_Celsius,
+            awful.widget.watch('bash -c "sh /home/jkyon/ShellScript/dwmBlocksCpuTemp"', 1),
+            -- tbox_separator_Celsius,
             tbox_separator_pipe,
             tbox_separator_space,
             cpu_widget(),
@@ -618,7 +661,22 @@ globalkeys = gears.table.join(
     -- awful.key({ modkey}, "p", function () awful.util.spawn_with_shell("~/.config/dmenu") end)
 
     awful.key({ modkey, }, "p",
-          function () awful.util.spawn("rofi -config ~/.config/rofi/config -show combi -combi-modi \"window,run\" -modi combi -theme ~/.config/rofi/config.rasi") end)
+          function () awful.util.spawn("rofi -config ~/.config/rofi/config -show combi -combi-modi \"window,run\" -modi combi -icon-theme \"Papirus\" -show-icons -theme ~/.config/rofi/config.rasi") end),
+
+
+---------------------  Tags Manipulation keybinds  ---------------------
+------------------------------------------------------------------------
+
+    awful.key({ modkey,           }, "a", add_tag,
+        {description = "add a tag", group = "tag"}),
+    awful.key({ modkey, "Shift"   }, "a", delete_tag,
+        {description = "delete the current tag", group = "tag"}),
+    awful.key({ modkey, "Shift"   }, "r", rename_tag,
+        {description = "rename the current tag", group = "tag"}),
+    awful.key({ modkey, "Control"   }, "a", move_to_new_tag,
+        {description = "add a tag with the focused client", group = "tag"})
+
+------------------------------------------------------------------------
 )
 
 clientkeys = gears.table.join(
@@ -641,7 +699,7 @@ clientkeys = gears.table.join(
         awful.key({}, "XF86AudioStop", function() awful.util.spawn("dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Pause") end),
 
 
-    awful.key({ }, "Print", function () awful.util.spawn("flameshot launcher") end),
+    awful.key({ }, "Print", function () awful.util.spawn("gnome-screenshot -i") end),
 
     awful.key({ modkey, "Control" }, "Escape", function () awful.util.spawn("loginctl suspend") end),
     
@@ -771,100 +829,102 @@ awful.rules.rules = {
      }
     },
 
+        ---------------------------------------------
+        -----------------  My Rules ----------------- 
+        ---------------------------------------------
 
-    { rule = { class = "yakuake" },
-     properties = { floating = true, ontop = true, focus = true },
-     callback = function(c)
-         c:geometry({x=1450, y=25})
-         c:connect_signal("unmanage", function() free_focus = true end)
-     end },
+        { rule_any = { class = {" - News"} },
+        properties = { floating = true,
+                        placement = awful.placement.centered,
+                        tag = screen[1].tags[3]       },},
 
+        { rule = { class = "Lxappearance" },
+        properties = { floating = true,
+                        placement = awful.placement.centered },},
 
-    { rule_any = { name = {"google chrome", "google-chrome-stable", "Google Chrome"} },
-      properties = { floating = false,
-                    placement = awful.placement.centered,
-                    tag = screen[2].tags[2]       },},
-
-
-    { rule = { class = "Thunar" },
-      properties = { floating = true, placement = awful.placement.centered },},
-
-    { rule_any = { class = {"gnome-screenshot", "screenshot"} },
-      properties = { floating = true, placement = awful.placement.centered },},
-
-
-    { rule = { class = "discord" },
-      properties = { floating = false,
-                    placement = awful.placement.centered,
-                    tag = screen[3].tags[1]       },},
-
-    { rule = { name = "Rambox" },
-      properties = { floating = false,
-                    placement = awful.placement.centered,
-                    tag = screen[3].tags[1]       },},
-
-    { rule_any = { class = {"spotify", "Spotify"} },
-      properties = { floating = false,
-                    placement = awful.placement.centered,
-                    tag = screen[3].tags[2]       },},
-
-
-    { rule = { name = "Steam" },
-      properties = { floating = false,
+        { rule = { class = "discord" },
+        properties = { floating = false,
+                        placement = awful.placement.centered,
+                        tag = screen[3].tags[1]       },},
+                        
+        { rule_any = { name = {"Friends List"} },
+        properties = { floating = true,
                     placement = awful.placement.centered,
                     tag = screen[1].tags[3]       },},
 
-    { rule_any = { name = {"Friends List"} },
-      properties = { floating = true,
-                    placement = awful.placement.centered,
-                    tag = screen[1].tags[3]       },},
+        { rule = { class = "Google-chrome" },
+        properties = { floating = false,
+                        placement = awful.placement.centered,
+                        tag = screen[2].tags[2]       },},
 
-    { rule_any = { class = {" - News"} },
-      properties = { floating = true,
-                    placement = awful.placement.centered,
-                    tag = screen[1].tags[3]       },},
+        { rule = { class = "Gnome-screenshot" },
+            properties = { floating = true, placement = awful.placement.centered },},
+        
+        { rule_any = { class = {"Heroic Games Launcher", "heroic"} },
+        properties = { floating = false,
+        placement = awful.placement.centered,
+        tag = screen[1].tags[3]       },},
+        
+        { rule = { name = "KDE Connect" },
+        properties = { floating = true,
+        placement = awful.placement.centered },},
+        
+        { rule = { name = "Lutris" },
+        properties = { floating = true,
+        placement = awful.placement.centered,
+                tag = screen[1].tags[3]       },},
+        
+        { rule = { name = "MuPDF" },
+        properties = { floating = true,
+        placement = awful.placement.centered },},
+        
+        { rule = { class = "openrgb" },
+        properties = { floating = true,
+        placement = awful.placement.centered },},
+        
+        { rule = { class = "PrismLauncher" },
+        properties = { floating = true,
+        placement = awful.placement.centered,
+        tag = screen[1].tags[3]       },},
+        
+        { rule = { class = "Rambox" },
+        properties = { floating = false,
+        placement = awful.placement.centered,
+        tag = screen[3].tags[1]       },},
 
-    { rule = { name = "Prism Launcher" },
-      properties = { floating = true,
-                    placement = awful.placement.centered,
-                    tag = screen[1].tags[3]       },},
+        { rule = { class = "Spotify" },
+        properties = { floating = false,
+        placement = awful.placement.centered,
+        tag = screen[3].tags[2]       },},
 
-    { rule_any = { class = {"Heroic Games Launcher", "heroic"} },
-      properties = { floating = false,
-                    placement = awful.placement.centered,
-                    tag = screen[1].tags[3]       },},
+        { rule = { class = "Steam" },
+        properties = { floating = false,
+        placement = awful.placement.centered,
+        tag = screen[1].tags[3]       },},
+        
+        { rule = { class = "Thunar" },
+        properties = { floating = true, placement = awful.placement.centered },},
+        
+        { rule = { class = "thunderbird" },
+        properties = { floating = false,
+        placement = awful.placement.centered,
+        tag = screen[1].tags[2] },},
+        
+        { rule = { class = "Timeshift" },
+        properties = { floating = true,
+        placement = awful.placement.centered },},
 
-    { rule = { name = "Lutris" },
-      properties = { floating = true,
-                    placement = awful.placement.centered,
-                    tag = screen[1].tags[3]       },},
-
-    { rule = { class = "Timeshift" },
-      properties = { floating = true,
-                    placement = awful.placement.centered },},
-
-
-    { rule = { name = "MuPDF" },
-      properties = { floating = true,
-                    placement = awful.placement.centered },},
-
-    { rule = { name = "Customize Look and Feel" },
-      properties = { floating = true,
-                    placement = awful.placement.centered },},
-
-    { rule = { name = "KDE Connect" },
-      properties = { floating = true,
-                    placement = awful.placement.centered },},
-
-    { rule = { name = "OpenRGB" },
-      properties = { floating = true,
-                    placement = awful.placement.centered },},
-
-
-
-    -- Floating clients.
-    { rule_any = {
-        instance = {
+        { rule = { class = "yakuake" },
+        properties = { floating = true, ontop = true, focus = true },
+        callback = function(c)
+            c:geometry({x=1450, y=25})
+            c:connect_signal("unmanage", function() free_focus = true end)
+        end },
+            
+                
+            -- Floating clients.
+            { rule_any = {
+                instance = {
           "DTA",  -- Firefox addon DownThemAll.
           "copyq",  -- Includes session name in class.
           "pinentry",
@@ -947,8 +1007,8 @@ client.connect_signal("request::titlebars", function(c)
 --         awful.titlebar.widget.closebutton    (c),
 --         awful.titlebar.widget.maximizedbutton(c),
 --         awful.titlebar.widget.floatingbutton (c),
--- --            awful.titlebar.widget.stickybutton   (c),
--- --            awful.titlebar.widget.ontopbutton    (c),
+--         awful.titlebar.widget.stickybutton   (c),
+--         awful.titlebar.widget.ontopbutton    (c),
 --
 --         layout = wibox.layout.fixed.horizontal(),
 --         },
@@ -974,16 +1034,14 @@ client.connect_signal("mouse::enter", function(c)
     c:emit_signal("request::activate", "mouse_enter", {raise = false})
 end)
 
+client.connect_signal("focus", function(c) c.border_color = beautiful.border_focus end) 
+client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
+
 -- client.connect_signal("focus", function(c) c.border_color = beautiful.border_focus c.opacity = 1 end)
 -- client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal c.opacity = 0.95 end)
 
+
 -- jKyon Adds
-
-
-beautiful.useless_gap = 2
-beautiful.tasklist_shape_focus = gears.shape.rounded_rect
-beautiful.taglist_shape_focus = gears.shape.rounded_rect
-beautiful.notification_shape = gears.shape.rounded_rect
 
 
 awful.spawn.with_shell("sh /home/jkyon/.dotfiles/.config/awesome/AwesomeWMstartupApps.sh")

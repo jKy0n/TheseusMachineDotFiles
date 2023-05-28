@@ -10,10 +10,11 @@ local gfs = require("gears.filesystem")
 local themes_path = gfs.get_themes_dir()
 
 local gears = require("gears")
+local beautiful = require("beautiful")
 
 local theme = {}
                                             --  Defaults
-theme.font          = "MesloLGS NF Bold 8"              --  "Noto Sans SemiBold 8" 
+theme.font          = "MesloLGS NF Bold 8"  --  "Noto Sans SemiBold 8" 
 
 theme.bg_normal     = "#232323"             -- "#222222"
 theme.bg_focus      = "#9F7DF6"             -- "#535d6c"         
@@ -26,11 +27,13 @@ theme.fg_focus      = "#ffffff"             -- "#ffffff"
 theme.fg_urgent     = "#ffffff"             -- "#ffffff"
 theme.fg_minimize   = "#ffffff"             -- "#ffffff"
 
-theme.useless_gap   = dpi(0)
-theme.border_width  = dpi(1)
-theme.border_normal = "#000000"
-theme.border_focus  = "#535d6c"
+theme.useless_gap   = dpi(2)
+theme.border_width  = dpi(2)
+theme.border_normal = "#232323"
+theme.border_focus  = "#9F7DF6"
+theme.border_active = "#9F7DF6"
 theme.border_marked = "#91231c"
+
 
 -- There are other variable sets
 -- overriding the default one when
@@ -124,6 +127,17 @@ theme.layout_cornerse = themes_path.."default/layouts/cornersew.png"
 theme.awesome_icon = theme_assets.awesome_icon(
     theme.menu_height, theme.bg_focus, theme.fg_focus
 )
+
+
+
+
+
+theme.taglist_shape = gears.shape.rounded_rect
+theme.notification_shape = gears.shape.rounded_rect
+-- beautiful.tasklist_shape_focus = gears.shape.rounded_rect
+-- beautiful.taglist_shape_focus = gears.shape.rounded_rect
+-- beautiful.notification_shape = gears.shape.rounded_rect
+
 
 -- Define the icon theme for application icons. If not set then the icons
 -- from /usr/share/icons and /usr/share/icons/hicolor will be used.
