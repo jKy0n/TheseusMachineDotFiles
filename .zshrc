@@ -1,5 +1,23 @@
+#
+export GTK_THEME="Marwaita Dark EndeavourOs"
+export EDITOR='nano'
 
-source ~/powerlevel10k/powerlevel10k.zsh-theme
+
+#source ~/powerlevel10k/powerlevel10k.zsh-theme
+#source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
+# typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
+
+
+# Verificar se a variável de ambiente específica da distribuição está definida
+if [[ "$(cat /etc/*-release)" == *"Gentoo"* ]]; then
+    # Configurações específicas para o Gentoo
+source /home/jkyon/powerlevel10k/powerlevel10k.zsh-theme
+
+elif [[ "$(cat /etc/*-release)" == *"Arch Linux"* ]]; then
+    # Configurações específicas para o Arch Linux
+source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
+fi
+
 
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
@@ -76,6 +94,7 @@ autoload -Uz up-line-or-beginning-search down-line-or-beginning-search
 zle -N up-line-or-beginning-search
 zle -N down-line-or-beginning-search
 
+# Tira?
 [[ -n "${key[Up]}"   ]] && bindkey -- "${key[Up]}"   up-line-or-beginning-search
 [[ -n "${key[Down]}" ]] && bindkey -- "${key[Down]}" down-line-or-beginning-search
 
@@ -83,8 +102,10 @@ zle -N down-line-or-beginning-search
 key[Control-Left]="${terminfo[kLFT5]}"
 key[Control-Right]="${terminfo[kRIT5]}"
 
+# Tira?
 [[ -n "${key[Control-Left]}"  ]] && bindkey -- "${key[Control-Left]}"  backward-word
 [[ -n "${key[Control-Right]}" ]] && bindkey -- "${key[Control-Right]}" forward-word
+
 
 # Add color to zsh (not shure if working
 # remove ls highlight color
@@ -93,18 +114,41 @@ zstyle ':completion:*:default' list-colors "${(s.:.)_ls_colors}"
 LS_COLORS+=$_ls_colors
 
 
-#source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-#source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+# Verificar se a variável de ambiente específica da distribuição está definida
+if [[ "$(cat /etc/*-release)" == *"Gentoo"* ]]; then
+    # Configurações específicas para o Gentoo
 source /usr/share/zsh/site-functions/zsh-autosuggestions.zsh
 source /usr/share/zsh/site-functions/zsh-syntax-highlighting.zsh
 source ~/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
-alias ls='ls --color'
-alias nano='nano --linenumbers'
-alias mv='mv -v'
-alias cp='cp  -v'
-alias cat='cat -n'
-alias ondemand='doas cpupower frequency-set -g ondemand'
-alias performance='doas cpupower frequency-set -g performance'
-alias mk='doas nano --linenumbers /etc/portage/make.conf'
-alias grep='grep --colour=auto'
+elif [[ "$(cat /etc/*-release)" == *"Arch Linux"* ]]; then
+    # Configurações específicas para o Arch Linux
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+fi
+
+
+if [[ "${TERM}" != "" && "${TERM}" == "alacritty" ]]
+then
+    precmd()
+    {
+        # output on which level (%L) this shell is running on.
+        # append the current directory (%~), substitute home directories with a tilde.
+        # "\a" bell (man 1 echo)
+        # "print" must be used here; echo cannot handle prompt expansions (%L)
+        #print -Pn "\e]0;$(id --user --name)@$(hostname): zsh[%L] %~\a"
+        print -Pn "\e]0;$(id --user --name): zsh[%L] %~\a"
+    }
+
+    preexec()
+    {
+        # output current executed command with parameters
+        # echo -en "\e]0;$(id --user --name)@$(hostname): ${1}\a"
+        echo -en "\e]0;$(id --user --name): ${1}\a"
+    }
+fi
+
+
+# Alias
+alias show-alias='bat --color=always /home/jkyon/ShellScript/aliases.sh'
+source /home/jkyon/ShellScript/aliases.sh

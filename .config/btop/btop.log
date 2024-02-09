@@ -1,0 +1,12 @@
+
+2023/09/02 (21:39:35) | ===> btop++ v.1.2.13
+2023/09/02 (21:39:35) | ERROR: Stall in Runner thread, restarting!
+2023/09/02 (21:45:03) | ERROR: Stall in Runner thread, restarting!
+2023/09/02 (21:50:45) | ERROR: Stall in Runner thread, restarting!
+
+2023/12/04 (17:07:09) | ===> btop++ v.1.2.13
+2023/12/04 (17:07:09) | WARNING: Error in Mem::collect() : filesystem error: cannot get file time: No such file or directory [/etc/fstab]
+2023/12/04 (17:07:09) | ERROR: Exception in runner thread -> Proc:: -> filesystem error: cannot get file time: No such file or directory [/etc/passwd]
+
+2024/02/03 (17:41:11) | ===> btop++ v.1.2.13
+2024/02/03 (17:41:11) | ERROR: Stall in Runner thread, restarting!

@@ -8,14 +8,20 @@ It's all about my PC
 ## Operational System:
 
 - OS: Gentoo Linux
-- Kernel: 6.1.12-gentoo-x86_64
-- Shell: bash 5.1.16 / zsh 5.9
-- GS: XOrg X11
-- WM: Awesome
+- Kernel: 6.6.13-gentoo-x86_64
+- Shell: bash / zsh
+- GS: XOrg
+- WM: Awesome (X11)
+
+- Theme: Marwaita Dark EndeavourOs
 - Icons: ePapirus-Dark
-- Terminal: Alacritty / Yakuake
+- Font: MesloLGS NF
+- Cursor: Future-black
+
+- Terminal: Alacritty
 - FS: BtrFS (system + jbod for data)
-- Init: systemd
+- Init: OpenRC
+- Pulseaudio
 
 
 ![Theseus Machine](https://github.com/jKy0n/TheseusMachineDotFiles/blob/main/midia/TheseusMachineRainbowMode.jpg)
@@ -23,17 +29,17 @@ It's all about my PC
 
 ## Hardware:
 
-- CPU: AMD Ryzen7 2700 @ 3500GHz (OC)
-- WC: PC Yes - Sangue Frio 2 (240mm)
+- CPU: AMD Ryzen9 5950X @ stock
+- WC: Corsair - iCue H150i RGB PRO XT (360mm)
 - MoBo: Asus Prime X570-Pro
-- RAM: HyperX Fury DDR4 4x8GB @ 2400MHz (no-OC)
-- GPU0: PowerColor Radeon RX 6600 (8GB)
-- GPU1: Gigabyte Radeon RX570 (8GB) 
-- NVMe: Adata Falcon - 500GB
-- SSD0: Samsung EVO860 - 500GB
-- SSD1: Kingston A400 - 240GB
-- HDD0: Seagate Barracuda - 1TB (7200RPM - 64MB)
-- HDD1: Toshiba P300 - 2TB (7200RPM - 64MB)
+- RAM: HyperX Fury DDR4 4x8GB @ 2400MHz (stock)
+- GPU: Sapphire Pure AMD RX 7800 XT (16GB) @ stock
+- NVMe1: Samsung EVO980 Pro - 500GB - EFI + swap + gentoo
+- NVMe2: Adata Falcon - 500GB - Ventoy + Steam + ???
+- SSD0: Samsung EVO860 - 500GB - /home
+- SSD1: Kingston A400 - 240GB - /home
+- HDD0: Seagate Barracuda - 1TB (7200RPM - 64MB) - /home
+- HDD1: Toshiba P300 - 2TB (7200RPM - 64MB) - BackUp
 - PSU: Corsair TX750M - 750W 80+G
 - CAB: Gamemax Raider XT
 - (and a lot of RGBs ヾ(✪‿✪)ｼ )
@@ -44,8 +50,8 @@ It's all about my PC
 
 ## Monitors:
 
-- Mon0: Samsung SyncMaster TA550 - 22" (16:9) @1920x1080 60Hz
-- Mon1: LG Flatron W1952TQ - 19" (16:10) @1440x900 60Hz
+- Mon0: LG Flatron W1952TQ - 19" (16:10) @1440x900 60Hz
+- Mon1: LG Ultra Gear 34WP65C-B - 34" (21:9) @3440x1440 160Hz
 - Mon2: Samsung SyncMaster 940B Plus - 19" (4:3) @ 1280x1024 75Hz
 
 
