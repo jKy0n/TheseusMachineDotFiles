@@ -50,11 +50,11 @@ It's all about my loved PC
 
 ###
 
-![Devices](https://github.com/jKy0n/TheseusMachineDotFiles/blob/main/midia/devicestab.png)
+![Devices](https://github.com/jKy0n/TheseusMachineDotFiles/blob/main/midia/devicesTab.png)
 
 ###
 
-![Peripherals](https://github.com/jKy0n/TheseusMachineDotFiles/blob/main/midia/Desktop-29-Feb-2024.png)
+![Peripherals](https://github.com/jKy0n/TheseusMachineDotFiles/blob/main/midia/Desktop-29-Feb-2024.jpg)
 
 ## Monitors:
 
