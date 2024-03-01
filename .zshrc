@@ -1,6 +1,9 @@
 #
 export GTK_THEME="Marwaita Dark EndeavourOs"
+#export QT_QPA_PLATFORMTHEME="qt5ct"
+
 export EDITOR='nano'
+export VISUAL='nano'
 
 
 #source ~/powerlevel10k/powerlevel10k.zsh-theme
@@ -11,11 +14,13 @@ export EDITOR='nano'
 # Verificar se a variável de ambiente específica da distribuição está definida
 if [[ "$(cat /etc/*-release)" == *"Gentoo"* ]]; then
     # Configurações específicas para o Gentoo
-source /home/jkyon/powerlevel10k/powerlevel10k.zsh-theme
-
+    source /home/jkyon/powerlevel10k/powerlevel10k.zsh-theme
 elif [[ "$(cat /etc/*-release)" == *"Arch Linux"* ]]; then
     # Configurações específicas para o Arch Linux
-source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
+    source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
+elif [[ "$(tty)" == "/dev/tty1" ]]; then
+    # Configurações específicas para o tty
+    source /home/jkyon/powerlevel10k.config/jkyon/tty/powerlevel10k.zsh-theme
 fi
 
 
@@ -152,3 +157,7 @@ fi
 # Alias
 alias show-alias='bat --color=always /home/jkyon/ShellScript/aliases.sh'
 source /home/jkyon/ShellScript/aliases.sh
+
+
+# Start tmux by default
+[[ -z $TMUX ]] && exec tmux

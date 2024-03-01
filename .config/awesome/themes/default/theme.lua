@@ -13,26 +13,28 @@ local gears = require("gears")
 local beautiful = require("beautiful")
 
 local theme = {}
-                                            --  Defaults
-theme.font          = "MesloLGS NF Bold 8"  --  "Noto Sans SemiBold 8" 
+                                                  --  Defaults
+theme.font              =   "MesloLGS NF Bold 8"  --  "Noto Sans SemiBold 8" 
 
-theme.bg_normal     = "#232323"             -- "#222222"
-theme.bg_focus      = "#9F7DF6"             -- "#535d6c"         
-theme.bg_urgent     = "#ff0000"             -- "#ff0000"
-theme.bg_minimize   = "#444444"             -- "#444444"
-theme.bg_systray    = theme.bg_normal
+theme.bg_normal         =   "#232323"             -- "#222222"
+theme.bg_focus          =   "#9F7DF6"             -- "#535d6c"         
+theme.bg_urgent         =   "#ff0000"             -- "#ff0000"
+theme.bg_minimize       =   "#444444"             -- "#444444"
+theme.bg_systray        =   theme.bg_normal
 
-theme.fg_normal     = "#aaaaaa"             -- "#aaaaaa"
-theme.fg_focus      = "#ffffff"             -- "#ffffff"
-theme.fg_urgent     = "#ffffff"             -- "#ffffff"
-theme.fg_minimize   = "#ffffff"             -- "#ffffff"
+theme.fg_normal         =   "#aaaaaa"             -- "#aaaaaa"
+theme.fg_focus          =   "#ffffff"             -- "#ffffff"
+theme.fg_urgent         =   "#ffffff"             -- "#ffffff"
+theme.fg_minimize       =   "#ffffff"             -- "#ffffff"
 
-theme.useless_gap   = dpi(2)
-theme.border_width  = dpi(2)
-theme.border_normal = "#232323"
-theme.border_focus  = "#9F7DF6"
-theme.border_active = "#9F7DF6"
-theme.border_marked = "#91231c"
+theme.useless_gap       =   dpi(2)                -- dpi(2)
+theme.border_width      =   dpi(2)                -- dpi(2)
+theme.border_normal     =   "#232323"             -- "#232323"
+theme.border_focus      =   "#9F7DF6"             -- "#9F7DF6"
+theme.border_active     =   "#9F7DF6"             -- "#9F7DF6"
+theme.border_marked     =   "#91231c"             -- "#91231c"
+
+theme.taglist_fg_empty  =   "#555555"             -- "#555555"
 
 
 -- There are other variable sets

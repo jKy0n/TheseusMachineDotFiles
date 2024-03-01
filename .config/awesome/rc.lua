@@ -45,13 +45,14 @@ local mytemp = lain.widget.temp()
 local cpu_widget = require("awesome-wm-widgets.cpu-widget.cpu-widget")
 local ram_widget = require("awesome-wm-widgets.ram-widget.ram-widget")
 
-
-local volume_widget = require('awesome-wm-widgets.volume-widget.volume')
+local volume_widget = require('awesome-wm-widgets.pactl-widget.volume')
+-- local volume_widget = require('awesome-wm-widgets.volume-widget.volume')
 local todo_widget = require("awesome-wm-widgets.todo-widget.todo")
 local weather_widget = require("awesome-wm-widgets.weather-widget.weather")
 local calendar_widget = require("awesome-wm-widgets.calendar-widget.calendar")
 local logout_menu_widget = require("awesome-wm-widgets.logout-menu-widget.logout-menu")
 
+local rubato = require("rubato")
 
 -- theme.wallpaper = "/home/jkyon/Pictures/Wallpapers/LinuxWallpapers/multi-monitor-wallpapers.jpg --bg-fill"
 -- local wallpaper_path = "/home/jkyon/Pictures/Wallpapers/LinuxWallpapers/multi-monitor-wallpapers.jpg"
@@ -79,6 +80,8 @@ require("awful.hotkeys_popup.keys")
 --     end
 
 
+-- Configurar o tamanho padrão das notificações
+naughty.config.defaults['icon_size'] = 300
 
 
 -- {{{ Error handling
@@ -149,8 +152,8 @@ myawesomemenu = {
    { "hotkeys", function() hotkeys_popup.show_help(nil, awful.screen.focused()) end },
    { "manual", terminal .. " -e man awesome" },
    { "edit config", editor_cmd .. " " .. awesome.conffile },
-   { "restart", awesome.restart },
-   { "quit", function() awesome.quit() end },
+--   { "restart", awesome.restart },
+--   { "quit", function() awesome.quit() end },
 }
 
 mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesome_icon },
@@ -226,8 +229,57 @@ mytextclock:connect_signal("button::press",
         if button == 1 then cw.toggle() end
     end)
 
+
 ---------------------------------------------------------------------
-------------borda-------  Tags Manipulation Functions  -------------------
+--------------------  Notification Custom Preset  -------------------
+
+
+-- Criar um novo preset para notificações críticas
+-- naughty.config.presets.my_critical = {
+--     font = "Noto Sans semibold 36",  -- Ajuste o nome da fonte e o tamanho conforme necessário
+--     fg   = "#FF0000",  -- Cor do texto
+--     bg   = "#1E1E1E",  -- Cor de fundo
+--     timeout = 10,      -- Tempo de exibição
+--     border_width = 2,
+--     border_color = "#FF0000",  -- Cor da borda
+-- }
+
+
+--------------------  Notification Custom Preset  -------------------
+---------------------------------------------------------------------
+
+
+-- local function set_wallpaper(s)
+--     -- Wallpaper
+--     if beautiful.wallpaper then
+--         local wallpaper = beautiful.wallpaper
+--         -- If wallpaper is a function, call it with the screen
+--         if type(wallpaper) == "function" then
+--             wallpaper = wallpaper(s)
+--         end
+--         gears.wallpaper.maximized(wallpaper, s, true)
+--     end
+-- end
+
+
+
+    ------------------  Minhas Funções  ------------------
+
+
+-- local function atualizarGentooUpdatesWidget(widget, stdout, stderr, exitreason, exitcode)
+--     if tonumber(stdout) == "0 Pkgs" then
+--         widget.visible = false
+--     else
+--         widget.visible = true
+--     end
+-- end
+
+-- local atualizarGentooUpdatesWidget_complemento = [=[tbox_separator_space; wibox.widget.textbox(' | ');]=]
+
+
+
+---------------------------------------------------------------------
+-------------------  Tags Manipulation Functions  -------------------
 
 local function add_tag()
     awful.tag.add(" NewTag ", {
@@ -268,23 +320,7 @@ local function move_to_new_tag()
 end
 
 -------------------  Tags Manipulation Functions  -------------------
----------------------------------------------------------------------
---------------------  Notification Custom Preset  -------------------
 
-
--- Criar um novo preset para notificações críticas
-naughty.config.presets.my_critical = {
-    font = "Noto Sans semibold 36",  -- Ajuste o nome da fonte e o tamanho conforme necessário
-    fg   = "#FF0000",  -- Cor do texto
-    bg   = "#1E1E1E",  -- Cor de fundo
-    timeout = 10,      -- Tempo de exibição
-    border_width = 2,
-    border_color = "#FF0000",  -- Cor da borda
-}
-
-
---------------------  Notification Custom Preset  -------------------
----------------------------------------------------------------------
 
 -- Create a wibox for each screen and add it
 local taglist_buttons = gears.table.join(
@@ -326,74 +362,46 @@ local tasklist_buttons = gears.table.join(
                                               awful.client.focus.byidx(-1)
                                           end))
 
--- local function set_wallpaper(s)
---     -- Wallpaper
---     if beautiful.wallpaper then
---         local wallpaper = beautiful.wallpaper
---         -- If wallpaper is a function, call it with the screen
---         if type(wallpaper) == "function" then
---             wallpaper = wallpaper(s)
---         end
---         gears.wallpaper.maximized(wallpaper, s, true)
---     end
--- end
-
-
-
-    ------------------  Minhas Funções  ------------------
-
-
--- local function atualizarGentooUpdatesWidget(widget, stdout, stderr, exitreason, exitcode)
---     if tonumber(stdout) == "0 Pkgs" then
---         widget.visible = false
---     else
---         widget.visible = true
---     end
--- end
-
--- local atualizarGentooUpdatesWidget_complemento = [=[tbox_separator_space; wibox.widget.textbox(' | ');]=]
-
-
 
     ------------------  Tags  ------------------
 
 awful.tag.add(" emerge (1) ", {
---    icon = "/home/jkyon/.dotfiles/.config/awesome/icons/input-gaming.svg.png",
     layout = awful.layout.suit.tile.left,
     screen = 1,
     selected = true
 })
 
 awful.tag.add(" System (2) ", {
---    icon = "/home/jkyon/.dotfiles/.config/awesome/icons/system.png",    
     layout = awful.layout.suit.tile,
     screen = 1,
     selected = false
 })    
 
 awful.tag.add(" Media (3) ", {
---    icon = "/home/jkyon/.dotfiles/.config/awesome/icons/system.png",    
     layout = awful.layout.suit.tile,
     screen = 1,
     selected = false
 })    
 
-awful.tag.add(" Minecraft (4) ", {
---    icon = "/home/jkyon/.dotfiles/.config/awesome/icons/input-gaming.svg.png",    
+awful.tag.add(" Games (4) ", {
     layout = awful.layout.suit.tile.left,
     screen = 1,
     selected = false
 })    
 
-awful.tag.add(" Steam (5) ", {
---    icon = "/home/jkyon/.dotfiles/.config/awesome/icons/input-gaming.svg.png",    
+awful.tag.add(" etc (5) ", {
     layout = awful.layout.suit.tile.left,
     screen = 1,
     selected = false
 })    
+
+-- awful.tag.add(" Minecraft (4) ", {
+--     layout = awful.layout.suit.tile.left,
+--     screen = 1,
+--     selected = false
+-- })    
 
 -- awful.tag.add(" Free =) ", {
--- --    icon = "/home/jkyon/.dotfiles/.config/awesome/icons/system.png",
 --     layout = awful.layout.suit.tile,
 --     screen = 1,
 --     selected = false
@@ -402,28 +410,24 @@ awful.tag.add(" Steam (5) ", {
     ------------------ Second Monitor ------------------
 
 awful.tag.add(" Monitor (1) ", {
---    icon = "/home/jkyon/.dotfiles/.config/awesome/icons/system.png",
-    layout = awful.layout.suit.fair,
+    layout = awful.layout.suit.max,
     screen = 2,
     selected = false
 })
 
 awful.tag.add(" Search (2) ", {
-    --    icon = "/home/jkyon/.dotfiles/.config/awesome/icons/system.png",
     layout = awful.layout.suit.tile,
     screen = 2,
     selected = true
 })
 
 awful.tag.add(" Media (3) ", {
-    --    icon = "/home/jkyon/.dotfiles/.config/awesome/icons/system.png",
     layout = awful.layout.suit.max,
     screen = 2,
     selected = false
 })
 
 -- awful.tag.add(" Free =) ", {
--- --    icon = "/home/jkyon/.dotfiles/.config/awesome/icons/system.png",
 --     layout = awful.layout.suit.tile,
 --     screen = 2,
 --     selected = false,
@@ -432,35 +436,30 @@ awful.tag.add(" Media (3) ", {
         ------------------ Third Monitor ------------------
 
 awful.tag.add(" Monitor (1) ", {
---    icon = "/home/jkyon/.dotfiles/.config/awesome/icons/system.png",
     layout = awful.layout.suit.tile.bottom,
     screen = 3,
     selected = true
 })
 
 awful.tag.add(" Chat (2) ", {    
---    icon = "/home/jkyon/.dotfiles/.config/awesome/icons/system.png",    
     layout = awful.layout.suit.max,
     screen = 3,
     selected = false
 })    
 
 awful.tag.add(" Music (3) ", {
---    icon = "/home/jkyon/.dotfiles/.config/awesome/icons/system.png",    
     layout = awful.layout.suit.tile,
     screen = 3,
     selected = false
 })    
 
 awful.tag.add(" Mixer (4) ", {
---    icon = "/home/jkyon/.dotfiles/.config/awesome/icons/system.png",
     layout = awful.layout.suit.tile,
     screen = 3,
     selected = false
 })
 
 -- awful.tag.add(" Free =) ", {
--- --    icon = "/home/jkyon/.dotfiles/.config/awesome/icons/system.png",
 --     layout = awful.layout.suit.tile,
 --     screen = 3,
 --     selected = false
@@ -470,35 +469,8 @@ awful.tag.add(" Mixer (4) ", {
 
         ---------------------------------------
 
--- Re-set wallpaper when a screen's geometry changes (e.g. different resolution)
--- screen.connect_signal("property::geometry", set_wallpaper)
 
-awful.screen.connect_for_each_screen(function(s)
-       -- Wallpaper
-    --    gears.wallpaper.maximized("/home/jkyon/Pictures/Wallpapers/LinuxWallpapers/multi-monitor-wallpapers.jpg", 1, true)
-    -- set_wallpaper(s)
-
-
-
--- awful.screen.connect_for_each_screen(function(s)
---     -- Configurações específicas da tela
-
---     -- Definir wallpaper para cada tela
---     gears.wallpaper.maximized("/caminho/para/o/seu/wallpaper.jpg", s, true)
-
-    
-
-        ---------------------------------------
-
-
-
---     -- Each screen has its own tag table.
---    awful.tag(
---         { " 1 ", " 2 ", " 3 ", " 4 ", " 5 ", " 6 " }, 
---         s, 
---         awful.layout.layouts[1]
---     )
-
+        awful.screen.connect_for_each_screen(function(s)
 
     -- Create a promptbox for each screen
     s.mypromptbox = awful.widget.prompt()
@@ -527,6 +499,8 @@ awful.screen.connect_for_each_screen(function(s)
         },
    }
 
+
+
     -- Create the wibox
     s.mywibox = awful.wibar({ position = "top", screen = s, opacity = 0.8, border_width = 3, shape = gears.shape.rounded_rect 	 })
 
@@ -553,16 +527,6 @@ awful.screen.connect_for_each_screen(function(s)
             layout = wibox.layout.fixed.horizontal,
 --            mykeyboardlayout,
 
-                    tbox_separator_space,
---                     tbox_separator_space,
-
---             wibox.widget.textbox('  '),
---             awful.widget.watch('bash -c "sh /home/jkyon/ShellScript/awesomeWidget-trackingAwesomeMemoryUse.sh"', 1),
-
---                     tbox_separator_space,
--- ------------------------------------------------------------------------------------------------            
---             wibox.widget.textbox(' | '),
-------------------------------------------------------------------------------------------------
                     tbox_separator_space,
 
             -- wibox.widget.textbox('  '),
@@ -604,6 +568,8 @@ awful.screen.connect_for_each_screen(function(s)
             wibox.widget.textbox('  '),
 
            wibox.widget.textbox(' GPU: '),
+           awful.widget.watch('bash -c "sh ~/ShellScript/awesomeWidget-gpu0usage.sh"', 1),
+                 tbox_separator_space,
            awful.widget.watch('bash -c "sh ~/ShellScript/awesomeWidget-gpu0freq.sh"', 1),
                  tbox_separator_space,
            wibox.widget.textbox('  '),
@@ -625,7 +591,15 @@ awful.screen.connect_for_each_screen(function(s)
 ------------------------------------------------------------------------------------------------
                     tbox_separator_space,
 
-            volume_widget({ widget_type = 'arc' , thickness = 2 }),
+            volume_widget({ 
+                widget_type = 'arc',
+                thickness   = 2 ,
+                step        = 5 ,
+                mixer_cmd   = 'pavucontrol',
+                device      = '@DEFAULT_SINK@',
+                tooltip     = true
+
+                }),
             
                     tbox_separator_space,
             
@@ -672,8 +646,8 @@ awful.screen.connect_for_each_screen(function(s)
         },
     }
 
-end)
 -- }}}
+end)
 
 
 
@@ -688,6 +662,16 @@ root.buttons(gears.table.join(
 
 -- {{{ Key bindings
 globalkeys = gears.table.join(
+
+    -- -- alt + tab
+    -- awful.key({ "Mod1", }, "Tab",
+    --     function ()
+    --         awful.client.focus.history.previous()
+    --         if client.focus then
+    --             client.focus:raise()
+    --         end
+    --     end),
+
     awful.key({ modkey,           }, "s",      hotkeys_popup.show_help,
               {description="show help", group="awesome"}),
     awful.key({ modkey,           }, "Left",   awful.tag.viewprev,
@@ -796,7 +780,27 @@ globalkeys = gears.table.join(
     -- awful.key({ modkey}, "p", function () awful.util.spawn_with_shell("~/.config/dmenu") end)
 
     awful.key({ modkey, }, "p",
-          function () awful.util.spawn("rofi -config ~/.config/rofi/config -show combi -combi-modi \"window,run\" -modi combi -icon-theme \"Papirus\" -show-icons -theme ~/.config/rofi/config.rasi") end),
+        --   function () awful.util.spawn("rofi -config ~/.config/rofi/config -show combi -combi-modi \"window,run\" -modi combi -icon-theme \"Papirus\" -show-icons -theme ~/.config/rofi/config.rasi") end),
+        function () awful.util.spawn("rofi  -config /home/jkyon/.dotfiles/.config/rofi.jkyon/config.rasi \
+                                            -show drun \
+                                            -icon-theme \"Papirus\"  \
+                                            -show-icons -theme /home/jkyon/.dotfiles/.config/rofi.jkyon/theme.rasi") 
+            end),
+
+
+    -- alt + tab
+    awful.key({ "Mod1", }, "Tab",
+        function () awful.util.spawn("rofi  -config /home/jkyon/.dotfiles/.config/rofi.jkyon/config.rasi \
+                                            -show window \
+                                            -window-format \"{t}\" \
+                                            -kb-row-down 'Alt+Tab,Alt+Down,Down' \
+                                            -kb-row-up 'Alt+ISO_Left_Tab,Alt+Up,Up' \
+                                            -kb-accept-entry '!Alt-Tab,!Alt+Down,!Alt+ISO_Left_Tab,!Alt+Up,Return' \
+                                            -me-select-entry 'MouseSecondary' \
+                                            -me-accept-entry 'MousePrimary' \
+                                            -modi combi -icon-theme \"Papirus\" \
+                                            -show-icons -theme /home/jkyon/.dotfiles/.config/rofi.jkyon/theme-tab.rasi") 
+            end),
 
 
 ---------------------  Tags Manipulation keybinds  ---------------------
@@ -833,7 +837,7 @@ clientkeys = gears.table.join(
         awful.key({}, "XF86AudioStop", function() awful.util.spawn("dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Pause") end),
 
 
-    awful.key({ }, "Print", function () awful.util.spawn("gnome-screenshot -i") end),
+    awful.key({ }, "Print", function () awful.util.spawn("gnome-screenshot --interactive") end),
 
     awful.key({ modkey, "Control" }, "Escape", function () awful.util.spawn("loginctl suspend") end),
     
@@ -967,76 +971,97 @@ awful.rules.rules = {
         -----------------  My Rules ----------------- 
         ---------------------------------------------
 
-
-        { rule = { class = "Lxappearance" },
-        properties = { floating = true,
-                        placement = awful.placement.centered },},
-
+-- A
+--
+-- B
+--
+-- C
+--
+-- D
+--
         { rule = { class = "discord" },
         properties = { floating = false,
-                        placement = awful.placement.centered,
-                        tag = screen[3].tags[2] },},
-                        
-        { rule = { class = "Google-chrome" },
-        properties = { floating = false,
-                        placement = awful.placement.centered,
-                        tag = screen[2].tags[3] },},
-
+        placement = awful.placement.centered,
+        tag = screen[3].tags[2] },},
+       
         { rule = { class = "dolphin" },
         properties = { floating = true,
-                       placement = awful.placement.centered },},
-
+        placement = awful.placement.centered },},
+-- E
+--
+-- F
+--
         { rule = { class = "feh" },
         properties = { floating = true,
-                        width = 3000,     -- Defina o tamanho que deseja
-                        height = 1000,    -- Defina o tamanho que deseja
-                        x = 340,          -- Posição x
-                        y = 100,          -- Posição y
-                        screen = 1
+        width = 3000,     -- Defina o tamanho que deseja
+        height = 1000,    -- Defina o tamanho que deseja
+        x = 340,          -- Posição x
+        y = 100,          -- Posição y
+        screen = 1
         }},
-
+-- G
+--
+        { rule = { class = "Google-chrome" },
+        properties = { floating = false,
+        placement = awful.placement.centered,
+        tag = screen[2].tags[3] },},
+        
         { rule = { class = "gnome-calculator" },
         properties = { floating = true,
-                       placement = awful.placement.centered },},
-
-        { rule = { class = "gnome-disks" },
+        placement = awful.placement.centered },},
+        
+        { rule_any = { class = {"Gnome-disks", "gnome-disks"} },
         properties = { floating = true,
-                       placement = awful.placement.centered },},
-
+        placement = awful.placement.centered },},
+        
         { rule = { class = "gpartedbin" },
         properties = { floating = true,
-                       placement = awful.placement.centered },},
-
-        { rule = { class = "Gnome-screenshot" },
-            properties = { floating = true, placement = awful.placement.centered },},
+        placement = awful.placement.centered },},
         
+        { rule = { class = "Gnome-screenshot" },
+        properties = { floating = true,
+        placement = awful.placement.centered 
+        },},        
+-- H
+--
         { rule_any = { class = {"Heroic Games Launcher", "heroic"} },
         properties = { floating = false,
         placement = awful.placement.centered,
         tag = screen[1].tags[3]       },},
-        
+-- I
+--
+-- J
+--
+-- K
+--
         { rule = { name = "KDE Connect" },
         properties = { floating = true,
-        placement = awful.placement.centered },},
-        
+        placement = awful.placement.centered },},    
+-- L
+--
         { rule = { name = "Lutris" },
         properties = { floating = true,
         placement = awful.placement.centered,
-                tag = screen[1].tags[3]       },},
-        
+        tag = screen[1].tags[3]       },},
+    
+        { rule = { class = "Lxappearance" },
+        properties = { floating = true,
+        placement = awful.placement.centered },},
+-- M
+--
         { rule = { name = "MuPDF" },
         properties = { floating = true,
         placement = awful.placement.centered },},
-        
+-- N
+--      
         { rule = { class = "openrgb" },
         properties = { floating = true,
         placement = awful.placement.centered },},
-        
-        { rule = { class = "pavucontrol" },
-        properties = { floating = false,
-        tag = screen[3].tags[4]       },},
-        
-        { rule = { class = "Pavucontrol" },
+-- O
+--
+-- P
+--        
+        { rule_any = { class = {"pavucontrol", "Pavucontrol"} },
         properties = { floating = false,
         tag = screen[3].tags[4]       },},
         
@@ -1044,18 +1069,22 @@ awful.rules.rules = {
         properties = { floating = true,
         placement = awful.placement.centered,
         tag = screen[1].tags[4]       },},
-        
-        { rule = { class = "Rambox" },
+-- Q
+-- 
+-- R
+--      
+        { rule = { class = "rambox" },
         properties = { floating = false,
         placement = awful.placement.centered,
         tag = screen[3].tags[2]       },},
-
+-- S
+--
         { rule = { class = "Spotify" },
         properties = { floating = false,
         placement = awful.placement.centered,
         tag = screen[3].tags[3]       },},
 
-        { rule = { class = "snappergui" },
+        { rule_any = { class = {"snappergui", "Snapper-gui"} },
         properties = { floating = true,
         placement = awful.placement.centered,
         -- tag = screen[3].tags[3]       
@@ -1064,23 +1093,24 @@ awful.rules.rules = {
         { rule = { class = "steam" },
         properties = { floating = true,
         placement = awful.placement.right,
-        tag = screen[1].tags[5]       },},
+        tag = screen[1].tags[4]       },},
 
                 { rule_any = { class = {" - News"} },
                 properties = { floating = true,
                                 placement = awful.placement.centered,
-                                tag = screen[1].tags[5]       },},
+                                tag = screen[1].tags[4]       },},
 
                 { rule_any = { name = {"Friends List"} },
                 properties = { floating = false,
                             placement = awful.placement.left,
-                            tag = screen[1].tags[5]       },},
+                            tag = screen[1].tags[4]       },},
 
                 { rule_any = { name = {"steamwebhelper"} },
                 properties = { floating = true,
                             placement = awful.placement.centered,
-                            tag = screen[1].tags[5]       },},
-      
+                            tag = screen[1].tags[4]       },},
+-- T
+--  
         { rule = { class = "Thunar" },
         properties = { floating = true, placement = awful.placement.centered },},
         
@@ -1092,19 +1122,28 @@ awful.rules.rules = {
         { rule = { class = "Timeshift" },
         properties = { floating = true,
         placement = awful.placement.centered },},
-
+-- U
+--
+-- V
+--
         { rule_any = { class = {"code", "Code"} },     -- vsCode
         properties = { floating = false,
         placement = awful.placement.left,
         tag = screen[1].tags[2] },},
-
+-- W
+--
+-- X
+--
+-- Y
+--
 --        { rule = { class = "yakuake" },
 --        properties = { floating = true, ontop = true, focus = true },
 --        callback = function(c)
 --            c:geometry({x=1450, y=25})
 --            c:connect_signal("unmanage", function() free_focus = true end)
 --        end },
-            
+-- Z
+--          
                 
             -- Floating clients.
             { rule_any = {
@@ -1256,3 +1295,11 @@ awful.spawn.with_shell("sh /home/jkyon/.dotfiles/.config/awesome/AwesomeWMstartu
 --     -- screen is the global screen module. It is also a list of all screens.
 --     global_wallpaper.screens = screen
 -- end)
+
+
+
+timed = rubato.timed {
+    intro = 0.1,
+    duration = 0.3
+}
+timed.target = 1

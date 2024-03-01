@@ -1,0 +1,1 @@
+.config/ananicy.d

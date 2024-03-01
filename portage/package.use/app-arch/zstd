@@ -1,0 +1,1 @@
+app-arch/zstd lzma zlib lz4 -static-libs -test
