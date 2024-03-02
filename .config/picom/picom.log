@@ -1315,3 +1315,16 @@
 [ 03/01/2024 00:11:27.915 session_init FATAL ERROR ] Another composite manager is already running
 [ 03/01/2024 00:11:57.392 session_init FATAL ERROR ] Another composite manager is already running
 [ 03/01/2024 00:26:19.640 session_init FATAL ERROR ] Another composite manager is already running
+[ 03/01/2024 21:41:04.988 x_fetch_region ERROR ] Failed to fetch rectangles (X error 138 XCB_XFIXES_BAD_REGION request 137 minor 19 serial 52615725)
+[ 03/01/2024 21:46:05.353 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 03/01/2024 21:46:05.353 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 03/01/2024 21:46:05.353 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 03/01/2024 21:46:05.353 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 03/01/2024 21:46:05.353 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 03/01/2024 21:46:05.353 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 03/01/2024 21:46:05.353 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 03/01/2024 21:46:05.353 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 03/01/2024 21:46:05.428 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 03/01/2024 21:46:05.428 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 03/01/2024 21:46:05.458 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 03/01/2024 22:07:19.695 session_init FATAL ERROR ] Another composite manager is already running
