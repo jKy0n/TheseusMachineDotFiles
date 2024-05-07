@@ -1328,3 +1328,1219 @@
 [ 03/01/2024 21:46:05.428 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
 [ 03/01/2024 21:46:05.458 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
 [ 03/01/2024 22:07:19.695 session_init FATAL ERROR ] Another composite manager is already running
+[ 03/02/2024 02:37:15.684 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 03/02/2024 02:37:15.726 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 03/02/2024 02:37:15.726 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 03/02/2024 02:37:15.726 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 03/02/2024 02:37:15.726 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 03/02/2024 02:37:15.726 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 03/02/2024 02:37:15.726 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 03/02/2024 02:37:15.726 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 03/02/2024 02:37:15.815 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 03/02/2024 02:37:15.815 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 03/02/2024 02:37:15.836 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 03/02/2024 07:05:34.107 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 03/02/2024 07:05:34.107 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 03/02/2024 07:05:34.107 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 03/02/2024 07:05:34.107 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 03/02/2024 07:05:34.107 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 03/02/2024 07:05:34.107 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 03/02/2024 07:05:34.107 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 03/02/2024 07:05:34.107 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 03/02/2024 07:05:34.114 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 03/02/2024 07:05:34.114 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 03/02/2024 07:05:34.114 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 03/03/2024 05:37:02.086 session_init FATAL ERROR ] Another composite manager is already running
+[ 03/03/2024 05:47:05.830 session_init FATAL ERROR ] Another composite manager is already running
+[ 03/03/2024 05:49:53.664 session_init FATAL ERROR ] Another composite manager is already running
+[ 03/03/2024 05:54:22.615 session_init FATAL ERROR ] Another composite manager is already running
+[ 03/03/2024 06:01:03.019 session_init FATAL ERROR ] Another composite manager is already running
+[ 03/03/2024 07:22:50.705 session_init FATAL ERROR ] Another composite manager is already running
+[ 03/03/2024 07:38:17.127 session_init FATAL ERROR ] Another composite manager is already running
+[ 03/03/2024 07:40:58.150 glx_has_extension ERROR ] Failed get GLX extension list.
+[ 03/03/2024 07:40:58.304 glx_has_extension ERROR ] Failed get GLX extension list.
+[ 03/03/2024 07:40:58.304 glx_has_extension ERROR ] Failed get GLX extension list.
+[ 03/03/2024 07:40:58.304 glx_has_extension ERROR ] Failed get GLX extension list.
+[ 03/03/2024 07:40:58.304 glx_has_extension ERROR ] Failed get GLX extension list.
+[ 03/03/2024 07:40:58.304 glx_has_extension ERROR ] Failed get GLX extension list.
+[ 03/03/2024 07:40:58.304 glx_has_extension ERROR ] Failed get GLX extension list.
+[ 03/03/2024 07:40:58.304 glx_has_extension ERROR ] Failed get GLX extension list.
+[ 03/03/2024 07:40:58.304 glx_init ERROR ] No GLX extension.
+[ 03/03/2024 07:40:58.304 initialize_backend FATAL ERROR ] Failed to initialize backend, aborting...
+[ 03/03/2024 07:46:13.394 glx_has_extension ERROR ] Failed get GLX extension list.
+[ 03/03/2024 07:46:13.394 glx_has_extension ERROR ] Failed get GLX extension list.
+[ 03/03/2024 07:46:13.394 glx_has_extension ERROR ] Failed get GLX extension list.
+[ 03/03/2024 07:46:13.394 glx_has_extension ERROR ] Failed get GLX extension list.
+[ 03/03/2024 07:46:13.394 glx_has_extension ERROR ] Failed get GLX extension list.
+[ 03/03/2024 07:46:13.394 glx_has_extension ERROR ] Failed get GLX extension list.
+[ 03/03/2024 07:46:13.394 glx_has_extension ERROR ] Failed get GLX extension list.
+[ 03/03/2024 07:46:13.394 glx_has_extension ERROR ] Failed get GLX extension list.
+[ 03/03/2024 07:46:13.394 glx_init ERROR ] No GLX extension.
+[ 03/03/2024 07:46:13.394 initialize_backend FATAL ERROR ] Failed to initialize backend, aborting...
+[ 03/03/2024 07:47:15.182 glx_has_extension ERROR ] Failed get GLX extension list.
+[ 03/03/2024 07:47:15.298 glx_has_extension ERROR ] Failed get GLX extension list.
+[ 03/03/2024 07:47:15.298 glx_has_extension ERROR ] Failed get GLX extension list.
+[ 03/03/2024 07:47:15.298 glx_has_extension ERROR ] Failed get GLX extension list.
+[ 03/03/2024 07:47:15.299 glx_has_extension ERROR ] Failed get GLX extension list.
+[ 03/03/2024 07:47:15.299 glx_has_extension ERROR ] Failed get GLX extension list.
+[ 03/03/2024 07:47:15.299 glx_has_extension ERROR ] Failed get GLX extension list.
+[ 03/03/2024 07:47:15.299 glx_has_extension ERROR ] Failed get GLX extension list.
+[ 03/03/2024 07:47:15.299 glx_init ERROR ] No GLX extension.
+[ 03/03/2024 07:47:15.299 initialize_backend FATAL ERROR ] Failed to initialize backend, aborting...
+[ 03/04/2024 13:42:55.243 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 03/04/2024 13:42:55.266 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 03/04/2024 13:42:55.266 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 03/04/2024 13:42:55.266 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 03/04/2024 13:42:55.266 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 03/04/2024 13:42:55.266 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 03/04/2024 13:42:55.266 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 03/04/2024 13:42:55.266 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 03/04/2024 13:42:56.722 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 03/04/2024 13:42:56.722 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 03/04/2024 13:42:56.748 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 03/04/2024 17:34:55.352 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 03/04/2024 17:34:55.373 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 03/04/2024 17:34:55.373 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 03/04/2024 17:34:55.373 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 03/04/2024 17:34:55.373 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 03/04/2024 17:34:55.373 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 03/04/2024 17:34:55.373 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 03/04/2024 17:34:55.373 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 03/04/2024 17:34:55.499 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 03/04/2024 17:34:55.500 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 03/04/2024 17:34:55.549 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 03/04/2024 18:19:53.775 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 03/04/2024 18:19:53.791 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 03/04/2024 18:19:53.791 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 03/04/2024 18:19:53.791 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 03/04/2024 18:19:53.791 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 03/04/2024 18:19:53.791 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 03/04/2024 18:19:53.791 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 03/04/2024 18:19:53.791 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 03/04/2024 18:19:56.123 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 03/04/2024 18:19:56.123 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 03/04/2024 18:19:56.178 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 03/04/2024 18:30:35.703 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 03/04/2024 18:30:35.768 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 03/04/2024 18:30:35.768 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 03/04/2024 18:30:35.768 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 03/04/2024 18:30:35.768 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 03/04/2024 18:30:35.768 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 03/04/2024 18:30:35.768 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 03/04/2024 18:30:35.768 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 03/04/2024 18:30:39.429 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 03/04/2024 18:30:39.429 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 03/04/2024 18:30:39.430 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 03/04/2024 18:37:40.550 handle_queued_x_events FATAL ERROR ] X11 server connection broke (error 1)
+[ 03/04/2024 18:39:37.347 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 03/04/2024 18:39:37.371 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 03/04/2024 18:39:37.371 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 03/04/2024 18:39:37.371 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 03/04/2024 18:39:37.371 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 03/04/2024 18:39:37.371 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 03/04/2024 18:39:37.371 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 03/04/2024 18:39:37.371 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 03/04/2024 18:39:37.502 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 03/04/2024 18:39:37.502 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 03/04/2024 18:39:37.543 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 03/05/2024 05:19:19.310 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 03/05/2024 05:19:19.362 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 03/05/2024 05:19:19.362 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 03/05/2024 05:19:19.362 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 03/05/2024 05:19:19.362 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 03/05/2024 05:19:19.362 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 03/05/2024 05:19:19.362 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 03/05/2024 05:19:19.362 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 03/05/2024 05:19:19.438 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 03/05/2024 05:19:19.438 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 03/05/2024 05:19:19.481 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 03/05/2024 05:22:38.966 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 03/05/2024 05:22:38.966 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 03/05/2024 05:22:38.966 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 03/05/2024 05:22:38.966 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 03/05/2024 05:22:38.966 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 03/05/2024 05:22:38.966 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 03/05/2024 05:22:38.966 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 03/05/2024 05:22:38.966 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 03/05/2024 05:22:38.973 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 03/05/2024 05:22:38.973 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 03/05/2024 05:22:38.974 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 03/05/2024 05:42:00.904 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 03/05/2024 05:42:00.904 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 03/05/2024 05:42:00.904 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 03/05/2024 05:42:00.904 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 03/05/2024 05:42:00.904 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 03/05/2024 05:42:00.904 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 03/05/2024 05:42:00.904 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 03/05/2024 05:42:00.904 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 03/05/2024 05:42:00.911 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 03/05/2024 05:42:00.911 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 03/05/2024 05:42:00.912 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 03/05/2024 05:42:50.693 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 03/05/2024 05:42:50.693 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 03/05/2024 05:42:50.693 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 03/05/2024 05:42:50.693 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 03/05/2024 05:42:50.693 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 03/05/2024 05:42:50.693 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 03/05/2024 05:42:50.693 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 03/05/2024 05:42:50.693 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 03/05/2024 05:42:50.700 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 03/05/2024 05:42:50.700 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 03/05/2024 05:42:50.700 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 03/05/2024 06:05:42.137 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 03/05/2024 06:05:42.137 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 03/05/2024 06:05:42.137 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 03/05/2024 06:05:42.137 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 03/05/2024 06:05:42.137 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 03/05/2024 06:05:42.137 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 03/05/2024 06:05:42.137 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 03/05/2024 06:05:42.137 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 03/05/2024 06:05:42.144 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 03/05/2024 06:05:42.144 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 03/05/2024 06:05:42.145 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 03/05/2024 06:08:05.814 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 03/05/2024 06:08:05.814 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 03/05/2024 06:08:05.814 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 03/05/2024 06:08:05.814 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 03/05/2024 06:08:05.814 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 03/05/2024 06:08:05.814 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 03/05/2024 06:08:05.814 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 03/05/2024 06:08:05.814 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 03/05/2024 06:08:05.821 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 03/05/2024 06:08:05.821 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 03/05/2024 06:08:05.821 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 03/05/2024 06:16:45.291 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 03/05/2024 06:16:45.291 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 03/05/2024 06:16:45.291 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 03/05/2024 06:16:45.291 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 03/05/2024 06:16:45.291 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 03/05/2024 06:16:45.291 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 03/05/2024 06:16:45.291 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 03/05/2024 06:16:45.291 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 03/05/2024 06:16:45.298 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 03/05/2024 06:16:45.298 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 03/05/2024 06:16:45.298 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 03/05/2024 06:21:17.476 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 03/05/2024 06:21:17.476 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 03/05/2024 06:21:17.476 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 03/05/2024 06:21:17.477 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 03/05/2024 06:21:17.477 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 03/05/2024 06:21:17.477 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 03/05/2024 06:21:17.477 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 03/05/2024 06:21:17.477 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 03/05/2024 06:21:17.484 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 03/05/2024 06:21:17.484 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 03/05/2024 06:21:17.484 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 03/05/2024 06:42:17.616 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 03/05/2024 06:42:17.645 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 03/05/2024 06:42:17.645 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 03/05/2024 06:42:17.645 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 03/05/2024 06:42:17.645 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 03/05/2024 06:42:17.645 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 03/05/2024 06:42:17.645 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 03/05/2024 06:42:17.645 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 03/05/2024 06:42:17.692 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 03/05/2024 06:42:17.692 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 03/05/2024 06:42:17.718 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 03/05/2024 07:06:00.249 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 03/05/2024 07:06:00.291 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 03/05/2024 07:06:00.291 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 03/05/2024 07:06:00.291 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 03/05/2024 07:06:00.291 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 03/05/2024 07:06:00.291 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 03/05/2024 07:06:00.291 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 03/05/2024 07:06:00.291 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 03/05/2024 07:06:00.345 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 03/05/2024 07:06:00.345 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 03/05/2024 07:06:00.364 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 03/05/2024 07:09:53.612 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 03/05/2024 07:09:53.612 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 03/05/2024 07:09:53.612 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 03/05/2024 07:09:53.612 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 03/05/2024 07:09:53.612 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 03/05/2024 07:09:53.612 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 03/05/2024 07:09:53.612 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 03/05/2024 07:09:53.612 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 03/05/2024 07:09:53.619 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 03/05/2024 07:09:53.619 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 03/05/2024 07:09:53.619 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 03/05/2024 09:24:42.422 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 03/05/2024 09:24:42.444 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 03/05/2024 09:24:42.444 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 03/05/2024 09:24:42.444 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 03/05/2024 09:24:42.444 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 03/05/2024 09:24:42.444 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 03/05/2024 09:24:42.444 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 03/05/2024 09:24:42.444 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 03/05/2024 09:24:42.500 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 03/05/2024 09:24:42.500 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 03/05/2024 09:24:42.518 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 03/05/2024 10:15:56.858 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 03/05/2024 10:15:56.858 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 03/05/2024 10:15:56.858 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 03/05/2024 10:15:56.858 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 03/05/2024 10:15:56.858 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 03/05/2024 10:15:56.858 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 03/05/2024 10:15:56.858 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 03/05/2024 10:15:56.858 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 03/05/2024 10:15:56.865 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 03/05/2024 10:15:56.865 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 03/05/2024 10:15:56.866 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 03/05/2024 10:36:35.108 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 03/05/2024 10:36:35.108 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 03/05/2024 10:36:35.108 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 03/05/2024 10:36:35.108 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 03/05/2024 10:36:35.108 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 03/05/2024 10:36:35.108 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 03/05/2024 10:36:35.108 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 03/05/2024 10:36:35.108 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 03/05/2024 10:36:35.115 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 03/05/2024 10:36:35.115 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 03/05/2024 10:36:35.115 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 03/05/2024 10:43:52.051 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 03/05/2024 10:43:52.057 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 03/05/2024 10:43:52.057 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 03/05/2024 10:43:52.057 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 03/05/2024 10:43:52.057 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 03/05/2024 10:43:52.057 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 03/05/2024 10:43:52.057 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 03/05/2024 10:43:52.057 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 03/05/2024 10:43:52.093 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 03/05/2024 10:43:52.093 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 03/05/2024 10:43:52.094 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 03/05/2024 12:18:22.543 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 03/05/2024 12:18:22.543 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 03/05/2024 12:18:22.543 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 03/05/2024 12:18:22.543 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 03/05/2024 12:18:22.543 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 03/05/2024 12:18:22.543 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 03/05/2024 12:18:22.543 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 03/05/2024 12:18:22.543 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 03/05/2024 12:18:22.551 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 03/05/2024 12:18:22.551 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 03/05/2024 12:18:22.551 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 03/05/2024 12:26:00.520 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 03/05/2024 12:26:00.524 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 03/05/2024 12:26:00.524 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 03/05/2024 12:26:00.524 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 03/05/2024 12:26:00.524 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 03/05/2024 12:26:00.524 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 03/05/2024 12:26:00.524 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 03/05/2024 12:26:00.524 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 03/05/2024 12:26:00.557 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 03/05/2024 12:26:00.557 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 03/05/2024 12:26:00.558 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 03/05/2024 21:44:09.586 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 03/05/2024 21:44:09.624 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 03/05/2024 21:44:09.624 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 03/05/2024 21:44:09.624 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 03/05/2024 21:44:09.624 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 03/05/2024 21:44:09.624 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 03/05/2024 21:44:09.624 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 03/05/2024 21:44:09.624 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 03/05/2024 21:44:09.730 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 03/05/2024 21:44:09.730 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 03/05/2024 21:44:09.790 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 03/06/2024 10:36:43.045 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 03/06/2024 10:36:43.054 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 03/06/2024 10:36:43.054 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 03/06/2024 10:36:43.054 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 03/06/2024 10:36:43.054 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 03/06/2024 10:36:43.054 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 03/06/2024 10:36:43.054 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 03/06/2024 10:36:43.054 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 03/06/2024 10:36:43.084 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 03/06/2024 10:36:43.084 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 03/06/2024 10:36:43.085 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 03/06/2024 16:08:04.088 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 03/06/2024 16:08:04.098 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 03/06/2024 16:08:04.098 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 03/06/2024 16:08:04.098 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 03/06/2024 16:08:04.098 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 03/06/2024 16:08:04.098 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 03/06/2024 16:08:04.098 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 03/06/2024 16:08:04.098 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 03/06/2024 16:08:04.223 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 03/06/2024 16:08:04.223 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 03/06/2024 16:08:04.275 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 03/06/2024 16:29:01.817 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 03/06/2024 16:29:01.840 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 03/06/2024 16:29:01.840 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 03/06/2024 16:29:01.840 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 03/06/2024 16:29:01.840 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 03/06/2024 16:29:01.840 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 03/06/2024 16:29:01.840 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 03/06/2024 16:29:01.840 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 03/06/2024 16:29:01.995 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 03/06/2024 16:29:01.995 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 03/06/2024 16:29:02.031 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 03/07/2024 16:26:46.471 x_fetch_region ERROR ] Failed to fetch rectangles (X error 138 XCB_XFIXES_BAD_REGION request 137 minor 19 serial 28029955)
+[ 03/07/2024 16:38:10.363 x_fetch_region ERROR ] Failed to fetch rectangles (X error 138 XCB_XFIXES_BAD_REGION request 137 minor 19 serial 28301566)
+[ 03/07/2024 17:43:11.795 session_init FATAL ERROR ] Another composite manager is already running
+[ 03/07/2024 17:47:05.750 session_init FATAL ERROR ] Another composite manager is already running
+[ 03/07/2024 20:29:12.480 session_init FATAL ERROR ] Another composite manager is already running
+[ 03/07/2024 20:39:15.035 session_init FATAL ERROR ] Another composite manager is already running
+[ 03/07/2024 21:03:54.193 session_init FATAL ERROR ] Another composite manager is already running
+[ 03/08/2024 07:47:21.842 session_init FATAL ERROR ] Another composite manager is already running
+[ 03/08/2024 14:09:17.563 session_init FATAL ERROR ] Another composite manager is already running
+[ 03/09/2024 17:09:16.390 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb792c
+[ 03/09/2024 17:09:16.469 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 03/09/2024 17:15:36.663 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb792e
+[ 03/09/2024 17:15:36.663 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 03/09/2024 17:37:17.082 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb792a
+[ 03/09/2024 17:37:17.090 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 03/09/2024 20:53:36.377 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb796a
+[ 03/09/2024 20:53:36.389 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 03/09/2024 20:53:40.236 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb796a
+[ 03/09/2024 20:53:40.236 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 03/09/2024 20:53:56.551 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb792a
+[ 03/09/2024 20:53:56.551 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 03/09/2024 20:53:58.732 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb792a
+[ 03/09/2024 20:53:58.732 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 03/09/2024 23:05:55.238 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb7934
+[ 03/09/2024 23:05:55.266 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 03/09/2024 23:05:55.269 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb797f
+[ 03/09/2024 23:05:55.269 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 03/09/2024 23:06:01.633 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb7921
+[ 03/09/2024 23:06:01.633 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 03/09/2024 23:06:07.497 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb7921
+[ 03/09/2024 23:06:07.497 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 03/09/2024 23:06:08.963 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb7922
+[ 03/09/2024 23:06:08.963 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 03/09/2024 23:06:32.859 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb7908
+[ 03/09/2024 23:06:32.859 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 03/09/2024 23:06:43.384 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb7922
+[ 03/09/2024 23:06:43.384 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 03/09/2024 23:06:48.104 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb7921
+[ 03/09/2024 23:06:48.104 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 03/09/2024 23:06:50.434 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb7921
+[ 03/09/2024 23:06:50.434 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 03/09/2024 23:06:53.364 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb792e
+[ 03/09/2024 23:06:53.364 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 03/09/2024 23:06:53.365 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb7921
+[ 03/09/2024 23:06:53.365 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 03/09/2024 23:09:58.993 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb797f
+[ 03/09/2024 23:09:58.993 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 03/09/2024 23:10:46.807 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb7934
+[ 03/09/2024 23:10:46.807 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 03/10/2024 02:25:15.795 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb792e
+[ 03/10/2024 02:25:15.798 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 03/10/2024 05:04:18.230 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb7982
+[ 03/10/2024 05:04:18.319 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 03/10/2024 05:04:50.806 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb7982
+[ 03/10/2024 05:04:50.806 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 03/10/2024 05:04:54.784 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb7927
+[ 03/10/2024 05:04:54.784 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 03/10/2024 05:04:54.785 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb7927
+[ 03/10/2024 05:04:54.785 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 03/10/2024 05:05:01.552 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb7982
+[ 03/10/2024 05:05:01.552 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 03/10/2024 05:05:41.548 session_init FATAL ERROR ] Another composite manager is already running
+[ 03/10/2024 05:09:48.253 win_bind_pixmap ERROR ] Failed to get named pixmap for window 0x0d000039(-- Unread -- - Local Folders - Mozilla Thunderbird)
+[ 03/10/2024 05:09:48.893 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 03/10/2024 05:09:48.893 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 03/10/2024 05:09:48.893 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 03/10/2024 05:09:48.893 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 03/10/2024 05:09:48.893 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 03/10/2024 05:09:48.893 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 03/10/2024 05:09:48.893 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 03/10/2024 05:09:48.893 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 03/10/2024 05:09:49.142 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 03/10/2024 05:09:49.142 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 03/10/2024 05:09:49.187 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 03/10/2024 05:11:11.295 session_init FATAL ERROR ] Another composite manager is already running
+[ 03/10/2024 10:01:07.901 session_init FATAL ERROR ] Another composite manager is already running
+[ 03/10/2024 10:01:52.763 session_init FATAL ERROR ] Another composite manager is already running
+[ 03/10/2024 10:02:56.829 session_init FATAL ERROR ] Another composite manager is already running
+[ 03/10/2024 10:03:32.709 session_init FATAL ERROR ] Another composite manager is already running
+[ 03/10/2024 10:04:32.458 session_init FATAL ERROR ] Another composite manager is already running
+[ 03/10/2024 10:05:16.330 session_init FATAL ERROR ] Another composite manager is already running
+[ 03/10/2024 10:06:59.690 session_init FATAL ERROR ] Another composite manager is already running
+[ 03/10/2024 10:07:16.406 session_init FATAL ERROR ] Another composite manager is already running
+[ 03/10/2024 13:00:43.981 session_init FATAL ERROR ] Another composite manager is already running
+[ 03/10/2024 13:03:46.456 session_init FATAL ERROR ] Another composite manager is already running
+[ 03/10/2024 13:08:06.423 session_init FATAL ERROR ] Another composite manager is already running
+[ 03/10/2024 23:39:59.865 session_init FATAL ERROR ] Another composite manager is already running
+[ 03/11/2024 09:25:53.644 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 03/11/2024 09:25:53.670 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 03/11/2024 09:25:53.670 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 03/11/2024 09:25:53.670 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 03/11/2024 09:25:53.670 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 03/11/2024 09:25:53.670 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 03/11/2024 09:25:53.670 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 03/11/2024 09:25:53.670 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 03/11/2024 09:25:53.763 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 03/11/2024 09:25:53.763 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 03/11/2024 09:25:53.862 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 03/12/2024 10:54:38.625 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 03/12/2024 10:54:38.630 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 03/12/2024 10:54:38.630 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 03/12/2024 10:54:38.630 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 03/12/2024 10:54:38.630 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 03/12/2024 10:54:38.630 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 03/12/2024 10:54:38.630 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 03/12/2024 10:54:38.630 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 03/12/2024 10:54:38.669 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 03/12/2024 10:54:38.670 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 03/12/2024 10:54:38.682 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 03/12/2024 14:20:17.856 session_init FATAL ERROR ] Another composite manager is already running
+[ 03/12/2024 15:06:20.860 session_init FATAL ERROR ] Another composite manager is already running
+[ 03/12/2024 15:41:24.571 session_init FATAL ERROR ] Another composite manager is already running
+[ 03/12/2024 15:51:11.666 session_init FATAL ERROR ] Another composite manager is already running
+[ 03/13/2024 08:57:03.822 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 03/13/2024 08:57:03.828 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 03/13/2024 08:57:03.828 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 03/13/2024 08:57:03.828 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 03/13/2024 08:57:03.828 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 03/13/2024 08:57:03.828 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 03/13/2024 08:57:03.828 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 03/13/2024 08:57:03.828 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 03/13/2024 08:57:03.862 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 03/13/2024 08:57:03.862 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 03/13/2024 08:57:03.881 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 03/13/2024 09:32:53.515 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 03/13/2024 09:32:53.518 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 03/13/2024 09:32:53.518 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 03/13/2024 09:32:53.518 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 03/13/2024 09:32:53.518 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 03/13/2024 09:32:53.518 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 03/13/2024 09:32:53.518 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 03/13/2024 09:32:53.518 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 03/13/2024 09:32:53.546 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 03/13/2024 09:32:53.546 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 03/13/2024 09:32:53.551 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 03/13/2024 16:08:03.387 session_init FATAL ERROR ] Another composite manager is already running
+[ 03/14/2024 14:35:39.943 session_init FATAL ERROR ] Another composite manager is already running
+[ 03/14/2024 14:45:58.961 session_init FATAL ERROR ] Another composite manager is already running
+[ 03/14/2024 20:00:01.212 session_init FATAL ERROR ] Another composite manager is already running
+[ 03/14/2024 20:03:44.380 session_init FATAL ERROR ] Another composite manager is already running
+[ 03/14/2024 20:12:10.103 session_init FATAL ERROR ] Another composite manager is already running
+[ 03/14/2024 20:19:08.694 session_init FATAL ERROR ] Another composite manager is already running
+[ 03/14/2024 20:32:54.058 session_init FATAL ERROR ] Another composite manager is already running
+[ 03/14/2024 20:40:35.268 session_init FATAL ERROR ] Another composite manager is already running
+[ 03/14/2024 20:43:29.818 session_init FATAL ERROR ] Another composite manager is already running
+[ 03/14/2024 20:48:28.956 session_init FATAL ERROR ] Another composite manager is already running
+[ 03/14/2024 21:23:26.159 session_init FATAL ERROR ] Another composite manager is already running
+[ 03/15/2024 12:50:43.554 session_init FATAL ERROR ] Another composite manager is already running
+[ 03/15/2024 13:01:02.719 session_init FATAL ERROR ] Another composite manager is already running
+[ 03/16/2024 16:00:47.683 x_fetch_region ERROR ] Failed to fetch rectangles (X error 138 XCB_XFIXES_BAD_REGION request 137 minor 19 serial 49886204)
+[ 03/16/2024 16:51:24.140 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01ae3865
+[ 03/16/2024 16:51:24.140 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 03/16/2024 16:55:48.123 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 03/16/2024 16:55:48.123 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 03/16/2024 16:55:48.123 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 03/16/2024 16:55:48.123 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 03/16/2024 16:55:48.123 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 03/16/2024 16:55:48.123 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 03/16/2024 16:55:48.123 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 03/16/2024 16:55:48.123 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 03/16/2024 16:55:48.140 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 03/16/2024 16:55:48.140 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 03/16/2024 16:55:48.140 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 03/18/2024 09:33:04.191 x_create_pixmap ERROR ] Failed to create pixmap (X error 14 BadIDChoice request 53 minor 0 serial 21408882)
+[ 03/18/2024 18:14:43.630 x_create_picture_with_pictfmt_and_pixmap ERROR ] failed to create picture (X error 14 BadIDChoice request 138 minor 4 serial 25485358)
+[ 03/19/2024 22:12:38.639 reset_enable INFO ] picom is resetting...
+[ 03/19/2024 22:12:39.107 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 03/19/2024 22:12:39.107 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 03/19/2024 22:12:39.266 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 03/19/2024 22:12:42.823 reset_enable INFO ] picom is resetting...
+[ 03/19/2024 23:52:17.512 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 03/19/2024 23:52:17.542 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 03/19/2024 23:52:17.542 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 03/19/2024 23:52:17.542 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 03/19/2024 23:52:17.542 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 03/19/2024 23:52:17.542 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 03/19/2024 23:52:17.542 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 03/19/2024 23:52:17.542 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 03/19/2024 23:52:17.950 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 03/19/2024 23:52:17.950 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 03/19/2024 23:52:18.080 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 03/20/2024 12:36:00.713 reset_enable INFO ] picom is resetting...
+[ 03/20/2024 12:36:00.977 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 03/20/2024 12:36:00.977 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 03/20/2024 12:36:00.996 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 03/20/2024 12:36:10.088 reset_enable INFO ] picom is resetting...
+[ 03/20/2024 12:41:49.649 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 03/20/2024 12:41:49.649 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 03/20/2024 12:41:49.649 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 03/20/2024 12:41:49.649 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 03/20/2024 12:41:49.649 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 03/20/2024 12:41:49.649 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 03/20/2024 12:41:49.649 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 03/20/2024 12:41:49.649 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 03/20/2024 12:41:49.660 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 03/20/2024 12:41:49.660 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 03/20/2024 12:41:49.660 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 03/20/2024 12:44:57.806 reset_enable INFO ] picom is resetting...
+[ 03/20/2024 12:44:57.950 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 03/20/2024 12:44:57.950 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 03/20/2024 12:44:57.950 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 03/20/2024 12:45:01.519 reset_enable INFO ] picom is resetting...
+[ 03/20/2024 12:45:01.656 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 03/20/2024 12:45:01.656 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 03/20/2024 12:45:01.656 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 03/20/2024 12:45:10.766 reset_enable INFO ] picom is resetting...
+[ 03/20/2024 12:46:44.024 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 03/20/2024 12:46:44.024 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 03/20/2024 12:46:44.024 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 03/20/2024 12:46:44.024 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 03/20/2024 12:46:44.024 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 03/20/2024 12:46:44.024 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 03/20/2024 12:46:44.024 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 03/20/2024 12:46:44.024 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 03/20/2024 12:46:44.033 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 03/20/2024 12:46:44.033 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 03/20/2024 12:46:44.033 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 03/20/2024 13:03:36.032 reset_enable INFO ] picom is resetting...
+[ 03/20/2024 13:03:58.582 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 03/20/2024 13:03:58.582 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 03/20/2024 13:03:58.582 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 03/20/2024 13:03:58.582 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 03/20/2024 13:03:58.582 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 03/20/2024 13:03:58.582 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 03/20/2024 13:03:58.582 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 03/20/2024 13:03:58.582 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 03/20/2024 13:03:58.591 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 03/20/2024 13:03:58.591 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 03/20/2024 13:03:58.591 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 03/20/2024 17:04:33.770 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 03/20/2024 17:04:33.797 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 03/20/2024 17:04:33.797 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 03/20/2024 17:04:33.797 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 03/20/2024 17:04:33.797 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 03/20/2024 17:04:33.797 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 03/20/2024 17:04:33.797 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 03/20/2024 17:04:33.797 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 03/20/2024 17:04:33.810 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 03/20/2024 17:04:33.810 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 03/20/2024 17:04:33.811 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 03/20/2024 17:24:17.251 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 03/20/2024 17:24:17.256 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 03/20/2024 17:24:17.256 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 03/20/2024 17:24:17.256 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 03/20/2024 17:24:17.256 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 03/20/2024 17:24:17.256 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 03/20/2024 17:24:17.256 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 03/20/2024 17:24:17.256 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 03/20/2024 17:24:17.278 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 03/20/2024 17:24:17.279 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 03/20/2024 17:24:17.304 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 03/21/2024 18:26:48.692 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 03/21/2024 18:26:48.696 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 03/21/2024 18:26:48.696 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 03/21/2024 18:26:48.696 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 03/21/2024 18:26:48.696 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 03/21/2024 18:26:48.696 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 03/21/2024 18:26:48.696 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 03/21/2024 18:26:48.696 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 03/21/2024 18:26:48.727 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 03/21/2024 18:26:48.727 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 03/21/2024 18:26:48.746 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 03/21/2024 18:44:30.238 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 03/21/2024 18:44:30.248 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 03/21/2024 18:44:30.248 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 03/21/2024 18:44:30.248 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 03/21/2024 18:44:30.248 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 03/21/2024 18:44:30.248 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 03/21/2024 18:44:30.248 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 03/21/2024 18:44:30.248 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 03/21/2024 18:44:30.270 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 03/21/2024 18:44:30.270 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 03/21/2024 18:44:30.280 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 03/21/2024 20:36:11.783 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 03/21/2024 20:36:11.792 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 03/21/2024 20:36:11.792 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 03/21/2024 20:36:11.792 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 03/21/2024 20:36:11.792 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 03/21/2024 20:36:11.792 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 03/21/2024 20:36:11.792 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 03/21/2024 20:36:11.792 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 03/21/2024 20:36:11.819 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 03/21/2024 20:36:11.819 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 03/21/2024 20:36:11.826 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 03/23/2024 09:55:48.005 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 03/23/2024 09:55:48.005 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 03/23/2024 09:55:48.005 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 03/23/2024 09:55:48.005 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 03/23/2024 09:55:48.005 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 03/23/2024 09:55:48.005 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 03/23/2024 09:55:48.005 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 03/23/2024 09:55:48.005 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 03/23/2024 09:55:48.191 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 03/23/2024 09:55:48.191 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 03/23/2024 09:55:48.218 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 03/24/2024 21:05:34.602 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 03/24/2024 21:05:34.602 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 03/24/2024 21:05:34.602 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 03/24/2024 21:05:34.602 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 03/24/2024 21:05:34.602 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 03/24/2024 21:05:34.602 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 03/24/2024 21:05:34.602 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 03/24/2024 21:05:34.602 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 03/24/2024 21:05:34.613 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 03/24/2024 21:05:34.614 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 03/24/2024 21:05:35.002 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 03/25/2024 18:47:36.932 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 03/25/2024 18:47:36.937 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 03/25/2024 18:47:36.937 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 03/25/2024 18:47:36.937 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 03/25/2024 18:47:36.937 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 03/25/2024 18:47:36.937 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 03/25/2024 18:47:36.937 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 03/25/2024 18:47:36.937 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 03/25/2024 18:47:36.983 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 03/25/2024 18:47:36.983 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 03/25/2024 18:47:37.012 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 03/30/2024 21:30:26.011 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 03/30/2024 21:30:26.011 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 03/30/2024 21:30:26.011 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 03/30/2024 21:30:26.011 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 03/30/2024 21:30:26.011 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 03/30/2024 21:30:26.011 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 03/30/2024 21:30:26.011 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 03/30/2024 21:30:26.011 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 03/30/2024 21:30:26.191 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 03/30/2024 21:30:26.191 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 03/30/2024 21:30:26.340 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 03/31/2024 22:35:02.430 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 03/31/2024 22:35:02.431 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 03/31/2024 22:35:02.431 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 03/31/2024 22:35:02.431 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 03/31/2024 22:35:02.431 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 03/31/2024 22:35:02.431 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 03/31/2024 22:35:02.431 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 03/31/2024 22:35:02.431 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 03/31/2024 22:35:02.732 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 03/31/2024 22:35:02.732 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 03/31/2024 22:35:02.908 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 04/02/2024 17:54:18.266 x_fetch_region ERROR ] Failed to fetch rectangles (X error 138 XCB_XFIXES_BAD_REGION request 137 minor 19 serial 22869558)
+[ 04/02/2024 18:19:39.161 x_fetch_region ERROR ] Failed to fetch rectangles (X error 138 XCB_XFIXES_BAD_REGION request 137 minor 19 serial 23508909)
+[ 04/02/2024 19:30:16.102 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 04/02/2024 19:30:16.102 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 04/02/2024 19:30:16.102 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 04/02/2024 19:30:16.102 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 04/02/2024 19:30:16.102 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 04/02/2024 19:30:16.102 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 04/02/2024 19:30:16.102 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 04/02/2024 19:30:16.102 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 04/02/2024 19:30:16.115 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 04/02/2024 19:30:16.115 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 04/02/2024 19:30:16.128 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 04/05/2024 12:31:55.301 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 04/05/2024 12:31:55.312 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 04/05/2024 12:31:55.312 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 04/05/2024 12:31:55.312 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 04/05/2024 12:31:55.312 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 04/05/2024 12:31:55.312 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 04/05/2024 12:31:55.312 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 04/05/2024 12:31:55.312 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 04/05/2024 12:31:55.384 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 04/05/2024 12:31:55.384 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 04/05/2024 12:31:55.387 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 04/06/2024 07:41:05.355 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01ac9213
+[ 04/06/2024 07:41:05.379 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/06/2024 18:33:03.548 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01aa84b4
+[ 04/06/2024 18:33:03.565 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x06a00069 ((null))
+[ 04/06/2024 18:36:34.895 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01aa84be
+[ 04/06/2024 18:36:34.895 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/06/2024 18:41:53.328 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01aa84b4
+[ 04/06/2024 18:41:53.328 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/06/2024 19:01:40.526 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01aa84b4
+[ 04/06/2024 19:01:40.526 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/06/2024 20:03:57.649 x_create_pixmap ERROR ] Failed to create pixmap (X error 14 BadIDChoice request 53 minor 0 serial 18167944)
+[ 04/06/2024 20:03:57.650 build_shadow ERROR ] Failed to create shadow pixmaps
+[ 04/06/2024 20:03:57.650 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x01849fe1 (Awesome drawin)
+[ 04/06/2024 20:12:38.351 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01aa82ad
+[ 04/06/2024 20:12:38.351 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x0184a46e (Awesome drawin)
+[ 04/06/2024 20:16:00.473 x_create_pixmap ERROR ] Failed to create pixmap (X error 14 BadIDChoice request 53 minor 0 serial 18301262)
+[ 04/06/2024 21:11:00.749 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01aa88aa
+[ 04/06/2024 21:11:00.750 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/06/2024 21:14:37.170 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01aa88a4
+[ 04/06/2024 21:14:37.170 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/06/2024 21:32:22.160 win_bind_pixmap ERROR ] Failed to get named pixmap for window 0x0180017c(Alacritty)
+[ 04/07/2024 17:08:24.133 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 04/07/2024 17:08:24.257 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 04/07/2024 17:08:24.257 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 04/07/2024 17:08:24.257 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 04/07/2024 17:08:24.257 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 04/07/2024 17:08:24.257 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 04/07/2024 17:08:24.257 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 04/07/2024 17:08:24.257 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 04/07/2024 17:08:24.275 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 04/07/2024 17:08:24.275 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 04/07/2024 17:08:24.336 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 04/10/2024 13:53:43.958 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 04/10/2024 13:53:43.966 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 04/10/2024 13:53:43.966 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 04/10/2024 13:53:43.966 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 04/10/2024 13:53:43.966 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 04/10/2024 13:53:43.966 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 04/10/2024 13:53:43.966 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 04/10/2024 13:53:43.966 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 04/10/2024 13:53:43.980 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 04/10/2024 13:53:43.980 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 04/10/2024 13:53:44.026 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 04/10/2024 17:21:29.382 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 04/10/2024 17:21:29.387 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 04/10/2024 17:21:29.387 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 04/10/2024 17:21:29.388 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 04/10/2024 17:21:29.388 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 04/10/2024 17:21:29.388 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 04/10/2024 17:21:29.388 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 04/10/2024 17:21:29.388 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 04/10/2024 17:21:29.402 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 04/10/2024 17:21:29.402 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 04/10/2024 17:21:29.426 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 04/13/2024 09:03:10.091 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01b1257a
+[ 04/13/2024 09:03:10.098 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x0187d56b (Awesome drawin)
+[ 04/13/2024 09:05:22.277 x_fetch_region ERROR ] Failed to fetch rectangles (X error 138 XCB_XFIXES_BAD_REGION request 137 minor 19 serial 22556730)
+[ 04/13/2024 10:23:14.888 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01b1255c
+[ 04/13/2024 10:23:14.900 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/13/2024 10:23:21.499 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01b1256f
+[ 04/13/2024 10:23:21.499 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/13/2024 10:23:24.401 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01b12557
+[ 04/13/2024 10:23:24.401 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/13/2024 10:23:26.735 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01b1256f
+[ 04/13/2024 10:23:26.735 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/13/2024 10:23:36.930 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01b12557
+[ 04/13/2024 10:23:36.930 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/13/2024 10:24:01.070 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 04/13/2024 10:24:01.070 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 04/13/2024 10:24:01.070 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 04/13/2024 10:24:01.070 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 04/13/2024 10:24:01.070 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 04/13/2024 10:24:01.070 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 04/13/2024 10:24:01.070 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 04/13/2024 10:24:01.070 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 04/13/2024 10:24:01.551 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 04/13/2024 10:24:01.551 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 04/13/2024 10:24:01.574 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 04/16/2024 07:21:32.041 x_create_pixmap ERROR ] Failed to create pixmap (X error 14 BadIDChoice request 53 minor 0 serial 30598034)
+[ 04/16/2024 07:21:32.085 build_shadow ERROR ] Failed to create shadow pixmaps
+[ 04/16/2024 07:21:32.085 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x0190aa36 (Awesome drawin)
+[ 04/16/2024 19:12:00.794 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01b562ba
+[ 04/16/2024 19:12:00.812 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x06c00088 ((null))
+[ 04/16/2024 19:52:29.695 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01b562a6
+[ 04/16/2024 19:52:29.695 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/16/2024 20:05:11.901 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01b56154
+[ 04/16/2024 20:05:11.901 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/17/2024 02:31:48.572 x_create_picture_with_pictfmt_and_pixmap ERROR ] failed to create picture (X error 14 BadIDChoice request 138 minor 4 serial 38528989)
+[ 04/17/2024 02:34:57.248 x_create_pixmap ERROR ] Failed to create pixmap (X error 14 BadIDChoice request 53 minor 0 serial 38543646)
+[ 04/17/2024 02:42:01.860 x_create_pixmap ERROR ] Failed to create pixmap (X error 14 BadIDChoice request 53 minor 0 serial 38578241)
+[ 04/17/2024 02:42:01.860 build_shadow ERROR ] Failed to create shadow pixmaps
+[ 04/17/2024 02:42:01.860 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x01933402 (Awesome drawin)
+[ 04/17/2024 03:03:20.459 x_create_pixmap ERROR ] Failed to create pixmap (X error 14 BadIDChoice request 53 minor 0 serial 38688280)
+[ 04/17/2024 03:03:20.459 build_shadow ERROR ] Failed to create shadow pixmaps
+[ 04/17/2024 03:03:20.459 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x01933eb4 (Awesome drawin)
+[ 04/17/2024 08:40:53.650 x_create_pixmap ERROR ] Failed to create pixmap (X error 14 BadIDChoice request 53 minor 0 serial 40608800)
+[ 04/17/2024 08:41:01.621 x_create_pixmap ERROR ] Failed to create pixmap (X error 14 BadIDChoice request 53 minor 0 serial 40610127)
+[ 04/17/2024 09:17:56.915 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01aca5dd
+[ 04/17/2024 09:17:56.915 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/17/2024 09:26:23.969 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01aca5db
+[ 04/17/2024 09:26:23.969 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/17/2024 09:57:37.324 x_create_pixmap ERROR ] Failed to create pixmap (X error 14 BadIDChoice request 53 minor 0 serial 41078358)
+[ 04/17/2024 09:57:37.324 build_shadow ERROR ] Failed to create shadow pixmaps
+[ 04/17/2024 09:57:37.324 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x01941381 (Awesome drawin)
+[ 04/17/2024 10:46:12.043 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01aca473
+[ 04/17/2024 10:46:12.055 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/17/2024 10:46:18.267 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01aca4d6
+[ 04/17/2024 10:46:18.267 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/17/2024 10:46:33.102 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01aca453
+[ 04/17/2024 10:46:33.102 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/17/2024 12:40:31.479 win_bind_pixmap ERROR ] Failed to get named pixmap for window 0x018005e9(Exames e Procedimentos — Mozilla Firefox)
+[ 04/17/2024 12:55:13.726 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 04/17/2024 12:55:13.726 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 04/17/2024 12:55:13.726 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 04/17/2024 12:55:13.726 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 04/17/2024 12:55:13.726 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 04/17/2024 12:55:13.726 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 04/17/2024 12:55:13.726 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 04/17/2024 12:55:13.726 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 04/17/2024 12:55:13.737 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 04/17/2024 12:55:13.737 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 04/17/2024 12:55:13.739 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 04/20/2024 12:35:34.860 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01af301f
+[ 04/20/2024 12:35:34.869 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/20/2024 14:13:15.950 x_create_pixmap ERROR ] Failed to create pixmap (X error 14 BadIDChoice request 53 minor 0 serial 30498953)
+[ 04/20/2024 14:13:15.962 build_shadow ERROR ] Failed to create shadow pixmaps
+[ 04/20/2024 14:13:15.962 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x019e5f1d (Awesome drawin)
+[ 04/20/2024 14:46:53.959 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01ae70c7
+[ 04/20/2024 14:46:53.959 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x019e7c37 (Awesome drawin)
+[ 04/20/2024 14:46:53.977 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01ae70ca
+[ 04/20/2024 14:46:53.977 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x019e7c37 (Awesome drawin)
+[ 04/20/2024 15:13:17.377 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01ae70e9
+[ 04/20/2024 15:13:17.403 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/20/2024 15:15:13.983 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01ae70ff
+[ 04/20/2024 15:15:13.983 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/20/2024 15:31:47.830 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01ae70c7
+[ 04/20/2024 15:31:47.830 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/20/2024 19:28:48.892 x_create_pixmap ERROR ] Failed to create pixmap (X error 14 BadIDChoice request 53 minor 0 serial 33503654)
+[ 04/20/2024 19:52:06.848 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01ae7174
+[ 04/20/2024 19:52:06.848 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/20/2024 19:52:10.397 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01ae7174
+[ 04/20/2024 19:52:10.397 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/20/2024 19:52:44.150 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01ae7064
+[ 04/20/2024 19:52:44.150 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/20/2024 20:17:43.439 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01ae70fc
+[ 04/20/2024 20:17:43.439 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/20/2024 20:22:55.460 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01ae70e9
+[ 04/20/2024 20:22:55.460 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/20/2024 20:27:13.023 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01ae70bd
+[ 04/20/2024 20:27:13.023 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/20/2024 20:27:20.043 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01ae7142
+[ 04/20/2024 20:27:20.043 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/20/2024 20:27:36.976 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 04/20/2024 20:27:36.977 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 04/20/2024 20:27:36.977 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 04/20/2024 20:27:36.977 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 04/20/2024 20:27:36.977 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 04/20/2024 20:27:36.977 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 04/20/2024 20:27:36.977 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 04/20/2024 20:27:36.977 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 04/20/2024 20:27:37.040 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 04/20/2024 20:27:37.040 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 04/20/2024 20:27:37.042 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 04/22/2024 05:15:30.141 x_create_picture_with_pictfmt_and_pixmap ERROR ] failed to create picture (X error 14 BadIDChoice request 138 minor 4 serial 12132121)
+[ 04/22/2024 05:15:30.167 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x018de0c5 (Awesome drawin)
+[ 04/22/2024 05:37:27.266 x_create_pixmap ERROR ] Failed to create pixmap (X error 14 BadIDChoice request 53 minor 0 serial 12246026)
+[ 04/22/2024 06:33:52.356 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01a5ae8f
+[ 04/22/2024 06:33:52.356 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/22/2024 09:49:19.435 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01a5a699
+[ 04/22/2024 09:49:19.506 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/22/2024 09:50:25.930 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01a5a6f6
+[ 04/22/2024 09:50:25.930 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/22/2024 09:50:33.356 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01a5a6f2
+[ 04/22/2024 09:50:33.356 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/22/2024 09:51:47.821 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01a5a6d5
+[ 04/22/2024 09:51:47.821 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/22/2024 10:20:29.942 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01a5a6d5
+[ 04/22/2024 10:20:29.942 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/22/2024 10:28:35.559 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01a5a676
+[ 04/22/2024 10:28:35.559 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x018e8159 (Awesome drawin)
+[ 04/22/2024 10:34:16.510 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01a5a66d
+[ 04/22/2024 10:34:16.510 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x018e8444 (Awesome drawin)
+[ 04/22/2024 10:45:26.950 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01a5a6f3
+[ 04/22/2024 10:45:26.950 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/22/2024 11:12:40.697 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01a5a60e
+[ 04/22/2024 11:12:40.715 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/22/2024 11:12:56.007 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01a5a61e
+[ 04/22/2024 11:12:56.007 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/22/2024 11:13:07.077 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 04/22/2024 11:13:07.077 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 04/22/2024 11:13:07.077 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 04/22/2024 11:13:07.077 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 04/22/2024 11:13:07.077 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 04/22/2024 11:13:07.077 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 04/22/2024 11:13:07.077 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 04/22/2024 11:13:07.077 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 04/22/2024 11:13:08.228 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 04/22/2024 11:13:08.228 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 04/22/2024 11:13:08.262 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 04/23/2024 21:51:56.830 x_create_picture_with_pictfmt_and_pixmap ERROR ] failed to create picture (X error 14 BadIDChoice request 138 minor 4 serial 15018314)
+[ 04/24/2024 07:00:01.439 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01b4eaf7
+[ 04/24/2024 07:00:01.451 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/24/2024 08:15:54.062 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 04/24/2024 08:15:54.062 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 04/24/2024 08:15:54.062 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 04/24/2024 08:15:54.062 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 04/24/2024 08:15:54.062 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 04/24/2024 08:15:54.062 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 04/24/2024 08:15:54.062 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 04/24/2024 08:15:54.062 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 04/24/2024 08:15:54.091 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 04/24/2024 08:15:54.091 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 04/24/2024 08:15:54.093 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 04/25/2024 17:03:15.793 x_fetch_region ERROR ] Failed to fetch rectangles (X error 138 XCB_XFIXES_BAD_REGION request 137 minor 19 serial 16734538)
+[ 04/26/2024 05:15:23.535 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bcb0fc
+[ 04/26/2024 05:15:23.674 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/26/2024 05:19:08.843 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bcb0ee
+[ 04/26/2024 05:19:08.843 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/26/2024 05:19:21.132 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bcb0ff
+[ 04/26/2024 05:19:21.132 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/26/2024 05:22:51.396 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bcb05c
+[ 04/26/2024 05:22:51.397 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x13fb592c (LibreOffice 7.6)
+[ 04/26/2024 05:23:27.618 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bcb06c
+[ 04/26/2024 05:23:27.623 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x13fb5adf (LibreOffice 7.6)
+[ 04/26/2024 05:23:52.997 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bcb075
+[ 04/26/2024 05:23:52.997 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x018d952c (Options - LibreOffice - User Data)
+[ 04/26/2024 05:27:35.010 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bcb04e
+[ 04/26/2024 05:27:35.019 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/26/2024 08:58:02.944 x_create_pixmap ERROR ] Failed to create pixmap (X error 14 BadIDChoice request 53 minor 0 serial 24660202)
+[ 04/26/2024 08:58:02.964 build_shadow ERROR ] Failed to create shadow pixmaps
+[ 04/26/2024 08:58:02.964 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x018d4961 (Awesome drawin)
+[ 04/26/2024 08:58:07.645 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb0535
+[ 04/26/2024 08:58:07.645 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x018d4961 (Awesome drawin)
+[ 04/26/2024 08:59:10.707 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb052d
+[ 04/26/2024 08:59:10.707 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/26/2024 08:59:40.431 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb0524
+[ 04/26/2024 08:59:40.431 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/26/2024 10:43:07.163 x_create_picture_with_pictfmt_and_pixmap ERROR ] failed to create picture (X error 14 BadIDChoice request 138 minor 4 serial 25792647)
+[ 04/26/2024 12:12:51.544 x_create_pixmap ERROR ] Failed to create pixmap (X error 14 BadIDChoice request 53 minor 0 serial 26291868)
+[ 04/26/2024 12:12:51.556 build_shadow ERROR ] Failed to create shadow pixmaps
+[ 04/26/2024 12:12:51.556 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x018e28a3 (Awesome drawin)
+[ 04/26/2024 14:11:06.850 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb0581
+[ 04/26/2024 14:11:06.989 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/26/2024 14:13:17.095 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb05fb
+[ 04/26/2024 14:13:17.095 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x018e6c65 (Awesome drawin)
+[ 04/26/2024 14:16:09.002 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb0581
+[ 04/26/2024 14:16:09.002 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x018e6dda (Awesome drawin)
+[ 04/26/2024 14:16:39.309 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb05fc
+[ 04/26/2024 14:16:39.309 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x08e001fd (notificationtoasts_200_desktop)
+[ 04/26/2024 14:16:39.392 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb05cf
+[ 04/26/2024 14:16:39.392 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x08e001fd (notificationtoasts_200_desktop)
+[ 04/26/2024 14:17:26.642 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb05ce
+[ 04/26/2024 14:17:26.642 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x018e6e93 (Awesome drawin)
+[ 04/26/2024 14:19:36.577 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb05ce
+[ 04/26/2024 14:19:36.577 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x018e6fa0 (Awesome drawin)
+[ 04/26/2024 14:22:29.069 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb05cb
+[ 04/26/2024 14:22:29.069 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x018e7117 (Awesome drawin)
+[ 04/26/2024 14:24:53.974 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb05cb
+[ 04/26/2024 14:24:53.974 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x018e7360 (Awesome drawin)
+[ 04/26/2024 14:26:40.616 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb05cc
+[ 04/26/2024 14:26:40.616 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x018e7453 (Awesome drawin)
+[ 04/26/2024 14:28:52.424 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb05fc
+[ 04/26/2024 14:28:52.424 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x018e757a (Awesome drawin)
+[ 04/26/2024 14:31:15.928 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb05c8
+[ 04/26/2024 14:31:15.928 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x018e76a1 (Awesome drawin)
+[ 04/26/2024 14:33:46.980 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb05c5
+[ 04/26/2024 14:33:46.980 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x018e7802 (Awesome drawin)
+[ 04/26/2024 14:36:22.480 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb05c6
+[ 04/26/2024 14:36:22.480 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x018e7957 (Awesome drawin)
+[ 04/26/2024 14:39:51.980 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb05c8
+[ 04/26/2024 14:39:51.980 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x018e7b18 (Awesome drawin)
+[ 04/26/2024 14:42:15.823 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb05c1
+[ 04/26/2024 14:42:15.823 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x018e7c55 (Awesome drawin)
+[ 04/26/2024 14:44:24.983 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb05c1
+[ 04/26/2024 14:44:24.983 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x018e0665 (Awesome drawin)
+[ 04/26/2024 14:47:45.629 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb04fe
+[ 04/26/2024 14:47:45.629 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x018e0814 (Awesome drawin)
+[ 04/26/2024 14:49:40.678 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb047e
+[ 04/26/2024 14:49:40.678 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x018e0919 (Awesome drawin)
+[ 04/26/2024 14:51:05.136 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb043e
+[ 04/26/2024 14:51:05.136 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x018e09e0 (Awesome drawin)
+[ 04/26/2024 14:54:29.483 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb0480
+[ 04/26/2024 14:54:29.483 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x018e0d19 (Awesome drawin)
+[ 04/26/2024 14:56:23.230 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb043c
+[ 04/26/2024 14:56:23.230 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x018e0e50 (Awesome drawin)
+[ 04/26/2024 14:58:08.635 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb0481
+[ 04/26/2024 14:58:08.635 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x018e0f57 (Awesome drawin)
+[ 04/26/2024 15:00:19.960 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb041f
+[ 04/26/2024 15:00:19.960 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x018e107c (Awesome drawin)
+[ 04/26/2024 15:17:35.359 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb05f8
+[ 04/26/2024 15:17:35.366 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/26/2024 15:18:23.508 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb05a5
+[ 04/26/2024 15:18:23.508 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/26/2024 15:42:21.787 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb0446
+[ 04/26/2024 15:42:21.797 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/26/2024 15:42:28.721 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb0446
+[ 04/26/2024 15:42:28.721 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/26/2024 15:42:42.425 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb0594
+[ 04/26/2024 15:42:42.425 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/26/2024 15:44:12.248 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb0594
+[ 04/26/2024 15:44:12.267 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/26/2024 15:44:21.146 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb0594
+[ 04/26/2024 15:44:21.146 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/26/2024 16:15:24.593 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb0594
+[ 04/26/2024 16:15:24.816 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/26/2024 16:15:26.850 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb0594
+[ 04/26/2024 16:15:26.850 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/26/2024 16:15:55.199 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb0537
+[ 04/26/2024 16:15:55.199 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/26/2024 16:16:25.052 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb0532
+[ 04/26/2024 16:16:25.052 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/26/2024 18:26:20.779 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb0441
+[ 04/26/2024 18:26:20.795 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/26/2024 18:42:00.148 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb04bf
+[ 04/26/2024 18:42:00.161 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/26/2024 19:00:19.875 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb0522
+[ 04/26/2024 19:00:19.896 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/26/2024 19:03:39.465 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb0535
+[ 04/26/2024 19:03:39.465 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/26/2024 19:06:01.100 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb04d0
+[ 04/26/2024 19:06:01.164 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/26/2024 19:15:41.817 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb04b1
+[ 04/26/2024 19:15:41.829 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/26/2024 19:18:28.164 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb04b7
+[ 04/26/2024 19:18:28.164 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/26/2024 19:30:21.102 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb0496
+[ 04/26/2024 19:30:21.132 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x018e5809 (Awesome drawin)
+[ 04/26/2024 19:30:40.062 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb0498
+[ 04/26/2024 19:30:40.062 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x06800b6f (Impressão com Tinta Branca em Papel Kraft, Preto e Colorido)
+[ 04/26/2024 19:31:56.971 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01bb04f0
+[ 04/26/2024 19:31:56.971 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/26/2024 19:32:08.471 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 04/26/2024 19:32:08.471 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 04/26/2024 19:32:08.471 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 04/26/2024 19:32:08.471 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 04/26/2024 19:32:08.471 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 04/26/2024 19:32:08.471 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 04/26/2024 19:32:08.471 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 04/26/2024 19:32:08.471 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 04/26/2024 19:32:09.146 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 04/26/2024 19:32:09.146 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 04/26/2024 19:32:09.154 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 04/27/2024 20:58:19.066 x_create_pixmap ERROR ] Failed to create pixmap (X error 14 BadIDChoice request 53 minor 0 serial 12171453)
+[ 04/27/2024 20:58:19.113 build_shadow ERROR ] Failed to create shadow pixmaps
+[ 04/27/2024 20:58:19.113 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x06c0007f ((null))
+[ 04/29/2024 08:23:24.374 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01aea481
+[ 04/29/2024 08:23:24.385 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x018abaed (Awesome drawin)
+[ 04/29/2024 10:28:22.911 x_create_pixmap ERROR ] Failed to create pixmap (X error 14 BadIDChoice request 53 minor 0 serial 27371949)
+[ 04/29/2024 11:55:55.911 x_create_pixmap ERROR ] Failed to create pixmap (X error 14 BadIDChoice request 53 minor 0 serial 27978127)
+[ 04/29/2024 11:55:56.012 build_shadow ERROR ] Failed to create shadow pixmaps
+[ 04/29/2024 11:55:56.012 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x06800c97 (Depilador elétrico sem fio Philips BG3005/15 Bodygroom cor preto 110V/220V)
+[ 04/29/2024 12:45:45.438 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01acdcf8
+[ 04/29/2024 12:45:45.462 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/29/2024 12:45:51.079 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01acdcff
+[ 04/29/2024 12:45:51.079 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/29/2024 12:46:09.614 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01acdcfc
+[ 04/29/2024 12:46:09.615 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/29/2024 12:51:26.045 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01acdcc1
+[ 04/29/2024 12:51:26.045 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/29/2024 12:51:27.109 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01acdccf
+[ 04/29/2024 12:51:27.109 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/29/2024 12:51:32.251 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01acdccf
+[ 04/29/2024 12:51:32.252 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/29/2024 12:52:24.973 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01acdce7
+[ 04/29/2024 12:52:24.973 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/29/2024 13:06:11.327 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01acdc7e
+[ 04/29/2024 13:06:11.358 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/29/2024 13:06:11.360 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01acdc7f
+[ 04/29/2024 13:06:11.360 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x06c000a1 ((null))
+[ 04/29/2024 13:10:03.922 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01acdcfd
+[ 04/29/2024 13:10:03.922 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x018e2637 (Awesome drawin)
+[ 04/29/2024 13:42:15.831 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01acdc97
+[ 04/29/2024 13:42:15.877 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x018e383a (Awesome drawin)
+[ 04/29/2024 13:42:15.890 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01acdc95
+[ 04/29/2024 13:42:15.890 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 04/29/2024 14:11:53.619 win_bind_pixmap ERROR ] Failed to get named pixmap for window 0x018b8efb(Steam)
+[ 04/29/2024 14:12:04.110 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 04/29/2024 14:12:04.110 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 04/29/2024 14:12:04.110 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 04/29/2024 14:12:04.110 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 04/29/2024 14:12:04.110 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 04/29/2024 14:12:04.110 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 04/29/2024 14:12:04.110 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 04/29/2024 14:12:04.110 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 04/29/2024 14:12:04.430 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 04/29/2024 14:12:04.430 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 04/29/2024 14:12:04.434 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 04/30/2024 05:38:30.088 x_fetch_region ERROR ] Failed to fetch rectangles (X error 138 XCB_XFIXES_BAD_REGION request 137 minor 19 serial 13029522)
+[ 04/30/2024 10:55:44.471 x_create_picture_with_pictfmt_and_pixmap ERROR ] failed to create picture (X error 14 BadIDChoice request 138 minor 4 serial 15719681)
+[ 05/01/2024 13:26:59.846 x_create_pixmap ERROR ] Failed to create pixmap (X error 14 BadIDChoice request 53 minor 0 serial 25090047)
+[ 05/02/2024 12:50:15.853 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01a3ff1e
+[ 05/02/2024 12:50:15.860 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x090002cb ((null))
+[ 05/02/2024 12:50:43.998 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01a3ff1f
+[ 05/02/2024 12:50:43.998 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x01923608 (Awesome drawin)
+[ 05/02/2024 12:55:28.387 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01a3ff20
+[ 05/02/2024 12:55:28.387 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x090002ce ((null))
+[ 05/02/2024 13:06:04.969 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01a3ff2a
+[ 05/02/2024 13:06:04.969 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x01923dfd (Awesome drawin)
+[ 05/02/2024 13:10:11.888 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01a3ff02
+[ 05/02/2024 13:10:11.888 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 05/02/2024 13:11:13.087 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01a3ff1a
+[ 05/02/2024 13:11:13.087 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 05/02/2024 13:12:07.220 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01a3ff1b
+[ 05/02/2024 13:12:07.220 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 05/02/2024 13:18:29.839 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01a3ff08
+[ 05/02/2024 13:18:29.839 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 05/02/2024 14:17:22.325 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01a3ff7a
+[ 05/02/2024 14:17:22.331 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x13e0afab (LibreOffice 7.6)
+[ 05/02/2024 14:17:37.485 x_create_pixmap ERROR ] Failed to create pixmap (X error 14 BadIDChoice request 53 minor 0 serial 36013339)
+[ 05/02/2024 14:26:30.584 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01a3ff88
+[ 05/02/2024 14:26:30.992 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 05/02/2024 14:53:19.504 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01a3ff47
+[ 05/02/2024 14:53:19.509 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 05/02/2024 14:54:55.677 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01a3ffe8
+[ 05/02/2024 14:54:55.677 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 05/02/2024 15:16:31.883 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01a3fff9
+[ 05/02/2024 15:16:31.916 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 05/02/2024 15:16:40.547 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01a3fffc
+[ 05/02/2024 15:16:40.547 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 05/02/2024 15:17:25.150 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01a3fffa
+[ 05/02/2024 15:17:25.150 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 05/02/2024 15:17:48.792 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01a3fff6
+[ 05/02/2024 15:17:48.792 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x06a00c37 (24h last - Local Folders)
+[ 05/02/2024 15:18:37.200 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01a3fff8
+[ 05/02/2024 15:18:37.200 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 05/02/2024 15:21:14.672 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01a3ff84
+[ 05/02/2024 15:21:14.672 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 05/02/2024 17:49:51.039 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01a3fe27
+[ 05/02/2024 17:49:51.061 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 05/02/2024 17:49:52.434 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01a3fe27
+[ 05/02/2024 17:49:52.434 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 05/02/2024 19:05:49.509 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01a3fe40
+[ 05/02/2024 19:05:49.604 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 05/02/2024 20:37:37.563 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 05/02/2024 20:37:37.580 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 05/02/2024 20:37:37.580 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 05/02/2024 20:37:37.580 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 05/02/2024 20:37:37.580 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 05/02/2024 20:37:37.580 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 05/02/2024 20:37:37.580 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 05/02/2024 20:37:37.580 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 05/02/2024 20:37:37.642 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 05/02/2024 20:37:37.642 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 05/02/2024 20:37:37.661 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 05/05/2024 10:12:38.821 x_fetch_region ERROR ] Failed to fetch rectangles (X error 138 XCB_XFIXES_BAD_REGION request 137 minor 19 serial 29191995)
+[ 05/05/2024 10:45:34.985 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 05/05/2024 10:45:34.993 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 05/05/2024 10:45:34.994 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 05/05/2024 10:45:34.994 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 05/05/2024 10:45:34.994 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 05/05/2024 10:45:34.994 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 05/05/2024 10:45:34.994 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 05/05/2024 10:45:34.994 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 05/05/2024 10:45:36.097 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 05/05/2024 10:45:36.097 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 05/05/2024 10:45:36.405 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 05/05/2024 13:46:27.682 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 05/05/2024 13:46:27.781 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 05/05/2024 13:46:27.781 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 05/05/2024 13:46:27.781 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 05/05/2024 13:46:27.781 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 05/05/2024 13:46:27.781 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 05/05/2024 13:46:27.781 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 05/05/2024 13:46:27.781 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 05/05/2024 13:46:27.908 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 05/05/2024 13:46:27.908 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 05/05/2024 13:46:27.957 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 05/07/2024 01:24:56.124 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x0e641afe
+[ 05/07/2024 01:24:56.131 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x0193cebf (Awesome drawin)
+[ 05/07/2024 03:54:50.920 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x0e641aa0
+[ 05/07/2024 03:54:50.926 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x0194197f (Awesome drawin)
+[ 05/07/2024 03:56:35.429 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x0e641a91
+[ 05/07/2024 03:56:35.429 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x01941a63 (Awesome drawin)
+[ 05/07/2024 05:04:57.714 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x0e641a5c
+[ 05/07/2024 05:04:58.030 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 05/07/2024 05:05:02.943 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x0e641a57
+[ 05/07/2024 05:05:02.943 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 05/07/2024 05:05:34.977 x_create_pixmap ERROR ] Failed to create pixmap (X error 14 BadIDChoice request 53 minor 0 serial 17484435)
+[ 05/07/2024 05:06:59.341 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x0e641a68
+[ 05/07/2024 05:06:59.341 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 05/07/2024 05:22:05.832 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x0e641a36
+[ 05/07/2024 05:22:05.832 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x06802f2c (Firefox)
+[ 05/07/2024 05:25:25.486 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x0e6419d8
+[ 05/07/2024 05:25:25.486 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x01945e45 (Awesome drawin)
+[ 05/07/2024 05:37:14.079 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x0e641bdf
+[ 05/07/2024 05:37:14.084 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x068041be (Firefox)
+[ 05/07/2024 05:37:15.430 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x0e641bdf
+[ 05/07/2024 05:37:15.431 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x068041be (Firefox)
+[ 05/07/2024 05:37:16.126 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x0e641bdb
+[ 05/07/2024 05:37:16.126 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x068041be (Firefox)
+[ 05/07/2024 06:21:33.412 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x0e641bb2
+[ 05/07/2024 06:21:33.418 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 05/07/2024 06:21:39.047 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x0e641bb4
+[ 05/07/2024 06:21:39.047 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 05/07/2024 06:22:00.677 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x0e641bb2
+[ 05/07/2024 06:22:00.677 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 05/07/2024 06:22:20.912 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x0e641a0c
+[ 05/07/2024 06:22:20.912 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 05/07/2024 07:06:09.739 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x0e641b18
+[ 05/07/2024 07:06:09.739 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x0194bcd1 (Awesome drawin)
+[ 05/07/2024 07:07:19.716 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x0e641bb5
+[ 05/07/2024 07:07:19.716 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 05/07/2024 11:54:43.342 session_init FATAL ERROR ] Another composite manager is already running
+[ 05/07/2024 12:04:57.708 session_init FATAL ERROR ] Another composite manager is already running
+[ 05/07/2024 12:06:33.339 session_init FATAL ERROR ] Another composite manager is already running
+[ 05/07/2024 12:09:43.433 session_init FATAL ERROR ] Another composite manager is already running
+[ 05/07/2024 12:11:08.844 session_init FATAL ERROR ] Another composite manager is already running

@@ -1,9 +1,9 @@
 #
-export GTK_THEME="Marwaita Dark EndeavourOs"
+#export GTK_THEME="Marwaita Dark EndeavourOS"
 #export QT_QPA_PLATFORMTHEME="qt5ct"
 
-export EDITOR='nano'
-export VISUAL='nano'
+export EDITOR='vim'
+export VISUAL='vim'
 
 
 #source ~/powerlevel10k/powerlevel10k.zsh-theme

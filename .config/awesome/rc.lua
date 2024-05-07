@@ -8,7 +8,9 @@
 --     require("rc.debug")  -- Certifique-se de ajustar o nome do arquivo conforme necessário
 -- end
 
---------------------------------------------------
+--------------------------------- Debug Mode --------------------------------
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
 
 
 -- If LuaRocks is installed, make sure that packages installed through it are
@@ -46,6 +48,7 @@ local cpu_widget = require("awesome-wm-widgets.cpu-widget.cpu-widget")
 local ram_widget = require("awesome-wm-widgets.ram-widget.ram-widget")
 
 local volume_widget = require('awesome-wm-widgets.pactl-widget.volume')
+--local myvolume = volume_widget()
 -- local volume_widget = require('awesome-wm-widgets.volume-widget.volume')
 local todo_widget = require("awesome-wm-widgets.todo-widget.todo")
 local weather_widget = require("awesome-wm-widgets.weather-widget.weather")
@@ -53,6 +56,10 @@ local calendar_widget = require("awesome-wm-widgets.calendar-widget.calendar")
 local logout_menu_widget = require("awesome-wm-widgets.logout-menu-widget.logout-menu")
 
 local rubato = require("rubato")
+
+local internet_widget = require("jkyon-widgets.internet_widget")
+-- local gentoo_update_checker = require("jkyon-widgets.gentoo_update_checker")
+
 
 -- theme.wallpaper = "/home/jkyon/Pictures/Wallpapers/LinuxWallpapers/multi-monitor-wallpapers.jpg --bg-fill"
 -- local wallpaper_path = "/home/jkyon/Pictures/Wallpapers/LinuxWallpapers/multi-monitor-wallpapers.jpg"
@@ -79,6 +86,9 @@ require("awful.hotkeys_popup.keys")
 --       gears.shape.rounded_rect(cr, w, h, dpi(6))
 --     end
 
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+------------------------------- Error handling ------------------------------
 
 -- Configurar o tamanho padrão das notificações
 naughty.config.defaults['icon_size'] = 300
@@ -109,13 +119,17 @@ do
 end
 -- }}}
 
+------------------------------- Error handling ------------------------------
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
 beautiful.init("/home/jkyon/.dotfiles/.config/awesome/themes/default/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
 terminal = "alacritty"
-editor = os.getenv("EDITOR") or "nano"
+editor = os.getenv("EDITOR") or "vim"
 editor_cmd = terminal .. " -e " .. editor
 
 -- Default modkey.
@@ -213,7 +227,32 @@ local temp = lain.widget.temp({
 })
 
 
-------------------------------------------------
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+---------------------------- Indicador de Internet --------------------------
+
+-- Criando o widget
+-- local internet_widget = wibox.widget.textbox()
+
+-- -- Função para verificar a conexão com a internet
+-- local function check_internet()
+--     awful.spawn.easy_async_with_shell("ping -c 1 8.8.8.8", function(stdout, stderr, reason, exit_code)
+--         if exit_code == 0 then
+--             -- Se o ping for bem-sucedido, a internet está funcionando e o widget fica invisível
+--             internet_widget:set_text("")
+--         else
+--             -- Se o ping falhar, a internet não está funcionando e o widget mostra uma mensagem
+--             internet_widget:set_text(" 🔴 Sem internet  |")
+--         end
+--     end)
+-- end
+
+-- -- Verificar a conexão com a internet a cada 10 segundos
+-- awful.widget.watch("bash -c 'sleep 10'", 0, check_internet)
+
+---------------------------- Indicador de Internet --------------------------
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
 
 local cw = calendar_widget({
     theme = 'naughty',
@@ -229,9 +268,87 @@ mytextclock:connect_signal("button::press",
         if button == 1 then cw.toggle() end
     end)
 
+---------------------------------------------------------------------
+--------------------  Custom Notification Center  -------------------
+
+-- This awful.wibar will be placed at the bottom and contain the notifications.
+-- local notif_wb = awful.wibar {
+--     position = "bottom",
+--     height   = 48,
+--     visible  = #naughty.active > 0,
+-- }
+
+-- notif_wb:setup {
+--     nil,
+--     {
+--         base_layout = wibox.widget {
+--             spacing_widget = wibox.widget {
+--                 orientation = "vertical",
+--                 span_ratio  = 0.5,
+--                 widget      = wibox.widget.separator,
+--             },
+--             forced_height = 30,
+--             spacing       = 3,
+--             layout        = wibox.layout.flex.horizontal
+--         },
+--         widget_template = {
+--             {
+--                 naughty.widget.icon,
+--                 {
+--                     naughty.widget.title,
+--                     naughty.widget.message,
+--                     {
+--                         layout = wibox.widget {
+--                             -- Adding the wibox.widget allows to share a
+--                             -- single instance for all spacers.
+--                             spacing_widget = wibox.widget {
+--                                 orientation = "vertical",
+--                                 span_ratio  = 0.9,
+--                                 widget      = wibox.widget.separator,
+--                             },
+--                             spacing = 3,
+--                             layout  = wibox.layout.flex.horizontal
+--                         },
+--                         widget = naughty.list.widgets,
+--                     },
+--                     layout = wibox.layout.align.vertical
+--                 },
+--                 spacing = 10,
+--                 fill_space = true,
+--                 layout  = wibox.layout.fixed.horizontal
+--             },
+--             margins = 5,
+--             widget  = wibox.container.margin
+--         },
+--         widget = naughty.list.notifications,
+--     },
+--     -- Add a button to dismiss all notifications, because why not.
+--     {
+--         {
+--             text   = "Dismiss all",
+--             halign = "center",
+--             valign = "center",
+--             widget = wibox.widget.textbox
+--         },
+--         buttons = gears.table.join(
+--             awful.button({ }, 1, function() naughty.destroy_all_notifications() end)
+--         ),
+--         forced_width       = 75,
+--         shape              = gears.shape.rounded_bar,
+--         shape_border_width = 1,
+--         shape_border_color = beautiful.bg_highlight,
+--         widget = wibox.container.background
+--     },
+--     layout = wibox.layout.align.horizontal
+-- }
+
+-- -- We don't want to have that bar all the time, only when there is content.
+-- naughty.connect_signal("property::active", function()
+--     notif_wb.visible = #naughty.active > 0
+-- end)
 
 ---------------------------------------------------------------------
---------------------  Notification Custom Preset  -------------------
+--------------------  Custom Notification Center  -------------------
 
 
 -- Criar um novo preset para notificações críticas
@@ -265,19 +382,33 @@ mytextclock:connect_signal("button::press",
 
     ------------------  Minhas Funções  ------------------
 
+-- local updates_widget = awful.widget.watch(update_widget, 3600)  -- Define atualização a cada 10800 segundos
 
--- local function atualizarGentooUpdatesWidget(widget, stdout, stderr, exitreason, exitcode)
---     if tonumber(stdout) == "0 Pkgs" then
---         widget.visible = false
+    
+-- local function update_widget()
+--     updates='$(sh /home/jkyon/ShellScript/dwmBlocksUpdates)'  -- Execute o script
+--     if updates then
+--         widget:set_text(updates)  -- Atualiza o texto do widget
 --     else
---         widget.visible = true
---     end
--- end
-
--- local atualizarGentooUpdatesWidget_complemento = [=[tbox_separator_space; wibox.widget.textbox(' | ');]=]
+--         widget:set_text("")        -- Limpa o texto do widget (opcional)
+--     end    
+-- end    
 
 
+-------------------  Tags Manipulation Functions  -------------------
+---------------------------------------------------------------------
+-------------------  gentoo_update_checker widget  ------------------
 
+-- -- Cria o widget
+-- local my_widget = wibox.widget.textbox()
+
+-- -- Chama a função de verificação de atualizações
+-- gentoo_update_checker.check_updates()
+
+-- -- Adiciona o tooltip ao widget
+-- gentoo_update_checker.tooltip:add_to_object(my_widget)
+
+-------------------  gentoo_update_checker widget  ------------------
 ---------------------------------------------------------------------
 -------------------  Tags Manipulation Functions  -------------------
 
@@ -363,7 +494,10 @@ local tasklist_buttons = gears.table.join(
                                           end))
 
 
-    ------------------  Tags  ------------------
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+------------------------------ Tags Organization ----------------------------
+
 
 awful.tag.add(" emerge (1) ", {
     layout = awful.layout.suit.tile.left,
@@ -371,13 +505,13 @@ awful.tag.add(" emerge (1) ", {
     selected = true
 })
 
-awful.tag.add(" System (2) ", {
+awful.tag.add(" Code (2) ", {
     layout = awful.layout.suit.tile,
     screen = 1,
     selected = false
 })    
 
-awful.tag.add(" Media (3) ", {
+awful.tag.add(" Mail (3) ", {
     layout = awful.layout.suit.tile,
     screen = 1,
     selected = false
@@ -395,11 +529,17 @@ awful.tag.add(" etc (5) ", {
     selected = false
 })    
 
--- awful.tag.add(" Minecraft (4) ", {
---     layout = awful.layout.suit.tile.left,
---     screen = 1,
---     selected = false
--- })    
+awful.tag.add(" Financial (6) ", {
+    layout = awful.layout.suit.tile.left,
+    screen = 1,
+    selected = false
+})    
+
+awful.tag.add(" VirtManager (7) ", {
+    layout = awful.layout.suit.tile.left,
+    screen = 1,
+    selected = false
+})    
 
 -- awful.tag.add(" Free =) ", {
 --     layout = awful.layout.suit.tile,
@@ -447,17 +587,17 @@ awful.tag.add(" Chat (2) ", {
     selected = false
 })    
 
-awful.tag.add(" Music (3) ", {
+awful.tag.add(" Sound (3) ", {
     layout = awful.layout.suit.tile,
     screen = 3,
     selected = false
 })    
 
-awful.tag.add(" Mixer (4) ", {
-    layout = awful.layout.suit.tile,
-    screen = 3,
-    selected = false
-})
+-- awful.tag.add(" Mixer (4) ", {
+--     layout = awful.layout.suit.tile,
+--     screen = 3,
+--     selected = false
+-- })
 
 -- awful.tag.add(" Free =) ", {
 --     layout = awful.layout.suit.tile,
@@ -465,9 +605,10 @@ awful.tag.add(" Mixer (4) ", {
 --     selected = false
 -- })
 
-        ---------------------------------------
 
-        ---------------------------------------
+------------------------------ Tags Organization ----------------------------
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
 
 
         awful.screen.connect_for_each_screen(function(s)
@@ -527,10 +668,16 @@ awful.tag.add(" Mixer (4) ", {
             layout = wibox.layout.fixed.horizontal,
 --            mykeyboardlayout,
 
+            internet_widget,
+
                     tbox_separator_space,
 
             -- wibox.widget.textbox('  '),
-            -- awful.widget.watch('bash -c "sh /home/jkyon/ShellScript/dwmBlocksUpdates"', 10800),
+
+
+            --gentoo_update_checker,
+            awful.widget.watch('bash -c "nice -n 19 sh /home/jkyon/ShellScript/dwmBlocksUpdates"', 3600),
+
 
             -- jkyon_gentooUpdatesWidget = awful.widget.watch("bash -c 'sh /home/jkyon/ShellScript/dwmBlocksUpdates' " .. atualizarGentooUpdatesWidget_complemento .. "", 600, atualizarGentooUpdatesWidget),
             -- jkyon_gentooUpdatesWidget = awful.widget.watch("bash -c 'sh /home/jkyon/ShellScript/dwmBlocksUpdates'", 600, atualizarGentooUpdatesWidget),
@@ -542,7 +689,8 @@ awful.tag.add(" Mixer (4) ", {
                     tbox_separator_space,
           
             wibox.widget.textbox('  '),
-            cpu.widget,
+            -- cpu.widget,
+            awful.widget.watch('bash -c "sh /home/jkyon/ShellScript/dwmBlocksCpuUsage"', 1),
                     tbox_separator_space,
             wibox.widget.textbox('  '),
             awful.widget.watch('bash -c "sh /home/jkyon/ShellScript/dwmBlocksCpuTemp"', 1),
@@ -597,8 +745,7 @@ awful.tag.add(" Mixer (4) ", {
                 step        = 5 ,
                 mixer_cmd   = 'pavucontrol',
                 device      = '@DEFAULT_SINK@',
-                tooltip     = true
-
+                tooltip     = false
                 }),
             
                     tbox_separator_space,
@@ -629,7 +776,7 @@ awful.tag.add(" Mixer (4) ", {
             --     show_hourly_forecast = true,
             --     show_daily_forecast = true,
             -- }),
-
+            weather_widget({ api_key = '3adf0fe30d03af8c1d09c7dda3b196dd', coordinates = {45.5017, -73.5673}, }),
             mytextclock,
 
                     tbox_separator_space,
@@ -649,7 +796,8 @@ awful.tag.add(" Mixer (4) ", {
 -- }}}
 end)
 
-
+------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------
 
 
 -- {{{ Mouse bindings
@@ -992,15 +1140,19 @@ awful.rules.rules = {
 -- F
 --
         { rule = { class = "feh" },
-        properties = { floating = true,
-        width = 3000,     -- Defina o tamanho que deseja
-        height = 1000,    -- Defina o tamanho que deseja
-        x = 340,          -- Posição x
-        y = 100,          -- Posição y
+        properties = { floating = true, name = "feh",
+        width = 2800,     -- Defina o tamanho que deseja
+        height = 1200,    -- Defina o tamanho que deseja
+        x = 1600,         -- Posição x
+        y = 100,          -- Posição yg
         screen = 1
         }},
 -- G
 --
+        { rule_any = { class = {"gedit", "Gedit"} },
+        properties = { floating = true,
+        placement = awful.placement.centered },},
+
         { rule = { class = "Google-chrome" },
         properties = { floating = false,
         placement = awful.placement.centered,
@@ -1063,7 +1215,7 @@ awful.rules.rules = {
 --        
         { rule_any = { class = {"pavucontrol", "Pavucontrol"} },
         properties = { floating = false,
-        tag = screen[3].tags[4]       },},
+        tag = screen[3].tags[3]       },},
         
         { rule = { class = "PrismLauncher" },
         properties = { floating = true,
@@ -1126,6 +1278,12 @@ awful.rules.rules = {
 --
 -- V
 --
+        { rule_any = { class = {"virt-manager", "Virt-manager"} },
+        properties = { floating = true,
+        placement = awful.placement.centered,
+        --tag = screen[1].tags[2]
+        },},
+
         { rule_any = { class = {"code", "Code"} },     -- vsCode
         properties = { floating = false,
         placement = awful.placement.left,
@@ -1286,6 +1444,7 @@ gears.timer {
 
 
 awful.spawn.with_shell("sh /home/jkyon/.dotfiles/.config/awesome/AwesomeWMstartupApps.sh")
+
 
         ---------------------------------------------
         ----------------  Wallpaper  ----------------
