@@ -47,6 +47,7 @@ local mytemp = lain.widget.temp()
 local cpu_widget = require("awesome-wm-widgets.cpu-widget.cpu-widget")
 local ram_widget = require("awesome-wm-widgets.ram-widget.ram-widget")
 
+
 local volume_widget = require('awesome-wm-widgets.pactl-widget.volume')
 --local myvolume = volume_widget()
 -- local volume_widget = require('awesome-wm-widgets.volume-widget.volume')
@@ -71,20 +72,6 @@ local internet_widget = require("jkyon-widgets.internet_widget")
 -- when client with a matching name is opened:
 require("awful.hotkeys_popup.keys")
 
-    --- Notifications ---
-
-
---     naughty.config.defaults.ontop = true
---   --  naughty.config.defaults.icon_size = dpi(32)
---     naughty.config.defaults.timeout = 10
---     naughty.config.defaults.hover_timeout = 300
---   --  naughty.config.defaults.title = 'System Notification Title'
---    -- naughty.config.defaults.margin = dpi(16)
---     --naughty.config.defaults.border_width = 0
---     naughty.config.defaults.position = 'top_middle'
---     naughty.config.defaults.shape = function(cr, w, h)
---       gears.shape.rounded_rect(cr, w, h, dpi(6))
---     end
 
 -----------------------------------------------------------------------------
 -----------------------------------------------------------------------------
@@ -1201,6 +1188,10 @@ awful.rules.rules = {
         placement = awful.placement.centered },},
 -- M
 --
+        { rule_any = { class = {"mpv"} },
+        properties = { floating = true,
+        placement = awful.placement.centered },},
+
         { rule = { name = "MuPDF" },
         properties = { floating = true,
         placement = awful.placement.centered },},

@@ -2544,3 +2544,168 @@
 [ 05/07/2024 12:06:33.339 session_init FATAL ERROR ] Another composite manager is already running
 [ 05/07/2024 12:09:43.433 session_init FATAL ERROR ] Another composite manager is already running
 [ 05/07/2024 12:11:08.844 session_init FATAL ERROR ] Another composite manager is already running
+[ 05/07/2024 15:08:43.489 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 05/07/2024 15:08:43.489 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 05/07/2024 15:08:43.489 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 05/07/2024 15:08:43.489 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 05/07/2024 15:08:43.489 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 05/07/2024 15:08:43.489 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 05/07/2024 15:08:43.489 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 05/07/2024 15:08:43.489 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 05/07/2024 15:08:43.501 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 05/07/2024 15:08:43.501 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 05/07/2024 15:08:43.503 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 05/09/2024 06:22:21.608 x_fetch_region ERROR ] Failed to fetch rectangles (X error 138 XCB_XFIXES_BAD_REGION request 137 minor 19 serial 29038592)
+[ 05/09/2024 08:06:45.597 session_init FATAL ERROR ] Another composite manager is already running
+[ 05/09/2024 08:10:26.392 session_init FATAL ERROR ] Another composite manager is already running
+[ 05/09/2024 08:18:13.770 session_init FATAL ERROR ] Another composite manager is already running
+[ 05/09/2024 08:24:17.959 session_init FATAL ERROR ] Another composite manager is already running
+[ 05/09/2024 08:31:18.959 session_init FATAL ERROR ] Another composite manager is already running
+[ 05/09/2024 08:42:38.557 session_init FATAL ERROR ] Another composite manager is already running
+[ 05/09/2024 08:43:21.460 session_init FATAL ERROR ] Another composite manager is already running
+[ 05/09/2024 11:12:25.046 x_create_pixmap ERROR ] Failed to create pixmap (X error 14 BadIDChoice request 53 minor 0 serial 31670354)
+[ 05/09/2024 11:12:25.058 build_shadow ERROR ] Failed to create shadow pixmaps
+[ 05/09/2024 11:12:25.058 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x06c0009e ((null))
+[ 05/09/2024 12:14:30.839 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 05/09/2024 12:14:31.808 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 05/09/2024 12:14:31.808 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 05/09/2024 12:14:31.808 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 05/09/2024 12:14:31.808 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 05/09/2024 12:14:31.808 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 05/09/2024 12:14:31.808 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 05/09/2024 12:14:31.808 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 05/09/2024 12:14:32.126 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 05/09/2024 12:14:32.126 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 05/09/2024 12:14:32.128 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 05/10/2024 21:33:55.386 x_fetch_region ERROR ] Failed to fetch rectangles (X error 138 XCB_XFIXES_BAD_REGION request 137 minor 19 serial 25267315)
+[ 05/10/2024 23:25:38.223 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 05/10/2024 23:25:38.453 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 05/10/2024 23:25:38.453 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 05/10/2024 23:25:38.453 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 05/10/2024 23:25:38.453 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 05/10/2024 23:25:38.453 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 05/10/2024 23:25:38.453 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 05/10/2024 23:25:38.453 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 05/10/2024 23:25:44.976 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 05/10/2024 23:25:44.976 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 05/10/2024 23:25:45.185 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 05/13/2024 21:03:25.363 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01830b26
+[ 05/13/2024 21:03:25.369 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 05/13/2024 21:04:28.042 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01830b3c
+[ 05/13/2024 21:04:28.042 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 05/13/2024 21:08:35.259 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01830b17
+[ 05/13/2024 21:08:35.259 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x016da12b (Create a New Image)
+[ 05/13/2024 21:08:35.858 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01830b1b
+[ 05/13/2024 21:08:35.858 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 05/13/2024 21:08:45.761 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 05/13/2024 21:08:45.761 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 05/13/2024 21:08:45.761 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 05/13/2024 21:08:45.761 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 05/13/2024 21:08:45.761 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 05/13/2024 21:08:45.761 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 05/13/2024 21:08:45.761 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 05/13/2024 21:08:45.761 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 05/13/2024 21:08:45.797 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 05/13/2024 21:08:45.797 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 05/13/2024 21:08:45.813 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 05/17/2024 21:59:13.969 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 05/17/2024 21:59:13.970 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 05/17/2024 21:59:13.970 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 05/17/2024 21:59:13.970 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 05/17/2024 21:59:13.970 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 05/17/2024 21:59:13.970 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 05/17/2024 21:59:13.970 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 05/17/2024 21:59:13.970 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 05/17/2024 21:59:14.069 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 05/17/2024 21:59:14.069 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 05/17/2024 21:59:14.106 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 05/19/2024 11:45:58.163 x_fetch_region ERROR ] Failed to fetch rectangles (X error 138 XCB_XFIXES_BAD_REGION request 137 minor 19 serial 20397757)
+[ 05/19/2024 14:25:26.416 x_fetch_region ERROR ] Failed to fetch rectangles (X error 138 XCB_XFIXES_BAD_REGION request 137 minor 19 serial 22050916)
+[ 05/20/2024 17:00:20.469 x_create_pixmap ERROR ] Failed to create pixmap (X error 14 BadIDChoice request 53 minor 0 serial 28716324)
+[ 05/20/2024 17:00:20.478 build_shadow ERROR ] Failed to create shadow pixmaps
+[ 05/20/2024 17:00:20.478 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x0ae00095 ((null))
+[ 05/21/2024 06:37:54.465 x_fetch_region ERROR ] Failed to fetch rectangles (X error 138 XCB_XFIXES_BAD_REGION request 137 minor 19 serial 34845812)
+[ 05/21/2024 10:46:01.184 x_create_pixmap ERROR ] Failed to create pixmap (X error 14 BadIDChoice request 53 minor 0 serial 36123102)
+[ 05/21/2024 10:46:01.190 build_shadow ERROR ] Failed to create shadow pixmaps
+[ 05/21/2024 10:46:01.190 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x016db7be (Awesome drawin)
+[ 05/21/2024 21:30:32.078 x_create_pixmap ERROR ] Failed to create pixmap (X error 14 BadIDChoice request 53 minor 0 serial 43363318)
+[ 05/21/2024 21:38:58.494 x_fetch_region ERROR ] Failed to fetch rectangles (X error 138 XCB_XFIXES_BAD_REGION request 137 minor 19 serial 43483557)
+[ 05/21/2024 22:54:15.088 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x0191375e
+[ 05/21/2024 22:54:15.100 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x066001c5 (Voltar à pesquisa do Bing)
+[ 05/21/2024 23:25:59.397 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01913783
+[ 05/21/2024 23:25:59.416 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 05/22/2024 09:08:26.068 x_create_picture_with_pictfmt_and_pixmap ERROR ] failed to create picture (X error 14 BadIDChoice request 138 minor 4 serial 45434130)
+[ 05/22/2024 11:48:44.920 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x019133ab
+[ 05/22/2024 11:48:44.941 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x017115af (Awesome drawin)
+[ 05/22/2024 12:23:18.722 x_create_pixmap ERROR ] Failed to create pixmap (X error 14 BadIDChoice request 53 minor 0 serial 46497238)
+[ 05/22/2024 12:23:18.722 build_shadow ERROR ] Failed to create shadow pixmaps
+[ 05/22/2024 12:23:18.722 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x0171340b (Awesome drawin)
+[ 05/22/2024 12:56:11.915 x_create_pixmap ERROR ] Failed to create pixmap (X error 14 BadIDChoice request 53 minor 0 serial 46700323)
+[ 05/22/2024 12:59:02.303 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01913fa6
+[ 05/22/2024 12:59:02.303 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x066000d3 (Memória RAM Corsair Vengeance RGB PRO SL, 32GB (2x16GB), 3200MHz, DDR4, CL16, Branco - CMH32GX4M2E3200C16W)
+[ 05/22/2024 13:42:16.379 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01913fbf
+[ 05/22/2024 13:42:16.390 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x06600129 (Close tab)
+[ 05/22/2024 13:42:16.412 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01913fb9
+[ 05/22/2024 13:42:16.412 win_bind_shadow ERROR ] Failed to bind shadow image, shadow will be disabled for 0x06600129 (Close tab)
+[ 05/22/2024 14:34:30.216 x_fetch_region ERROR ] Failed to fetch rectangles (X error 138 XCB_XFIXES_BAD_REGION request 137 minor 19 serial 48358417)
+[ 05/22/2024 14:40:44.953 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01913fad
+[ 05/22/2024 14:40:45.151 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 05/22/2024 14:40:56.849 glx_bind_pixmap ERROR ] Failed to create glpixmap for pixmap 0x01913ff4
+[ 05/22/2024 14:40:56.849 win_bind_pixmap ERROR ] Failed to bind pixmap
+[ 05/22/2024 14:42:58.479 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 05/22/2024 14:42:58.479 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 05/22/2024 14:42:58.479 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 05/22/2024 14:42:58.479 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 05/22/2024 14:42:58.479 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 05/22/2024 14:42:58.479 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 05/22/2024 14:42:58.479 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 05/22/2024 14:42:58.479 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 05/22/2024 14:42:58.551 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 05/22/2024 14:42:58.551 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 05/22/2024 14:42:58.575 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 05/24/2024 03:37:41.482 x_fetch_region ERROR ] Failed to fetch rectangles (X error 138 XCB_XFIXES_BAD_REGION request 137 minor 19 serial 15799582)
+[ 05/24/2024 03:59:22.417 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 05/24/2024 03:59:22.417 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 05/24/2024 03:59:22.417 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 05/24/2024 03:59:22.417 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 05/24/2024 03:59:22.417 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 05/24/2024 03:59:22.417 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 05/24/2024 03:59:22.417 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 05/24/2024 03:59:22.417 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 05/24/2024 03:59:22.529 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 05/24/2024 03:59:22.529 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 05/24/2024 03:59:22.624 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 05/24/2024 17:37:32.204 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 05/24/2024 17:37:32.221 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 05/24/2024 17:37:32.221 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 05/24/2024 17:37:32.221 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 05/24/2024 17:37:32.221 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 05/24/2024 17:37:32.223 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 05/24/2024 17:37:32.223 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 05/24/2024 17:37:32.223 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 05/24/2024 17:37:33.527 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 05/24/2024 17:37:33.527 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 05/24/2024 17:37:33.550 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 05/26/2024 11:20:00.775 x_fetch_region ERROR ] Failed to fetch rectangles (X error 138 XCB_XFIXES_BAD_REGION request 137 minor 19 serial 18553868)
+[ 05/26/2024 12:15:55.939 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 05/26/2024 12:15:55.981 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 05/26/2024 12:15:55.981 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 05/26/2024 12:15:55.981 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 05/26/2024 12:15:55.981 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 05/26/2024 12:15:55.981 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 05/26/2024 12:15:55.981 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 05/26/2024 12:15:55.981 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 05/26/2024 12:15:56.374 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 05/26/2024 12:15:56.374 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 05/26/2024 12:15:56.376 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 05/26/2024 16:18:06.892 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 05/26/2024 16:18:06.909 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 05/26/2024 16:18:06.909 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 05/26/2024 16:18:06.909 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 05/26/2024 16:18:06.909 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 05/26/2024 16:18:06.909 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 05/26/2024 16:18:06.909 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 05/26/2024 16:18:06.909 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 05/26/2024 16:18:06.934 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 05/26/2024 16:18:06.934 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 05/26/2024 16:18:06.935 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
