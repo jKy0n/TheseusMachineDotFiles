@@ -1,1 +1,0 @@
-/home/jkyon/.dotfiles/portage/savedconfig/x11-misc/dmenu-5.0

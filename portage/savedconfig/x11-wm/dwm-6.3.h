@@ -1,1 +1,0 @@
-/home/jkyon/.dotfiles/portage/savedconfig/x11-wm/dwm-6.3

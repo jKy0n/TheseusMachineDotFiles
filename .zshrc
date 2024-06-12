@@ -2,8 +2,8 @@
 #export GTK_THEME="Marwaita Dark EndeavourOS"
 #export QT_QPA_PLATFORMTHEME="qt5ct"
 
-export EDITOR='vim'
-export VISUAL='vim'
+export EDITOR=nvim
+export VISUAL=nvim
 
 
 #source ~/powerlevel10k/powerlevel10k.zsh-theme

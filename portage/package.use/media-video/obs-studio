@@ -1,1 +1,1 @@
-media-video/obs-studio alsa browser fdk pulseaudio speex ssl truetype websocket -decklink -jack lua -mpegts -nvenc pipewire python -qsv -test v4l vlc -wayland
+media-video/obs-studio alsa browser fdk pulseaudio speex ssl truetype websocket -decklink -jack lua -mpegts -nvenc pipewire python -qsv -test v4l -vlc -wayland

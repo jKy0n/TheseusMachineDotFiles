@@ -1,1 +1,0 @@
-/home/jkyon/.dotfiles/portage/savedconfig/x11-misc/dwmblocks-0.2

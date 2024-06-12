@@ -763,7 +763,7 @@ awful.tag.add(" Sound (3) ", {
             --     show_hourly_forecast = true,
             --     show_daily_forecast = true,
             -- }),
-            weather_widget({ api_key = '3adf0fe30d03af8c1d09c7dda3b196dd', coordinates = {45.5017, -73.5673}, }),
+            -- weather_widget({ api_key = '3adf0fe30d03af8c1d09c7dda3b196dd', coordinates = {45.5017, -73.5673}, }),
             mytextclock,
 
                     tbox_separator_space,
@@ -1108,6 +1108,9 @@ awful.rules.rules = {
 
 -- A
 --
+        { rule_any = { class = {"ark"} },
+        properties = { floating = true,
+        placement = awful.placement.centered },},
 -- B
 --
 -- C
@@ -1131,7 +1134,7 @@ awful.rules.rules = {
         width = 2800,     -- Defina o tamanho que deseja
         height = 1200,    -- Defina o tamanho que deseja
         x = 1600,         -- Posição x
-        y = 100,          -- Posição yg
+        y = 100,          -- Posição y
         screen = 1
         }},
 -- G
@@ -1212,6 +1215,10 @@ awful.rules.rules = {
         properties = { floating = true,
         placement = awful.placement.centered,
         tag = screen[1].tags[4]       },},
+
+        { rule_any = { class = {"ProtonUp-Qt"} },
+        properties = { floating = true,
+        placement = awful.placement.centered },},
 -- Q
 -- 
 -- R
@@ -1276,9 +1283,8 @@ awful.rules.rules = {
         },},
 
         { rule_any = { class = {"code", "Code"} },     -- vsCode
-        properties = { floating = false,
-        placement = awful.placement.left,
-        tag = screen[1].tags[2] },},
+        properties = { floating = true,
+        placement = awful.placement.left,},},
 -- W
 --
 -- X

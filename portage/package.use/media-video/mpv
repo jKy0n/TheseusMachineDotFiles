@@ -1,2 +1,2 @@
-media-video/mpv X alsa cli drm egl iconv libmpv lua opengl pulseaudio uchardet vaapi vdpau vulkan zlib -archive -bluray -cdda -debug -dvb -dvd gamepad -jack -javascript jpeg -lcms -libcaca -nvenc openal -pipewire rubberband -sdl -sixel -sndio -test -tools -wayland -xv -zimg
+media-video/mpv X alsa cli drm egl iconv libmpv lua opengl pulseaudio uchardet vaapi vdpau vulkan zlib -bluray -debug -dvb -dvd gamepad -jack jpeg -nvenc openal pipewire rubberband -sdl -sixel -sndio -test -tools -wayland -xv -zimg
 
