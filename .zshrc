@@ -155,8 +155,8 @@ fi
 
 
 # Alias
-alias show-alias='bat --color=always /home/jkyon/ShellScript/aliases.sh'
-source /home/jkyon/ShellScript/aliases.sh
+alias show-alias='bat --color=always ~/ShellScript/aliases.sh'
+source ~/ShellScript/aliases.sh
 
 
 # Start tmux by default
