@@ -182,9 +182,9 @@ mytextclock = wibox.widget.textclock()
 -------------------- Widgets --------------------
 
 
+tbox_separator_space = wibox.widget.textbox (" ")
 -- tbox_separator_pipe = wibox.widget.textbox (" | ")
 -- tbox_separator_dash = wibox.widget.textbox (" - ")
-tbox_separator_space = wibox.widget.textbox (" ")
 
 -- tbox_gpu_label = wibox.widget.textbox ("GPU: ")
 -- tbox_MHz_label = wibox.widget.textbox ("MHz")
@@ -338,15 +338,16 @@ mytextclock:connect_signal("button::press",
 --------------------  Custom Notification Center  -------------------
 
 
--- Criar um novo preset para notificações críticas
--- naughty.config.presets.my_critical = {
---     font = "Noto Sans semibold 36",  -- Ajuste o nome da fonte e o tamanho conforme necessário
---     fg   = "#FF0000",  -- Cor do texto
---     bg   = "#1E1E1E",  -- Cor de fundo
---     timeout = 10,      -- Tempo de exibição
---     border_width = 2,
---     border_color = "#FF0000",  -- Cor da borda
--- }
+    -- ruled.notification.connect_signal('request::rules', function()
+    --     ruled.notification.append_rule {
+    --         rule = { },
+    --         properties = {
+    --             screen = awful.screen.preferred,
+    --             implicit_timeout = 5,
+    --             position = "top_center", -- Defina como "top_center"
+    --         }
+    --     }
+    -- end)
 
 
 --------------------  Notification Custom Preset  -------------------
@@ -1135,8 +1136,7 @@ awful.rules.rules = {
         height = 1200,    -- Defina o tamanho que deseja
         x = 1600,         -- Posição x
         y = 100,          -- Posição y
-        screen = 1
-        }},
+        screen = 1  }},
 -- G
 --
         { rule_any = { class = {"gedit", "Gedit"} },
@@ -1162,8 +1162,7 @@ awful.rules.rules = {
         
         { rule = { class = "Gnome-screenshot" },
         properties = { floating = true,
-        placement = awful.placement.centered 
-        },},        
+        placement = awful.placement.centered },},        
 -- H
 --
         { rule_any = { class = {"Heroic Games Launcher", "heroic"} },
@@ -1236,9 +1235,7 @@ awful.rules.rules = {
 
         { rule_any = { class = {"snappergui", "Snapper-gui"} },
         properties = { floating = true,
-        placement = awful.placement.centered,
-        -- tag = screen[3].tags[3]       
-        },},
+        placement = awful.placement.centered,},},
 
         { rule = { class = "steam" },
         properties = { floating = true,
@@ -1278,9 +1275,7 @@ awful.rules.rules = {
 --
         { rule_any = { class = {"virt-manager", "Virt-manager"} },
         properties = { floating = true,
-        placement = awful.placement.centered,
-        --tag = screen[1].tags[2]
-        },},
+        placement = awful.placement.centered,},},
 
         { rule_any = { class = {"code", "Code"} },     -- vsCode
         properties = { floating = true,
@@ -1428,6 +1423,13 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 
 
 -- jKyon Adds
+--
+
+-- Notifications adjustments
+beautiful.notification_font = "sans 12"  -- Altere o tamanho conforme desejado
+
+
+
 
 -- Run garbage collector regularly to prevent memory leaks
 gears.timer {
@@ -1454,8 +1456,8 @@ awful.spawn.with_shell("sh /home/jkyon/.dotfiles/.config/awesome/AwesomeWMstartu
 
 
 
-timed = rubato.timed {
-    intro = 0.1,
-    duration = 0.3
-}
-timed.target = 1
+-- timed = rubato.timed {
+--     intro = 0.1,
+--     duration = 0.3
+-- }
+-- timed.target = 1
