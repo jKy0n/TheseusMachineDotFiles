@@ -1,3 +1,6 @@
 [submodule ".config/tmux/plugins/tpm"]
 	path = .config/tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm
+[submodule "/home/jkyon/.dotfiles/.config/awesome/awesome-wm-widgets"]
+	path = /home/jkyon/.dotfiles/.config/awesome/awesome-wm-widgets
+	url = https://github.com/streetturtle/awesome-wm-widgets.git
