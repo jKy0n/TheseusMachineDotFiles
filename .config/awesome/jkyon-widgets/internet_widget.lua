@@ -23,7 +23,7 @@ local function check_internet()
             end)
         else
             -- Se o ping falhar, a internet não está funcionando e o widget mostra uma mensagem
-            internet_widget:set_text("  🔴 Sem internet  |")
+            internet_widget:set_text(" 🔴 Sem internet |")
         end
     end)
 end
