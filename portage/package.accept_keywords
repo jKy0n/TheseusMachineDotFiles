@@ -36,3 +36,4 @@ dev-vcs/lazygit ~amd64
 sys-fs/gdu ~amd64
 dev-java/oraclejdk-bin ~amd64
 media-sound/reaper-bin ~amd64
+media-tv/gtk-v4l ~amd64

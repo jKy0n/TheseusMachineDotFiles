@@ -1,0 +1,17 @@
+# Arquivos de configuração do Alacritty em formato TOML
+
+
+import = ["~/.config/alacritty/dracula.toml"]
+
+
+# Configuração do Shell
+shell = { program = "/bin/zsh", args = ["-l"] }
+
+
+# Configurações gerais
+[font]
+    normal = { family = "MesloLGS NF" }
+    size = 9.0
+
+[window]
+    opacity = 0.8
