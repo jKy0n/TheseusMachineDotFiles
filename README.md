@@ -8,8 +8,8 @@ It's all about my loved PC
 ## Operational System:
 
 - **OS:** Gentoo Linux
-- **Kernel:** 6.6.13-gentoo-x86_64
-- **Shell:** bash / zsh
+- **Kernel:** 6.6.32-gentoo-dist
+- **Shell:** zsh (bash for sh)
 - **GS:** XOrg (X11)
 - **WM:** Awesome
 - **Audio:** Pipewire + some PulseAudios junkies
@@ -17,11 +17,11 @@ It's all about my loved PC
 - **FS:** BtrFS (system + jbod for data and others)
 - **Init:** OpenRC
 - **Auth:** sudo + Gnome polkit
-- **Security:** Hardened + SELinux + crypto (/home only)
+
 
 #### Theming
 
-- **Theme:** Marwaita Dark EndeavourOs
+- **Theme:** Catppuccin Dark Mocchiato
 - **Icons:** ePapirus-Dark
 - **Font:** MesloLGS NF
 - **Cursor:** Future-black-cursors
@@ -71,6 +71,7 @@ It's all about my loved PC
 - **NP:** Exbom BK-N30
 - **Mouse:** Logitech G403
 - **Tablet:** Wacom Intuos CTL4100
+- **Webcam:** Logitech C505 
 
 
 ## Audio:

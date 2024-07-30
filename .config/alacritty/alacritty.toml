@@ -1,12 +1,19 @@
 # Arquivos de configuração do Alacritty em formato TOML
 
-
-import = ["~/.config/alacritty/dracula.toml"]
+import = [
+  # uncomment the flavour you want below:
+  # "~/.config/alacritty/catppuccin-latte.toml"
+  # "~/.config/alacritty/catppuccin-frappe.toml"
+    "~/.config/alacritty/catppuccin-macchiato.toml"
+  # "~/.config/alacritty/catppuccin-mocha.toml"
+]
 
 
 # Configuração do Shell
 shell = { program = "/bin/zsh", args = ["-l"] }
 
+[env]
+TERM = "xterm-256color"
 
 # Configurações gerais
 [font]
@@ -15,3 +22,6 @@ shell = { program = "/bin/zsh", args = ["-l"] }
 
 [window]
     opacity = 0.8
+
+[cursor]
+    style = { shape = "beam", blinking = "On" }

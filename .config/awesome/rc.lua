@@ -490,44 +490,44 @@ local tasklist_buttons = gears.table.join(
 awful.tag.add(" emerge (1) ", {
     layout = awful.layout.suit.tile.left,
     screen = 1,
-    selected = true
+    selected = false
 })
 
 awful.tag.add(" Code (2) ", {
     layout = awful.layout.suit.tile,
     screen = 1,
-    selected = false
-})    
+    selected = true
+})
 
 awful.tag.add(" Mail (3) ", {
     layout = awful.layout.suit.tile,
     screen = 1,
     selected = false
-})    
+})
 
-awful.tag.add(" Games (4) ", {
+awful.tag.add(" etc (4) ", {
     layout = awful.layout.suit.tile.left,
     screen = 1,
     selected = false
-})    
+})
 
-awful.tag.add(" etc (5) ", {
-    layout = awful.layout.suit.tile.left,
-    screen = 1,
-    selected = false
-})    
+-- awful.tag.add(" Games (X) ", {
+--     layout = awful.layout.suit.tile.left,
+--     screen = 1,
+--     selected = false
+-- })
 
-awful.tag.add(" Financial (6) ", {
-    layout = awful.layout.suit.tile.left,
-    screen = 1,
-    selected = false
-})    
+-- awful.tag.add(" Krita (6) ", {
+--     layout = awful.layout.suit.tile.left,
+--     screen = 1,
+--     selected = false
+-- })
 
-awful.tag.add(" VirtManager (7) ", {
-    layout = awful.layout.suit.tile.left,
-    screen = 1,
-    selected = false
-})    
+-- awful.tag.add(" VirtManager (7) ", {
+--     layout = awful.layout.suit.tile.left,
+--     screen = 1,
+--     selected = false
+-- })
 
 -- awful.tag.add(" Free =) ", {
 --     layout = awful.layout.suit.tile,
@@ -573,13 +573,13 @@ awful.tag.add(" Chat (2) ", {
     layout = awful.layout.suit.max,
     screen = 3,
     selected = false
-})    
+})
 
 awful.tag.add(" Sound (3) ", {
     layout = awful.layout.suit.tile,
     screen = 3,
     selected = false
-})    
+})
 
 -- awful.tag.add(" Mixer (4) ", {
 --     layout = awful.layout.suit.tile,
@@ -915,6 +915,12 @@ globalkeys = gears.table.join(
 
     -- awful.key({ modkey}, "p", function () awful.util.spawn_with_shell("~/.config/dmenu") end)
 
+    -- awful.key({ modkey, }, "p",
+    --     function () awful.util.spawn("rofi  -config /home/jkyon/.dotfiles/.config/rofi/config.rasi \
+    --                                         -icon-theme \"Papirus\"  \
+    --                                         -show-icons") 
+    --         end),
+
     awful.key({ modkey, }, "p",
         --   function () awful.util.spawn("rofi -config ~/.config/rofi/config -show combi -combi-modi \"window,run\" -modi combi -icon-theme \"Papirus\" -show-icons -theme ~/.config/rofi/config.rasi") end),
         function () awful.util.spawn("rofi  -config /home/jkyon/.dotfiles/.config/rofi.jkyon/config.rasi \
@@ -1167,8 +1173,7 @@ awful.rules.rules = {
 --
         { rule_any = { class = {"Heroic Games Launcher", "heroic"} },
         properties = { floating = false,
-        placement = awful.placement.centered,
-        tag = screen[1].tags[3]       },},
+        placement = awful.placement.centered },},
 -- I
 --
 -- J
@@ -1182,8 +1187,7 @@ awful.rules.rules = {
 --
         { rule = { name = "Lutris" },
         properties = { floating = true,
-        placement = awful.placement.centered,
-        tag = screen[1].tags[3]       },},
+        placement = awful.placement.centered },},
     
         { rule = { class = "Lxappearance" },
         properties = { floating = true,
@@ -1212,8 +1216,7 @@ awful.rules.rules = {
         
         { rule = { class = "PrismLauncher" },
         properties = { floating = true,
-        placement = awful.placement.centered,
-        tag = screen[1].tags[4]       },},
+        placement = awful.placement.centered },},
 
         { rule_any = { class = {"ProtonUp-Qt"} },
         properties = { floating = true,
@@ -1239,23 +1242,19 @@ awful.rules.rules = {
 
         { rule = { class = "steam" },
         properties = { floating = true,
-        placement = awful.placement.right,
-        tag = screen[1].tags[4]       },},
+        placement = awful.placement.right },},
 
                 { rule_any = { class = {" - News"} },
                 properties = { floating = true,
-                                placement = awful.placement.centered,
-                                tag = screen[1].tags[4]       },},
+                                placement = awful.placement.centered },},
 
                 { rule_any = { name = {"Friends List"} },
                 properties = { floating = false,
-                            placement = awful.placement.left,
-                            tag = screen[1].tags[4]       },},
+                            placement = awful.placement.left },},
 
                 { rule_any = { name = {"steamwebhelper"} },
                 properties = { floating = true,
-                            placement = awful.placement.centered,
-                            tag = screen[1].tags[4]       },},
+                            placement = awful.placement.centered },},
 -- T
 --  
         { rule = { class = "Thunar" },
