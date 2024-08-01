@@ -4080,3 +4080,245 @@
 [ 07/29/2024 17:01:19.244 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
 [ 07/29/2024 17:01:19.244 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
 [ 07/29/2024 17:01:19.340 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 07/30/2024 04:00:03.420 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 07/30/2024 04:00:03.466 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 07/30/2024 04:00:03.466 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 07/30/2024 04:00:03.466 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 07/30/2024 04:00:03.466 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 07/30/2024 04:00:03.466 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 07/30/2024 04:00:03.466 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 07/30/2024 04:00:03.466 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 07/30/2024 04:00:03.732 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 07/30/2024 04:00:03.732 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 07/30/2024 04:00:03.742 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 07/31/2024 04:00:04.023 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 07/31/2024 04:00:04.346 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 07/31/2024 04:00:04.346 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 07/31/2024 04:00:04.346 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 07/31/2024 04:00:04.346 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 07/31/2024 04:00:04.346 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 07/31/2024 04:00:04.346 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 07/31/2024 04:00:04.346 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 07/31/2024 04:00:04.382 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 07/31/2024 04:00:04.382 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 07/31/2024 04:00:04.572 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 07/31/2024 11:49:49.648 session_init FATAL ERROR ] Another composite manager is already running
+[ 07/31/2024 11:50:03.518 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 07/31/2024 11:50:03.518 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 07/31/2024 11:50:03.518 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 07/31/2024 11:50:03.518 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 07/31/2024 11:50:03.518 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 07/31/2024 11:50:03.518 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 07/31/2024 11:50:03.518 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 07/31/2024 11:50:03.518 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 07/31/2024 11:50:03.625 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 07/31/2024 11:50:03.625 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 07/31/2024 11:50:03.651 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 07/31/2024 14:28:18.680 reset_enable INFO ] picom is resetting...
+[ 07/31/2024 14:28:20.404 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 07/31/2024 14:28:20.404 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 07/31/2024 14:28:20.420 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 07/31/2024 14:29:38.252 reset_enable INFO ] picom is resetting...
+[ 07/31/2024 14:29:38.384 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 07/31/2024 14:29:38.384 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 07/31/2024 14:29:38.384 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 07/31/2024 14:30:03.028 reset_enable INFO ] picom is resetting...
+[ 07/31/2024 14:30:03.190 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 07/31/2024 14:30:03.191 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 07/31/2024 14:30:03.191 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 07/31/2024 14:30:22.509 reset_enable INFO ] picom is resetting...
+[ 07/31/2024 14:30:22.663 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 07/31/2024 14:30:22.664 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 07/31/2024 14:30:22.664 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 07/31/2024 14:30:41.849 reset_enable INFO ] picom is resetting...
+[ 07/31/2024 14:30:42.004 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 07/31/2024 14:30:42.004 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 07/31/2024 14:30:42.004 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 07/31/2024 14:32:34.630 reset_enable INFO ] picom is resetting...
+[ 07/31/2024 14:32:34.765 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 07/31/2024 14:32:34.765 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 07/31/2024 14:32:34.765 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 07/31/2024 14:32:59.339 reset_enable INFO ] picom is resetting...
+[ 07/31/2024 14:32:59.465 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 07/31/2024 14:32:59.465 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 07/31/2024 14:32:59.465 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 07/31/2024 14:40:26.247 reset_enable INFO ] picom is resetting...
+[ 07/31/2024 14:40:26.416 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 07/31/2024 14:40:26.436 generate_dual_kawase_params INFO ] blur-strength: 3 [.iter = 2, .offset = 2.000000]
+[ 07/31/2024 14:40:26.552 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 07/31/2024 14:40:47.425 reset_enable INFO ] picom is resetting...
+[ 07/31/2024 14:40:47.589 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 07/31/2024 14:40:47.589 generate_dual_kawase_params INFO ] blur-strength: 3 [.iter = 2, .offset = 2.000000]
+[ 07/31/2024 14:40:47.589 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 07/31/2024 14:41:01.202 reset_enable INFO ] picom is resetting...
+[ 07/31/2024 14:41:01.364 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 07/31/2024 14:41:01.364 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 07/31/2024 14:41:01.364 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 07/31/2024 14:41:12.735 reset_enable INFO ] picom is resetting...
+[ 07/31/2024 14:41:12.851 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 07/31/2024 14:41:12.851 generate_dual_kawase_params INFO ] blur-strength: 2 [.iter = 1, .offset = 2.250000]
+[ 07/31/2024 14:41:12.890 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 07/31/2024 14:43:56.395 reset_enable INFO ] picom is resetting...
+[ 07/31/2024 14:43:56.565 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 07/31/2024 14:43:56.565 generate_dual_kawase_params INFO ] blur-strength: 2 [.iter = 1, .offset = 2.250000]
+[ 07/31/2024 14:43:56.565 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 07/31/2024 14:46:04.590 reset_enable INFO ] picom is resetting...
+[ 07/31/2024 14:46:04.735 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 07/31/2024 14:46:04.735 generate_dual_kawase_params INFO ] blur-strength: 2 [.iter = 1, .offset = 2.250000]
+[ 07/31/2024 14:46:04.735 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 07/31/2024 14:46:18.517 reset_enable INFO ] picom is resetting...
+[ 07/31/2024 14:46:18.650 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 07/31/2024 14:46:18.650 generate_dual_kawase_params INFO ] blur-strength: 2 [.iter = 1, .offset = 2.250000]
+[ 07/31/2024 14:46:18.650 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 07/31/2024 14:46:38.767 reset_enable INFO ] picom is resetting...
+[ 07/31/2024 14:46:38.881 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 07/31/2024 14:46:38.881 generate_dual_kawase_params INFO ] blur-strength: 1 [.iter = 1, .offset = 1.250000]
+[ 07/31/2024 14:46:38.881 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 07/31/2024 14:46:46.481 reset_enable INFO ] picom is resetting...
+[ 07/31/2024 14:46:46.629 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 07/31/2024 14:46:46.629 generate_dual_kawase_params INFO ] blur-strength: 2 [.iter = 1, .offset = 2.250000]
+[ 07/31/2024 14:46:46.629 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 07/31/2024 14:48:30.477 reset_enable INFO ] picom is resetting...
+[ 07/31/2024 14:48:30.612 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 07/31/2024 14:48:30.613 generate_dual_kawase_params INFO ] blur-strength: 2 [.iter = 1, .offset = 2.250000]
+[ 07/31/2024 14:48:30.613 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 07/31/2024 14:48:40.212 reset_enable INFO ] picom is resetting...
+[ 07/31/2024 14:48:40.355 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 07/31/2024 14:48:40.355 generate_dual_kawase_params INFO ] blur-strength: 2 [.iter = 1, .offset = 2.250000]
+[ 07/31/2024 14:48:40.356 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 07/31/2024 14:49:20.060 reset_enable INFO ] picom is resetting...
+[ 07/31/2024 14:49:20.197 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 07/31/2024 14:49:20.197 generate_dual_kawase_params INFO ] blur-strength: 2 [.iter = 1, .offset = 2.250000]
+[ 07/31/2024 14:49:20.197 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 07/31/2024 14:50:14.509 reset_enable INFO ] picom is resetting...
+[ 07/31/2024 14:50:14.631 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 07/31/2024 14:50:14.631 generate_dual_kawase_params INFO ] blur-strength: 2 [.iter = 1, .offset = 2.250000]
+[ 07/31/2024 14:50:14.632 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 07/31/2024 14:51:13.307 reset_enable INFO ] picom is resetting...
+[ 07/31/2024 14:51:13.432 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 07/31/2024 14:51:13.432 generate_dual_kawase_params INFO ] blur-strength: 2 [.iter = 1, .offset = 2.250000]
+[ 07/31/2024 14:51:13.432 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 07/31/2024 14:51:25.557 reset_enable INFO ] picom is resetting...
+[ 07/31/2024 14:51:25.695 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 07/31/2024 14:51:25.695 generate_dual_kawase_params INFO ] blur-strength: 2 [.iter = 1, .offset = 2.250000]
+[ 07/31/2024 14:51:25.695 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 07/31/2024 14:53:58.713 reset_enable INFO ] picom is resetting...
+[ 07/31/2024 14:53:58.851 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 07/31/2024 14:53:58.851 generate_dual_kawase_params INFO ] blur-strength: 2 [.iter = 1, .offset = 2.250000]
+[ 07/31/2024 14:53:58.851 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 07/31/2024 14:54:08.584 reset_enable INFO ] picom is resetting...
+[ 07/31/2024 14:54:08.730 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 07/31/2024 14:54:08.730 generate_dual_kawase_params INFO ] blur-strength: 2 [.iter = 1, .offset = 2.250000]
+[ 07/31/2024 14:54:08.731 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 07/31/2024 15:24:36.344 reset_enable INFO ] picom is resetting...
+[ 07/31/2024 15:27:10.804 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 07/31/2024 15:27:10.804 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 07/31/2024 15:27:10.804 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 07/31/2024 15:27:10.804 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 07/31/2024 15:27:10.804 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 07/31/2024 15:27:10.804 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 07/31/2024 15:27:10.804 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 07/31/2024 15:27:10.804 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 07/31/2024 15:27:10.817 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 07/31/2024 15:27:10.817 generate_dual_kawase_params INFO ] blur-strength: 2 [.iter = 1, .offset = 2.250000]
+[ 07/31/2024 15:27:10.817 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 07/31/2024 16:03:17.913 reset_enable INFO ] picom is resetting...
+[ 07/31/2024 16:03:18.054 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 07/31/2024 16:03:18.054 generate_dual_kawase_params INFO ] blur-strength: 2 [.iter = 1, .offset = 2.250000]
+[ 07/31/2024 16:03:18.055 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 07/31/2024 16:08:27.558 reset_enable INFO ] picom is resetting...
+[ 07/31/2024 16:25:08.580 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 07/31/2024 16:25:08.580 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 07/31/2024 16:25:08.580 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 07/31/2024 16:25:08.580 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 07/31/2024 16:25:08.580 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 07/31/2024 16:25:08.580 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 07/31/2024 16:25:08.580 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 07/31/2024 16:25:08.580 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 07/31/2024 16:25:08.625 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 07/31/2024 16:25:08.625 generate_dual_kawase_params INFO ] blur-strength: 2 [.iter = 1, .offset = 2.250000]
+[ 07/31/2024 16:25:08.666 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 07/31/2024 16:25:50.339 reset_enable INFO ] picom is resetting...
+[ 07/31/2024 16:25:50.480 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 07/31/2024 16:25:50.480 generate_dual_kawase_params INFO ] blur-strength: 2 [.iter = 1, .offset = 2.250000]
+[ 07/31/2024 16:25:50.480 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 07/31/2024 16:27:11.541 reset_enable INFO ] picom is resetting...
+[ 07/31/2024 16:27:11.661 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 07/31/2024 16:27:11.661 generate_dual_kawase_params INFO ] blur-strength: 2 [.iter = 1, .offset = 2.250000]
+[ 07/31/2024 16:27:11.661 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 07/31/2024 16:27:26.119 reset_enable INFO ] picom is resetting...
+[ 07/31/2024 16:27:26.252 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 07/31/2024 16:27:26.252 generate_dual_kawase_params INFO ] blur-strength: 2 [.iter = 1, .offset = 2.250000]
+[ 07/31/2024 16:27:26.252 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 07/31/2024 16:34:51.360 reset_enable INFO ] picom is resetting...
+[ 07/31/2024 16:34:51.503 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 07/31/2024 16:34:51.504 generate_dual_kawase_params INFO ] blur-strength: 2 [.iter = 1, .offset = 2.250000]
+[ 07/31/2024 16:34:51.504 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 07/31/2024 16:37:32.963 reset_enable INFO ] picom is resetting...
+[ 07/31/2024 16:37:33.083 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 07/31/2024 16:37:33.083 generate_dual_kawase_params INFO ] blur-strength: 2 [.iter = 1, .offset = 2.250000]
+[ 07/31/2024 16:37:33.083 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 07/31/2024 16:52:31.937 session_init FATAL ERROR ] Another composite manager is already running
+[ 07/31/2024 16:54:03.404 session_init FATAL ERROR ] Another composite manager is already running
+[ 07/31/2024 16:56:31.675 session_init FATAL ERROR ] Another composite manager is already running
+[ 07/31/2024 16:57:11.973 reset_enable INFO ] picom is resetting...
+[ 07/31/2024 16:57:12.111 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 07/31/2024 16:57:12.111 generate_dual_kawase_params INFO ] blur-strength: 2 [.iter = 1, .offset = 2.250000]
+[ 07/31/2024 16:57:12.112 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 07/31/2024 16:57:13.590 reset_enable INFO ] picom is resetting...
+[ 07/31/2024 16:57:13.735 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 07/31/2024 16:57:13.735 generate_dual_kawase_params INFO ] blur-strength: 2 [.iter = 1, .offset = 2.250000]
+[ 07/31/2024 16:57:13.736 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 07/31/2024 16:57:13.865 reset_enable INFO ] picom is resetting...
+[ 07/31/2024 16:57:13.997 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 07/31/2024 16:57:13.997 generate_dual_kawase_params INFO ] blur-strength: 2 [.iter = 1, .offset = 2.250000]
+[ 07/31/2024 16:57:13.997 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 07/31/2024 16:57:29.168 reset_enable INFO ] picom is resetting...
+[ 07/31/2024 16:57:29.295 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 07/31/2024 16:57:29.295 generate_dual_kawase_params INFO ] blur-strength: 2 [.iter = 1, .offset = 2.250000]
+[ 07/31/2024 16:57:29.296 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 07/31/2024 16:57:29.453 reset_enable INFO ] picom is resetting...
+[ 07/31/2024 16:57:29.588 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 07/31/2024 16:57:29.589 generate_dual_kawase_params INFO ] blur-strength: 2 [.iter = 1, .offset = 2.250000]
+[ 07/31/2024 16:57:29.589 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 07/31/2024 16:57:29.694 reset_enable INFO ] picom is resetting...
+[ 07/31/2024 16:57:29.828 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 07/31/2024 16:57:29.828 generate_dual_kawase_params INFO ] blur-strength: 2 [.iter = 1, .offset = 2.250000]
+[ 07/31/2024 16:57:29.829 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 07/31/2024 16:57:56.291 session_init FATAL ERROR ] Another composite manager is already running
+[ 07/31/2024 16:58:38.147 session_init FATAL ERROR ] Another composite manager is already running
+[ 07/31/2024 16:59:00.082 session_init FATAL ERROR ] Another composite manager is already running
+[ 07/31/2024 17:00:10.207 session_init FATAL ERROR ] Another composite manager is already running
+[ 07/31/2024 17:00:25.643 session_init FATAL ERROR ] Another composite manager is already running
+[ 07/31/2024 17:00:45.463 session_init FATAL ERROR ] Another composite manager is already running
+[ 07/31/2024 17:46:00.898 session_init FATAL ERROR ] Another composite manager is already running
+[ 07/31/2024 17:52:46.708 session_init FATAL ERROR ] Another composite manager is already running
+[ 07/31/2024 17:54:38.378 session_init FATAL ERROR ] Another composite manager is already running
+[ 07/31/2024 19:43:14.971 session_init FATAL ERROR ] Another composite manager is already running
+[ 07/31/2024 19:50:07.626 session_init FATAL ERROR ] Another composite manager is already running
+[ 07/31/2024 19:50:45.665 session_init FATAL ERROR ] Another composite manager is already running
+[ 07/31/2024 21:03:47.225 session_init FATAL ERROR ] Another composite manager is already running
+[ 07/31/2024 21:05:35.477 session_init FATAL ERROR ] Another composite manager is already running
+[ 07/31/2024 21:06:42.955 session_init FATAL ERROR ] Another composite manager is already running
+[ 07/31/2024 22:12:10.289 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 07/31/2024 22:12:10.300 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 07/31/2024 22:12:10.301 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 07/31/2024 22:12:10.301 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 07/31/2024 22:12:10.301 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 07/31/2024 22:12:10.301 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 07/31/2024 22:12:10.301 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 07/31/2024 22:12:10.301 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 07/31/2024 22:12:10.438 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 07/31/2024 22:12:10.438 generate_dual_kawase_params INFO ] blur-strength: 2 [.iter = 1, .offset = 2.250000]
+[ 07/31/2024 22:12:10.440 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 08/01/2024 04:00:03.389 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 08/01/2024 04:00:03.411 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 08/01/2024 04:00:03.411 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 08/01/2024 04:00:03.411 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 08/01/2024 04:00:03.411 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 08/01/2024 04:00:03.411 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 08/01/2024 04:00:03.411 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 08/01/2024 04:00:03.411 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 08/01/2024 04:00:04.237 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 08/01/2024 04:00:04.237 generate_dual_kawase_params INFO ] blur-strength: 2 [.iter = 1, .offset = 2.250000]
+[ 08/01/2024 04:00:04.450 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.

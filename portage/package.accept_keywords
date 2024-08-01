@@ -40,3 +40,6 @@ media-tv/gtk-v4l ~amd64
 dev-python/sendgrid ~amd64
 dev-python/python-http-client ~amd64
 dev-python/starkbank-ecdsa ~amd64
+media-sound/helvum ~amd64
+media-video/v4l2loopback ~amd64
+app-misc/lf ~amd64

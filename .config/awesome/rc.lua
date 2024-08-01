@@ -1,18 +1,5 @@
 --
---      DEBUG MODE
 --
---
--- local debug_mode = os.getenv("AWESOME_DEBUG") -- Você pode ajustar o nome da variável de ambiente conforme preferir
-
--- if debug_mode then
---     require("rc.debug")  -- Certifique-se de ajustar o nome do arquivo conforme necessário
--- end
-
---------------------------------- Debug Mode --------------------------------
------------------------------------------------------------------------------
------------------------------------------------------------------------------
-
-
 -- If LuaRocks is installed, make sure that packages installed through it are
 -- found (e.g. lgi). If LuaRocks is not installed, do nothing.
 pcall(require, "luarocks.loader")
@@ -36,9 +23,6 @@ local free_focus = true
 local function custom_focus_filter(c) return free_focus and awful.client.focus.filter(c) end
 
 
--- local jkyon_gentooUpdatesWidget
-
-
 local lain = require "lain"
 local mycpu = lain.widget.cpu()
 local mymem = lain.widget.mem()
@@ -55,8 +39,6 @@ local todo_widget = require("awesome-wm-widgets.todo-widget.todo")
 local weather_widget = require("awesome-wm-widgets.weather-widget.weather")
 local calendar_widget = require("awesome-wm-widgets.calendar-widget.calendar")
 local logout_menu_widget = require("awesome-wm-widgets.logout-menu-widget.logout-menu")
-
-local rubato = require("rubato")
 
 local internet_widget = require("jkyon-widgets.internet_widget")
 -- local gentoo_update_checker = require("jkyon-widgets.gentoo_update_checker")
@@ -116,7 +98,7 @@ beautiful.init("/home/jkyon/.dotfiles/.config/awesome/themes/default/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
 terminal = "alacritty"
-editor = os.getenv("EDITOR") or "vim"
+editor = os.getenv("EDITOR") or "nvim"
 editor_cmd = terminal .. " -e " .. editor
 
 -- Default modkey.
@@ -186,12 +168,6 @@ tbox_separator_space = wibox.widget.textbox (" ")
 -- tbox_separator_pipe = wibox.widget.textbox (" | ")
 -- tbox_separator_dash = wibox.widget.textbox (" - ")
 
--- tbox_gpu_label = wibox.widget.textbox ("GPU: ")
--- tbox_MHz_label = wibox.widget.textbox ("MHz")
--- tbox_separator_Celsius = wibox.widget.textbox ("ºC")
-
-
-
 
 local cpu = lain.widget.cpu {
     settings = function()
@@ -199,13 +175,11 @@ local cpu = lain.widget.cpu {
     end
 }
 
-
 local mem = lain.widget.mem {
     settings = function()
         widget:set_markup("RAM " .. mem_now.perc .. "%")
     end
 }
-
 
 local temp = lain.widget.temp({
     settings = function()
@@ -351,52 +325,6 @@ mytextclock:connect_signal("button::press",
 
 
 --------------------  Notification Custom Preset  -------------------
----------------------------------------------------------------------
-
-
--- local function set_wallpaper(s)
---     -- Wallpaper
---     if beautiful.wallpaper then
---         local wallpaper = beautiful.wallpaper
---         -- If wallpaper is a function, call it with the screen
---         if type(wallpaper) == "function" then
---             wallpaper = wallpaper(s)
---         end
---         gears.wallpaper.maximized(wallpaper, s, true)
---     end
--- end
-
-
-
-    ------------------  Minhas Funções  ------------------
-
--- local updates_widget = awful.widget.watch(update_widget, 3600)  -- Define atualização a cada 10800 segundos
-
-    
--- local function update_widget()
---     updates='$(sh /home/jkyon/ShellScript/dwmBlocksUpdates)'  -- Execute o script
---     if updates then
---         widget:set_text(updates)  -- Atualiza o texto do widget
---     else
---         widget:set_text("")        -- Limpa o texto do widget (opcional)
---     end    
--- end    
-
-
--------------------  Tags Manipulation Functions  -------------------
----------------------------------------------------------------------
--------------------  gentoo_update_checker widget  ------------------
-
--- -- Cria o widget
--- local my_widget = wibox.widget.textbox()
-
--- -- Chama a função de verificação de atualizações
--- gentoo_update_checker.check_updates()
-
--- -- Adiciona o tooltip ao widget
--- gentoo_update_checker.tooltip:add_to_object(my_widget)
-
--------------------  gentoo_update_checker widget  ------------------
 ---------------------------------------------------------------------
 -------------------  Tags Manipulation Functions  -------------------
 
@@ -677,6 +605,7 @@ awful.tag.add(" Sound (3) ", {
                     tbox_separator_space,
           
             wibox.widget.textbox('  '),
+            wibox.widget.textbox('CPU: '),
             -- cpu.widget,
             awful.widget.watch('bash -c "sh /home/jkyon/ShellScript/dwmBlocksCpuUsage"', 1),
                     tbox_separator_space,
@@ -696,7 +625,7 @@ awful.tag.add(" Sound (3) ", {
 ------------------------------------------------------------------------------------------------
             wibox.widget.textbox('  '),
             mem.widget,
-            ram_widget({ color_used = '#9F7DF6', color_buf = '#292a44' }),
+            ram_widget({ color_used = '#cba6f7', color_buf = '#444444' }),
 ------------------------------------------------------------------------------------------------            
             wibox.widget.textbox(' | '),
 ------------------------------------------------------------------------------------------------
@@ -715,11 +644,11 @@ awful.tag.add(" Sound (3) ", {
 --            wibox.widget.textbox(' | '),
 --            tbox_separator_space,
 
-            --   wibox.widget.textbox('GPU1: '),
-            --   awful.widget.watch('bash -c "sh ~/ShellScript/awesomeWidget-gpu1freq.sh"', 1),
-            --           tbox_separator_space,
-            --   wibox.widget.textbox('  '),
-            --   awful.widget.watch('bash -c "sh ~/ShellScript/awesomeWidget-gpu1temp.sh"', 1),
+--          wibox.widget.textbox('GPU1: '),
+--          awful.widget.watch('bash -c "sh ~/ShellScript/awesomeWidget-gpu1freq.sh"', 1),
+--                  tbox_separator_space,
+--          wibox.widget.textbox('  '),
+--          awful.widget.watch('bash -c "sh ~/ShellScript/awesomeWidget-gpu1temp.sh"', 1),
             
                     tbox_separator_space,
 ------------------------------------------------------------------------------------------------            
@@ -770,7 +699,8 @@ awful.tag.add(" Sound (3) ", {
                     tbox_separator_space,
 
             logout_menu_widget{
-                 font = 'Noto Sans semibold 9',
+                -- font = 'Noto Sans semibold 9',
+                 font = 'MesloLGS NF Bold 10',
                  onlogout   =  function() awesome.quit() end,
                 --  onlock     =  function() awful.spawn.with_shell('xscreensaver-command -lock') end,
                  onsuspend  =  function() awful.spawn.with_shell("loginctl suspend") end,
@@ -1242,7 +1172,7 @@ awful.rules.rules = {
 
         { rule = { class = "steam" },
         properties = { floating = true,
-        placement = awful.placement.right },},
+        placement = awful.placement.centered },},
 
                 { rule_any = { class = {" - News"} },
                 properties = { floating = true,
@@ -1278,7 +1208,7 @@ awful.rules.rules = {
 
         { rule_any = { class = {"code", "Code"} },     -- vsCode
         properties = { floating = true,
-        placement = awful.placement.left,},},
+        placement = awful.placement.centered },},
 -- W
 --
 -- X
@@ -1382,6 +1312,8 @@ client.connect_signal("request::titlebars", function(c)
     )
 
 
+--      Aqui eu tirei o frame (moldura) das janelas 
+--
 --     awful.titlebar(c) : setup {
 --         { -- Left
 --         awful.titlebar.widget.closebutton    (c),
@@ -1417,16 +1349,14 @@ end)
 client.connect_signal("focus", function(c) c.border_color = beautiful.border_focus end) 
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 
--- client.connect_signal("focus", function(c) c.border_color = beautiful.border_focus c.opacity = 1 end)
--- client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal c.opacity = 0.95 end)
 
 
 -- jKyon Adds
 --
 
 -- Notifications adjustments
-beautiful.notification_font = "sans 12"  -- Altere o tamanho conforme desejado
-
+-- beautiful.notification_font = "sans 12"  -- Altere o tamanho conforme desejado
+beautiful.notification_font = "MesloLGS NF 12"
 
 
 
@@ -1442,16 +1372,6 @@ gears.timer {
 
 
 awful.spawn.with_shell("sh /home/jkyon/.dotfiles/.config/awesome/AwesomeWMstartupApps.sh")
-
-
-        ---------------------------------------------
-        ----------------  Wallpaper  ----------------
-        ---------------------------------------------
-
--- screen.connect_signal("request::wallpaper", function()
---     -- screen is the global screen module. It is also a list of all screens.
---     global_wallpaper.screens = screen
--- end)
 
 
 
