@@ -633,7 +633,7 @@ awful.tag.add(" Sound (3) ", {
             wibox.widget.textbox('  '),
 
            wibox.widget.textbox(' GPU: '),
-           awful.widget.watch('bash -c "sh ~/ShellScript/awesomeWidget-gpu0usage.sh"', 1),
+           awful.widget.watch('bash -c "sh ~/ShellScript/awesomeWidget-gpu0usage-fast.sh"', 1),
                  tbox_separator_space,
            awful.widget.watch('bash -c "sh ~/ShellScript/awesomeWidget-gpu0freq.sh"', 1),
                  tbox_separator_space,
