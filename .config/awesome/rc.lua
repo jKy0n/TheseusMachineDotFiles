@@ -1,5 +1,4 @@
 --
---
 -- If LuaRocks is installed, make sure that packages installed through it are
 -- found (e.g. lgi). If LuaRocks is not installed, do nothing.
 pcall(require, "luarocks.loader")
@@ -23,6 +22,9 @@ local free_focus = true
 local function custom_focus_filter(c) return free_focus and awful.client.focus.filter(c) end
 
 
+local rules = require("jkyon-modules.rules") -- Adcciona arquivo de regras rules.lua
+
+
 local lain = require "lain"
 local mycpu = lain.widget.cpu()
 local mymem = lain.widget.mem()
@@ -42,12 +44,6 @@ local logout_menu_widget = require("awesome-wm-widgets.logout-menu-widget.logout
 
 local internet_widget = require("jkyon-widgets.internet_widget")
 -- local gentoo_update_checker = require("jkyon-widgets.gentoo_update_checker")
-
-
--- theme.wallpaper = "/home/jkyon/Pictures/Wallpapers/LinuxWallpapers/multi-monitor-wallpapers.jpg --bg-fill"
--- local wallpaper_path = "/home/jkyon/Pictures/Wallpapers/LinuxWallpapers/multi-monitor-wallpapers.jpg"
--- gears.wallpaper.centered(wallpaper_path, 1, true)
-
 
 
 -- Enable hotkeys help widget for VIM and other apps
@@ -189,29 +185,6 @@ local temp = lain.widget.temp({
 
 
 -----------------------------------------------------------------------------
------------------------------------------------------------------------------
----------------------------- Indicador de Internet --------------------------
-
--- Criando o widget
--- local internet_widget = wibox.widget.textbox()
-
--- -- Função para verificar a conexão com a internet
--- local function check_internet()
---     awful.spawn.easy_async_with_shell("ping -c 1 8.8.8.8", function(stdout, stderr, reason, exit_code)
---         if exit_code == 0 then
---             -- Se o ping for bem-sucedido, a internet está funcionando e o widget fica invisível
---             internet_widget:set_text("")
---         else
---             -- Se o ping falhar, a internet não está funcionando e o widget mostra uma mensagem
---             internet_widget:set_text(" 🔴 Sem internet  |")
---         end
---     end)
--- end
-
--- -- Verificar a conexão com a internet a cada 10 segundos
--- awful.widget.watch("bash -c 'sleep 10'", 0, check_internet)
-
----------------------------- Indicador de Internet --------------------------
 -----------------------------------------------------------------------------
 -----------------------------------------------------------------------------
 
@@ -1021,6 +994,9 @@ clientbuttons = gears.table.join(
 root.keys(globalkeys)
 -- }}}
 
+
+awful.rules.rules = rules
+
 -- {{{ Rules
 -- Rules to apply to new clients (through the "manage" signal).
 awful.rules.rules = {
@@ -1039,10 +1015,11 @@ awful.rules.rules = {
      }
     },
 
+
+
         ---------------------------------------------
         -----------------  My Rules ----------------- 
         ---------------------------------------------
-
 -- A
 --
         { rule_any = { class = {"ark"} },
@@ -1215,51 +1192,51 @@ awful.rules.rules = {
 --
 -- Y
 --
---        { rule = { class = "yakuake" },
---        properties = { floating = true, ontop = true, focus = true },
---        callback = function(c)
---            c:geometry({x=1450, y=25})
---            c:connect_signal("unmanage", function() free_focus = true end)
---        end },
+       { rule = { class = "yakuake" },
+       properties = { floating = true, ontop = true, focus = true },
+       callback = function(c)
+           c:geometry({x=1450, y=25})
+           c:connect_signal("unmanage", function() free_focus = true end)
+       end },
 -- Z
---          
+-- 
                 
-            -- Floating clients.
-            { rule_any = {
-                instance = {
-          "DTA",  -- Firefox addon DownThemAll.
-          "copyq",  -- Includes session name in class.
-          "pinentry",
-        },
-        class = {
-          "Arandr",
-          "Blueman-manager",
-          "Gpick",
-          "Kruler",
-          "MessageWin",  -- kalarm.
-          "Sxiv",
-          "Tor Browser", -- Needs a fixed window size to avoid fingerprinting by screen size.
-          "Wpa_gui",
-          "veromix",
-          "xtightvncviewer"},
+    --         -- Floating clients.
+    --         { rule_any = {
+    --             instance = {
+    --       "DTA",  -- Firefox addon DownThemAll.
+    --       "copyq",  -- Includes session name in class.
+    --       "pinentry",
+    --     },
+    --     class = {
+    --       "Arandr",
+    --       "Blueman-manager",
+    --       "Gpick",
+    --       "Kruler",
+    --       "MessageWin",  -- kalarm.
+    --       "Sxiv",
+    --       "Tor Browser", -- Needs a fixed window size to avoid fingerprinting by screen size.
+    --       "Wpa_gui",
+    --       "veromix",
+    --       "xtightvncviewer"},
 
-        -- Note that the name property shown in xprop might be set slightly after creation of the client
-        -- and the name shown there might not match defined rules here.
-        name = {
-          "Event Tester",  -- xev.
-        },
-        role = {
-          "AlarmWindow",  -- Thunderbird's calendar.
-          "ConfigManager",  -- Thunderbird's about:config.
-          "pop-up",       -- e.g. Google Chrome's (detached) Developer Tools.
-        }
-      }, properties = { floating = true }},
+    --     -- Note that the name property shown in xprop might be set slightly after creation of the client
+    --     -- and the name shown there might not match defined rules here.
+    --     name = {
+    --       "Event Tester",  -- xev.
+    --     },
+    --     role = {
+    --       "AlarmWindow",  -- Thunderbird's calendar.
+    --       "ConfigManager",  -- Thunderbird's about:config.
+    --       "pop-up",       -- e.g. Google Chrome's (detached) Developer Tools.
+    --     }
+    --   }, properties = { floating = true }},
 
-    -- Add titlebars to normal clients and dialogs
-    { rule_any = {type = { "normal", "dialog" }
-     },    properties = { titlebars_enabled = true },
-           placement = awful.placement.centered
-    },
+    -- -- Add titlebars to normal clients and dialogs
+    -- { rule_any = {type = { "normal", "dialog" }
+    --  },    properties = { titlebars_enabled = true },
+    --        placement = awful.placement.centered
+    -- },
 
     -- Set Firefox to always map on the tag named "2" on screen 1.
     -- { rule = { class = "Firefox" },

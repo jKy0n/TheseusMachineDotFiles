@@ -43,3 +43,5 @@ dev-python/starkbank-ecdsa ~amd64
 media-sound/helvum ~amd64
 media-video/v4l2loopback ~amd64
 app-misc/lf ~amd64
+dev-vcs/gitkraken ~amd64
+dev-vcs/github-desktop ~amd64
