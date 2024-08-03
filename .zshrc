@@ -147,14 +147,16 @@ then
         # "\a" bell (man 1 echo)
         # "print" must be used here; echo cannot handle prompt expansions (%L)
         #print -Pn "\e]0;$(id --user --name)@$(hostname): zsh[%L] %~\a"
-        print -Pn "\e]0;$(id --user --name): zsh[%L] %~\a"
+        #print -Pn "\e]0;$(id --user --name): zsh[%L] %~\a"
+        print -Pn "\e]0;Alacritty - zsh[%L] %~ - job #${job_count}\a"
     }
 
     preexec()
     {
         # output current executed command with parameters
         # echo -en "\e]0;$(id --user --name)@$(hostname): ${1}\a"
-        echo -en "\e]0;$(id --user --name): ${1}\a"
+        #echo -en "\e]0;$(id --user --name): ${1}\a"
+        echo -en "\e]0;Alacritty - ${1}\a"
     }
 fi
 

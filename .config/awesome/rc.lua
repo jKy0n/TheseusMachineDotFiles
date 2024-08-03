@@ -24,6 +24,7 @@ local function custom_focus_filter(c) return free_focus and awful.client.focus.f
 
 local rules = require("jkyon-modules.rules") -- Adcciona arquivo de regras rules.lua
 
+local rotate = require("screenrotation")
 
 local lain = require "lain"
 local mycpu = lain.widget.cpu()
@@ -577,7 +578,7 @@ awful.tag.add(" Sound (3) ", {
 ------------------------------------------------------------------------------------------------
                     tbox_separator_space,
           
-            wibox.widget.textbox('  '),
+            wibox.widget.textbox('  '),
             wibox.widget.textbox('CPU: '),
             -- cpu.widget,
             awful.widget.watch('bash -c "sh /home/jkyon/ShellScript/dwmBlocksCpuUsage"', 1),
@@ -861,6 +862,19 @@ globalkeys = gears.table.join(
         {description = "add a tag with the focused client", group = "tag"})
 
 ------------------------------------------------------------------------
+------------------------------------------------------------------------
+
+--   awful.key({ modkey }, "Up", function() rotate("normal") end,
+--     {description = "Normal tag rotation", group = "tag"}),
+--   awful.key({ modkey }, "Down", function() rotate("inverted") end,
+--     {description = "Inverted tag rotation", group = "tag"}),
+--   awful.key({ modkey }, "Left", function() rotate("left") end,
+--     {description = "Counter-clockwise tag rotation", group = "tag"}),
+--   awful.key({ modkey }, "Right", function() rotate("right") end,
+--     {description = "Clockwise tag rotation", group = "tag"})
+
+------------------------------------------------------------------------ 
+------------------------------------------------------------------------     
 )
 
 clientkeys = gears.table.join(
@@ -1022,6 +1036,9 @@ awful.rules.rules = {
         ---------------------------------------------
 -- A
 --
+        { rule = { class = "Alacritty" },
+        properties = { titlebars_enabled = false } },
+
         { rule_any = { class = {"ark"} },
         properties = { floating = true,
         placement = awful.placement.centered },},

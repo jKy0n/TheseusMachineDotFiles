@@ -4480,3 +4480,57 @@
 [ 08/02/2024 09:42:39.360 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
 [ 08/02/2024 09:42:39.360 generate_dual_kawase_params INFO ] blur-strength: 2 [.iter = 1, .offset = 2.250000]
 [ 08/02/2024 09:42:39.360 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 08/02/2024 21:58:44.731 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 08/02/2024 21:58:44.737 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 08/02/2024 21:58:44.737 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 08/02/2024 21:58:44.737 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 08/02/2024 21:58:44.737 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 08/02/2024 21:58:44.737 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 08/02/2024 21:58:44.737 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 08/02/2024 21:58:44.737 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 08/02/2024 21:58:44.812 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 08/02/2024 21:58:44.812 generate_dual_kawase_params INFO ] blur-strength: 2 [.iter = 1, .offset = 2.250000]
+[ 08/02/2024 21:58:44.846 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 08/03/2024 01:27:12.854 session_init FATAL ERROR ] Another composite manager is already running
+[ 08/03/2024 01:27:14.995 configure_root INFO ] Root configuration changed, new geometry: 6160x3440
+[ 08/03/2024 01:27:15.015 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 08/03/2024 01:27:15.015 generate_dual_kawase_params INFO ] blur-strength: 2 [.iter = 1, .offset = 2.250000]
+[ 08/03/2024 01:27:15.015 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 08/03/2024 01:27:15.231 configure_root INFO ] Root configuration changed, new geometry: 6160x3440
+[ 08/03/2024 01:27:15.239 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 08/03/2024 01:27:15.239 generate_dual_kawase_params INFO ] blur-strength: 2 [.iter = 1, .offset = 2.250000]
+[ 08/03/2024 01:27:15.239 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 08/03/2024 01:27:15.242 configure_root INFO ] Root configuration changed, new geometry: 6160x3440
+[ 08/03/2024 01:27:15.256 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 08/03/2024 01:27:15.256 generate_dual_kawase_params INFO ] blur-strength: 2 [.iter = 1, .offset = 2.250000]
+[ 08/03/2024 01:27:15.256 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 08/03/2024 01:27:15.262 configure_root INFO ] Root configuration changed, new geometry: 6160x1440
+[ 08/03/2024 01:27:15.274 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 08/03/2024 01:27:15.274 generate_dual_kawase_params INFO ] blur-strength: 2 [.iter = 1, .offset = 2.250000]
+[ 08/03/2024 01:27:15.274 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 08/03/2024 01:27:15.279 configure_root INFO ] Root configuration changed, new geometry: 6160x1440
+[ 08/03/2024 01:27:15.287 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 08/03/2024 01:27:15.287 generate_dual_kawase_params INFO ] blur-strength: 2 [.iter = 1, .offset = 2.250000]
+[ 08/03/2024 01:27:15.287 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 08/03/2024 01:30:19.472 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 08/03/2024 01:30:19.472 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 08/03/2024 01:30:19.472 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 08/03/2024 01:30:19.472 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 08/03/2024 01:30:19.472 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 08/03/2024 01:30:19.472 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 08/03/2024 01:30:19.472 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 08/03/2024 01:30:19.472 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 08/03/2024 01:30:19.481 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 08/03/2024 01:30:19.481 generate_dual_kawase_params INFO ] blur-strength: 2 [.iter = 1, .offset = 2.250000]
+[ 08/03/2024 01:30:19.481 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.
+[ 08/03/2024 04:00:02.886 glx_has_extension INFO ] Found GLX extension GLX_SGI_video_sync.
+[ 08/03/2024 04:00:02.886 glx_has_extension INFO ] Found GLX extension GLX_SGI_swap_control.
+[ 08/03/2024 04:00:02.886 glx_has_extension INFO ] Found GLX extension GLX_OML_sync_control.
+[ 08/03/2024 04:00:02.886 glx_has_extension INFO ] Found GLX extension GLX_MESA_swap_control.
+[ 08/03/2024 04:00:02.886 glx_has_extension INFO ] Found GLX extension GLX_EXT_swap_control.
+[ 08/03/2024 04:00:02.886 glx_has_extension INFO ] Found GLX extension GLX_EXT_texture_from_pixmap.
+[ 08/03/2024 04:00:02.886 glx_has_extension INFO ] Found GLX extension GLX_ARB_create_context.
+[ 08/03/2024 04:00:02.886 glx_has_extension INFO ] Found GLX extension GLX_EXT_buffer_age.
+[ 08/03/2024 04:00:02.894 gl_has_extension INFO ] Missing GL extension GL_GREMEDY_string_marker.
+[ 08/03/2024 04:00:02.894 generate_dual_kawase_params INFO ] blur-strength: 2 [.iter = 1, .offset = 2.250000]
+[ 08/03/2024 04:00:02.894 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'opacity'. This is normal when using custom shaders.

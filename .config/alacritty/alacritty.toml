@@ -22,6 +22,31 @@ TERM = "xterm-256color"
 
 [window]
     opacity = 0.8
+    dynamic_title = true
 
 [cursor]
-    style = { shape = "beam", blinking = "On" }
+    style = { shape = "Beam", blinking = "On" }
+    vi_mode_style  = { shape = "Block", blinking = "On" }
+
+# Seção de mapeamento de teclas
+[keyboard] 
+
+bindings = [
+# Enter vi mode with Ctrl+Space 
+{ key = "Space", mods = "Shift|Control",  mode = "~Search", action = "ToggleViMode" },
+# Vi mode bindings 
+{ key = "h", mode = "Vi", action = "Left" },
+{ key = "j", mode = "Vi", action = "Down" },
+{ key = "k", mode = "Vi", action = "Up" },
+{ key = "l", mode = "Vi", action = "Right" },
+# Exit vi mode with Escape 
+{ key = "Escape", mode = "Vi", action = "ToggleViMode" },
+# Move to the start of the line 
+{ key = "0", mode = "Vi", action = "First" },
+# Move to the end of the line 
+{ key = "$", mode = "Vi", action = "Last" },
+# Delete a character 
+#{ key = "x", mode = "Vi", action = "ViMotionDeleteChar" },
+# Enter insert mode with 'i' 
+#{ key = "i", mode = "Vi", action = "ViMotionInsert" } ]
+]
