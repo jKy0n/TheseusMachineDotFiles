@@ -17,7 +17,10 @@ TERM = "xterm-256color"
 
 # Configurações gerais
 [font]
-    normal = { family = "MesloLGS NF" }
+#    normal = { family = "JetBrainsMonoNerdFontPropo" }
+#    normal = { family = "JetBrainsMonoNerdFontPropo" }
+#    normal = { family = "MesloLGMDZNerdFont" }
+    normal = { family = "MesloLGS Nerd Font" }
     size = 9.0
 
 [window]

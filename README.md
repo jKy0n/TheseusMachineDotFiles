@@ -35,7 +35,7 @@ It's all about my loved PC
 - **CPU:** AMD Ryzen9 5950X @ stock
 - **WC:** Corsair - iCue H150i RGB PRO XT (360mm)
 - **MoBo:** Asus Prime X570-Pro
-- **RAM:** HyperX Fury DDR4 4x8GB @ 2400MHz (stock)
+- **RAM:** Corsair Vengeance DDR4 4x16GB @ 3200MHz (stock)
 - **GPU:** Sapphire Pure AMD RX 7800 XT (16GB) @ stock
 - **Storage:**
     - **NVMe1:** /dev/NVMe1 -  Samsung EVO980 Pro - 500GB

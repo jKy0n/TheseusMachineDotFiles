@@ -26,76 +26,77 @@
     "modules": [
         {
             "type": "custom", // HardwareStart
-            "format": "┌─────────────────── \u001b[1m Software \u001b[0m ───────────────────┐" // `\u001b` is `\033`, or `\e`
+            "format": "┌───────────────────────── \u001b[1m Software \u001b[0m ─────────────────────────┐" // `\u001b` is `\033`, or `\e`
         },
         {
             "type": "os",
-            "key": "  " // Just get your distro's logo off nerdfonts.com,
+            "key": "  " // Just get your distro's logo off nerdfonts.com,
         },
         {
             "type": "kernel",
-            "key": "  ",
+            "key": "  ",
             "format": "{1} {2}"
         },
         {
-            "type": "shell",
-            "key": "  "
+            "type": "command",
+            "key": "  ",
+            "text": "sh /home/jkyon/ShellScript/fastfetchCustomTerminal.sh"
         },
         {
-            "type": "terminal",
-            "key": "  "
+            "type": "editor",
+            "key": "  ",
+            "format": "AstroNvim ({2} {5})"
         },
         {
             "type": "wm",
-            "key": "  "
+            "key": "  "
         },
         {
             "type": "command",
-            "key": "  ",
+            "key": "  󰓃",
             "text": " pipewire --version | awk 'NR==1 {printf \"%s \", $1} NR==2 {print $4}' "
         },
         {
             "type": "command",
-            "key": "  ",
+            "key": "  ",
             "text": " btrfs --version | awk '{print \"BtrFS\", $2}' "
         },
         {
             "type": "command",
-            "key": "  ",
+            "key": "  ",
             "text": "openrc --version | awk '{gsub(/[()]/, \"\", $2); print $2, $3}'"
         },
         {
             "type": "command",
-            "key": "  ",
+            "key": "  󱕵",
             "text": " sudo --version | awk 'NR==1 {print $1, $3 }' "
         },
         {
             "type": "custom", // SoftwareStart
-            "format": "├──────────────────── \u001b[1m Theme \u001b[0m ────────────────────┤"
+            "format": "├─────────────────────────── \u001b[1m Theme \u001b[0m ───────────────────────────┤"
         },
         {
             "type": "theme",
-            "key": "  󰌢"
+            "key": "  ",
+            "format": "{2}"
         },
         {
             "type": "icons",
-            "key": "  󰌢"
+            "key": "  ",
+            "format": "{2}"
         },
         {
             "type": "font",
-            "key": "  󰌢"
+            "key": "  󰛖",
+            "format": "{2}"
         },
         {
             "type": "cursor",
-            "key": "  󰌢"
+            "key": "  󰇀"
         },
         {
             "type": "custom", // SoftwareStart
-            "format": "├─────────────────── \u001b[1m Hardware \u001b[0m ───────────────────┤"
-        },
-        {
-            "type": "host",
-            "key": "  󰌢"
+            "format": "├───────────────────────── \u001b[1m Hardware \u001b[0m ─────────────────────────┤"
         },
         {
             "type": "cpu",
@@ -103,53 +104,94 @@
         },
         {
             "type": "custom",
-            "key": "  ",
-            "format": "Corsair - iCue H150i RGB Pro XT (360mm)"
-        },
-        {
-            "type": "board",
-            "key": "  "
+            "key": "  󰈐",
+            "format": "Corsair iCue H150i RGB Pro XT (360mm)"
         },
         {
             "type": "memory",
-            "key": "  ",
-            "format": "Corsair Veageance {1} / {2} ({3})"
+            "key": "  ",
+            "format": "Corsair Vengeance RGB RT {1} / {2} ({3})"
         },
         {
             "type": "gpu",
             "detectionMethod": "pci",
-            "key": "  "
+            "key": "  󰢮"
+        },
+        {
+            "type": "board",
+            "key": "  󰚗"
         },
         {
             "type": "disk",
-            "key": " ",
-            "format": "Disk: {10} - {1} / {2} - {9}"
+            "key": "  ",
+            "format": "{10} - {1} / {2} - {9}"
         },
         {
             "type": "custom",
-            "format": "|─────────────────── \u001b[1m Peripherals \u001b[0m ──────────────────|"
+            "format": "├───────────────────── \u001b[1m Peripheral \u001b[0m ────────────────────┤"
+        },
+        {
+            "type": "custom",
+            "key": "  ",
+            "format": "HyperX Alloy Origins Core (tkl)"
+        },
+        {
+            "type": "custom",
+            "key": "  󰃬",
+            "format": "Exbom BK-N30"
+        },
+        {
+            "type": "custom",
+            "key": "  󰍽",
+            "format": "Logitech G403"
+        },
+        {
+            "type": "custom",
+            "key": "  ",
+            "format": "Wacom Intuos (CTL4100)"
+        },
+        {
+            "type": "custom",
+            "key": "  󰖠",
+            "format": "Logitech C505"
+        },
+        {
+            "type": "sound",
+            "key": "  󰤽",
+            "format": "{2}"
+        },
+        {
+            "type": "custom",
+            "key": "  ",
+            "format": "Behringer B2 (@ Cardioide & Low Cut)"
+        },
+        {
+            "type": "custom",
+            "key": "  󱡏",
+            "format": "JBL T290 (in-Ear)"
         },
         {
             "type": "display",
-            "key": "  󱄄"
+            "key": "  󱄄",
+            "format": "{6} - {1}x{2} @ {1}"
         },
         {
             "type": "custom",
-            "format": "|───────────────────── \u001b[1m Uptime \u001b[0m ────────────────────|"
+            "format": "|─────────────────────── \u001b[1m Uptime \u001b[0m ──────────────────────|"
         },
         {
             "type": "command",
-            "key": "  OS Age ",
+            "key": "  ",
             "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days"
         },
         {
             "type": "uptime",
-            "key": "  Uptime ",
-            "keyColor": "magenta"
+            "key": "  "
+            //"keyColor": "magenta"
         },
         {
             "type": "custom", // InformationEnd
-            "format": "└───────────────────────────────────────────────────┘"
+            "format": "└───────────────────────────────────────────────────────┘"
         },
         {
             "type": "colors",
