@@ -3,7 +3,7 @@
 It's all about my loved PC
 
 
-![Neofetch](https://github.com/jKy0n/TheseusMachineDotFiles/blob/main/midia/Neofetch-29-Feb-2024.png)
+![Neofetch](https://github.com/jKy0n/TheseusMachineDotFiles/blob/main/media/Neofetch-09-Aug-2024.png)
 
 ## Operational System:
 
@@ -29,7 +29,7 @@ It's all about my loved PC
 - **Cursor:** Future-black-cursors
 
 
-![Theseus Machine](https://github.com/jKy0n/TheseusMachineDotFiles/blob/main/midia/TheseusMachine-29-Feb-2024.jpg)
+![Theseus Machine](https://github.com/jKy0n/TheseusMachineDotFiles/blob/main/media/TheseusMachine-09-Aug-2024.jpg)
 
 
 ## Hardware:
@@ -52,11 +52,11 @@ It's all about my loved PC
 
 ###
 
-![Devices](https://github.com/jKy0n/TheseusMachineDotFiles/blob/main/midia/devicesTab.png)
+![Devices](https://github.com/jKy0n/TheseusMachineDotFiles/blob/main/media/devicesTab.png)
 
 ###
 
-![Peripherals](https://github.com/jKy0n/TheseusMachineDotFiles/blob/main/midia/Desktop-29-Feb-2024.jpg)
+![Peripherals](https://github.com/jKy0n/TheseusMachineDotFiles/blob/main/media/Desktop-09-Aug-2024.jpg)
 
 ## Monitors:
 
