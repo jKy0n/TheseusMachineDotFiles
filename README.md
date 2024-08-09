@@ -14,16 +14,18 @@ It's all about my loved PC
 - **WM:** Awesome
 - **Audio:** Pipewire + some PulseAudios junkies
 - **Terminal:** Alacritty + tmux
+- **Editor:** AstroNvim (nvim)
 - **FS:** BtrFS (system + jbod for data and others)
 - **Init:** OpenRC
 - **Auth:** sudo + Gnome polkit
+- **Boot:** GRUB UEFI
 
 
 #### Theming
 
 - **Theme:** Catppuccin Dark Mocchiato
 - **Icons:** ePapirus-Dark
-- **Font:** MesloLGS NF
+- **Font:** MesloLGLDZ Nerd Font
 - **Cursor:** Future-black-cursors
 
 
@@ -33,7 +35,7 @@ It's all about my loved PC
 ## Hardware:
 
 - **CPU:** AMD Ryzen9 5950X @ stock
-- **WC:** Corsair - iCue H150i RGB PRO XT (360mm)
+- **WC:** Corsair iCue H150i RGB PRO XT (360mm)
 - **MoBo:** Asus Prime X570-Pro
 - **RAM:** Corsair Vengeance DDR4 4x16GB @ 3200MHz (stock)
 - **GPU:** Sapphire Pure AMD RX 7800 XT (16GB) @ stock
@@ -65,7 +67,8 @@ It's all about my loved PC
 
 ## Inputs:
 
-- **KB:** T-Dagger Bora - ISO ABNT2
+- **KB0:** HyperX Alloy Origins Core (ABNT2 - Red Switches)
+- **KB1:** T-Dagger Bora - ISO ABNT2
     - **Switch:** Akko Custom Switches Lavander Purple
     - **Keycap:** Some Purple from AliExpress
 - **NP:** Exbom BK-N30

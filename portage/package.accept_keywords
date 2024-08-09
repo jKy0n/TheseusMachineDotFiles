@@ -46,3 +46,5 @@ app-misc/lf ~amd64
 dev-vcs/gitkraken ~amd64
 dev-vcs/github-desktop ~amd64
 app-text/code-minimap ~amd64
+app-shells/zsh-theme-powerlevel10k ~amd64
+app-shells/gitstatus ~amd64
