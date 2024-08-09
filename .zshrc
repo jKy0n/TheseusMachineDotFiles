@@ -12,6 +12,7 @@ export TMUX_POWERLINE_DIR_USER_THEMES="~/.dotfiles/.config/tmux-powerline/themes
 export TMUX_POWERLINE_SEG_WEATHER_LAT="-24.012042"
 export TMUX_POWERLINE_SEG_WEATHER_LON="-46.404200"
 
+source /home/jkyon/.dotfiles/.zshrc_secret
 
 # The following lines were added by compinstall   
 zstyle :compinstall filename '/home/jkyon/.zshrc'
@@ -74,6 +75,7 @@ if [[ "$(cat /etc/*-release)" == *"Gentoo"* ]]; then
     source /usr/share/zsh/site-functions/zsh-autosuggestions.zsh
     source /usr/share/zsh/site-functions/zsh-history-substring-search.zsh
     source /usr/share/zsh/site-functions/zsh-syntax-highlighting.zsh
+    source ~/.dotfiles/.config/zsh/zsh-syntax-highlighting/themes/catppuccin_macchiato-zsh-syntax-highlighting.zsh
 
 elif [[ "$(cat /etc/*-release)" == *"Arch Linux"* ]]; then
     # Configurações específicas para o Arch Linux

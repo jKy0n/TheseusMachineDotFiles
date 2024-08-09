@@ -14,7 +14,7 @@ local beautiful = require("beautiful")
 
 local theme = {}
 
-theme.font              =   "MesloLGS NF Bold 8"
+theme.font              =   "MesloLGS Nerd Font Bold 8"
 
 theme.bg_normal         =   "#1E1E2E"
 theme.bg_focus          =   "#cba6f7"

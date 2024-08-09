@@ -578,7 +578,7 @@ awful.tag.add(" Sound (3) ", {
 ------------------------------------------------------------------------------------------------
                     tbox_separator_space,
           
-            wibox.widget.textbox('  '),
+            wibox.widget.textbox('   '),
             wibox.widget.textbox('CPU: '),
             -- cpu.widget,
             awful.widget.watch('bash -c "sh /home/jkyon/ShellScript/dwmBlocksCpuUsage"', 1),
@@ -597,7 +597,7 @@ awful.tag.add(" Sound (3) ", {
 ------------------------------------------------------------------------------------------------            
             wibox.widget.textbox(' | '),
 ------------------------------------------------------------------------------------------------
-            wibox.widget.textbox('  '),
+            wibox.widget.textbox('   '),
             mem.widget,
             ram_widget({ color_used = '#cba6f7', color_buf = '#444444' }),
 ------------------------------------------------------------------------------------------------            
@@ -674,7 +674,7 @@ awful.tag.add(" Sound (3) ", {
 
             logout_menu_widget{
                 -- font = 'Noto Sans semibold 9',
-                 font = 'MesloLGS NF Bold 10',
+                 font = 'MesloLGS Nerd Font Bold 10',
                  onlogout   =  function() awesome.quit() end,
                 --  onlock     =  function() awful.spawn.with_shell('xscreensaver-command -lock') end,
                  onsuspend  =  function() awful.spawn.with_shell("loginctl suspend") end,
@@ -1350,7 +1350,7 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 
 -- Notifications adjustments
 -- beautiful.notification_font = "sans 12"  -- Altere o tamanho conforme desejado
-beautiful.notification_font = "MesloLGS NF 12"
+beautiful.notification_font = "MesloLGS Nerd Font 12"
 
 
 

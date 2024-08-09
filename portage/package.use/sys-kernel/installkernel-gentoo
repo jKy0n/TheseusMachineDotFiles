@@ -1,2 +1,0 @@
-# move sys-kernel/installkernel-gentoo sys-kernel/installkernel
-sys-kernel/installkernel dracut grub -uki -ukify
