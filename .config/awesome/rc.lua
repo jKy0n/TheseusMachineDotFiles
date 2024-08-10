@@ -597,14 +597,14 @@ awful.tag.add(" Sound (3) ", {
 ------------------------------------------------------------------------------------------------            
             wibox.widget.textbox(' | '),
 ------------------------------------------------------------------------------------------------
-            wibox.widget.textbox('   '),
+            wibox.widget.textbox('   '),  --  
             mem.widget,
             ram_widget({ color_used = '#cba6f7', color_buf = '#444444' }),
 ------------------------------------------------------------------------------------------------            
             wibox.widget.textbox(' | '),
 ------------------------------------------------------------------------------------------------
             
-            wibox.widget.textbox('  '),
+            wibox.widget.textbox(' 󰢮 '),  --  
 
            wibox.widget.textbox(' GPU: '),
            awful.widget.watch('bash -c "sh ~/ShellScript/awesomeWidget-gpu0usage-fast.sh"', 1),

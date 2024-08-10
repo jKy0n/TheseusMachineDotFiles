@@ -25,7 +25,7 @@ It's all about my loved PC
 
 - **Theme:** Catppuccin Dark Mocchiato
 - **Icons:** ePapirus-Dark
-- **Font:** MesloLGLDZ Nerd Font
+- **Font:** MesloLGLDZ Nerd Font / Noto Sans
 - **Cursor:** Future-black-cursors
 
 
