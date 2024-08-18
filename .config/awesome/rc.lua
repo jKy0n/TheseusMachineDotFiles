@@ -26,6 +26,10 @@ local rules = require("jkyon-modules.rules") -- Adcciona arquivo de regras rules
 
 local rotate = require("screenrotation")
 
+local switcher = require("awesome-switcher")
+-- local machi = require("layout-machi")
+
+
 local lain = require "lain"
 local mycpu = lain.widget.cpu()
 local mymem = lain.widget.mem()
@@ -57,7 +61,28 @@ require("awful.hotkeys_popup.keys")
 ------------------------------- Error handling ------------------------------
 
 -- Configurar o tamanho padrão das notificações
-naughty.config.defaults['icon_size'] = 300
+naughty.config.defaults = {
+    timeout = 10, -- Tempo de exibição em segundos
+    -- screen = awful.screen.focused(), -- Qual tela exibir as notificações
+    screen = 1, -- Qual tela exibir as notificações
+    position = "top_middle", -- Posição: 'top_right', 'top_left', 'bottom_right', 'bottom_left'
+    margin = 10,
+    ontop = true,
+    font = "MesloLGS Nerd Font Bold 10", -- Fonte
+    icon_size = 300,
+    border_width = 2,
+}
+
+-- -- Conectar sinal para tocar som ao exibir uma notificação
+-- naughty.connect_signal("request::display", function(n)
+--     -- Tocar som quando a notificação aparecer
+--     awful.spawn("paplay /usr/share/sounds/freedesktop/stereo/message.oga")
+--
+--     -- Exibir a notificação
+--     naughty.layout.box { notification = n }
+-- end)
+
+
 
 
 -- {{{ Error handling
@@ -93,6 +118,8 @@ end
 -- Themes define colours, icons, font and wallpapers.
 beautiful.init("/home/jkyon/.dotfiles/.config/awesome/themes/default/theme.lua")
 
+-- beautiful.layout_machi = machi.get_icon()
+
 -- This is used later as the default terminal and editor to run.
 terminal = "alacritty"
 editor = os.getenv("EDITOR") or "nvim"
@@ -118,10 +145,12 @@ awful.layout.layouts = {
 --    awful.layout.suit.magnifier,
 --    awful.layout.suit.corner.nw,
 --    awful.layout.suit.floating,
-    awful.layout.suit.corner.ne,
+--    awful.layout.suit.corner.ne,
 --    awful.layout.suit.corner.sw,
 --    awful.layout.suit.corner.se,
 --    awful.layout.suit.max.fullscreen,
+--    machi.default_layout,
+    -- awful.layout.set(lain.layout.termfair, tag),
     awful.layout.suit.max,
 }
 -- }}}
@@ -154,8 +183,8 @@ mykeyboardlayout = awful.widget.keyboardlayout()
 
 -- {{{ Wibar
 -- Create a textclock widget
--- mytextclock = wibox.widget.textclock(" %A, %d %B, %H:%M ", 60)
-mytextclock = wibox.widget.textclock()
+mytextclock = wibox.widget.textclock(' %a, %d %b - %H:%M ', 60)
+-- mytextclock = wibox.widget.textclock()
 
 
 -------------------- Widgets --------------------
@@ -384,6 +413,12 @@ local tasklist_buttons = gears.table.join(
                                           end))
 
 
+----------------------------------------------------------------------------- 
+----------------------------------------------------------------------------- 
+
+
+
+
 -----------------------------------------------------------------------------
 -----------------------------------------------------------------------------
 ------------------------------ Tags Organization ----------------------------
@@ -396,7 +431,7 @@ awful.tag.add(" emerge (1) ", {
 })
 
 awful.tag.add(" Code (2) ", {
-    layout = awful.layout.suit.tile,
+    layout = awful.layout.suit.tile.left,
     screen = 1,
     selected = true
 })
@@ -677,9 +712,9 @@ awful.tag.add(" Sound (3) ", {
                  font = 'MesloLGS Nerd Font Bold 10',
                  onlogout   =  function() awesome.quit() end,
                 --  onlock     =  function() awful.spawn.with_shell('xscreensaver-command -lock') end,
-                 onsuspend  =  function() awful.spawn.with_shell("loginctl suspend") end,
-                 onreboot   =  function() awful.spawn.with_shell("loginctl reboot") end,
-                 onpoweroff =  function() awful.spawn.with_shell("loginctl poweroff") end,
+                 onsuspend  =  function() awful.spawn.with_shell("systemctl suspend") end,
+                 onreboot   =  function() awful.spawn.with_shell("systemctl reboot") end,
+                 onpoweroff =  function() awful.spawn.with_shell("systemctl poweroff") end,
             },
                     tbox_separator_space
         },
@@ -764,6 +799,13 @@ globalkeys = gears.table.join(
     awful.key({ modkey, "Shift"   }, "q", awesome.quit,
               {description = "quit awesome", group = "awesome"}),
 
+
+    -- awful.key({ modkey,           }, ".",    function () machi.default_editor.start_interactive() end,
+    --           {description = "edit the current layout if it is a machi layout", group = "layout"}),
+    -- awful.key({ modkey,           }, "/",    function () machi.switcher.start(client.focus) end,
+    --           {description = "switch between windows for a machi layout", group = "layout"}),
+
+
     awful.key({ modkey,           }, "l",     function () awful.tag.incmwfact( 0.05)          end,
               {description = "increase master width factor", group = "layout"}),
     awful.key({ modkey,           }, "h",     function () awful.tag.incmwfact(-0.05)          end,
@@ -828,9 +870,9 @@ globalkeys = gears.table.join(
     awful.key({ modkey, }, "p",
         --   function () awful.util.spawn("rofi -config ~/.config/rofi/config -show combi -combi-modi \"window,run\" -modi combi -icon-theme \"Papirus\" -show-icons -theme ~/.config/rofi/config.rasi") end),
         function () awful.util.spawn("rofi  -config /home/jkyon/.dotfiles/.config/rofi.jkyon/config.rasi \
-                                            -show drun \
-                                            -icon-theme \"Papirus\"  \
-                                            -show-icons -theme /home/jkyon/.dotfiles/.config/rofi.jkyon/theme.rasi") 
+                                            -modes \"drun,run,file-browser-extended,window,emoji,calc\" -show drun \
+                                            -icon-theme \"Papirus\" -show-icons \
+                                            -theme /home/jkyon/.dotfiles/.config/rofi.jkyon/theme.rasi") 
             end),
 
 
@@ -1127,11 +1169,14 @@ awful.rules.rules = {
         placement = awful.placement.centered },},
 -- N
 --      
-        { rule = { class = "openrgb" },
+        { rule_any = { class = {"nemo", "Nemo"} },
         properties = { floating = true,
         placement = awful.placement.centered },},
 -- O
 --
+        { rule = { class = "openrgb" },
+        properties = { floating = true,
+        placement = awful.placement.centered },},
 -- P
 --        
         { rule_any = { class = {"pavucontrol", "Pavucontrol"} },
@@ -1364,9 +1409,7 @@ gears.timer {
 
 -- beautiful.wallpaper = "/home/jkyon/Pictures/Wallpapers/LinuxWallpapers/multi-monitor-wallpapers.jpg"
 
-
 awful.spawn.with_shell("sh /home/jkyon/.dotfiles/.config/awesome/AwesomeWMstartupApps.sh")
-
 
 
 -- timed = rubato.timed {

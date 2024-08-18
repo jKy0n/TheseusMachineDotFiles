@@ -31,7 +31,7 @@
         },
         {
             "type": "os",
-            "key": "  " // Just get your distro's logo off nerdfonts.com,
+            "key": "  " // Just get your distro's logo off nerdfonts.com,
         },
         {
             "type": "kernel",
@@ -62,10 +62,14 @@
             "key": "  ",
             "text": " btrfs --version | awk '{print \"BtrFS\", $2}' "
         },
+        // {
+        //     "type": "command",
+        //     "key": "  ",
+        //     "text": "openrc --version | awk '{gsub(/[()]/, \"\", $2); print $2, $3}'"
+        // },
         {
-            "type": "command",
-            "key": "  ",
-            "text": "openrc --version | awk '{gsub(/[()]/, \"\", $2); print $2, $3}'"
+            "type": "initsystem",
+            "key": "  "
         },
         {
             "type": "command",
@@ -89,12 +93,12 @@
         },
         {
             "type": "icons",
-            "key": "  ",
+            "key": "  󰉋",
             "format": "{2}"
         },
         {
             "type": "font",
-            "key": "  󰛖",
+            "key": "  ",
             "format": "{2}"
         },
         {
@@ -118,7 +122,7 @@
         {
             "type": "memory",
             "key": "  ",
-            "format": "Corsair Vengeance RGB RT {1} / {2} ({3})"
+            "format": "Corsair Vengeance RGB RT - {1} / {2} ({3})"
         },
         {
             "type": "gpu",
@@ -133,7 +137,7 @@
             "type": "disk",
             "key": "  ",
             "percent": {},
-            "format": "{10} - {1} / {2} - {9}"
+            "format": "{10} - {1} / {2} - ({3}) - {9}"
         },
         {
             "type": "custom", // Peripheral
@@ -192,6 +196,10 @@
             "key": " "
         },
         {
+            "type": "host",
+            "key": "  "
+        },
+        {
             "type": "packages",
             "key": "  "
         },
@@ -204,6 +212,11 @@
             "type": "uptime",
             "key": "  "
             //"keyColor": "magenta"
+        },
+        {
+            "type": "localip",
+            "key": "  󰌗",
+            "format": "{1}"
         },
         {
             "type": "custom", // InformationEnd
