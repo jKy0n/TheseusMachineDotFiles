@@ -1,0 +1,847 @@
+[ 08/19/2024 14:03:03.902 session_init FATAL ERROR ] Another composite manager is already running
+[ 08/19/2024 14:03:04.264 session_init FATAL ERROR ] Another composite manager is already running
+[ 08/19/2024 14:03:04.504 session_init FATAL ERROR ] Another composite manager is already running
+[ 08/19/2024 14:03:04.775 session_init FATAL ERROR ] Another composite manager is already running
+[ 08/19/2024 14:03:05.031 session_init FATAL ERROR ] Another composite manager is already running
+[ 08/19/2024 14:04:04.304 session_init FATAL ERROR ] Another composite manager is already running
+[ 08/19/2024 14:04:04.537 session_init FATAL ERROR ] Another composite manager is already running
+[ 08/19/2024 14:04:04.767 session_init FATAL ERROR ] Another composite manager is already running
+[ 08/19/2024 14:04:05.024 session_init FATAL ERROR ] Another composite manager is already running
+[ 08/19/2024 14:04:05.278 session_init FATAL ERROR ] Another composite manager is already running
+[ 08/19/2024 14:08:52.314 set_rr_scheduling INFO ] Set real-time scheduling priority to 1
+[ 08/19/2024 14:10:25.482 set_rr_scheduling INFO ] Set real-time scheduling priority to 1
+[ 08/19/2024 14:10:25.569 glxext_init INFO ] Extension GLX_SGI_video_sync - present
+[ 08/19/2024 14:10:25.569 glxext_init INFO ] Extension GLX_SGI_swap_control - present
+[ 08/19/2024 14:10:25.569 glxext_init INFO ] Extension GLX_OML_sync_control - present
+[ 08/19/2024 14:10:25.569 glxext_init INFO ] Extension GLX_MESA_swap_control - present
+[ 08/19/2024 14:10:25.569 glxext_init INFO ] Extension GLX_EXT_swap_control - present
+[ 08/19/2024 14:10:25.569 glxext_init INFO ] Extension GLX_EXT_texture_from_pixmap - present
+[ 08/19/2024 14:10:25.569 glxext_init INFO ] Extension GLX_ARB_create_context - present
+[ 08/19/2024 14:10:25.569 glxext_init INFO ] Extension GLX_EXT_buffer_age - present
+[ 08/19/2024 14:10:25.569 glxext_init INFO ] Extension GLX_ARB_create_context_robustness - present
+[ 08/19/2024 14:10:25.569 glxext_init INFO ] Extension GLX_MESA_query_renderer - present
+[ 08/19/2024 14:10:25.582 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'time'. This is normal when using custom shaders.
+[ 08/19/2024 14:10:25.587 gl_init INFO ] Using back buffer format 0x8051
+[ 08/19/2024 14:49:05.133 reset_enable INFO ] picom is resetting...
+[ 08/19/2024 14:49:05.159 set_rr_scheduling INFO ] Set real-time scheduling priority to 1
+[ 08/19/2024 14:49:05.231 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'time'. This is normal when using custom shaders.
+[ 08/19/2024 14:49:05.231 gl_init INFO ] Using back buffer format 0x8051
+[ 08/19/2024 14:49:30.676 reset_enable INFO ] picom is resetting...
+[ 08/19/2024 14:49:30.698 set_rr_scheduling INFO ] Set real-time scheduling priority to 1
+[ 08/19/2024 14:49:30.791 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'time'. This is normal when using custom shaders.
+[ 08/19/2024 14:49:30.791 gl_init INFO ] Using back buffer format 0x8051
+[ 08/19/2024 15:31:59.371 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 196091
+[ 08/19/2024 15:32:40.561 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 214477
+[ 08/19/2024 15:32:45.586 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 217107
+[ 08/19/2024 15:36:22.743 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 318928
+[ 08/19/2024 15:38:19.999 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 350373
+[ 08/19/2024 15:38:55.177 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 358898
+[ 08/19/2024 15:38:55.177 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 358902
+[ 08/19/2024 15:47:18.548 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 469491
+[ 08/19/2024 15:47:40.785 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 474861
+[ 08/19/2024 15:47:43.568 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 476193
+[ 08/19/2024 15:48:14.627 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 483636
+[ 08/19/2024 16:06:07.887 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 693233
+[ 08/19/2024 16:06:08.013 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 693340
+[ 08/19/2024 16:55:20.561 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 1068734
+[ 08/19/2024 16:56:23.989 set_rr_scheduling INFO ] Set real-time scheduling priority to 1
+[ 08/19/2024 16:56:24.091 glxext_init INFO ] Extension GLX_SGI_video_sync - present
+[ 08/19/2024 16:56:24.091 glxext_init INFO ] Extension GLX_SGI_swap_control - present
+[ 08/19/2024 16:56:24.091 glxext_init INFO ] Extension GLX_OML_sync_control - present
+[ 08/19/2024 16:56:24.091 glxext_init INFO ] Extension GLX_MESA_swap_control - present
+[ 08/19/2024 16:56:24.091 glxext_init INFO ] Extension GLX_EXT_swap_control - present
+[ 08/19/2024 16:56:24.091 glxext_init INFO ] Extension GLX_EXT_texture_from_pixmap - present
+[ 08/19/2024 16:56:24.091 glxext_init INFO ] Extension GLX_ARB_create_context - present
+[ 08/19/2024 16:56:24.091 glxext_init INFO ] Extension GLX_EXT_buffer_age - present
+[ 08/19/2024 16:56:24.091 glxext_init INFO ] Extension GLX_ARB_create_context_robustness - present
+[ 08/19/2024 16:56:24.091 glxext_init INFO ] Extension GLX_MESA_query_renderer - present
+[ 08/19/2024 16:56:24.099 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'time'. This is normal when using custom shaders.
+[ 08/19/2024 16:56:24.100 gl_init INFO ] Using back buffer format 0x8051
+[ 08/19/2024 17:11:32.825 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 161530
+[ 08/19/2024 17:11:36.164 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 162697
+[ 08/19/2024 17:12:51.178 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 175766
+[ 08/19/2024 17:13:05.992 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 178334
+[ 08/19/2024 17:14:30.952 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 195985
+[ 08/19/2024 17:15:50.688 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 223735
+[ 08/19/2024 18:18:24.389 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 571878
+[ 08/19/2024 18:18:53.306 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 581084
+[ 08/19/2024 18:21:45.648 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 611997
+[ 08/19/2024 18:22:54.845 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 625940
+[ 08/19/2024 18:24:01.824 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 649845
+[ 08/19/2024 18:24:11.585 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 651545
+[ 08/19/2024 18:24:15.798 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 652511
+[ 08/19/2024 18:24:15.798 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 652515
+[ 08/19/2024 18:26:17.853 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 671573
+[ 08/19/2024 18:26:31.502 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 673847
+[ 08/19/2024 18:27:00.677 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 680725
+[ 08/19/2024 18:27:37.568 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 686628
+[ 08/19/2024 18:27:37.568 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 686629
+[ 08/19/2024 18:27:48.610 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 688741
+[ 08/19/2024 18:28:33.641 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 699108
+[ 08/19/2024 18:28:45.476 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 701088
+[ 08/19/2024 18:30:01.143 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 711890
+[ 08/19/2024 18:30:17.933 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 716890
+[ 08/19/2024 18:31:12.705 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 724107
+[ 08/19/2024 18:31:19.319 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 725339
+[ 08/19/2024 18:31:29.574 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 728120
+[ 08/19/2024 18:31:54.605 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 731320
+[ 08/19/2024 18:32:02.901 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 732616
+[ 08/19/2024 18:32:30.159 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 736362
+[ 08/19/2024 18:32:33.710 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 737316
+[ 08/19/2024 18:32:40.532 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 738411
+[ 08/19/2024 18:33:00.584 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 741242
+[ 08/19/2024 18:33:07.322 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 742935
+[ 08/19/2024 18:33:13.113 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 743910
+[ 08/19/2024 18:33:15.808 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 744532
+[ 08/19/2024 18:46:33.631 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 946561
+[ 08/19/2024 18:47:15.778 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 954376
+[ 08/19/2024 18:48:41.770 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 971136
+[ 08/19/2024 18:48:49.354 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 972613
+[ 08/19/2024 18:56:00.955 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 1053472
+[ 08/19/2024 18:56:02.740 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 1053824
+[ 08/19/2024 19:46:16.823 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 1575900
+[ 08/19/2024 19:59:29.295 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 1719119
+[ 08/19/2024 19:59:40.655 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 1721637
+[ 08/19/2024 20:07:26.848 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 1809975
+[ 08/19/2024 20:07:29.725 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 1810650
+[ 08/19/2024 20:49:41.220 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 2202125
+[ 08/19/2024 20:49:44.768 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 2202659
+[ 08/19/2024 20:49:59.415 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 2204812
+[ 08/19/2024 20:50:30.801 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 2209220
+[ 08/19/2024 20:59:16.085 set_rr_scheduling INFO ] Set real-time scheduling priority to 1
+[ 08/19/2024 20:59:16.179 glxext_init INFO ] Extension GLX_SGI_video_sync - present
+[ 08/19/2024 20:59:16.179 glxext_init INFO ] Extension GLX_SGI_swap_control - present
+[ 08/19/2024 20:59:16.179 glxext_init INFO ] Extension GLX_OML_sync_control - present
+[ 08/19/2024 20:59:16.179 glxext_init INFO ] Extension GLX_MESA_swap_control - present
+[ 08/19/2024 20:59:16.179 glxext_init INFO ] Extension GLX_EXT_swap_control - present
+[ 08/19/2024 20:59:16.179 glxext_init INFO ] Extension GLX_EXT_texture_from_pixmap - present
+[ 08/19/2024 20:59:16.179 glxext_init INFO ] Extension GLX_ARB_create_context - present
+[ 08/19/2024 20:59:16.179 glxext_init INFO ] Extension GLX_EXT_buffer_age - present
+[ 08/19/2024 20:59:16.179 glxext_init INFO ] Extension GLX_ARB_create_context_robustness - present
+[ 08/19/2024 20:59:16.179 glxext_init INFO ] Extension GLX_MESA_query_renderer - present
+[ 08/19/2024 20:59:16.205 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'time'. This is normal when using custom shaders.
+[ 08/19/2024 20:59:16.207 gl_init INFO ] Using back buffer format 0x8051
+[ 08/19/2024 22:01:57.506 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 707641
+[ 08/19/2024 22:02:02.867 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 710043
+[ 08/19/2024 22:03:49.024 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 738163
+[ 08/19/2024 22:04:03.523 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 741731
+[ 08/19/2024 22:04:32.871 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 749190
+[ 08/19/2024 22:18:14.533 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 884765
+[ 08/19/2024 22:19:16.117 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 892165
+[ 08/19/2024 22:24:01.642 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 945610
+[ 08/19/2024 22:24:04.533 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 945988
+[ 08/19/2024 22:24:26.501 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 948009
+[ 08/19/2024 22:25:48.103 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 954331
+[ 08/19/2024 22:26:50.871 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 958480
+[ 08/19/2024 22:28:02.708 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 963245
+[ 08/19/2024 22:28:25.294 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 964395
+[ 08/19/2024 22:34:26.684 set_rr_scheduling INFO ] Set real-time scheduling priority to 1
+[ 08/19/2024 22:34:26.777 glxext_init INFO ] Extension GLX_SGI_video_sync - present
+[ 08/19/2024 22:34:26.777 glxext_init INFO ] Extension GLX_SGI_swap_control - present
+[ 08/19/2024 22:34:26.777 glxext_init INFO ] Extension GLX_OML_sync_control - present
+[ 08/19/2024 22:34:26.777 glxext_init INFO ] Extension GLX_MESA_swap_control - present
+[ 08/19/2024 22:34:26.777 glxext_init INFO ] Extension GLX_EXT_swap_control - present
+[ 08/19/2024 22:34:26.777 glxext_init INFO ] Extension GLX_EXT_texture_from_pixmap - present
+[ 08/19/2024 22:34:26.777 glxext_init INFO ] Extension GLX_ARB_create_context - present
+[ 08/19/2024 22:34:26.777 glxext_init INFO ] Extension GLX_EXT_buffer_age - present
+[ 08/19/2024 22:34:26.777 glxext_init INFO ] Extension GLX_ARB_create_context_robustness - present
+[ 08/19/2024 22:34:26.777 glxext_init INFO ] Extension GLX_MESA_query_renderer - present
+[ 08/19/2024 22:34:26.844 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'time'. This is normal when using custom shaders.
+[ 08/19/2024 22:34:26.846 gl_init INFO ] Using back buffer format 0x8051
+[ 08/19/2024 22:47:45.363 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 127117
+[ 08/19/2024 22:48:32.154 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 138998
+[ 08/19/2024 22:49:14.403 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 149203
+[ 08/19/2024 22:52:03.808 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 190332
+[ 08/19/2024 22:52:09.684 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 192528
+[ 08/19/2024 22:52:37.398 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 200439
+[ 08/19/2024 22:52:53.643 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 206037
+[ 08/19/2024 22:52:59.019 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 207540
+[ 08/19/2024 22:53:03.433 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 209510
+[ 08/19/2024 22:54:06.045 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 227528
+[ 08/19/2024 22:54:17.282 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 230794
+[ 08/19/2024 22:54:22.507 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 232729
+[ 08/19/2024 22:55:11.087 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 248015
+[ 08/19/2024 22:55:25.757 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 252799
+[ 08/19/2024 22:56:31.251 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 271334
+[ 08/19/2024 22:56:38.357 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 273477
+[ 08/19/2024 23:03:17.104 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 424881
+[ 08/19/2024 23:06:22.392 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 619793
+[ 08/19/2024 23:06:58.993 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 657404
+[ 08/19/2024 23:07:05.713 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 664228
+[ 08/19/2024 23:07:29.299 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 687639
+[ 08/19/2024 23:09:59.267 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 839103
+[ 08/19/2024 23:11:16.787 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 906662
+[ 08/19/2024 23:12:01.969 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 918460
+[ 08/19/2024 23:12:20.095 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 934244
+[ 08/19/2024 23:12:22.282 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 936146
+[ 08/19/2024 23:13:14.126 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 946105
+[ 08/19/2024 23:19:57.555 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 1017056
+[ 08/19/2024 23:21:01.546 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 1026424
+[ 08/19/2024 23:21:43.537 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 1033293
+[ 08/19/2024 23:22:05.395 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 1036931
+[ 08/19/2024 23:22:37.825 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 1044784
+[ 08/19/2024 23:35:48.499 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 1171892
+[ 08/19/2024 23:54:37.488 set_rr_scheduling INFO ] Set real-time scheduling priority to 1
+[ 08/19/2024 23:54:37.593 glxext_init INFO ] Extension GLX_SGI_video_sync - present
+[ 08/19/2024 23:54:37.593 glxext_init INFO ] Extension GLX_SGI_swap_control - present
+[ 08/19/2024 23:54:37.593 glxext_init INFO ] Extension GLX_OML_sync_control - present
+[ 08/19/2024 23:54:37.593 glxext_init INFO ] Extension GLX_MESA_swap_control - present
+[ 08/19/2024 23:54:37.593 glxext_init INFO ] Extension GLX_EXT_swap_control - present
+[ 08/19/2024 23:54:37.593 glxext_init INFO ] Extension GLX_EXT_texture_from_pixmap - present
+[ 08/19/2024 23:54:37.593 glxext_init INFO ] Extension GLX_ARB_create_context - present
+[ 08/19/2024 23:54:37.593 glxext_init INFO ] Extension GLX_EXT_buffer_age - present
+[ 08/19/2024 23:54:37.593 glxext_init INFO ] Extension GLX_ARB_create_context_robustness - present
+[ 08/19/2024 23:54:37.593 glxext_init INFO ] Extension GLX_MESA_query_renderer - present
+[ 08/19/2024 23:54:37.606 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'time'. This is normal when using custom shaders.
+[ 08/19/2024 23:54:37.608 gl_init INFO ] Using back buffer format 0x8051
+[ 08/20/2024 00:00:21.158 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 82259
+[ 08/20/2024 00:30:09.316 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 348458
+[ 08/20/2024 00:30:10.510 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 348786
+[ 08/20/2024 00:30:12.115 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 349540
+[ 08/20/2024 00:30:15.701 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 350153
+[ 08/20/2024 00:34:45.504 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 400674
+[ 08/20/2024 00:44:07.559 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 507533
+[ 08/20/2024 00:44:24.456 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 510753
+[ 08/20/2024 01:34:57.093 set_rr_scheduling INFO ] Set real-time scheduling priority to 1
+[ 08/20/2024 01:34:57.179 glxext_init INFO ] Extension GLX_SGI_video_sync - present
+[ 08/20/2024 01:34:57.179 glxext_init INFO ] Extension GLX_SGI_swap_control - present
+[ 08/20/2024 01:34:57.179 glxext_init INFO ] Extension GLX_OML_sync_control - present
+[ 08/20/2024 01:34:57.179 glxext_init INFO ] Extension GLX_MESA_swap_control - present
+[ 08/20/2024 01:34:57.179 glxext_init INFO ] Extension GLX_EXT_swap_control - present
+[ 08/20/2024 01:34:57.179 glxext_init INFO ] Extension GLX_EXT_texture_from_pixmap - present
+[ 08/20/2024 01:34:57.179 glxext_init INFO ] Extension GLX_ARB_create_context - present
+[ 08/20/2024 01:34:57.179 glxext_init INFO ] Extension GLX_EXT_buffer_age - present
+[ 08/20/2024 01:34:57.179 glxext_init INFO ] Extension GLX_ARB_create_context_robustness - present
+[ 08/20/2024 01:34:57.179 glxext_init INFO ] Extension GLX_MESA_query_renderer - present
+[ 08/20/2024 01:34:57.205 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'time'. This is normal when using custom shaders.
+[ 08/20/2024 01:34:57.211 gl_init INFO ] Using back buffer format 0x8051
+[ 08/20/2024 06:34:57.106 set_rr_scheduling INFO ] Set real-time scheduling priority to 1
+[ 08/20/2024 06:34:57.200 glxext_init INFO ] Extension GLX_SGI_video_sync - present
+[ 08/20/2024 06:34:57.201 glxext_init INFO ] Extension GLX_SGI_swap_control - present
+[ 08/20/2024 06:34:57.201 glxext_init INFO ] Extension GLX_OML_sync_control - present
+[ 08/20/2024 06:34:57.201 glxext_init INFO ] Extension GLX_MESA_swap_control - present
+[ 08/20/2024 06:34:57.201 glxext_init INFO ] Extension GLX_EXT_swap_control - present
+[ 08/20/2024 06:34:57.201 glxext_init INFO ] Extension GLX_EXT_texture_from_pixmap - present
+[ 08/20/2024 06:34:57.201 glxext_init INFO ] Extension GLX_ARB_create_context - present
+[ 08/20/2024 06:34:57.201 glxext_init INFO ] Extension GLX_EXT_buffer_age - present
+[ 08/20/2024 06:34:57.201 glxext_init INFO ] Extension GLX_ARB_create_context_robustness - present
+[ 08/20/2024 06:34:57.201 glxext_init INFO ] Extension GLX_MESA_query_renderer - present
+[ 08/20/2024 06:34:57.238 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'time'. This is normal when using custom shaders.
+[ 08/20/2024 06:34:57.240 gl_init INFO ] Using back buffer format 0x8051
+[ 08/20/2024 11:28:57.104 set_rr_scheduling INFO ] Set real-time scheduling priority to 1
+[ 08/20/2024 11:28:57.173 glxext_init INFO ] Extension GLX_SGI_video_sync - present
+[ 08/20/2024 11:28:57.173 glxext_init INFO ] Extension GLX_SGI_swap_control - present
+[ 08/20/2024 11:28:57.173 glxext_init INFO ] Extension GLX_OML_sync_control - present
+[ 08/20/2024 11:28:57.173 glxext_init INFO ] Extension GLX_MESA_swap_control - present
+[ 08/20/2024 11:28:57.173 glxext_init INFO ] Extension GLX_EXT_swap_control - present
+[ 08/20/2024 11:28:57.173 glxext_init INFO ] Extension GLX_EXT_texture_from_pixmap - present
+[ 08/20/2024 11:28:57.173 glxext_init INFO ] Extension GLX_ARB_create_context - present
+[ 08/20/2024 11:28:57.173 glxext_init INFO ] Extension GLX_EXT_buffer_age - present
+[ 08/20/2024 11:28:57.173 glxext_init INFO ] Extension GLX_ARB_create_context_robustness - present
+[ 08/20/2024 11:28:57.173 glxext_init INFO ] Extension GLX_MESA_query_renderer - present
+[ 08/20/2024 11:28:57.180 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'time'. This is normal when using custom shaders.
+[ 08/20/2024 11:28:57.181 gl_init INFO ] Using back buffer format 0x8051
+[ 08/20/2024 13:18:50.983 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 418493
+[ 08/20/2024 14:10:57.080 set_rr_scheduling INFO ] Set real-time scheduling priority to 1
+[ 08/20/2024 14:10:57.166 glxext_init INFO ] Extension GLX_SGI_video_sync - present
+[ 08/20/2024 14:10:57.166 glxext_init INFO ] Extension GLX_SGI_swap_control - present
+[ 08/20/2024 14:10:57.166 glxext_init INFO ] Extension GLX_OML_sync_control - present
+[ 08/20/2024 14:10:57.166 glxext_init INFO ] Extension GLX_MESA_swap_control - present
+[ 08/20/2024 14:10:57.166 glxext_init INFO ] Extension GLX_EXT_swap_control - present
+[ 08/20/2024 14:10:57.166 glxext_init INFO ] Extension GLX_EXT_texture_from_pixmap - present
+[ 08/20/2024 14:10:57.166 glxext_init INFO ] Extension GLX_ARB_create_context - present
+[ 08/20/2024 14:10:57.166 glxext_init INFO ] Extension GLX_EXT_buffer_age - present
+[ 08/20/2024 14:10:57.166 glxext_init INFO ] Extension GLX_ARB_create_context_robustness - present
+[ 08/20/2024 14:10:57.166 glxext_init INFO ] Extension GLX_MESA_query_renderer - present
+[ 08/20/2024 14:10:57.174 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'time'. This is normal when using custom shaders.
+[ 08/20/2024 14:10:57.176 gl_init INFO ] Using back buffer format 0x8051
+[ 08/20/2024 14:24:23.482 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 82550
+[ 08/20/2024 14:24:31.464 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 84482
+[ 08/20/2024 17:20:57.099 set_rr_scheduling INFO ] Set real-time scheduling priority to 1
+[ 08/20/2024 17:20:57.208 glxext_init INFO ] Extension GLX_SGI_video_sync - present
+[ 08/20/2024 17:20:57.208 glxext_init INFO ] Extension GLX_SGI_swap_control - present
+[ 08/20/2024 17:20:57.208 glxext_init INFO ] Extension GLX_OML_sync_control - present
+[ 08/20/2024 17:20:57.208 glxext_init INFO ] Extension GLX_MESA_swap_control - present
+[ 08/20/2024 17:20:57.208 glxext_init INFO ] Extension GLX_EXT_swap_control - present
+[ 08/20/2024 17:20:57.208 glxext_init INFO ] Extension GLX_EXT_texture_from_pixmap - present
+[ 08/20/2024 17:20:57.208 glxext_init INFO ] Extension GLX_ARB_create_context - present
+[ 08/20/2024 17:20:57.208 glxext_init INFO ] Extension GLX_EXT_buffer_age - present
+[ 08/20/2024 17:20:57.209 glxext_init INFO ] Extension GLX_ARB_create_context_robustness - present
+[ 08/20/2024 17:20:57.209 glxext_init INFO ] Extension GLX_MESA_query_renderer - present
+[ 08/20/2024 17:20:57.216 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'time'. This is normal when using custom shaders.
+[ 08/20/2024 17:20:57.219 gl_init INFO ] Using back buffer format 0x8051
+[ 08/20/2024 18:52:07.256 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 908795
+[ 08/20/2024 19:02:57.075 set_rr_scheduling INFO ] Set real-time scheduling priority to 1
+[ 08/20/2024 19:02:57.158 glxext_init INFO ] Extension GLX_SGI_video_sync - present
+[ 08/20/2024 19:02:57.158 glxext_init INFO ] Extension GLX_SGI_swap_control - present
+[ 08/20/2024 19:02:57.158 glxext_init INFO ] Extension GLX_OML_sync_control - present
+[ 08/20/2024 19:02:57.158 glxext_init INFO ] Extension GLX_MESA_swap_control - present
+[ 08/20/2024 19:02:57.158 glxext_init INFO ] Extension GLX_EXT_swap_control - present
+[ 08/20/2024 19:02:57.158 glxext_init INFO ] Extension GLX_EXT_texture_from_pixmap - present
+[ 08/20/2024 19:02:57.158 glxext_init INFO ] Extension GLX_ARB_create_context - present
+[ 08/20/2024 19:02:57.158 glxext_init INFO ] Extension GLX_EXT_buffer_age - present
+[ 08/20/2024 19:02:57.159 glxext_init INFO ] Extension GLX_ARB_create_context_robustness - present
+[ 08/20/2024 19:02:57.159 glxext_init INFO ] Extension GLX_MESA_query_renderer - present
+[ 08/20/2024 19:02:57.180 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'time'. This is normal when using custom shaders.
+[ 08/20/2024 19:02:57.181 gl_init INFO ] Using back buffer format 0x8051
+[ 08/20/2024 20:18:49.898 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 927993
+[ 08/20/2024 20:21:17.107 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 949422
+[ 08/20/2024 20:29:12.711 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 1018591
+[ 08/20/2024 20:32:57.088 set_rr_scheduling INFO ] Set real-time scheduling priority to 1
+[ 08/20/2024 20:32:57.180 glxext_init INFO ] Extension GLX_SGI_video_sync - present
+[ 08/20/2024 20:32:57.180 glxext_init INFO ] Extension GLX_SGI_swap_control - present
+[ 08/20/2024 20:32:57.180 glxext_init INFO ] Extension GLX_OML_sync_control - present
+[ 08/20/2024 20:32:57.180 glxext_init INFO ] Extension GLX_MESA_swap_control - present
+[ 08/20/2024 20:32:57.180 glxext_init INFO ] Extension GLX_EXT_swap_control - present
+[ 08/20/2024 20:32:57.180 glxext_init INFO ] Extension GLX_EXT_texture_from_pixmap - present
+[ 08/20/2024 20:32:57.180 glxext_init INFO ] Extension GLX_ARB_create_context - present
+[ 08/20/2024 20:32:57.180 glxext_init INFO ] Extension GLX_EXT_buffer_age - present
+[ 08/20/2024 20:32:57.180 glxext_init INFO ] Extension GLX_ARB_create_context_robustness - present
+[ 08/20/2024 20:32:57.180 glxext_init INFO ] Extension GLX_MESA_query_renderer - present
+[ 08/20/2024 20:32:57.200 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'time'. This is normal when using custom shaders.
+[ 08/20/2024 20:32:57.201 gl_init INFO ] Using back buffer format 0x8051
+[ 08/20/2024 20:37:43.733 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 73162
+[ 08/20/2024 20:37:47.382 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 78546
+[ 08/20/2024 20:38:18.734 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 117843
+[ 08/20/2024 20:38:30.447 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 131840
+[ 08/20/2024 20:39:51.455 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 199875
+[ 08/20/2024 20:39:52.776 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 200880
+[ 08/20/2024 20:43:37.234 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 255376
+[ 08/20/2024 20:43:37.289 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 255486
+[ 08/20/2024 20:48:05.237 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 311957
+[ 08/20/2024 20:50:20.826 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 328887
+[ 08/20/2024 20:55:40.813 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 354146
+[ 08/20/2024 20:57:08.669 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 365364
+[ 08/20/2024 20:58:11.845 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 375559
+[ 08/20/2024 20:58:15.037 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 376897
+[ 08/20/2024 20:58:59.821 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 383368
+[ 08/20/2024 20:59:03.013 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 384363
+[ 08/20/2024 20:59:25.192 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 389049
+[ 08/20/2024 21:00:29.023 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 395456
+[ 08/20/2024 21:00:39.159 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 396456
+[ 08/20/2024 21:02:04.340 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 418581
+[ 08/20/2024 21:04:35.871 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 428846
+[ 08/20/2024 21:07:23.008 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 443612
+[ 08/20/2024 21:08:16.150 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 452187
+[ 08/20/2024 21:08:21.898 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 452789
+[ 08/20/2024 21:08:37.489 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 454933
+[ 08/20/2024 21:09:15.193 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 456724
+[ 08/20/2024 21:09:47.334 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 462586
+[ 08/20/2024 21:11:14.683 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 470168
+[ 08/20/2024 21:11:29.746 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 471301
+[ 08/20/2024 21:11:53.027 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 472811
+[ 08/20/2024 21:12:02.923 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 475163
+[ 08/20/2024 21:20:15.711 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 509750
+[ 08/20/2024 21:21:53.628 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 525006
+[ 08/20/2024 21:23:30.083 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 538557
+[ 08/20/2024 21:56:58.695 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 859655
+[ 08/20/2024 21:57:10.067 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 861545
+[ 08/20/2024 22:24:59.415 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 1073935
+[ 08/20/2024 22:28:57.093 set_rr_scheduling INFO ] Set real-time scheduling priority to 1
+[ 08/20/2024 22:28:57.187 glxext_init INFO ] Extension GLX_SGI_video_sync - present
+[ 08/20/2024 22:28:57.187 glxext_init INFO ] Extension GLX_SGI_swap_control - present
+[ 08/20/2024 22:28:57.187 glxext_init INFO ] Extension GLX_OML_sync_control - present
+[ 08/20/2024 22:28:57.187 glxext_init INFO ] Extension GLX_MESA_swap_control - present
+[ 08/20/2024 22:28:57.187 glxext_init INFO ] Extension GLX_EXT_swap_control - present
+[ 08/20/2024 22:28:57.187 glxext_init INFO ] Extension GLX_EXT_texture_from_pixmap - present
+[ 08/20/2024 22:28:57.187 glxext_init INFO ] Extension GLX_ARB_create_context - present
+[ 08/20/2024 22:28:57.187 glxext_init INFO ] Extension GLX_EXT_buffer_age - present
+[ 08/20/2024 22:28:57.187 glxext_init INFO ] Extension GLX_ARB_create_context_robustness - present
+[ 08/20/2024 22:28:57.187 glxext_init INFO ] Extension GLX_MESA_query_renderer - present
+[ 08/20/2024 22:28:57.195 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'time'. This is normal when using custom shaders.
+[ 08/20/2024 22:28:57.196 gl_init INFO ] Using back buffer format 0x8051
+[ 08/20/2024 22:31:16.933 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 44023
+[ 08/20/2024 22:31:44.911 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 48770
+[ 08/20/2024 22:32:29.407 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 57846
+[ 08/20/2024 22:32:29.407 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 57850
+[ 08/20/2024 22:51:49.372 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 374916
+[ 08/20/2024 22:51:56.336 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 375858
+[ 08/20/2024 22:52:04.916 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 377643
+[ 08/20/2024 23:01:40.901 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 526209
+[ 08/20/2024 23:08:53.662 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 600765
+[ 08/20/2024 23:17:51.527 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 736860
+[ 08/20/2024 23:19:26.271 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 786402
+[ 08/20/2024 23:33:55.437 set_rr_scheduling INFO ] Set real-time scheduling priority to 1
+[ 08/20/2024 23:33:55.538 glxext_init INFO ] Extension GLX_SGI_video_sync - present
+[ 08/20/2024 23:33:55.538 glxext_init INFO ] Extension GLX_SGI_swap_control - present
+[ 08/20/2024 23:33:55.538 glxext_init INFO ] Extension GLX_OML_sync_control - present
+[ 08/20/2024 23:33:55.538 glxext_init INFO ] Extension GLX_MESA_swap_control - present
+[ 08/20/2024 23:33:55.538 glxext_init INFO ] Extension GLX_EXT_swap_control - present
+[ 08/20/2024 23:33:55.538 glxext_init INFO ] Extension GLX_EXT_texture_from_pixmap - present
+[ 08/20/2024 23:33:55.538 glxext_init INFO ] Extension GLX_ARB_create_context - present
+[ 08/20/2024 23:33:55.538 glxext_init INFO ] Extension GLX_EXT_buffer_age - present
+[ 08/20/2024 23:33:55.538 glxext_init INFO ] Extension GLX_ARB_create_context_robustness - present
+[ 08/20/2024 23:33:55.538 glxext_init INFO ] Extension GLX_MESA_query_renderer - present
+[ 08/20/2024 23:33:55.555 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'time'. This is normal when using custom shaders.
+[ 08/20/2024 23:33:55.557 gl_init INFO ] Using back buffer format 0x8051
+[ 08/20/2024 23:57:39.184 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 615225
+[ 08/20/2024 23:57:47.712 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 617134
+[ 08/21/2024 00:31:07.013 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 1047618
+[ 08/21/2024 00:34:30.724 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 1102546
+[ 08/21/2024 00:34:30.724 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 1102549
+[ 08/21/2024 00:34:34.048 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 1103747
+[ 08/21/2024 00:34:34.048 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 1103750
+[ 08/21/2024 00:36:26.751 set_rr_scheduling INFO ] Set real-time scheduling priority to 1
+[ 08/21/2024 00:36:26.852 glxext_init INFO ] Extension GLX_SGI_video_sync - present
+[ 08/21/2024 00:36:26.852 glxext_init INFO ] Extension GLX_SGI_swap_control - present
+[ 08/21/2024 00:36:26.852 glxext_init INFO ] Extension GLX_OML_sync_control - present
+[ 08/21/2024 00:36:26.852 glxext_init INFO ] Extension GLX_MESA_swap_control - present
+[ 08/21/2024 00:36:26.852 glxext_init INFO ] Extension GLX_EXT_swap_control - present
+[ 08/21/2024 00:36:26.852 glxext_init INFO ] Extension GLX_EXT_texture_from_pixmap - present
+[ 08/21/2024 00:36:26.852 glxext_init INFO ] Extension GLX_ARB_create_context - present
+[ 08/21/2024 00:36:26.852 glxext_init INFO ] Extension GLX_EXT_buffer_age - present
+[ 08/21/2024 00:36:26.852 glxext_init INFO ] Extension GLX_ARB_create_context_robustness - present
+[ 08/21/2024 00:36:26.852 glxext_init INFO ] Extension GLX_MESA_query_renderer - present
+[ 08/21/2024 00:36:26.908 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'time'. This is normal when using custom shaders.
+[ 08/21/2024 00:36:26.911 gl_init INFO ] Using back buffer format 0x8051
+[ 08/21/2024 00:38:14.703 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 36054
+[ 08/21/2024 00:42:47.034 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 182196
+[ 08/21/2024 00:42:51.865 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 185272
+[ 08/21/2024 00:48:48.833 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 362656
+[ 08/21/2024 02:17:57.082 set_rr_scheduling INFO ] Set real-time scheduling priority to 1
+[ 08/21/2024 02:17:57.175 glxext_init INFO ] Extension GLX_SGI_video_sync - present
+[ 08/21/2024 02:17:57.175 glxext_init INFO ] Extension GLX_SGI_swap_control - present
+[ 08/21/2024 02:17:57.175 glxext_init INFO ] Extension GLX_OML_sync_control - present
+[ 08/21/2024 02:17:57.175 glxext_init INFO ] Extension GLX_MESA_swap_control - present
+[ 08/21/2024 02:17:57.175 glxext_init INFO ] Extension GLX_EXT_swap_control - present
+[ 08/21/2024 02:17:57.175 glxext_init INFO ] Extension GLX_EXT_texture_from_pixmap - present
+[ 08/21/2024 02:17:57.175 glxext_init INFO ] Extension GLX_ARB_create_context - present
+[ 08/21/2024 02:17:57.175 glxext_init INFO ] Extension GLX_EXT_buffer_age - present
+[ 08/21/2024 02:17:57.175 glxext_init INFO ] Extension GLX_ARB_create_context_robustness - present
+[ 08/21/2024 02:17:57.175 glxext_init INFO ] Extension GLX_MESA_query_renderer - present
+[ 08/21/2024 02:17:57.186 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'time'. This is normal when using custom shaders.
+[ 08/21/2024 02:17:57.187 gl_init INFO ] Using back buffer format 0x8051
+[ 08/21/2024 06:41:57.129 set_rr_scheduling INFO ] Set real-time scheduling priority to 1
+[ 08/21/2024 06:41:57.227 glxext_init INFO ] Extension GLX_SGI_video_sync - present
+[ 08/21/2024 06:41:57.227 glxext_init INFO ] Extension GLX_SGI_swap_control - present
+[ 08/21/2024 06:41:57.227 glxext_init INFO ] Extension GLX_OML_sync_control - present
+[ 08/21/2024 06:41:57.227 glxext_init INFO ] Extension GLX_MESA_swap_control - present
+[ 08/21/2024 06:41:57.227 glxext_init INFO ] Extension GLX_EXT_swap_control - present
+[ 08/21/2024 06:41:57.227 glxext_init INFO ] Extension GLX_EXT_texture_from_pixmap - present
+[ 08/21/2024 06:41:57.227 glxext_init INFO ] Extension GLX_ARB_create_context - present
+[ 08/21/2024 06:41:57.227 glxext_init INFO ] Extension GLX_EXT_buffer_age - present
+[ 08/21/2024 06:41:57.227 glxext_init INFO ] Extension GLX_ARB_create_context_robustness - present
+[ 08/21/2024 06:41:57.227 glxext_init INFO ] Extension GLX_MESA_query_renderer - present
+[ 08/21/2024 06:41:57.253 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'time'. This is normal when using custom shaders.
+[ 08/21/2024 06:41:57.257 gl_init INFO ] Using back buffer format 0x8051
+[ 08/21/2024 08:28:57.098 set_rr_scheduling INFO ] Set real-time scheduling priority to 1
+[ 08/21/2024 08:28:57.228 glxext_init INFO ] Extension GLX_SGI_video_sync - present
+[ 08/21/2024 08:28:57.228 glxext_init INFO ] Extension GLX_SGI_swap_control - present
+[ 08/21/2024 08:28:57.228 glxext_init INFO ] Extension GLX_OML_sync_control - present
+[ 08/21/2024 08:28:57.228 glxext_init INFO ] Extension GLX_MESA_swap_control - present
+[ 08/21/2024 08:28:57.228 glxext_init INFO ] Extension GLX_EXT_swap_control - present
+[ 08/21/2024 08:28:57.228 glxext_init INFO ] Extension GLX_EXT_texture_from_pixmap - present
+[ 08/21/2024 08:28:57.228 glxext_init INFO ] Extension GLX_ARB_create_context - present
+[ 08/21/2024 08:28:57.228 glxext_init INFO ] Extension GLX_EXT_buffer_age - present
+[ 08/21/2024 08:28:57.228 glxext_init INFO ] Extension GLX_ARB_create_context_robustness - present
+[ 08/21/2024 08:28:57.228 glxext_init INFO ] Extension GLX_MESA_query_renderer - present
+[ 08/21/2024 08:28:57.254 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'time'. This is normal when using custom shaders.
+[ 08/21/2024 08:28:57.255 gl_init INFO ] Using back buffer format 0x8051
+[ 08/21/2024 08:35:33.365 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 82736
+[ 08/21/2024 08:35:38.450 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 84231
+[ 08/21/2024 09:02:24.328 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 432807
+[ 08/21/2024 09:11:26.307 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 547055
+[ 08/21/2024 09:14:23.449 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 577339
+[ 08/21/2024 09:15:52.314 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 600825
+[ 08/21/2024 09:51:57.134 set_rr_scheduling INFO ] Set real-time scheduling priority to 1
+[ 08/21/2024 09:51:57.234 glxext_init INFO ] Extension GLX_SGI_video_sync - present
+[ 08/21/2024 09:51:57.234 glxext_init INFO ] Extension GLX_SGI_swap_control - present
+[ 08/21/2024 09:51:57.234 glxext_init INFO ] Extension GLX_OML_sync_control - present
+[ 08/21/2024 09:51:57.234 glxext_init INFO ] Extension GLX_MESA_swap_control - present
+[ 08/21/2024 09:51:57.234 glxext_init INFO ] Extension GLX_EXT_swap_control - present
+[ 08/21/2024 09:51:57.234 glxext_init INFO ] Extension GLX_EXT_texture_from_pixmap - present
+[ 08/21/2024 09:51:57.234 glxext_init INFO ] Extension GLX_ARB_create_context - present
+[ 08/21/2024 09:51:57.234 glxext_init INFO ] Extension GLX_EXT_buffer_age - present
+[ 08/21/2024 09:51:57.234 glxext_init INFO ] Extension GLX_ARB_create_context_robustness - present
+[ 08/21/2024 09:51:57.234 glxext_init INFO ] Extension GLX_MESA_query_renderer - present
+[ 08/21/2024 09:51:57.242 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'time'. This is normal when using custom shaders.
+[ 08/21/2024 09:51:57.243 gl_init INFO ] Using back buffer format 0x8051
+[ 08/21/2024 10:14:28.230 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 407744
+[ 08/21/2024 12:21:57.137 set_rr_scheduling INFO ] Set real-time scheduling priority to 1
+[ 08/21/2024 12:21:57.216 glxext_init INFO ] Extension GLX_SGI_video_sync - present
+[ 08/21/2024 12:21:57.216 glxext_init INFO ] Extension GLX_SGI_swap_control - present
+[ 08/21/2024 12:21:57.216 glxext_init INFO ] Extension GLX_OML_sync_control - present
+[ 08/21/2024 12:21:57.216 glxext_init INFO ] Extension GLX_MESA_swap_control - present
+[ 08/21/2024 12:21:57.216 glxext_init INFO ] Extension GLX_EXT_swap_control - present
+[ 08/21/2024 12:21:57.216 glxext_init INFO ] Extension GLX_EXT_texture_from_pixmap - present
+[ 08/21/2024 12:21:57.216 glxext_init INFO ] Extension GLX_ARB_create_context - present
+[ 08/21/2024 12:21:57.216 glxext_init INFO ] Extension GLX_EXT_buffer_age - present
+[ 08/21/2024 12:21:57.216 glxext_init INFO ] Extension GLX_ARB_create_context_robustness - present
+[ 08/21/2024 12:21:57.216 glxext_init INFO ] Extension GLX_MESA_query_renderer - present
+[ 08/21/2024 12:21:57.240 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'time'. This is normal when using custom shaders.
+[ 08/21/2024 12:21:57.242 gl_init INFO ] Using back buffer format 0x8051
+[ 08/21/2024 14:45:57.149 set_rr_scheduling INFO ] Set real-time scheduling priority to 1
+[ 08/21/2024 14:45:57.237 glxext_init INFO ] Extension GLX_SGI_video_sync - present
+[ 08/21/2024 14:45:57.237 glxext_init INFO ] Extension GLX_SGI_swap_control - present
+[ 08/21/2024 14:45:57.237 glxext_init INFO ] Extension GLX_OML_sync_control - present
+[ 08/21/2024 14:45:57.237 glxext_init INFO ] Extension GLX_MESA_swap_control - present
+[ 08/21/2024 14:45:57.237 glxext_init INFO ] Extension GLX_EXT_swap_control - present
+[ 08/21/2024 14:45:57.237 glxext_init INFO ] Extension GLX_EXT_texture_from_pixmap - present
+[ 08/21/2024 14:45:57.237 glxext_init INFO ] Extension GLX_ARB_create_context - present
+[ 08/21/2024 14:45:57.237 glxext_init INFO ] Extension GLX_EXT_buffer_age - present
+[ 08/21/2024 14:45:57.237 glxext_init INFO ] Extension GLX_ARB_create_context_robustness - present
+[ 08/21/2024 14:45:57.237 glxext_init INFO ] Extension GLX_MESA_query_renderer - present
+[ 08/21/2024 14:45:57.268 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'time'. This is normal when using custom shaders.
+[ 08/21/2024 14:45:57.270 gl_init INFO ] Using back buffer format 0x8051
+[ 08/21/2024 15:18:57.319 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 656477
+[ 08/21/2024 15:32:20.720 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 857705
+[ 08/21/2024 15:51:40.449 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 1128632
+[ 08/21/2024 15:51:53.281 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 1132333
+[ 08/21/2024 15:51:57.091 set_rr_scheduling INFO ] Set real-time scheduling priority to 1
+[ 08/21/2024 15:51:57.175 glxext_init INFO ] Extension GLX_SGI_video_sync - present
+[ 08/21/2024 15:51:57.175 glxext_init INFO ] Extension GLX_SGI_swap_control - present
+[ 08/21/2024 15:51:57.175 glxext_init INFO ] Extension GLX_OML_sync_control - present
+[ 08/21/2024 15:51:57.175 glxext_init INFO ] Extension GLX_MESA_swap_control - present
+[ 08/21/2024 15:51:57.175 glxext_init INFO ] Extension GLX_EXT_swap_control - present
+[ 08/21/2024 15:51:57.175 glxext_init INFO ] Extension GLX_EXT_texture_from_pixmap - present
+[ 08/21/2024 15:51:57.175 glxext_init INFO ] Extension GLX_ARB_create_context - present
+[ 08/21/2024 15:51:57.175 glxext_init INFO ] Extension GLX_EXT_buffer_age - present
+[ 08/21/2024 15:51:57.175 glxext_init INFO ] Extension GLX_ARB_create_context_robustness - present
+[ 08/21/2024 15:51:57.175 glxext_init INFO ] Extension GLX_MESA_query_renderer - present
+[ 08/21/2024 15:51:57.207 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'time'. This is normal when using custom shaders.
+[ 08/21/2024 15:51:57.208 gl_init INFO ] Using back buffer format 0x8051
+[ 08/21/2024 15:54:07.614 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 34538
+[ 08/21/2024 15:55:49.638 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 65782
+[ 08/21/2024 15:55:53.841 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 67189
+[ 08/21/2024 15:56:44.481 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 79874
+[ 08/21/2024 15:57:02.359 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 84905
+[ 08/21/2024 16:39:06.964 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 822416
+[ 08/21/2024 16:39:32.526 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 832047
+[ 08/21/2024 16:56:57.134 set_rr_scheduling INFO ] Set real-time scheduling priority to 1
+[ 08/21/2024 16:56:57.234 glxext_init INFO ] Extension GLX_SGI_video_sync - present
+[ 08/21/2024 16:56:57.234 glxext_init INFO ] Extension GLX_SGI_swap_control - present
+[ 08/21/2024 16:56:57.234 glxext_init INFO ] Extension GLX_OML_sync_control - present
+[ 08/21/2024 16:56:57.234 glxext_init INFO ] Extension GLX_MESA_swap_control - present
+[ 08/21/2024 16:56:57.234 glxext_init INFO ] Extension GLX_EXT_swap_control - present
+[ 08/21/2024 16:56:57.234 glxext_init INFO ] Extension GLX_EXT_texture_from_pixmap - present
+[ 08/21/2024 16:56:57.234 glxext_init INFO ] Extension GLX_ARB_create_context - present
+[ 08/21/2024 16:56:57.234 glxext_init INFO ] Extension GLX_EXT_buffer_age - present
+[ 08/21/2024 16:56:57.234 glxext_init INFO ] Extension GLX_ARB_create_context_robustness - present
+[ 08/21/2024 16:56:57.234 glxext_init INFO ] Extension GLX_MESA_query_renderer - present
+[ 08/21/2024 16:56:57.251 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'time'. This is normal when using custom shaders.
+[ 08/21/2024 16:56:57.253 gl_init INFO ] Using back buffer format 0x8051
+[ 08/21/2024 17:05:07.467 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 125962
+[ 08/21/2024 18:14:57.122 set_rr_scheduling INFO ] Set real-time scheduling priority to 1
+[ 08/21/2024 18:14:57.214 glxext_init INFO ] Extension GLX_SGI_video_sync - present
+[ 08/21/2024 18:14:57.214 glxext_init INFO ] Extension GLX_SGI_swap_control - present
+[ 08/21/2024 18:14:57.214 glxext_init INFO ] Extension GLX_OML_sync_control - present
+[ 08/21/2024 18:14:57.214 glxext_init INFO ] Extension GLX_MESA_swap_control - present
+[ 08/21/2024 18:14:57.214 glxext_init INFO ] Extension GLX_EXT_swap_control - present
+[ 08/21/2024 18:14:57.214 glxext_init INFO ] Extension GLX_EXT_texture_from_pixmap - present
+[ 08/21/2024 18:14:57.214 glxext_init INFO ] Extension GLX_ARB_create_context - present
+[ 08/21/2024 18:14:57.214 glxext_init INFO ] Extension GLX_EXT_buffer_age - present
+[ 08/21/2024 18:14:57.214 glxext_init INFO ] Extension GLX_ARB_create_context_robustness - present
+[ 08/21/2024 18:14:57.214 glxext_init INFO ] Extension GLX_MESA_query_renderer - present
+[ 08/21/2024 18:14:57.232 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'time'. This is normal when using custom shaders.
+[ 08/21/2024 18:14:57.238 gl_init INFO ] Using back buffer format 0x8051
+[ 08/21/2024 18:38:26.550 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 354740
+[ 08/21/2024 18:39:46.060 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 372025
+[ 08/21/2024 18:45:01.831 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 443832
+[ 08/21/2024 18:47:26.118 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 470244
+[ 08/21/2024 18:47:53.761 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 476336
+[ 08/21/2024 18:50:52.275 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 507483
+[ 08/21/2024 18:51:15.447 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 512221
+[ 08/21/2024 18:51:40.555 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 518148
+[ 08/21/2024 18:55:05.247 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 560497
+[ 08/21/2024 18:57:26.581 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 590598
+[ 08/21/2024 18:58:15.910 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 601932
+[ 08/21/2024 18:58:41.269 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 607222
+[ 08/21/2024 18:59:00.253 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 611409
+[ 08/21/2024 18:59:15.649 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 614876
+[ 08/21/2024 18:59:36.820 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 619349
+[ 08/21/2024 19:00:03.044 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 625581
+[ 08/21/2024 19:00:31.477 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 630786
+[ 08/21/2024 19:01:09.146 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 639052
+[ 08/21/2024 19:02:57.674 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 665132
+[ 08/21/2024 19:02:58.421 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 665367
+[ 08/21/2024 19:03:44.875 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 676716
+[ 08/21/2024 19:04:05.053 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 681790
+[ 08/21/2024 19:04:57.852 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 691869
+[ 08/21/2024 19:05:03.041 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 693276
+[ 08/21/2024 19:05:28.893 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 698115
+[ 08/21/2024 19:06:03.503 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 704570
+[ 08/21/2024 19:06:21.691 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 707778
+[ 08/21/2024 19:06:30.928 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 709316
+[ 08/21/2024 19:06:31.842 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 709617
+[ 08/21/2024 19:06:34.449 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 710219
+[ 08/21/2024 19:07:12.751 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 717738
+[ 08/21/2024 19:07:58.692 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 727523
+[ 08/21/2024 19:10:29.609 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 758206
+[ 08/21/2024 19:11:58.217 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 776603
+[ 08/21/2024 19:12:45.919 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 785291
+[ 08/21/2024 19:13:03.887 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 789065
+[ 08/21/2024 19:13:11.937 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 791270
+[ 08/21/2024 19:13:23.109 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 794233
+[ 08/21/2024 19:13:54.700 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 800648
+[ 08/21/2024 19:14:38.884 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 810231
+[ 08/21/2024 19:14:46.775 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 811968
+[ 08/21/2024 19:14:51.608 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 813433
+[ 08/21/2024 19:15:33.942 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 821306
+[ 08/21/2024 19:17:23.724 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 839448
+[ 08/21/2024 19:17:36.936 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 842211
+[ 08/21/2024 19:18:45.881 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 855892
+[ 08/21/2024 19:19:38.957 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 865886
+[ 08/21/2024 19:20:48.356 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 878470
+[ 08/21/2024 19:24:51.491 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 918681
+[ 08/21/2024 19:25:00.571 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 920807
+[ 08/21/2024 19:25:53.731 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 931969
+[ 08/21/2024 19:25:57.487 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 933137
+[ 08/21/2024 19:26:03.200 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 934345
+[ 08/21/2024 19:27:56.152 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 954526
+[ 08/21/2024 19:28:43.949 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 966672
+[ 08/21/2024 19:28:56.672 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 970126
+[ 08/21/2024 19:29:18.015 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 974964
+[ 08/21/2024 19:29:59.129 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 982679
+[ 08/21/2024 19:30:44.383 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 992881
+[ 08/21/2024 19:31:41.231 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 1006827
+[ 08/21/2024 19:31:46.975 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 1008287
+[ 08/21/2024 19:31:47.124 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 1008406
+[ 08/21/2024 19:32:09.131 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 1013498
+[ 08/21/2024 19:32:16.033 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 1015309
+[ 08/21/2024 19:33:22.002 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 1028964
+[ 08/21/2024 19:33:57.166 set_rr_scheduling INFO ] Set real-time scheduling priority to 1
+[ 08/21/2024 19:33:57.276 glxext_init INFO ] Extension GLX_SGI_video_sync - present
+[ 08/21/2024 19:33:57.276 glxext_init INFO ] Extension GLX_SGI_swap_control - present
+[ 08/21/2024 19:33:57.276 glxext_init INFO ] Extension GLX_OML_sync_control - present
+[ 08/21/2024 19:33:57.276 glxext_init INFO ] Extension GLX_MESA_swap_control - present
+[ 08/21/2024 19:33:57.276 glxext_init INFO ] Extension GLX_EXT_swap_control - present
+[ 08/21/2024 19:33:57.276 glxext_init INFO ] Extension GLX_EXT_texture_from_pixmap - present
+[ 08/21/2024 19:33:57.276 glxext_init INFO ] Extension GLX_ARB_create_context - present
+[ 08/21/2024 19:33:57.276 glxext_init INFO ] Extension GLX_EXT_buffer_age - present
+[ 08/21/2024 19:33:57.276 glxext_init INFO ] Extension GLX_ARB_create_context_robustness - present
+[ 08/21/2024 19:33:57.276 glxext_init INFO ] Extension GLX_MESA_query_renderer - present
+[ 08/21/2024 19:33:57.310 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'time'. This is normal when using custom shaders.
+[ 08/21/2024 19:33:57.311 gl_init INFO ] Using back buffer format 0x8051
+[ 08/21/2024 19:34:11.147 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 4998
+[ 08/21/2024 19:42:37.973 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 134037
+[ 08/21/2024 19:42:44.154 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 135699
+[ 08/21/2024 19:43:00.618 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 139091
+[ 08/21/2024 19:43:12.294 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 142810
+[ 08/21/2024 19:44:04.554 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 155326
+[ 08/21/2024 19:45:00.682 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 171671
+[ 08/21/2024 19:45:09.470 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 173886
+[ 08/21/2024 19:46:07.388 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 186903
+[ 08/21/2024 19:46:39.947 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 196226
+[ 08/21/2024 19:47:00.693 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 202578
+[ 08/21/2024 19:48:14.503 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 218868
+[ 08/21/2024 19:48:51.244 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 228339
+[ 08/21/2024 19:49:32.146 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 237308
+[ 08/21/2024 19:49:52.989 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 242859
+[ 08/21/2024 19:50:02.235 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 245117
+[ 08/21/2024 19:50:33.451 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 253687
+[ 08/21/2024 19:50:39.126 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 255579
+[ 08/21/2024 19:51:11.283 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 263843
+[ 08/21/2024 19:51:28.362 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 267966
+[ 08/21/2024 19:51:44.639 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 271913
+[ 08/21/2024 19:52:13.019 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 279156
+[ 08/21/2024 19:52:30.371 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 282776
+[ 08/21/2024 19:54:11.996 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 308806
+[ 08/21/2024 19:58:01.014 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 358373
+[ 08/21/2024 20:03:42.916 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 416463
+[ 08/21/2024 20:11:27.084 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 520499
+[ 08/21/2024 20:15:45.217 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 579230
+[ 08/21/2024 20:15:54.487 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 581984
+[ 08/21/2024 20:17:14.043 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 603444
+[ 08/21/2024 20:17:16.645 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 604575
+[ 08/21/2024 20:17:35.555 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 611964
+[ 08/21/2024 21:20:18.845 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 1158186
+[ 08/21/2024 21:23:31.786 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 1192356
+[ 08/21/2024 21:24:19.665 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 1199872
+[ 08/21/2024 21:24:47.879 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 1205412
+[ 08/21/2024 21:25:23.369 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 1214164
+[ 08/21/2024 21:25:41.732 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 1218723
+[ 08/21/2024 21:25:51.589 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 1221493
+[ 08/21/2024 21:26:41.942 set_rr_scheduling INFO ] Set real-time scheduling priority to 1
+[ 08/21/2024 21:26:42.044 glxext_init INFO ] Extension GLX_SGI_video_sync - present
+[ 08/21/2024 21:26:42.044 glxext_init INFO ] Extension GLX_SGI_swap_control - present
+[ 08/21/2024 21:26:42.044 glxext_init INFO ] Extension GLX_OML_sync_control - present
+[ 08/21/2024 21:26:42.044 glxext_init INFO ] Extension GLX_MESA_swap_control - present
+[ 08/21/2024 21:26:42.044 glxext_init INFO ] Extension GLX_EXT_swap_control - present
+[ 08/21/2024 21:26:42.044 glxext_init INFO ] Extension GLX_EXT_texture_from_pixmap - present
+[ 08/21/2024 21:26:42.044 glxext_init INFO ] Extension GLX_ARB_create_context - present
+[ 08/21/2024 21:26:42.044 glxext_init INFO ] Extension GLX_EXT_buffer_age - present
+[ 08/21/2024 21:26:42.044 glxext_init INFO ] Extension GLX_ARB_create_context_robustness - present
+[ 08/21/2024 21:26:42.044 glxext_init INFO ] Extension GLX_MESA_query_renderer - present
+[ 08/21/2024 21:26:42.067 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'time'. This is normal when using custom shaders.
+[ 08/21/2024 21:26:42.073 gl_init INFO ] Using back buffer format 0x8051
+[ 08/21/2024 21:26:43.291 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 3167
+[ 08/21/2024 21:26:48.715 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 5100
+[ 08/21/2024 21:31:03.050 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 73594
+[ 08/21/2024 21:31:16.858 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 76597
+[ 08/21/2024 21:31:30.969 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 80043
+[ 08/21/2024 21:32:48.979 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 94102
+[ 08/21/2024 21:34:11.934 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 112897
+[ 08/21/2024 21:34:13.012 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 113381
+[ 08/21/2024 21:34:46.416 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 121059
+[ 08/21/2024 21:35:18.746 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 127872
+[ 08/21/2024 21:35:42.372 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 133862
+[ 08/21/2024 21:35:50.620 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 135992
+[ 08/21/2024 21:40:08.695 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 190673
+[ 08/21/2024 21:40:22.469 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 194220
+[ 08/21/2024 21:40:35.640 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 197205
+[ 08/21/2024 21:42:18.466 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 215346
+[ 08/21/2024 21:43:20.137 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 227742
+[ 08/21/2024 21:45:02.454 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 249701
+[ 08/21/2024 21:45:32.710 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 257215
+[ 08/21/2024 21:45:36.910 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 258641
+[ 08/21/2024 21:46:47.474 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 275424
+[ 08/21/2024 21:48:17.591 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 299451
+[ 08/21/2024 21:53:45.695 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 370193
+[ 08/21/2024 21:53:54.599 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 372787
+[ 08/21/2024 21:54:07.959 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 377006
+[ 08/21/2024 21:54:42.377 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 386551
+[ 08/21/2024 21:55:25.222 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 399945
+[ 08/21/2024 21:55:44.004 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 404855
+[ 08/21/2024 21:56:45.985 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 419000
+[ 08/21/2024 21:56:46.122 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 419211
+[ 08/21/2024 21:57:17.720 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 426769
+[ 08/21/2024 21:57:17.856 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 426993
+[ 08/21/2024 21:59:15.174 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 451239
+[ 08/21/2024 21:59:15.174 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 451244
+[ 08/21/2024 22:00:15.885 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 463839
+[ 08/21/2024 22:01:04.172 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 476697
+[ 08/21/2024 22:01:38.848 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 485636
+[ 08/21/2024 22:01:44.670 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 486953
+[ 08/21/2024 22:02:42.493 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 497540
+[ 08/21/2024 22:02:42.558 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 497640
+[ 08/21/2024 22:03:24.143 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 505807
+[ 08/21/2024 22:03:24.240 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 505975
+[ 08/21/2024 22:04:22.222 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 515982
+[ 08/21/2024 22:05:53.884 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 533876
+[ 08/21/2024 22:07:19.280 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 554653
+[ 08/21/2024 22:07:31.169 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 557981
+[ 08/21/2024 22:07:46.708 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 562377
+[ 08/21/2024 22:08:13.574 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 569272
+[ 08/21/2024 22:08:57.248 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 579508
+[ 08/21/2024 22:09:50.247 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 589348
+[ 08/21/2024 22:10:02.202 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 592209
+[ 08/21/2024 22:10:29.644 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 598702
+[ 08/21/2024 22:10:33.105 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 599821
+[ 08/21/2024 22:11:35.785 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 617681
+[ 08/21/2024 22:13:00.401 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 634252
+[ 08/21/2024 22:13:51.402 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 646614
+[ 08/21/2024 22:16:17.363 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 681035
+[ 08/21/2024 22:25:54.776 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 718835
+[ 08/21/2024 22:26:02.160 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 720492
+[ 08/21/2024 22:27:28.750 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 729729
+[ 08/21/2024 22:27:38.084 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 731949
+[ 08/21/2024 22:27:49.033 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 734277
+[ 08/21/2024 22:28:04.300 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 738677
+[ 08/21/2024 22:31:15.195 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 801759
+[ 08/21/2024 22:31:34.256 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 810924
+[ 08/21/2024 22:31:34.355 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 811107
+[ 08/21/2024 22:32:18.778 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 829541
+[ 08/21/2024 22:32:28.947 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 834142
+[ 08/21/2024 22:35:09.658 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 894742
+[ 08/21/2024 22:38:13.065 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 964226
+[ 08/21/2024 22:39:02.014 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 973751
+[ 08/21/2024 22:40:33.388 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 993477
+[ 08/21/2024 22:41:05.073 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 1000237
+[ 08/21/2024 22:41:31.210 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 1006138
+[ 08/21/2024 22:42:16.990 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 1015920
+[ 08/21/2024 22:42:18.380 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 1016484
+[ 08/21/2024 22:42:23.565 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 1017774
+[ 08/21/2024 22:43:29.951 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 1032695
+[ 08/21/2024 22:44:21.335 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 1042769
+[ 08/21/2024 22:44:40.834 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 1047896
+[ 08/21/2024 22:45:16.362 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 1056156
+[ 08/21/2024 22:45:16.555 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 1056271
+[ 08/21/2024 22:45:27.130 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 1058959
+[ 08/21/2024 22:46:37.729 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 1074890
+[ 08/21/2024 22:46:37.958 set_rr_scheduling INFO ] Set real-time scheduling priority to 1
+[ 08/21/2024 22:46:38.046 glxext_init INFO ] Extension GLX_SGI_video_sync - present
+[ 08/21/2024 22:46:38.046 glxext_init INFO ] Extension GLX_SGI_swap_control - present
+[ 08/21/2024 22:46:38.046 glxext_init INFO ] Extension GLX_OML_sync_control - present
+[ 08/21/2024 22:46:38.046 glxext_init INFO ] Extension GLX_MESA_swap_control - present
+[ 08/21/2024 22:46:38.046 glxext_init INFO ] Extension GLX_EXT_swap_control - present
+[ 08/21/2024 22:46:38.046 glxext_init INFO ] Extension GLX_EXT_texture_from_pixmap - present
+[ 08/21/2024 22:46:38.046 glxext_init INFO ] Extension GLX_ARB_create_context - present
+[ 08/21/2024 22:46:38.046 glxext_init INFO ] Extension GLX_EXT_buffer_age - present
+[ 08/21/2024 22:46:38.046 glxext_init INFO ] Extension GLX_ARB_create_context_robustness - present
+[ 08/21/2024 22:46:38.046 glxext_init INFO ] Extension GLX_MESA_query_renderer - present
+[ 08/21/2024 22:46:38.074 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'time'. This is normal when using custom shaders.
+[ 08/21/2024 22:46:38.076 gl_init INFO ] Using back buffer format 0x8051
+[ 08/21/2024 22:47:43.739 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 19318
+[ 08/21/2024 22:48:41.726 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 34497
+[ 08/21/2024 22:48:49.395 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 36904
+[ 08/21/2024 22:49:39.791 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 47710
+[ 08/21/2024 22:50:20.038 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 57215
+[ 08/21/2024 22:50:25.379 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 58265
+[ 08/21/2024 22:52:39.406 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 83875
+[ 08/21/2024 22:52:43.734 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 85256
+[ 08/21/2024 22:52:54.974 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 88179
+[ 08/21/2024 22:53:20.794 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 94495
+[ 08/21/2024 22:54:16.505 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 103815
+[ 08/21/2024 22:55:47.179 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 122608
+[ 08/21/2024 22:57:11.195 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 137793
+[ 08/21/2024 22:58:04.472 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 148624
+[ 08/21/2024 22:58:25.050 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 153617
+[ 08/21/2024 22:58:43.506 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 158298
+[ 08/21/2024 23:02:41.762 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 202582
+[ 08/21/2024 23:07:12.141 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 269133
+[ 08/21/2024 23:15:25.518 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 305837
+[ 08/21/2024 23:21:36.468 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 380482
+[ 08/21/2024 23:21:58.545 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 384597
+[ 08/21/2024 23:25:36.020 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 426066
+[ 08/21/2024 23:27:00.249 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 439861
+[ 08/21/2024 23:29:44.495 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 468950
+[ 08/21/2024 23:29:47.481 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 469891
+[ 08/21/2024 23:29:51.902 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 471249
+[ 08/21/2024 23:29:57.875 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 472873
+[ 08/21/2024 23:30:01.560 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 473944
+[ 08/21/2024 23:30:12.912 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 476007
+[ 08/21/2024 23:30:17.571 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 477324
+[ 08/21/2024 23:30:24.167 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 478902
+[ 08/21/2024 23:30:33.513 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 480758
+[ 08/21/2024 23:30:50.229 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 484249
+[ 08/21/2024 23:31:01.810 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 487117
+[ 08/21/2024 23:31:04.430 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 487997
+[ 08/21/2024 23:31:07.747 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 489183
+[ 08/21/2024 23:31:16.696 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 491017
+[ 08/21/2024 23:31:20.086 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 492207
+[ 08/21/2024 23:31:47.092 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 497980
+[ 08/21/2024 23:31:51.939 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 499421
+[ 08/21/2024 23:31:57.211 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 500741
+[ 08/21/2024 23:32:07.959 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 503014
+[ 08/21/2024 23:32:12.322 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 504126
+[ 08/21/2024 23:32:42.466 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 510331
+[ 08/21/2024 23:32:50.777 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 512751
+[ 08/21/2024 23:33:13.112 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 517990
+[ 08/21/2024 23:33:26.326 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 521405
+[ 08/21/2024 23:33:33.822 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 523090
+[ 08/21/2024 23:33:41.704 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 525405
+[ 08/21/2024 23:34:22.702 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 533352
+[ 08/21/2024 23:35:58.533 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 548621
+[ 08/21/2024 23:35:58.634 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 548836
+[ 08/21/2024 23:38:06.595 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 576735
+[ 08/21/2024 23:38:50.587 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 588916
+[ 08/21/2024 23:38:53.600 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 589881
+[ 08/21/2024 23:39:26.597 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 598211
+[ 08/21/2024 23:39:45.512 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 601857
+[ 08/21/2024 23:40:03.770 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 605871
+[ 08/21/2024 23:41:15.814 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 622363
+[ 08/21/2024 23:42:04.506 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 635228
+[ 08/21/2024 23:42:25.680 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 640530
+[ 08/21/2024 23:43:00.728 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 649124
+[ 08/21/2024 23:43:09.265 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 650957
+[ 08/21/2024 23:44:53.746 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 672122
+[ 08/22/2024 00:16:57.103 set_rr_scheduling INFO ] Set real-time scheduling priority to 1
+[ 08/22/2024 00:16:57.205 glxext_init INFO ] Extension GLX_SGI_video_sync - present
+[ 08/22/2024 00:16:57.206 glxext_init INFO ] Extension GLX_SGI_swap_control - present
+[ 08/22/2024 00:16:57.206 glxext_init INFO ] Extension GLX_OML_sync_control - present
+[ 08/22/2024 00:16:57.206 glxext_init INFO ] Extension GLX_MESA_swap_control - present
+[ 08/22/2024 00:16:57.206 glxext_init INFO ] Extension GLX_EXT_swap_control - present
+[ 08/22/2024 00:16:57.206 glxext_init INFO ] Extension GLX_EXT_texture_from_pixmap - present
+[ 08/22/2024 00:16:57.206 glxext_init INFO ] Extension GLX_ARB_create_context - present
+[ 08/22/2024 00:16:57.206 glxext_init INFO ] Extension GLX_EXT_buffer_age - present
+[ 08/22/2024 00:16:57.206 glxext_init INFO ] Extension GLX_ARB_create_context_robustness - present
+[ 08/22/2024 00:16:57.206 glxext_init INFO ] Extension GLX_MESA_query_renderer - present
+[ 08/22/2024 00:16:57.214 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'time'. This is normal when using custom shaders.
+[ 08/22/2024 00:16:57.214 gl_init INFO ] Using back buffer format 0x8051
+[ 08/22/2024 00:21:36.256 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 22922
+[ 08/22/2024 00:21:48.570 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 23832
+[ 08/22/2024 01:06:42.033 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 381720
+[ 08/22/2024 01:08:33.505 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 411799
+[ 08/22/2024 01:08:50.470 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 416051
+[ 08/22/2024 01:08:57.527 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 418129
+[ 08/22/2024 01:11:10.512 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 450446

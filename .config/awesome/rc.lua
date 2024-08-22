@@ -442,7 +442,13 @@ awful.tag.add(" Mail (3) ", {
     selected = false
 })
 
-awful.tag.add(" etc (4) ", {
+awful.tag.add(" Notes (4) ", {
+    layout = awful.layout.suit.tile.left,
+    screen = 1,
+    selected = false
+})
+
+awful.tag.add(" etc (5) ", {
     layout = awful.layout.suit.tile.left,
     screen = 1,
     selected = false
@@ -486,7 +492,13 @@ awful.tag.add(" Search (2) ", {
     selected = true
 })
 
-awful.tag.add(" Media (3) ", {
+awful.tag.add(" BackUp (3) ", {
+    layout = awful.layout.suit.max,
+    screen = 2,
+    selected = false
+})
+
+awful.tag.add(" Media (4) ", {
     layout = awful.layout.suit.max,
     screen = 2,
     selected = false
@@ -513,7 +525,7 @@ awful.tag.add(" Chat (2) ", {
 })
 
 awful.tag.add(" Sound (3) ", {
-    layout = awful.layout.suit.tile,
+    layout = awful.layout.suit.max,
     screen = 3,
     selected = false
 })
@@ -1086,6 +1098,10 @@ awful.rules.rules = {
         placement = awful.placement.centered },},
 -- B
 --
+        { rule = { class = "Back In Time" },
+        properties = { floating = true,
+        placement = awful.placement.centered,
+        tag = screen[2].tags[3] },},
 -- C
 --
 -- D
@@ -1118,7 +1134,7 @@ awful.rules.rules = {
         { rule = { class = "Google-chrome" },
         properties = { floating = false,
         placement = awful.placement.centered,
-        tag = screen[2].tags[3] },},
+        tag = screen[2].tags[4] },},
         
         { rule = { class = "gnome-calculator" },
         properties = { floating = true,
@@ -1148,7 +1164,8 @@ awful.rules.rules = {
 --
         { rule = { name = "KDE Connect" },
         properties = { floating = true,
-        placement = awful.placement.centered },},    
+        placement = awful.placement.centered,
+        tag = screen[2].tags[3] },},    
 -- L
 --
         { rule = { name = "Lutris" },
@@ -1174,6 +1191,10 @@ awful.rules.rules = {
         placement = awful.placement.centered },},
 -- O
 --
+        { rule_any = { class = {"obsidian", "obsidian"} },
+        properties = { floating = false,
+        tag = screen[1].tags[4]       },},
+
         { rule = { class = "openrgb" },
         properties = { floating = true,
         placement = awful.placement.centered },},
@@ -1190,6 +1211,10 @@ awful.rules.rules = {
         { rule_any = { class = {"ProtonUp-Qt"} },
         properties = { floating = true,
         placement = awful.placement.centered },},
+
+        { rule_any = { class = {"pulseeffects", "Pulseeffects"} },
+        properties = { floating = false,
+        tag = screen[3].tags[3]       },},
 -- Q
 -- 
 -- R
