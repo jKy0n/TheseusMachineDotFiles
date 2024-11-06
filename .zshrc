@@ -5,6 +5,8 @@
 
 export EDITOR=nvim
 export VISUAL=nvim
+export TERM="xterm-256color"
+
 #export DISTCC_JOBS=28
 
 export TMUX_POWERLINE_THEME=my-theme
@@ -84,7 +86,7 @@ elif [[ "$(cat /etc/*-release)" == *"Arch Linux"* ]]; then
 fi
 
 
-# typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
 
 
 # Load Aliases list
@@ -179,6 +181,12 @@ then
     }
 fi
 
+echo -e '\e[5 q'  # Beam cursor with blinking
+# Força o cursor a voltar para beam e piscante ao retornar ao shell
+function reset_cursor {
+    echo -e '\e[5 q'
+}
+precmd_functions+=("reset_cursor")
 
 # Start tmux by default
-[[ -z $TMUX ]] && exec tmux
+# [[ -z $TMUX ]] && exec tmux

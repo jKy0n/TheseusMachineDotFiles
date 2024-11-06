@@ -60,7 +60,7 @@
         {
             "type": "command",
             "key": "  ",
-            "text": " btrfs --version | awk '{print \"BtrFS\", $2}' "
+            "text": " btrfs --version | awk 'NR==1 {print \"BtrFS\", $2}' "
         },
         // {
         //     "type": "command",

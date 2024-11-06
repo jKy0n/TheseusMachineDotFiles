@@ -22,7 +22,7 @@ local free_focus = true
 local function custom_focus_filter(c) return free_focus and awful.client.focus.filter(c) end
 
 
-local rules = require("jkyon-modules.rules") -- Adcciona arquivo de regras rules.lua
+-- local rules = require("jkyon-modules.rules") -- Adcciona arquivo de regras rules.lua
 
 local rotate = require("screenrotation")
 
@@ -38,12 +38,13 @@ local mytemp = lain.widget.temp()
 local cpu_widget = require("awesome-wm-widgets.cpu-widget.cpu-widget")
 local ram_widget = require("awesome-wm-widgets.ram-widget.ram-widget")
 
+-- local json = require("json")
 
 local volume_widget = require('awesome-wm-widgets.pactl-widget.volume')
 --local myvolume = volume_widget()
 -- local volume_widget = require('awesome-wm-widgets.volume-widget.volume')
-local todo_widget = require("awesome-wm-widgets.todo-widget.todo")
-local weather_widget = require("awesome-wm-widgets.weather-widget.weather")
+-- local todo_widget = require("awesome-wm-widgets.todo-widget.todo")
+-- local weather_widget = require("awesome-wm-widgets.weather-widget.weather")
 local calendar_widget = require("awesome-wm-widgets.calendar-widget.calendar")
 local logout_menu_widget = require("awesome-wm-widgets.logout-menu-widget.logout-menu")
 
@@ -478,56 +479,26 @@ awful.tag.add(" etc (5) ", {
 --     selected = false
 -- })
 
+
     ------------------ Second Monitor ------------------
 
-awful.tag.add(" Monitor (1) ", {
-    layout = awful.layout.suit.max,
-    screen = 2,
-    selected = false
-})
-
-awful.tag.add(" Search (2) ", {
-    layout = awful.layout.suit.tile,
-    screen = 2,
-    selected = true
-})
-
-awful.tag.add(" BackUp (3) ", {
-    layout = awful.layout.suit.max,
-    screen = 2,
-    selected = false
-})
-
-awful.tag.add(" Media (4) ", {
-    layout = awful.layout.suit.max,
-    screen = 2,
-    selected = false
-})
-
--- awful.tag.add(" Free =) ", {
---     layout = awful.layout.suit.tile,
---     screen = 2,
---     selected = false,
--- })
-
-        ------------------ Third Monitor ------------------
 
 awful.tag.add(" Monitor (1) ", {
-    layout = awful.layout.suit.tile.bottom,
-    screen = 3,
-    selected = true
+layout = awful.layout.suit.tile.bottom,
+screen = 2,
+selected = true
 })
 
 awful.tag.add(" Chat (2) ", {    
-    layout = awful.layout.suit.max,
-    screen = 3,
-    selected = false
+layout = awful.layout.suit.tile.bottom,
+screen = 2,
+selected = false
 })
 
 awful.tag.add(" Sound (3) ", {
-    layout = awful.layout.suit.max,
-    screen = 3,
-    selected = false
+layout = awful.layout.suit.tile.bottom,
+screen = 2,
+selected = false
 })
 
 -- awful.tag.add(" Mixer (4) ", {
@@ -540,6 +511,52 @@ awful.tag.add(" Sound (3) ", {
 --     layout = awful.layout.suit.tile,
 --     screen = 3,
 --     selected = false
+-- })
+
+
+    ------------------ Third Monitor ------------------
+
+
+awful.tag.add(" Monitor (1) ", {
+    layout = awful.layout.suit.tile,
+    screen = 3,
+    selected = false
+})
+
+awful.tag.add(" Search (2) ", {
+    layout = awful.layout.suit.tile,
+    screen = 3,
+    selected = true
+})
+
+awful.tag.add(" BackUp (3) ", {
+    layout = awful.layout.suit.tile,
+    screen = 3,
+    selected = false
+})
+
+awful.tag.add(" Media (4) ", {
+    layout = awful.layout.suit.tile,
+    screen = 3,
+    selected = false
+})
+
+-- awful.tag.add(" Sound (5) ", {
+--     layout = awful.layout.suit.tile,
+--     screen = 3,
+--     selected = false
+-- })
+
+-- awful.tag.add(" Chat (6) ", {
+--     layout = awful.layout.suit.tile,
+--     screen = 3,
+--     selected = false
+-- })
+
+-- awful.tag.add(" Free =) ", {
+--     layout = awful.layout.suit.tile,
+--     screen = 2,
+--     selected = false,
 -- })
 
 
@@ -609,24 +626,16 @@ awful.tag.add(" Sound (3) ", {
 
                     tbox_separator_space,
 
-            -- wibox.widget.textbox('  '),
-
-
-            --gentoo_update_checker,
             awful.widget.watch('bash -c "nice -n 19 sh /home/jkyon/ShellScript/dwmBlocksUpdates"', 3600),
 
-
-            -- jkyon_gentooUpdatesWidget = awful.widget.watch("bash -c 'sh /home/jkyon/ShellScript/dwmBlocksUpdates' " .. atualizarGentooUpdatesWidget_complemento .. "", 600, atualizarGentooUpdatesWidget),
-            -- jkyon_gentooUpdatesWidget = awful.widget.watch("bash -c 'sh /home/jkyon/ShellScript/dwmBlocksUpdates'", 600, atualizarGentooUpdatesWidget),
-           
                     -- tbox_separator_space,
 ------------------------------------------------------------------------------------------------            
             -- wibox.widget.textbox(' | '),
 ------------------------------------------------------------------------------------------------
                     tbox_separator_space,
           
-            wibox.widget.textbox('   '),
-            wibox.widget.textbox('CPU: '),
+            wibox.widget.textbox('  '),
+            wibox.widget.textbox('CPU '),
             -- cpu.widget,
             awful.widget.watch('bash -c "sh /home/jkyon/ShellScript/dwmBlocksCpuUsage"', 1),
                     tbox_separator_space,
@@ -653,7 +662,7 @@ awful.tag.add(" Sound (3) ", {
             
             wibox.widget.textbox(' 󰢮 '),  --  
 
-           wibox.widget.textbox(' GPU: '),
+           wibox.widget.textbox(' GPU '),
            awful.widget.watch('bash -c "sh ~/ShellScript/awesomeWidget-gpu0usage-fast.sh"', 1),
                  tbox_separator_space,
            awful.widget.watch('bash -c "sh ~/ShellScript/awesomeWidget-gpu0freq.sh"', 1),
@@ -674,6 +683,13 @@ awful.tag.add(" Sound (3) ", {
                     tbox_separator_space,
 ------------------------------------------------------------------------------------------------            
             wibox.widget.textbox(' | '),
+------------------------------------------------------------------------------------------------            
+            wibox.widget.textbox(' 󰚥 '),
+            wibox.widget.textbox(' PSU '),
+            awful.widget.watch('bash -c "sh ~/ShellScript/awesomeWidget-PSU-monitor.sh"', 1),
+                    tbox_separator_space,
+------------------------------------------------------------------------------------------------            
+            wibox.widget.textbox(' | '),
 ------------------------------------------------------------------------------------------------
                     tbox_separator_space,
 
@@ -688,7 +704,7 @@ awful.tag.add(" Sound (3) ", {
             
                     tbox_separator_space,
             
-            todo_widget(),
+            -- todo_widget(),
             
                     tbox_separator_space,
                     tbox_separator_space,
@@ -1096,12 +1112,16 @@ awful.rules.rules = {
         { rule_any = { class = {"ark"} },
         properties = { floating = true,
         placement = awful.placement.centered },},
+
+        { rule_any = { class = {"arandr"} },
+        properties = { floating = true,
+        placement = awful.placement.centered },},
 -- B
 --
         { rule = { class = "Back In Time" },
         properties = { floating = true,
         placement = awful.placement.centered,
-        tag = screen[2].tags[3] },},
+        tag = screen[3].tags[3] },},
 -- C
 --
 -- D
@@ -1109,7 +1129,8 @@ awful.rules.rules = {
         { rule = { class = "discord" },
         properties = { floating = false,
         placement = awful.placement.centered,
-        tag = screen[3].tags[2] },},
+        -- tag = screen[3].tags[2], 
+        },},
        
         { rule = { class = "dolphin" },
         properties = { floating = true,
@@ -1134,7 +1155,7 @@ awful.rules.rules = {
         { rule = { class = "Google-chrome" },
         properties = { floating = false,
         placement = awful.placement.centered,
-        tag = screen[2].tags[4] },},
+        tag = screen[3].tags[4] },},
         
         { rule = { class = "gnome-calculator" },
         properties = { floating = true,
@@ -1165,7 +1186,7 @@ awful.rules.rules = {
         { rule = { name = "KDE Connect" },
         properties = { floating = true,
         placement = awful.placement.centered,
-        tag = screen[2].tags[3] },},    
+        tag = screen[3].tags[3] },},    
 -- L
 --
         { rule = { name = "Lutris" },
@@ -1202,7 +1223,12 @@ awful.rules.rules = {
 --        
         { rule_any = { class = {"pavucontrol", "Pavucontrol"} },
         properties = { floating = false,
-        tag = screen[3].tags[3]       },},
+        -- tag = screen[3].tags[3],
+        },},
+        
+        { rule = { class = "plasma-emojier" },
+        properties = { floating = true,
+        placement = awful.placement.centered },},
         
         { rule = { class = "PrismLauncher" },
         properties = { floating = true,
@@ -1214,7 +1240,8 @@ awful.rules.rules = {
 
         { rule_any = { class = {"pulseeffects", "Pulseeffects"} },
         properties = { floating = false,
-        tag = screen[3].tags[3]       },},
+        -- tag = screen[3].tags[3]
+        },},
 -- Q
 -- 
 -- R
@@ -1222,13 +1249,15 @@ awful.rules.rules = {
         { rule = { class = "rambox" },
         properties = { floating = false,
         placement = awful.placement.centered,
-        tag = screen[3].tags[2]       },},
+        -- tag = screen[3].tags[2],
+        },},
 -- S
 --
         { rule = { class = "Spotify" },
         properties = { floating = false,
         placement = awful.placement.centered,
-        tag = screen[3].tags[3]       },},
+        -- tag = screen[3].tags[3],
+        },},
 
         { rule_any = { class = {"snappergui", "Snapper-gui"} },
         properties = { floating = true,
