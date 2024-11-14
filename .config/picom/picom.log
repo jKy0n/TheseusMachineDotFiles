@@ -26389,3 +26389,8 @@
 [ 11/14/2024 15:47:42.474 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 691366
 [ 11/14/2024 15:48:18.102 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 698629
 [ 11/14/2024 15:58:02.831 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 832087
+[ 11/14/2024 15:59:30.532 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 862555
+[ 11/14/2024 15:59:30.532 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 862556
+[ 11/14/2024 15:59:40.632 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 866438
+[ 11/14/2024 15:59:40.632 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 866439
+[ 11/14/2024 16:00:32.066 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 882286
