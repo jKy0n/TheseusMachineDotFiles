@@ -52,4 +52,9 @@ bindings = [
 #{ key = "x", mode = "Vi", action = "ViMotionDeleteChar" },
 # Enter insert mode with 'i' 
 #{ key = "i", mode = "Vi", action = "ViMotionInsert" } ]
+# Mapeamento de teclas para Control+Setas
+{ key = "Left",  mods = "Control", chars = "\u001b[1;5D" },
+{ key = "Right", mods = "Control", chars = "\u001b[1;5C" },
+{ key = "Home",  chars = "\u001b[H" },
+{ key = "End",   chars = "\u001b[F" },
 ]

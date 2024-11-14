@@ -1,7 +1,7 @@
 #
 #
 # export GTK_THEME=Catppuccin-Dark-Macchiato
-#export QT_QPA_PLATFORMTHEME="qt5ct"
+# export QT_QPA_PLATFORMTHEME="qt5ct"
 
 export EDITOR=nvim
 export VISUAL=nvim
@@ -15,6 +15,9 @@ export TMUX_POWERLINE_SEG_WEATHER_LAT="-24.012042"
 export TMUX_POWERLINE_SEG_WEATHER_LON="-46.404200"
 
 source /home/jkyon/.dotfiles/.zshrc_secret
+
+# Plugins do oh-my-zsh
+plugins=( tmux )
 
 # The following lines were added by compinstall   
 zstyle :compinstall filename '/home/jkyon/.zshrc'
@@ -37,19 +40,22 @@ bindkey -e
 # End of lines configured by zsh-newuser-install
 
 # Compinit and completion setup
-autoload -Uz compinit
+autoload -Uz compinit promptinit
 compinit
+promptinit; prompt gentoo
 setopt COMPLETE_ALIASES
+
+
 # End of lines added by compinstall
 
+zstyle ':completion::complete:*' use-cache 1
 
-zstyle ':completion:*' matcher-list '' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' \
-'+l:|?=** r:|?=**'
-
+# zstyle ':completion:*' matcher-list '' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' \
+# '+l:|?=** r:|?=**'
 
 # Add color to zsh (not shure if working
 # remove ls highlight color
-_ls_colors=":ow=01;33"
+_ls_colors=":ow=00;33"
 zstyle ':completion:*:default' list-colors "${(s.:.)_ls_colors}"
 LS_COLORS+=$_ls_colors
 
@@ -71,23 +77,48 @@ fi
 
 
 # Verificar se a variável de ambiente específica da distribuição está definida
-if [[ "$(cat /etc/*-release)" == *"Gentoo"* ]]; then
-    # Configurações específicas para o Gentoo
+
+# if [[ "$(cat /etc/*-release)" == *"Gentoo"* ]]; then
+# # Configurações específicas para o Gentoo
+#     source /usr/share/zsh/site-functions/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+#     source /usr/share/zsh/site-functions/zsh-autosuggestions.zsh
+#     source /usr/share/zsh/site-functions/zsh-history-substring-search.zsh
+#     source /usr/share/zsh/site-functions/zsh-syntax-highlighting.zsh
+#     source ~/.dotfiles/.config/zsh/zsh-syntax-highlighting/themes/catppuccin_macchiato-zsh-syntax-highlighting.zsh
+#
+# elif [[ "$(cat /etc/*-release)" == *"Arch Linux"* ]]; then
+#     # Configurações específicas para o Arch Linux
+#     source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+#     source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+# fi
+
+
+# Verificar se a variável de ambiente específica da distribuição está definida
+
+case "$(cat /etc/*-release)" in
+    *Gentoo*) 
+# Configurações específicas para o Gentoo
+    source /usr/share/zsh/site-contrib/oh-my-zsh/oh-my-zsh.sh
     source /usr/share/zsh/site-functions/zsh-autocomplete/zsh-autocomplete.plugin.zsh
     source /usr/share/zsh/site-functions/zsh-autosuggestions.zsh
     source /usr/share/zsh/site-functions/zsh-history-substring-search.zsh
     source /usr/share/zsh/site-functions/zsh-syntax-highlighting.zsh
     source ~/.dotfiles/.config/zsh/zsh-syntax-highlighting/themes/catppuccin_macchiato-zsh-syntax-highlighting.zsh
-
-elif [[ "$(cat /etc/*-release)" == *"Arch Linux"* ]]; then
-    # Configurações específicas para o Arch Linux
+        ;;
+    *Arch*)
+# Configurações específicas para o Arch Linux
     source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
     source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-fi
+        ;;
+esac
 
 
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
 
+
+# Plugins do oh-my-zsh
+plugins=( tmux )
+ZSH_TMUX_AUTOSTART=true
 
 # Load Aliases list
 alias show-alias='bat --color=always ~/ShellScript/aliases.sh'
@@ -188,5 +219,8 @@ function reset_cursor {
 }
 precmd_functions+=("reset_cursor")
 
-# Start tmux by default
-# [[ -z $TMUX ]] && exec tmux
+
+# Start tmux by default only if not already in tmux and if no sessions are active
+[[ -z "$TMUX" ]] && (tmux new-session || tmux attach)
+
+# source /home/jkyon/ShellScript/start-tmux-automatically-on-zsh.zsh

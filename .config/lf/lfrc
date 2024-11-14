@@ -13,7 +13,9 @@ set syntax on
 set shell zsh
 
 # binds
-bind "." "toggle hidden"
+#bind "." "toggle hidden"
+set hidden
+map H hidden!
 
 # set '-eu' options for shell commands
 # These options are used to have safer shell commands. Option '-e' is used to

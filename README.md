@@ -3,21 +3,25 @@
 It's all about my loved PC
 
 
-![Neofetch](https://github.com/jKy0n/TheseusMachineDotFiles/blob/main/media/Neofetch-09-Aug-2024.png)
+![Festfetch](https://github.com/jKy0n/TheseusMachineDotFiles/blob/main/media/fastfetch-14-Nov-2024.png)
+
+## Desktop:
+
+![Desktop](https://github.com/jKy0n/TheseusMachineDotFiles/blob/main/media/Desktop-14-Nov-2024.jpg)
 
 ## Operational System:
 
-- **OS:** Gentoo Linux
-- **Kernel:** 6.6.32-gentoo-dist
+- **OS:** Gentoo Linux 2.17 x86_64
+- **Kernel:** 6.6.X-gentoo-dist
 - **Shell:** zsh (bash for sh)
 - **GS:** XOrg (X11)
-- **WM:** Awesome
-- **Audio:** Pipewire + some PulseAudios junkies
+- **WM:** awesome
+- **Audio:** pipewire
 - **Terminal:** Alacritty + tmux
 - **Editor:** AstroNvim (nvim)
 - **FS:** BtrFS (system + jbod for data and others)
-- **Init:** OpenRC
-- **Auth:** sudo + Gnome polkit
+- **Init:** systemd
+- **Auth:** sudo
 - **Boot:** GRUB UEFI
 
 
@@ -52,25 +56,22 @@ It's all about my loved PC
 
 ###
 
-![Devices](https://github.com/jKy0n/TheseusMachineDotFiles/blob/main/media/devicesTab.png)
+![Devices](https://github.com/jKy0n/TheseusMachineDotFiles/blob/main/media/devicesTab-14-Nov-2024.png)
 
 ###
 
-![Peripherals](https://github.com/jKy0n/TheseusMachineDotFiles/blob/main/media/Desktop-09-Aug-2024.jpg)
+![Peripherals](https://github.com/jKy0n/TheseusMachineDotFiles/blob/main/media/Peripherals-14-Nov-2024.jpg)
 
 ## Monitors:
 
 - **Mon0:** LG Ultra Gear 34WP65C-B - 34" (21:9) @3440x1440 160Hz
-- **Mon1:** LG Flatron W1952TQ - 19" (16:10) @1440x900 60Hz
-- **Mon2:** Samsung SyncMaster 940B Plus - 19" (4:3) @ 1280x1024 75Hz
+- **Mon1:** LG 22BN550Y-B - 22" (9:16) @1080x1920 60Hz 5ms (Portrait mode)
+- **Mon2:** LG 22BN550Y-B - 22" (16:9) @1920x1080 60Hz 5ms
 
 
 ## Inputs:
 
-- **KB0:** HyperX Alloy Origins Core (ABNT2 - Red Switches)
-- **KB1:** T-Dagger Bora - ISO ABNT2
-    - **Switch:** Akko Custom Switches Lavander Purple
-    - **Keycap:** Some Purple from AliExpress
+- **KB:** HyperX Alloy Origins Core (ABNT2 - Red Switches)
 - **NP:** Exbom BK-N30
 - **Mouse:** Logitech G403
 - **Tablet:** Wacom Intuos CTL4100

@@ -594,163 +594,605 @@ awful.tag.add(" Media (4) ", {
         },
    }
 
+   
+-------------------------------------------------------------------------------------
+--------------------------------  Wibox única  --------------------------------------
+-------------------------------------------------------------------------------------
 
+--     -- Create the wibox
+--     s.mywibox = awful.wibar({ position = "top", screen = s, opacity = 0.8, border_width = 3, shape = gears.shape.rounded_rect 	 })
 
-    -- Create the wibox
-    s.mywibox = awful.wibar({ position = "top", screen = s, opacity = 0.8, border_width = 3, shape = gears.shape.rounded_rect 	 })
+--     -- Add widgets to the wibox
+--     s.mywibox:setup {
+--         layout = wibox.layout.align.horizontal,
+--         { -- Left widgets
+--             layout = wibox.layout.fixed.horizontal,
+-- --            mylauncher,
+--             tbox_separator_space,
+--             s.mylayoutbox,
+--             tbox_separator_space,
+--             tbox_separator_space,
+--             s.mytaglist,
+--             tbox_separator_space,
+--             s.mypromptbox,
+--             tbox_separator_space,
 
-    -- Add widgets to the wibox
-    s.mywibox:setup {
-        layout = wibox.layout.align.horizontal,
-        { -- Left widgets
-            layout = wibox.layout.fixed.horizontal,
---            mylauncher,
-            tbox_separator_space,
-            s.mylayoutbox,
-            tbox_separator_space,
-            tbox_separator_space,
-            s.mytaglist,
-            tbox_separator_space,
-            s.mypromptbox,
-            tbox_separator_space,
+--         },
 
-        },
+--         s.mytasklist, -- Middle widget
 
-        s.mytasklist, -- Middle widget
+--         { -- Right widgets
+--             layout = wibox.layout.fixed.horizontal,
+-- --            mykeyboardlayout,
 
-        { -- Right widgets
-            layout = wibox.layout.fixed.horizontal,
---            mykeyboardlayout,
+--             internet_widget,
 
-            internet_widget,
+--                     tbox_separator_space,
 
-                    tbox_separator_space,
+--             awful.widget.watch('bash -c "nice -n 19 sh /home/jkyon/ShellScript/dwmBlocksUpdates"', 3600),
 
-            awful.widget.watch('bash -c "nice -n 19 sh /home/jkyon/ShellScript/dwmBlocksUpdates"', 3600),
-
-                    -- tbox_separator_space,
-------------------------------------------------------------------------------------------------            
-            -- wibox.widget.textbox(' | '),
-------------------------------------------------------------------------------------------------
-                    tbox_separator_space,
+--                     -- tbox_separator_space,
+-- ------------------------------------------------------------------------------------------------            
+--             -- wibox.widget.textbox(' | '),
+-- ------------------------------------------------------------------------------------------------
+--                     tbox_separator_space,
           
-            wibox.widget.textbox('  '),
-            wibox.widget.textbox('CPU '),
-            -- cpu.widget,
-            awful.widget.watch('bash -c "sh /home/jkyon/ShellScript/dwmBlocksCpuUsage"', 1),
+--             wibox.widget.textbox('  '),
+--             wibox.widget.textbox('CPU '),
+--             -- cpu.widget,
+--             awful.widget.watch('bash -c "sh /home/jkyon/ShellScript/dwmBlocksCpuUsage"', 1),
+--                     tbox_separator_space,
+--             wibox.widget.textbox('  '),
+--             awful.widget.watch('bash -c "sh /home/jkyon/ShellScript/dwmBlocksCpuTemp"', 1),
+--                     tbox_separator_space,
+-- ------------------------------------------------------------------------------------------------            
+--             wibox.widget.textbox(' | '),
+-- ------------------------------------------------------------------------------------------------
+--                     tbox_separator_space,
+           
+--             cpu_widget(),
+           
+--                     tbox_separator_space,
+-- ------------------------------------------------------------------------------------------------            
+--             wibox.widget.textbox(' | '),
+-- ------------------------------------------------------------------------------------------------
+--             wibox.widget.textbox('   '),  --  
+--             mem.widget,
+--             ram_widget({ color_used = '#cba6f7', color_buf = '#444444' }),
+-- ------------------------------------------------------------------------------------------------            
+--             wibox.widget.textbox(' | '),
+-- ------------------------------------------------------------------------------------------------
+            
+--             wibox.widget.textbox(' 󰢮 '),  --  
+
+--            wibox.widget.textbox(' GPU '),
+--            awful.widget.watch('bash -c "sh ~/ShellScript/awesomeWidget-gpu0usage-fast.sh"', 1),
+--                  tbox_separator_space,
+--            awful.widget.watch('bash -c "sh ~/ShellScript/awesomeWidget-gpu0freq.sh"', 1),
+--                  tbox_separator_space,
+--            wibox.widget.textbox('  '),
+--            awful.widget.watch('bash -c "sh ~/ShellScript/awesomeWidget-gpu0temp.sh"', 1),
+            
+-- --            tbox_separator_space,
+-- --            wibox.widget.textbox(' | '),
+-- --            tbox_separator_space,
+
+-- --          wibox.widget.textbox('GPU1: '),
+-- --          awful.widget.watch('bash -c "sh ~/ShellScript/awesomeWidget-gpu1freq.sh"', 1),
+-- --                  tbox_separator_space,
+-- --          wibox.widget.textbox('  '),
+-- --          awful.widget.watch('bash -c "sh ~/ShellScript/awesomeWidget-gpu1temp.sh"', 1),
+            
+--                     tbox_separator_space,
+-- ------------------------------------------------------------------------------------------------            
+--             wibox.widget.textbox(' | '),
+-- ------------------------------------------------------------------------------------------------            
+--             wibox.widget.textbox(' 󰚥 '),
+--             wibox.widget.textbox(' PSU '),
+--             awful.widget.watch('bash -c "sh ~/ShellScript/awesomeWidget-PSU-monitor.sh"', 1),
+--                     tbox_separator_space,
+-- ------------------------------------------------------------------------------------------------            
+--             wibox.widget.textbox(' | '),
+-- ------------------------------------------------------------------------------------------------
+--                     tbox_separator_space,
+
+--             volume_widget({ 
+--                 widget_type = 'arc',
+--                 thickness   = 2 ,
+--                 step        = 5 ,
+--                 mixer_cmd   = 'pavucontrol',
+--                 device      = '@DEFAULT_SINK@',
+--                 tooltip     = false
+--                 }),
+            
+--                     tbox_separator_space,
+            
+--             -- todo_widget(),
+            
+--                     tbox_separator_space,
+--                     tbox_separator_space,
+            
+--             wibox.widget.systray(),
+            
+--                     tbox_separator_space,
+
+--             -- weather_widget({
+--             --   api_key='3adf0fe30d03af8c1d09c7dda3b196dd',
+--             --   coordinates = {24.0124, -46.4039},
+--             --   }),
+
+--             --  weather_curl_widget({
+--             --     api_key = '3adf0fe30d03af8c1d09c7dda3b196dd',
+--             --     coordinates = {24.012499355220648, -46.403999855263514},
+--             --     time_format_12h = true,
+--             --     units = 'imperial',
+--             --     both_units_widget = true,
+--             --     font_name = 'Carter One',
+--             --     icons = 'VitalyGorbachev',
+--             --     icons_extension = '.svg',
+--             --     show_hourly_forecast = true,
+--             --     show_daily_forecast = true,
+--             -- }),
+--             -- weather_widget({ api_key = '3adf0fe30d03af8c1d09c7dda3b196dd', coordinates = {45.5017, -73.5673}, }),
+--             mytextclock,
+
+--                     tbox_separator_space,
+
+--             logout_menu_widget{
+--                 -- font = 'Noto Sans semibold 9',
+--                  font = 'MesloLGS Nerd Font Bold 10',
+--                  onlogout   =  function() awesome.quit() end,
+--                 --  onlock     =  function() awful.spawn.with_shell('xscreensaver-command -lock') end,
+--                  onsuspend  =  function() awful.spawn.with_shell("systemctl suspend") end,
+--                  onreboot   =  function() awful.spawn.with_shell("systemctl reboot") end,
+--                  onpoweroff =  function() awful.spawn.with_shell("systemctl poweroff") end,
+--             },
+--                     tbox_separator_space
+--         },
+--     }
+
+-- -- }}}
+-- end)
+
+
+-- ------------------------------------------------------------------------------------------------
+-- ------------------------------------------------------------------------------------------------
+
+
+    -- Create the wibox monitor 1
+    s.mywibox = awful.wibar({   position = "top", 
+                                screen = s, 
+                                opacity = 0.8, 
+                                border_width = 3, 
+                                shape = gears.shape.rounded_rect 
+    })
+
+-------------------------------------------------------------------------------------
+----------------------------------  Wibox 1  ----------------------------------------
+-------------------------------------------------------------------------------------
+
+    -- Configuração da wibox para cada monitor
+    if s.index == 1 then
+    -- Primeiro monitor
+        -- Add widgets to the wibox
+        s.mywibox:setup {
+            layout = wibox.layout.align.horizontal,
+            { -- Left widgets
+                layout = wibox.layout.fixed.horizontal,
+    --            mylauncher,
+                tbox_separator_space,
+                s.mylayoutbox,
+                tbox_separator_space,
+                tbox_separator_space,
+                s.mytaglist,
+                tbox_separator_space,
+                s.mypromptbox,
+                tbox_separator_space,
+
+            },
+
+            s.mytasklist, -- Middle widget
+
+            { -- Right widgets
+                layout = wibox.layout.fixed.horizontal,
+    --            mykeyboardlayout,
+
+                internet_widget,
+
+                        tbox_separator_space,
+
+                awful.widget.watch('bash -c "nice -n 19 sh /home/jkyon/ShellScript/dwmBlocksUpdates"', 3600),
+
+                        -- tbox_separator_space,
+    ------------------------------------------------------------------------------------------------            
+                -- wibox.widget.textbox(' | '),
+    ------------------------------------------------------------------------------------------------
+                        tbox_separator_space,
+            
+                wibox.widget.textbox('  '),
+                wibox.widget.textbox('CPU '),
+                -- cpu.widget,
+                awful.widget.watch('bash -c "sh /home/jkyon/ShellScript/dwmBlocksCpuUsage"', 1),
+                        tbox_separator_space,
+                        tbox_separator_space,
+                awful.widget.watch('bash -c "sh /home/jkyon/ShellScript/awesomeWidget-CPU-freq-monitor.sh"', 1),
+                        tbox_separator_space,
+                wibox.widget.textbox('  '),
+                awful.widget.watch('bash -c "sh /home/jkyon/ShellScript/dwmBlocksCpuTemp"', 1),
+                        tbox_separator_space,
+    ------------------------------------------------------------------------------------------------            
+                wibox.widget.textbox(' | '),
+    ------------------------------------------------------------------------------------------------
+                        tbox_separator_space,
+            
+                cpu_widget(),
+            
+                        tbox_separator_space,
+    ------------------------------------------------------------------------------------------------            
+                wibox.widget.textbox(' | '),
+    ------------------------------------------------------------------------------------------------
+                wibox.widget.textbox('   '),  --  
+                mem.widget,
+                ram_widget({ color_used = '#cba6f7', color_buf = '#444444' }),
+    ------------------------------------------------------------------------------------------------            
+                wibox.widget.textbox(' | '),
+    ------------------------------------------------------------------------------------------------
+                
+                wibox.widget.textbox(' 󰢮 '),  --  
+
+            wibox.widget.textbox(' GPU '),
+            awful.widget.watch('bash -c "sh ~/ShellScript/awesomeWidget-gpu0usage-fast.sh"', 1),
+                    tbox_separator_space,
+            awful.widget.watch('bash -c "sh ~/ShellScript/awesomeWidget-gpu0freq.sh"', 1),
                     tbox_separator_space,
             wibox.widget.textbox('  '),
-            awful.widget.watch('bash -c "sh /home/jkyon/ShellScript/dwmBlocksCpuTemp"', 1),
-                    tbox_separator_space,
-------------------------------------------------------------------------------------------------            
-            wibox.widget.textbox(' | '),
-------------------------------------------------------------------------------------------------
-                    tbox_separator_space,
-           
-            cpu_widget(),
-           
-                    tbox_separator_space,
-------------------------------------------------------------------------------------------------            
-            wibox.widget.textbox(' | '),
-------------------------------------------------------------------------------------------------
-            wibox.widget.textbox('   '),  --  
-            mem.widget,
-            ram_widget({ color_used = '#cba6f7', color_buf = '#444444' }),
-------------------------------------------------------------------------------------------------            
-            wibox.widget.textbox(' | '),
-------------------------------------------------------------------------------------------------
-            
-            wibox.widget.textbox(' 󰢮 '),  --  
+            awful.widget.watch('bash -c "sh ~/ShellScript/awesomeWidget-gpu0temp.sh"', 1),
+                
+    --            tbox_separator_space,
+    --            wibox.widget.textbox(' | '),
+    --            tbox_separator_space,
 
-           wibox.widget.textbox(' GPU '),
-           awful.widget.watch('bash -c "sh ~/ShellScript/awesomeWidget-gpu0usage-fast.sh"', 1),
-                 tbox_separator_space,
-           awful.widget.watch('bash -c "sh ~/ShellScript/awesomeWidget-gpu0freq.sh"', 1),
-                 tbox_separator_space,
-           wibox.widget.textbox('  '),
-           awful.widget.watch('bash -c "sh ~/ShellScript/awesomeWidget-gpu0temp.sh"', 1),
-            
---            tbox_separator_space,
---            wibox.widget.textbox(' | '),
---            tbox_separator_space,
+    --          wibox.widget.textbox('GPU1: '),
+    --          awful.widget.watch('bash -c "sh ~/ShellScript/awesomeWidget-gpu1freq.sh"', 1),
+    --                  tbox_separator_space,
+    --          wibox.widget.textbox('  '),
+    --          awful.widget.watch('bash -c "sh ~/ShellScript/awesomeWidget-gpu1temp.sh"', 1),
+                
+                        tbox_separator_space,
+    ------------------------------------------------------------------------------------------------            
+                wibox.widget.textbox(' | '),
+    ------------------------------------------------------------------------------------------------            
+                wibox.widget.textbox(' 󰚥 '),
+                wibox.widget.textbox(' PSU '),
+                awful.widget.watch('bash -c "sh ~/ShellScript/awesomeWidget-PSU-monitor.sh"', 1),
+                        tbox_separator_space,
+    ------------------------------------------------------------------------------------------------            
+                wibox.widget.textbox(' | '),
+    ------------------------------------------------------------------------------------------------
+                        tbox_separator_space,
 
---          wibox.widget.textbox('GPU1: '),
---          awful.widget.watch('bash -c "sh ~/ShellScript/awesomeWidget-gpu1freq.sh"', 1),
---                  tbox_separator_space,
---          wibox.widget.textbox('  '),
---          awful.widget.watch('bash -c "sh ~/ShellScript/awesomeWidget-gpu1temp.sh"', 1),
-            
-                    tbox_separator_space,
-------------------------------------------------------------------------------------------------            
-            wibox.widget.textbox(' | '),
-------------------------------------------------------------------------------------------------            
-            wibox.widget.textbox(' 󰚥 '),
-            wibox.widget.textbox(' PSU '),
-            awful.widget.watch('bash -c "sh ~/ShellScript/awesomeWidget-PSU-monitor.sh"', 1),
-                    tbox_separator_space,
-------------------------------------------------------------------------------------------------            
-            wibox.widget.textbox(' | '),
-------------------------------------------------------------------------------------------------
-                    tbox_separator_space,
+                volume_widget({ 
+                    widget_type = 'arc',
+                    thickness   = 2 ,
+                    step        = 5 ,
+                    mixer_cmd   = 'pavucontrol',
+                    device      = '@DEFAULT_SINK@',
+                    tooltip     = false
+                    }),
+                
+                        tbox_separator_space,
+                
+                -- todo_widget(),
+                
+                        tbox_separator_space,
+                        tbox_separator_space,
+                
+                wibox.widget.systray(),
+                
+                        tbox_separator_space,
 
-            volume_widget({ 
-                widget_type = 'arc',
-                thickness   = 2 ,
-                step        = 5 ,
-                mixer_cmd   = 'pavucontrol',
-                device      = '@DEFAULT_SINK@',
-                tooltip     = false
-                }),
-            
-                    tbox_separator_space,
-            
-            -- todo_widget(),
-            
-                    tbox_separator_space,
-                    tbox_separator_space,
-            
-            wibox.widget.systray(),
-            
-                    tbox_separator_space,
+                mytextclock,
 
-            -- weather_widget({
-            --   api_key='3adf0fe30d03af8c1d09c7dda3b196dd',
-            --   coordinates = {24.0124, -46.4039},
-            --   }),
+                        tbox_separator_space,
 
-            --  weather_curl_widget({
-            --     api_key = '3adf0fe30d03af8c1d09c7dda3b196dd',
-            --     coordinates = {24.012499355220648, -46.403999855263514},
-            --     time_format_12h = true,
-            --     units = 'imperial',
-            --     both_units_widget = true,
-            --     font_name = 'Carter One',
-            --     icons = 'VitalyGorbachev',
-            --     icons_extension = '.svg',
-            --     show_hourly_forecast = true,
-            --     show_daily_forecast = true,
-            -- }),
-            -- weather_widget({ api_key = '3adf0fe30d03af8c1d09c7dda3b196dd', coordinates = {45.5017, -73.5673}, }),
-            mytextclock,
-
-                    tbox_separator_space,
-
-            logout_menu_widget{
-                -- font = 'Noto Sans semibold 9',
-                 font = 'MesloLGS Nerd Font Bold 10',
-                 onlogout   =  function() awesome.quit() end,
-                --  onlock     =  function() awful.spawn.with_shell('xscreensaver-command -lock') end,
-                 onsuspend  =  function() awful.spawn.with_shell("systemctl suspend") end,
-                 onreboot   =  function() awful.spawn.with_shell("systemctl reboot") end,
-                 onpoweroff =  function() awful.spawn.with_shell("systemctl poweroff") end,
+                logout_menu_widget{
+                    -- font = 'Noto Sans semibold 9',
+                    font = 'MesloLGS Nerd Font Bold 10',
+                    onlogout   =  function() awesome.quit() end,
+                    --  onlock     =  function() awful.spawn.with_shell('xscreensaver-command -lock') end,
+                    onsuspend  =  function() awful.spawn.with_shell("systemctl suspend") end,
+                    onreboot   =  function() awful.spawn.with_shell("systemctl reboot") end,
+                    onpoweroff =  function() awful.spawn.with_shell("systemctl poweroff") end,
+                },
+                        tbox_separator_space
             },
-                    tbox_separator_space
-        },
-    }
+        }
 
--- }}}
+
+-------------------------------------------------------------------------------------
+----------------------------------  Wibox 2  ----------------------------------------
+-------------------------------------------------------------------------------------
+
+
+    elseif s.index == 2 then
+        -- Segundo monitor
+        s.mywibox:setup {
+            layout = wibox.layout.align.horizontal,
+            { -- Left widgets
+                layout = wibox.layout.fixed.horizontal,
+    --            mylauncher,
+                tbox_separator_space,
+                s.mylayoutbox,
+                tbox_separator_space,
+                tbox_separator_space,
+                s.mytaglist,
+                tbox_separator_space,
+                s.mypromptbox,
+                tbox_separator_space,
+
+            },
+
+            s.mytasklist, -- Middle widget
+
+            { -- Right widgets
+                layout = wibox.layout.fixed.horizontal,
+    --            mykeyboardlayout,
+
+                internet_widget,
+
+                --         tbox_separator_space,
+
+                -- awful.widget.watch('bash -c "nice -n 19 sh /home/jkyon/ShellScript/dwmBlocksUpdates"', 3600),
+
+                        -- tbox_separator_space,
+    ------------------------------------------------------------------------------------------------            
+                -- wibox.widget.textbox(' | '),
+    ------------------------------------------------------------------------------------------------
+                        tbox_separator_space,
+                        tbox_separator_space,
+                        tbox_separator_space,
+            
+                wibox.widget.textbox('  '),
+                wibox.widget.textbox('CPU '),
+                -- cpu.widget,
+                awful.widget.watch('bash -c "sh /home/jkyon/ShellScript/dwmBlocksCpuUsage"', 1),
+                --         tbox_separator_space,
+                -- wibox.widget.textbox('  '),
+                -- awful.widget.watch('bash -c "sh /home/jkyon/ShellScript/dwmBlocksCpuTemp"', 1),
+                --         tbox_separator_space,
+    ------------------------------------------------------------------------------------------------            
+    --             wibox.widget.textbox(' | '),
+    -- ------------------------------------------------------------------------------------------------
+    --                     tbox_separator_space,
+            
+    --             cpu_widget(),
+            
+                        tbox_separator_space,
+    ------------------------------------------------------------------------------------------------            
+                wibox.widget.textbox(' | '),
+    ------------------------------------------------------------------------------------------------
+                wibox.widget.textbox('   '),  --  
+                mem.widget,
+                -- ram_widget({ color_used = '#cba6f7', color_buf = '#444444' }),
+    ------------------------------------------------------------------------------------------------            
+                wibox.widget.textbox(' | '),
+    ------------------------------------------------------------------------------------------------
+                
+                wibox.widget.textbox(' 󰢮 '),  --  
+
+            wibox.widget.textbox(' GPU '),
+            awful.widget.watch('bash -c "sh ~/ShellScript/awesomeWidget-gpu0usage-fast.sh"', 1),
+            --         tbox_separator_space,
+            -- awful.widget.watch('bash -c "sh ~/ShellScript/awesomeWidget-gpu0freq.sh"', 1),
+            --         tbox_separator_space,
+            -- wibox.widget.textbox('  '),
+            -- awful.widget.watch('bash -c "sh ~/ShellScript/awesomeWidget-gpu0temp.sh"', 1),
+                
+    --            tbox_separator_space,
+    --            wibox.widget.textbox(' | '),
+    --            tbox_separator_space,
+
+    --          wibox.widget.textbox('GPU1: '),
+    --          awful.widget.watch('bash -c "sh ~/ShellScript/awesomeWidget-gpu1freq.sh"', 1),
+    --                  tbox_separator_space,
+    --          wibox.widget.textbox('  '),
+    --          awful.widget.watch('bash -c "sh ~/ShellScript/awesomeWidget-gpu1temp.sh"', 1),
+                
+                        -- tbox_separator_space,
+    ------------------------------------------------------------------------------------------------            
+    --             wibox.widget.textbox(' | '),
+    -- ------------------------------------------------------------------------------------------------            
+    --             wibox.widget.textbox(' 󰚥 '),
+    --             wibox.widget.textbox(' PSU '),
+    --             awful.widget.watch('bash -c "sh ~/ShellScript/awesomeWidget-PSU-monitor.sh"', 1),
+                        tbox_separator_space,
+    ------------------------------------------------------------------------------------------------            
+                wibox.widget.textbox(' | '),
+    ------------------------------------------------------------------------------------------------
+                        tbox_separator_space,
+
+                volume_widget({ 
+                    widget_type = 'arc',
+                    thickness   = 2 ,
+                    step        = 5 ,
+                    mixer_cmd   = 'pavucontrol',
+                    device      = '@DEFAULT_SINK@',
+                    tooltip     = false
+                    }),
+                
+                --         tbox_separator_space,
+                
+                -- -- todo_widget(),
+                
+                --         tbox_separator_space,
+                --         tbox_separator_space,
+                
+                -- wibox.widget.systray(),
+                
+                        tbox_separator_space,
+
+                mytextclock,
+
+                        tbox_separator_space,
+
+                logout_menu_widget{
+                    -- font = 'Noto Sans semibold 9',
+                    font = 'MesloLGS Nerd Font Bold 10',
+                    onlogout   =  function() awesome.quit() end,
+                    --  onlock     =  function() awful.spawn.with_shell('xscreensaver-command -lock') end,
+                    onsuspend  =  function() awful.spawn.with_shell("systemctl suspend") end,
+                    onreboot   =  function() awful.spawn.with_shell("systemctl reboot") end,
+                    onpoweroff =  function() awful.spawn.with_shell("systemctl poweroff") end,
+                },
+                        tbox_separator_space
+            },
+        }
+
+-------------------------------------------------------------------------------------
+----------------------------------  Wibox 3  ----------------------------------------
+-------------------------------------------------------------------------------------        
+
+    elseif s.index == 3 then
+        -- Segundo monitor
+        s.mywibox:setup {
+            layout = wibox.layout.align.horizontal,
+            { -- Left widgets
+                layout = wibox.layout.fixed.horizontal,
+    --            mylauncher,
+                tbox_separator_space,
+                s.mylayoutbox,
+                tbox_separator_space,
+                tbox_separator_space,
+                s.mytaglist,
+                tbox_separator_space,
+                s.mypromptbox,
+                tbox_separator_space,
+
+            },
+
+            s.mytasklist, -- Middle widget
+
+            { -- Right widgets
+                layout = wibox.layout.fixed.horizontal,
+    --            mykeyboardlayout,
+
+                internet_widget,
+
+                        tbox_separator_space,
+
+                awful.widget.watch('bash -c "nice -n 19 sh /home/jkyon/ShellScript/dwmBlocksUpdates"', 3600),
+
+                        -- tbox_separator_space,
+    ------------------------------------------------------------------------------------------------            
+                -- wibox.widget.textbox(' | '),
+    ------------------------------------------------------------------------------------------------
+                        tbox_separator_space,
+            
+                wibox.widget.textbox('  '),
+                wibox.widget.textbox('CPU '),
+                -- cpu.widget,
+                awful.widget.watch('bash -c "sh /home/jkyon/ShellScript/dwmBlocksCpuUsage"', 1),
+                        tbox_separator_space,
+                        tbox_separator_space,
+                awful.widget.watch('bash -c "sh /home/jkyon/ShellScript/awesomeWidget-CPU-freq-monitor.sh"', 1),
+                        tbox_separator_space,
+                wibox.widget.textbox('  '),
+                awful.widget.watch('bash -c "sh /home/jkyon/ShellScript/dwmBlocksCpuTemp"', 1),
+    --                     tbox_separator_space,
+    -- ------------------------------------------------------------------------------------------------            
+    --             wibox.widget.textbox(' | '),
+    -- ------------------------------------------------------------------------------------------------
+    --                     tbox_separator_space,
+            
+    --             cpu_widget(),
+            
+                        tbox_separator_space,
+    ------------------------------------------------------------------------------------------------            
+                wibox.widget.textbox(' | '),
+    ------------------------------------------------------------------------------------------------
+                wibox.widget.textbox('   '),  --  
+                mem.widget,
+                -- ram_widget({ color_used = '#cba6f7', color_buf = '#444444' }),
+    ------------------------------------------------------------------------------------------------            
+                wibox.widget.textbox(' | '),
+    ------------------------------------------------------------------------------------------------
+                
+                wibox.widget.textbox(' 󰢮 '),  --  
+
+            wibox.widget.textbox(' GPU '),
+            awful.widget.watch('bash -c "sh ~/ShellScript/awesomeWidget-gpu0usage-fast.sh"', 1),
+                    tbox_separator_space,
+            awful.widget.watch('bash -c "sh ~/ShellScript/awesomeWidget-gpu0freq.sh"', 1),
+                    tbox_separator_space,
+            wibox.widget.textbox('  '),
+            awful.widget.watch('bash -c "sh ~/ShellScript/awesomeWidget-gpu0temp.sh"', 1),
+                
+    --            tbox_separator_space,
+    --            wibox.widget.textbox(' | '),
+    --            tbox_separator_space,
+
+    --          wibox.widget.textbox('GPU1: '),
+    --          awful.widget.watch('bash -c "sh ~/ShellScript/awesomeWidget-gpu1freq.sh"', 1),
+    --                  tbox_separator_space,
+    --          wibox.widget.textbox('  '),
+    --          awful.widget.watch('bash -c "sh ~/ShellScript/awesomeWidget-gpu1temp.sh"', 1),
+                
+                        tbox_separator_space,
+    ------------------------------------------------------------------------------------------------            
+                wibox.widget.textbox(' | '),
+    ------------------------------------------------------------------------------------------------            
+                wibox.widget.textbox(' 󰚥 '),
+                wibox.widget.textbox(' PSU '),
+                awful.widget.watch('bash -c "sh ~/ShellScript/awesomeWidget-PSU-monitor.sh"', 1),
+                        tbox_separator_space,
+    ------------------------------------------------------------------------------------------------            
+                wibox.widget.textbox(' | '),
+    ------------------------------------------------------------------------------------------------
+                        tbox_separator_space,
+
+                volume_widget({ 
+                    widget_type = 'arc',
+                    thickness   = 2 ,
+                    step        = 5 ,
+                    mixer_cmd   = 'pavucontrol',
+                    device      = '@DEFAULT_SINK@',
+                    tooltip     = false
+                    }),
+                
+                --         tbox_separator_space,
+                
+                -- -- todo_widget(),
+                
+                --         tbox_separator_space,
+                --         tbox_separator_space,
+                
+                -- wibox.widget.systray(),
+                
+                        tbox_separator_space,
+
+                mytextclock,
+
+                        tbox_separator_space,
+
+                logout_menu_widget{
+                    -- font = 'Noto Sans semibold 9',
+                    font = 'MesloLGS Nerd Font Bold 10',
+                    onlogout   =  function() awesome.quit() end,
+                    --  onlock     =  function() awful.spawn.with_shell('xscreensaver-command -lock') end,
+                    onsuspend  =  function() awful.spawn.with_shell("systemctl suspend") end,
+                    onreboot   =  function() awful.spawn.with_shell("systemctl reboot") end,
+                    onpoweroff =  function() awful.spawn.with_shell("systemctl poweroff") end,
+                },
+                        tbox_separator_space
+            },
+        }
+
+    end
+    -- }}}
 end)
 
+
+------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------
 
@@ -1129,7 +1571,7 @@ awful.rules.rules = {
         { rule = { class = "discord" },
         properties = { floating = false,
         placement = awful.placement.centered,
-        -- tag = screen[3].tags[2], 
+        tag = screen[2].tags[2], 
         },},
        
         { rule = { class = "dolphin" },
@@ -1223,7 +1665,7 @@ awful.rules.rules = {
 --        
         { rule_any = { class = {"pavucontrol", "Pavucontrol"} },
         properties = { floating = false,
-        -- tag = screen[3].tags[3],
+        tag = screen[2].tags[3],
         },},
         
         { rule = { class = "plasma-emojier" },
@@ -1240,7 +1682,7 @@ awful.rules.rules = {
 
         { rule_any = { class = {"pulseeffects", "Pulseeffects"} },
         properties = { floating = false,
-        -- tag = screen[3].tags[3]
+        tag = screen[2].tags[3]
         },},
 -- Q
 -- 
@@ -1249,14 +1691,14 @@ awful.rules.rules = {
         { rule = { class = "rambox" },
         properties = { floating = false,
         placement = awful.placement.centered,
-        -- tag = screen[3].tags[2],
+        tag = screen[2].tags[2],
         },},
 -- S
 --
         { rule = { class = "Spotify" },
         properties = { floating = false,
         placement = awful.placement.centered,
-        -- tag = screen[3].tags[3],
+        tag = screen[2].tags[3],
         },},
 
         { rule_any = { class = {"snappergui", "Snapper-gui"} },
