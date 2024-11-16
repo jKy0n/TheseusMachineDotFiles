@@ -26394,3 +26394,302 @@
 [ 11/14/2024 15:59:40.632 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 866438
 [ 11/14/2024 15:59:40.632 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 866439
 [ 11/14/2024 16:00:32.066 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 882286
+[ 11/14/2024 16:26:08.198 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 1237600
+[ 11/14/2024 16:26:08.582 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 1237735
+[ 11/14/2024 16:26:11.573 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 1238470
+[ 11/14/2024 16:27:38.302 set_rr_scheduling INFO ] Set real-time scheduling priority to 1
+[ 11/14/2024 16:27:38.382 glxext_init INFO ] Extension GLX_SGI_video_sync - present
+[ 11/14/2024 16:27:38.382 glxext_init INFO ] Extension GLX_SGI_swap_control - present
+[ 11/14/2024 16:27:38.382 glxext_init INFO ] Extension GLX_OML_sync_control - present
+[ 11/14/2024 16:27:38.382 glxext_init INFO ] Extension GLX_MESA_swap_control - present
+[ 11/14/2024 16:27:38.382 glxext_init INFO ] Extension GLX_EXT_swap_control - present
+[ 11/14/2024 16:27:38.382 glxext_init INFO ] Extension GLX_EXT_texture_from_pixmap - present
+[ 11/14/2024 16:27:38.382 glxext_init INFO ] Extension GLX_ARB_create_context - present
+[ 11/14/2024 16:27:38.382 glxext_init INFO ] Extension GLX_EXT_buffer_age - present
+[ 11/14/2024 16:27:38.382 glxext_init INFO ] Extension GLX_ARB_create_context_robustness - present
+[ 11/14/2024 16:27:38.382 glxext_init INFO ] Extension GLX_MESA_query_renderer - present
+[ 11/14/2024 16:27:38.453 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'time'. This is normal when using custom shaders.
+[ 11/14/2024 16:27:38.461 gl_init INFO ] Using back buffer format 0x8051
+[ 11/14/2024 16:29:19.705 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 30188
+[ 11/14/2024 17:39:38.295 set_rr_scheduling INFO ] Set real-time scheduling priority to 1
+[ 11/14/2024 17:39:38.386 glxext_init INFO ] Extension GLX_SGI_video_sync - present
+[ 11/14/2024 17:39:38.386 glxext_init INFO ] Extension GLX_SGI_swap_control - present
+[ 11/14/2024 17:39:38.386 glxext_init INFO ] Extension GLX_OML_sync_control - present
+[ 11/14/2024 17:39:38.386 glxext_init INFO ] Extension GLX_MESA_swap_control - present
+[ 11/14/2024 17:39:38.386 glxext_init INFO ] Extension GLX_EXT_swap_control - present
+[ 11/14/2024 17:39:38.386 glxext_init INFO ] Extension GLX_EXT_texture_from_pixmap - present
+[ 11/14/2024 17:39:38.386 glxext_init INFO ] Extension GLX_ARB_create_context - present
+[ 11/14/2024 17:39:38.386 glxext_init INFO ] Extension GLX_EXT_buffer_age - present
+[ 11/14/2024 17:39:38.386 glxext_init INFO ] Extension GLX_ARB_create_context_robustness - present
+[ 11/14/2024 17:39:38.386 glxext_init INFO ] Extension GLX_MESA_query_renderer - present
+[ 11/14/2024 17:39:38.425 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'time'. This is normal when using custom shaders.
+[ 11/14/2024 17:39:38.447 gl_init INFO ] Using back buffer format 0x8051
+[ 11/14/2024 18:07:53.362 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 468404
+[ 11/14/2024 20:33:38.293 set_rr_scheduling INFO ] Set real-time scheduling priority to 1
+[ 11/14/2024 20:33:38.377 glxext_init INFO ] Extension GLX_SGI_video_sync - present
+[ 11/14/2024 20:33:38.378 glxext_init INFO ] Extension GLX_SGI_swap_control - present
+[ 11/14/2024 20:33:38.378 glxext_init INFO ] Extension GLX_OML_sync_control - present
+[ 11/14/2024 20:33:38.378 glxext_init INFO ] Extension GLX_MESA_swap_control - present
+[ 11/14/2024 20:33:38.378 glxext_init INFO ] Extension GLX_EXT_swap_control - present
+[ 11/14/2024 20:33:38.378 glxext_init INFO ] Extension GLX_EXT_texture_from_pixmap - present
+[ 11/14/2024 20:33:38.378 glxext_init INFO ] Extension GLX_ARB_create_context - present
+[ 11/14/2024 20:33:38.378 glxext_init INFO ] Extension GLX_EXT_buffer_age - present
+[ 11/14/2024 20:33:38.378 glxext_init INFO ] Extension GLX_ARB_create_context_robustness - present
+[ 11/14/2024 20:33:38.378 glxext_init INFO ] Extension GLX_MESA_query_renderer - present
+[ 11/14/2024 20:33:38.386 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'time'. This is normal when using custom shaders.
+[ 11/14/2024 20:33:38.402 gl_init INFO ] Using back buffer format 0x8051
+[ 11/14/2024 20:51:20.143 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 331556
+[ 11/14/2024 20:54:11.812 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 383050
+[ 11/14/2024 20:55:28.762 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 408451
+[ 11/14/2024 21:00:04.717 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 489832
+[ 11/14/2024 21:02:26.000 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 531709
+[ 11/14/2024 21:02:42.684 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 537092
+[ 11/14/2024 21:04:30.421 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 572245
+[ 11/14/2024 21:05:13.804 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 585717
+[ 11/14/2024 21:05:57.154 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 600734
+[ 11/14/2024 21:10:18.357 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 686374
+[ 11/14/2024 21:12:52.541 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 735639
+[ 11/14/2024 21:12:54.943 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 736706
+[ 11/14/2024 21:13:42.859 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 754357
+[ 11/14/2024 21:14:30.860 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 772234
+[ 11/14/2024 21:19:27.714 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 848544
+[ 11/14/2024 21:47:01.715 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 1170823
+[ 11/14/2024 21:51:38.353 set_rr_scheduling INFO ] Set real-time scheduling priority to 1
+[ 11/14/2024 21:51:38.479 glxext_init INFO ] Extension GLX_SGI_video_sync - present
+[ 11/14/2024 21:51:38.479 glxext_init INFO ] Extension GLX_SGI_swap_control - present
+[ 11/14/2024 21:51:38.479 glxext_init INFO ] Extension GLX_OML_sync_control - present
+[ 11/14/2024 21:51:38.479 glxext_init INFO ] Extension GLX_MESA_swap_control - present
+[ 11/14/2024 21:51:38.479 glxext_init INFO ] Extension GLX_EXT_swap_control - present
+[ 11/14/2024 21:51:38.479 glxext_init INFO ] Extension GLX_EXT_texture_from_pixmap - present
+[ 11/14/2024 21:51:38.479 glxext_init INFO ] Extension GLX_ARB_create_context - present
+[ 11/14/2024 21:51:38.479 glxext_init INFO ] Extension GLX_EXT_buffer_age - present
+[ 11/14/2024 21:51:38.479 glxext_init INFO ] Extension GLX_ARB_create_context_robustness - present
+[ 11/14/2024 21:51:38.479 glxext_init INFO ] Extension GLX_MESA_query_renderer - present
+[ 11/14/2024 21:51:38.507 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'time'. This is normal when using custom shaders.
+[ 11/14/2024 21:51:38.527 gl_init INFO ] Using back buffer format 0x8051
+[ 11/14/2024 22:33:29.674 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 483934
+[ 11/14/2024 23:13:40.929 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 1149484
+[ 11/14/2024 23:13:45.830 set_rr_scheduling INFO ] Set real-time scheduling priority to 1
+[ 11/14/2024 23:13:45.930 glxext_init INFO ] Extension GLX_SGI_video_sync - present
+[ 11/14/2024 23:13:45.931 glxext_init INFO ] Extension GLX_SGI_swap_control - present
+[ 11/14/2024 23:13:45.931 glxext_init INFO ] Extension GLX_OML_sync_control - present
+[ 11/14/2024 23:13:45.931 glxext_init INFO ] Extension GLX_MESA_swap_control - present
+[ 11/14/2024 23:13:45.931 glxext_init INFO ] Extension GLX_EXT_swap_control - present
+[ 11/14/2024 23:13:45.931 glxext_init INFO ] Extension GLX_EXT_texture_from_pixmap - present
+[ 11/14/2024 23:13:45.931 glxext_init INFO ] Extension GLX_ARB_create_context - present
+[ 11/14/2024 23:13:45.931 glxext_init INFO ] Extension GLX_EXT_buffer_age - present
+[ 11/14/2024 23:13:45.931 glxext_init INFO ] Extension GLX_ARB_create_context_robustness - present
+[ 11/14/2024 23:13:45.931 glxext_init INFO ] Extension GLX_MESA_query_renderer - present
+[ 11/14/2024 23:13:45.960 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'time'. This is normal when using custom shaders.
+[ 11/14/2024 23:13:45.962 gl_init INFO ] Using back buffer format 0x8051
+[ 11/15/2024 01:35:55.209 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 438945
+[ 11/15/2024 01:52:09.714 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 535400
+[ 11/15/2024 01:58:48.196 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 581328
+[ 11/15/2024 01:58:48.196 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 581336
+[ 11/15/2024 01:58:48.196 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 581341
+[ 11/15/2024 01:58:48.196 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 581354
+[ 11/15/2024 01:58:48.196 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 581358
+[ 11/15/2024 01:58:48.196 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 581361
+[ 11/15/2024 01:58:48.196 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 581383
+[ 11/15/2024 02:05:56.841 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 659784
+[ 11/15/2024 02:05:56.863 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 659813
+[ 11/15/2024 02:17:07.332 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 762945
+[ 11/15/2024 02:30:56.813 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 887821
+[ 11/15/2024 02:42:36.071 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 1017726
+[ 11/15/2024 02:43:07.251 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 1023978
+[ 11/15/2024 02:58:38.283 set_rr_scheduling INFO ] Set real-time scheduling priority to 1
+[ 11/15/2024 02:58:38.385 glxext_init INFO ] Extension GLX_SGI_video_sync - present
+[ 11/15/2024 02:58:38.385 glxext_init INFO ] Extension GLX_SGI_swap_control - present
+[ 11/15/2024 02:58:38.385 glxext_init INFO ] Extension GLX_OML_sync_control - present
+[ 11/15/2024 02:58:38.385 glxext_init INFO ] Extension GLX_MESA_swap_control - present
+[ 11/15/2024 02:58:38.385 glxext_init INFO ] Extension GLX_EXT_swap_control - present
+[ 11/15/2024 02:58:38.385 glxext_init INFO ] Extension GLX_EXT_texture_from_pixmap - present
+[ 11/15/2024 02:58:38.385 glxext_init INFO ] Extension GLX_ARB_create_context - present
+[ 11/15/2024 02:58:38.385 glxext_init INFO ] Extension GLX_EXT_buffer_age - present
+[ 11/15/2024 02:58:38.385 glxext_init INFO ] Extension GLX_ARB_create_context_robustness - present
+[ 11/15/2024 02:58:38.385 glxext_init INFO ] Extension GLX_MESA_query_renderer - present
+[ 11/15/2024 02:58:38.394 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'time'. This is normal when using custom shaders.
+[ 11/15/2024 02:58:38.418 gl_init INFO ] Using back buffer format 0x8051
+[ 11/15/2024 03:06:16.316 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 62539
+[ 11/15/2024 06:52:38.323 set_rr_scheduling INFO ] Set real-time scheduling priority to 1
+[ 11/15/2024 06:52:38.405 glxext_init INFO ] Extension GLX_SGI_video_sync - present
+[ 11/15/2024 06:52:38.405 glxext_init INFO ] Extension GLX_SGI_swap_control - present
+[ 11/15/2024 06:52:38.405 glxext_init INFO ] Extension GLX_OML_sync_control - present
+[ 11/15/2024 06:52:38.405 glxext_init INFO ] Extension GLX_MESA_swap_control - present
+[ 11/15/2024 06:52:38.405 glxext_init INFO ] Extension GLX_EXT_swap_control - present
+[ 11/15/2024 06:52:38.405 glxext_init INFO ] Extension GLX_EXT_texture_from_pixmap - present
+[ 11/15/2024 06:52:38.405 glxext_init INFO ] Extension GLX_ARB_create_context - present
+[ 11/15/2024 06:52:38.405 glxext_init INFO ] Extension GLX_EXT_buffer_age - present
+[ 11/15/2024 06:52:38.405 glxext_init INFO ] Extension GLX_ARB_create_context_robustness - present
+[ 11/15/2024 06:52:38.405 glxext_init INFO ] Extension GLX_MESA_query_renderer - present
+[ 11/15/2024 06:52:38.438 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'time'. This is normal when using custom shaders.
+[ 11/15/2024 06:52:38.439 gl_init INFO ] Using back buffer format 0x8051
+[ 11/15/2024 11:06:56.404 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 693451
+[ 11/15/2024 11:16:38.286 set_rr_scheduling INFO ] Set real-time scheduling priority to 1
+[ 11/15/2024 11:16:38.362 glxext_init INFO ] Extension GLX_SGI_video_sync - present
+[ 11/15/2024 11:16:38.362 glxext_init INFO ] Extension GLX_SGI_swap_control - present
+[ 11/15/2024 11:16:38.362 glxext_init INFO ] Extension GLX_OML_sync_control - present
+[ 11/15/2024 11:16:38.362 glxext_init INFO ] Extension GLX_MESA_swap_control - present
+[ 11/15/2024 11:16:38.362 glxext_init INFO ] Extension GLX_EXT_swap_control - present
+[ 11/15/2024 11:16:38.362 glxext_init INFO ] Extension GLX_EXT_texture_from_pixmap - present
+[ 11/15/2024 11:16:38.362 glxext_init INFO ] Extension GLX_ARB_create_context - present
+[ 11/15/2024 11:16:38.362 glxext_init INFO ] Extension GLX_EXT_buffer_age - present
+[ 11/15/2024 11:16:38.362 glxext_init INFO ] Extension GLX_ARB_create_context_robustness - present
+[ 11/15/2024 11:16:38.362 glxext_init INFO ] Extension GLX_MESA_query_renderer - present
+[ 11/15/2024 11:16:38.371 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'time'. This is normal when using custom shaders.
+[ 11/15/2024 11:16:38.403 gl_init INFO ] Using back buffer format 0x8051
+[ 11/15/2024 13:10:38.266 set_rr_scheduling INFO ] Set real-time scheduling priority to 1
+[ 11/15/2024 13:10:38.356 glxext_init INFO ] Extension GLX_SGI_video_sync - present
+[ 11/15/2024 13:10:38.356 glxext_init INFO ] Extension GLX_SGI_swap_control - present
+[ 11/15/2024 13:10:38.356 glxext_init INFO ] Extension GLX_OML_sync_control - present
+[ 11/15/2024 13:10:38.356 glxext_init INFO ] Extension GLX_MESA_swap_control - present
+[ 11/15/2024 13:10:38.356 glxext_init INFO ] Extension GLX_EXT_swap_control - present
+[ 11/15/2024 13:10:38.356 glxext_init INFO ] Extension GLX_EXT_texture_from_pixmap - present
+[ 11/15/2024 13:10:38.356 glxext_init INFO ] Extension GLX_ARB_create_context - present
+[ 11/15/2024 13:10:38.356 glxext_init INFO ] Extension GLX_EXT_buffer_age - present
+[ 11/15/2024 13:10:38.356 glxext_init INFO ] Extension GLX_ARB_create_context_robustness - present
+[ 11/15/2024 13:10:38.356 glxext_init INFO ] Extension GLX_MESA_query_renderer - present
+[ 11/15/2024 13:10:38.380 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'time'. This is normal when using custom shaders.
+[ 11/15/2024 13:10:38.392 gl_init INFO ] Using back buffer format 0x8051
+[ 11/15/2024 13:20:34.752 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 108758
+[ 11/15/2024 13:53:34.875 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 523743
+[ 11/15/2024 14:38:59.524 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 1019634
+[ 11/15/2024 15:03:29.357 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 1227915
+[ 11/15/2024 15:03:49.107 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 1234083
+[ 11/15/2024 15:04:40.344 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 1246936
+[ 11/15/2024 15:10:38.266 set_rr_scheduling INFO ] Set real-time scheduling priority to 1
+[ 11/15/2024 15:10:38.357 glxext_init INFO ] Extension GLX_SGI_video_sync - present
+[ 11/15/2024 15:10:38.358 glxext_init INFO ] Extension GLX_SGI_swap_control - present
+[ 11/15/2024 15:10:38.358 glxext_init INFO ] Extension GLX_OML_sync_control - present
+[ 11/15/2024 15:10:38.358 glxext_init INFO ] Extension GLX_MESA_swap_control - present
+[ 11/15/2024 15:10:38.358 glxext_init INFO ] Extension GLX_EXT_swap_control - present
+[ 11/15/2024 15:10:38.358 glxext_init INFO ] Extension GLX_EXT_texture_from_pixmap - present
+[ 11/15/2024 15:10:38.358 glxext_init INFO ] Extension GLX_ARB_create_context - present
+[ 11/15/2024 15:10:38.358 glxext_init INFO ] Extension GLX_EXT_buffer_age - present
+[ 11/15/2024 15:10:38.358 glxext_init INFO ] Extension GLX_ARB_create_context_robustness - present
+[ 11/15/2024 15:10:38.358 glxext_init INFO ] Extension GLX_MESA_query_renderer - present
+[ 11/15/2024 15:10:38.366 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'time'. This is normal when using custom shaders.
+[ 11/15/2024 15:10:38.383 gl_init INFO ] Using back buffer format 0x8051
+[ 11/15/2024 15:41:38.692 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 144961
+[ 11/15/2024 15:55:54.280 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 338742
+[ 11/15/2024 15:57:34.176 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 396442
+[ 11/15/2024 16:01:47.768 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 474729
+[ 11/15/2024 16:03:16.777 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 495564
+[ 11/15/2024 16:17:21.211 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 675009
+[ 11/15/2024 16:27:38.272 set_rr_scheduling INFO ] Set real-time scheduling priority to 1
+[ 11/15/2024 16:27:38.395 glxext_init INFO ] Extension GLX_SGI_video_sync - present
+[ 11/15/2024 16:27:38.395 glxext_init INFO ] Extension GLX_SGI_swap_control - present
+[ 11/15/2024 16:27:38.395 glxext_init INFO ] Extension GLX_OML_sync_control - present
+[ 11/15/2024 16:27:38.395 glxext_init INFO ] Extension GLX_MESA_swap_control - present
+[ 11/15/2024 16:27:38.395 glxext_init INFO ] Extension GLX_EXT_swap_control - present
+[ 11/15/2024 16:27:38.395 glxext_init INFO ] Extension GLX_EXT_texture_from_pixmap - present
+[ 11/15/2024 16:27:38.395 glxext_init INFO ] Extension GLX_ARB_create_context - present
+[ 11/15/2024 16:27:38.395 glxext_init INFO ] Extension GLX_EXT_buffer_age - present
+[ 11/15/2024 16:27:38.395 glxext_init INFO ] Extension GLX_ARB_create_context_robustness - present
+[ 11/15/2024 16:27:38.395 glxext_init INFO ] Extension GLX_MESA_query_renderer - present
+[ 11/15/2024 16:27:38.406 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'time'. This is normal when using custom shaders.
+[ 11/15/2024 16:27:38.421 gl_init INFO ] Using back buffer format 0x8051
+[ 11/15/2024 16:40:37.651 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 201107
+[ 11/15/2024 16:41:13.602 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 213809
+[ 11/15/2024 16:48:55.329 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 353850
+[ 11/15/2024 16:49:10.244 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 359248
+[ 11/15/2024 16:50:07.975 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 375642
+[ 11/15/2024 17:51:38.369 set_rr_scheduling INFO ] Set real-time scheduling priority to 1
+[ 11/15/2024 17:51:38.489 glxext_init INFO ] Extension GLX_SGI_video_sync - present
+[ 11/15/2024 17:51:38.489 glxext_init INFO ] Extension GLX_SGI_swap_control - present
+[ 11/15/2024 17:51:38.489 glxext_init INFO ] Extension GLX_OML_sync_control - present
+[ 11/15/2024 17:51:38.489 glxext_init INFO ] Extension GLX_MESA_swap_control - present
+[ 11/15/2024 17:51:38.489 glxext_init INFO ] Extension GLX_EXT_swap_control - present
+[ 11/15/2024 17:51:38.489 glxext_init INFO ] Extension GLX_EXT_texture_from_pixmap - present
+[ 11/15/2024 17:51:38.489 glxext_init INFO ] Extension GLX_ARB_create_context - present
+[ 11/15/2024 17:51:38.489 glxext_init INFO ] Extension GLX_EXT_buffer_age - present
+[ 11/15/2024 17:51:38.489 glxext_init INFO ] Extension GLX_ARB_create_context_robustness - present
+[ 11/15/2024 17:51:38.489 glxext_init INFO ] Extension GLX_MESA_query_renderer - present
+[ 11/15/2024 17:51:38.657 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'time'. This is normal when using custom shaders.
+[ 11/15/2024 17:51:38.659 gl_init INFO ] Using back buffer format 0x8051
+[ 11/15/2024 19:03:38.304 set_rr_scheduling INFO ] Set real-time scheduling priority to 1
+[ 11/15/2024 19:03:38.406 glxext_init INFO ] Extension GLX_SGI_video_sync - present
+[ 11/15/2024 19:03:38.406 glxext_init INFO ] Extension GLX_SGI_swap_control - present
+[ 11/15/2024 19:03:38.406 glxext_init INFO ] Extension GLX_OML_sync_control - present
+[ 11/15/2024 19:03:38.406 glxext_init INFO ] Extension GLX_MESA_swap_control - present
+[ 11/15/2024 19:03:38.406 glxext_init INFO ] Extension GLX_EXT_swap_control - present
+[ 11/15/2024 19:03:38.406 glxext_init INFO ] Extension GLX_EXT_texture_from_pixmap - present
+[ 11/15/2024 19:03:38.406 glxext_init INFO ] Extension GLX_ARB_create_context - present
+[ 11/15/2024 19:03:38.406 glxext_init INFO ] Extension GLX_EXT_buffer_age - present
+[ 11/15/2024 19:03:38.406 glxext_init INFO ] Extension GLX_ARB_create_context_robustness - present
+[ 11/15/2024 19:03:38.406 glxext_init INFO ] Extension GLX_MESA_query_renderer - present
+[ 11/15/2024 19:03:38.443 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'time'. This is normal when using custom shaders.
+[ 11/15/2024 19:03:38.520 gl_init INFO ] Using back buffer format 0x8051
+[ 11/15/2024 20:15:38.338 set_rr_scheduling INFO ] Set real-time scheduling priority to 1
+[ 11/15/2024 20:15:38.429 glxext_init INFO ] Extension GLX_SGI_video_sync - present
+[ 11/15/2024 20:15:38.429 glxext_init INFO ] Extension GLX_SGI_swap_control - present
+[ 11/15/2024 20:15:38.429 glxext_init INFO ] Extension GLX_OML_sync_control - present
+[ 11/15/2024 20:15:38.429 glxext_init INFO ] Extension GLX_MESA_swap_control - present
+[ 11/15/2024 20:15:38.429 glxext_init INFO ] Extension GLX_EXT_swap_control - present
+[ 11/15/2024 20:15:38.429 glxext_init INFO ] Extension GLX_EXT_texture_from_pixmap - present
+[ 11/15/2024 20:15:38.429 glxext_init INFO ] Extension GLX_ARB_create_context - present
+[ 11/15/2024 20:15:38.429 glxext_init INFO ] Extension GLX_EXT_buffer_age - present
+[ 11/15/2024 20:15:38.429 glxext_init INFO ] Extension GLX_ARB_create_context_robustness - present
+[ 11/15/2024 20:15:38.429 glxext_init INFO ] Extension GLX_MESA_query_renderer - present
+[ 11/15/2024 20:15:38.468 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'time'. This is normal when using custom shaders.
+[ 11/15/2024 20:15:38.473 gl_init INFO ] Using back buffer format 0x8051
+[ 11/15/2024 20:19:08.029 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 63213
+[ 11/15/2024 23:45:38.274 set_rr_scheduling INFO ] Set real-time scheduling priority to 1
+[ 11/15/2024 23:45:38.371 glxext_init INFO ] Extension GLX_SGI_video_sync - present
+[ 11/15/2024 23:45:38.371 glxext_init INFO ] Extension GLX_SGI_swap_control - present
+[ 11/15/2024 23:45:38.371 glxext_init INFO ] Extension GLX_OML_sync_control - present
+[ 11/15/2024 23:45:38.371 glxext_init INFO ] Extension GLX_MESA_swap_control - present
+[ 11/15/2024 23:45:38.371 glxext_init INFO ] Extension GLX_EXT_swap_control - present
+[ 11/15/2024 23:45:38.371 glxext_init INFO ] Extension GLX_EXT_texture_from_pixmap - present
+[ 11/15/2024 23:45:38.371 glxext_init INFO ] Extension GLX_ARB_create_context - present
+[ 11/15/2024 23:45:38.371 glxext_init INFO ] Extension GLX_EXT_buffer_age - present
+[ 11/15/2024 23:45:38.371 glxext_init INFO ] Extension GLX_ARB_create_context_robustness - present
+[ 11/15/2024 23:45:38.371 glxext_init INFO ] Extension GLX_MESA_query_renderer - present
+[ 11/15/2024 23:45:38.405 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'time'. This is normal when using custom shaders.
+[ 11/15/2024 23:45:38.460 gl_init INFO ] Using back buffer format 0x8051
+[ 11/16/2024 00:54:21.408 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 439358
+[ 11/16/2024 00:56:02.844 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 457717
+[ 11/16/2024 01:00:03.779 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 493628
+[ 11/16/2024 01:00:58.598 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 502506
+[ 11/16/2024 01:03:51.850 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 530725
+[ 11/16/2024 01:14:55.969 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 644624
+[ 11/16/2024 01:14:58.041 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 645018
+[ 11/16/2024 01:36:59.507 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 881602
+[ 11/16/2024 01:39:46.201 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 905358
+[ 11/16/2024 01:39:49.328 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 906184
+[ 11/16/2024 01:40:52.156 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 915354
+[ 11/16/2024 01:41:37.642 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 920427
+[ 11/16/2024 01:42:05.177 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 923711
+[ 11/16/2024 01:42:06.314 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 923870
+[ 11/16/2024 01:42:52.010 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 930548
+[ 11/16/2024 01:42:54.426 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 930980
+[ 11/16/2024 01:43:50.361 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 938356
+[ 11/16/2024 01:44:00.793 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 940378
+[ 11/16/2024 01:51:38.278 set_rr_scheduling INFO ] Set real-time scheduling priority to 1
+[ 11/16/2024 01:51:38.344 glxext_init INFO ] Extension GLX_SGI_video_sync - present
+[ 11/16/2024 01:51:38.344 glxext_init INFO ] Extension GLX_SGI_swap_control - present
+[ 11/16/2024 01:51:38.344 glxext_init INFO ] Extension GLX_OML_sync_control - present
+[ 11/16/2024 01:51:38.344 glxext_init INFO ] Extension GLX_MESA_swap_control - present
+[ 11/16/2024 01:51:38.344 glxext_init INFO ] Extension GLX_EXT_swap_control - present
+[ 11/16/2024 01:51:38.344 glxext_init INFO ] Extension GLX_EXT_texture_from_pixmap - present
+[ 11/16/2024 01:51:38.344 glxext_init INFO ] Extension GLX_ARB_create_context - present
+[ 11/16/2024 01:51:38.344 glxext_init INFO ] Extension GLX_EXT_buffer_age - present
+[ 11/16/2024 01:51:38.344 glxext_init INFO ] Extension GLX_ARB_create_context_robustness - present
+[ 11/16/2024 01:51:38.344 glxext_init INFO ] Extension GLX_MESA_query_renderer - present
+[ 11/16/2024 01:51:38.364 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'time'. This is normal when using custom shaders.
+[ 11/16/2024 01:51:38.379 gl_init INFO ] Using back buffer format 0x8051
+[ 11/16/2024 01:58:17.837 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 70787
+[ 11/16/2024 03:51:38.271 set_rr_scheduling INFO ] Set real-time scheduling priority to 1
+[ 11/16/2024 03:51:38.343 glxext_init INFO ] Extension GLX_SGI_video_sync - present
+[ 11/16/2024 03:51:38.343 glxext_init INFO ] Extension GLX_SGI_swap_control - present
+[ 11/16/2024 03:51:38.343 glxext_init INFO ] Extension GLX_OML_sync_control - present
+[ 11/16/2024 03:51:38.343 glxext_init INFO ] Extension GLX_MESA_swap_control - present
+[ 11/16/2024 03:51:38.343 glxext_init INFO ] Extension GLX_EXT_swap_control - present
+[ 11/16/2024 03:51:38.343 glxext_init INFO ] Extension GLX_EXT_texture_from_pixmap - present
+[ 11/16/2024 03:51:38.343 glxext_init INFO ] Extension GLX_ARB_create_context - present
+[ 11/16/2024 03:51:38.343 glxext_init INFO ] Extension GLX_EXT_buffer_age - present
+[ 11/16/2024 03:51:38.343 glxext_init INFO ] Extension GLX_ARB_create_context_robustness - present
+[ 11/16/2024 03:51:38.343 glxext_init INFO ] Extension GLX_MESA_query_renderer - present
+[ 11/16/2024 03:51:38.422 glGetUniformLocationChecked INFO ] Failed to get location of uniform 'time'. This is normal when using custom shaders.
+[ 11/16/2024 03:51:38.550 gl_init INFO ] Using back buffer format 0x8051
+[ 11/16/2024 03:54:00.954 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 29362

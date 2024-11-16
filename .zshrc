@@ -1,7 +1,7 @@
 #
 #
 # export GTK_THEME=Catppuccin-Dark-Macchiato
-# export QT_QPA_PLATFORMTHEME="qt5ct"
+export QT_QPA_PLATFORMTHEME="qt5ct"
 
 export EDITOR=nvim
 export VISUAL=nvim

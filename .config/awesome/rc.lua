@@ -3,6 +3,9 @@
 -- found (e.g. lgi). If LuaRocks is not installed, do nothing.
 pcall(require, "luarocks.loader")
 
+local widget_path = os.getenv("HOME") .. "/.config/awesome/jkyon-widgets/"
+package.path = package.path .. ";" .. widget_path .. "?.lua"
+
 -- Standard awesome library
 local gears = require("gears")
 local awful = require("awful")
@@ -40,22 +43,21 @@ local ram_widget = require("awesome-wm-widgets.ram-widget.ram-widget")
 
 -- local json = require("json")
 
+
 local volume_widget = require('awesome-wm-widgets.pactl-widget.volume')
---local myvolume = volume_widget()
--- local volume_widget = require('awesome-wm-widgets.volume-widget.volume')
 -- local todo_widget = require("awesome-wm-widgets.todo-widget.todo")
 -- local weather_widget = require("awesome-wm-widgets.weather-widget.weather")
 local calendar_widget = require("awesome-wm-widgets.calendar-widget.calendar")
 local logout_menu_widget = require("awesome-wm-widgets.logout-menu-widget.logout-menu")
 
 local internet_widget = require("jkyon-widgets.internet_widget")
--- local gentoo_update_checker = require("jkyon-widgets.gentoo_update_checker")
 
 
 -- Enable hotkeys help widget for VIM and other apps
 -- when client with a matching name is opened:
 require("awful.hotkeys_popup.keys")
 
+local dnd_widget = require("jkyon-widgets/DoNotDisturb-Widget")
 
 -----------------------------------------------------------------------------
 -----------------------------------------------------------------------------
@@ -73,17 +75,6 @@ naughty.config.defaults = {
     icon_size = 300,
     border_width = 2,
 }
-
--- -- Conectar sinal para tocar som ao exibir uma notificação
--- naughty.connect_signal("request::display", function(n)
---     -- Tocar som quando a notificação aparecer
---     awful.spawn("paplay /usr/share/sounds/freedesktop/stereo/message.oga")
---
---     -- Exibir a notificação
---     naughty.layout.box { notification = n }
--- end)
-
-
 
 
 -- {{{ Error handling
@@ -195,6 +186,21 @@ tbox_separator_space = wibox.widget.textbox (" ")
 -- tbox_separator_pipe = wibox.widget.textbox (" | ")
 -- tbox_separator_dash = wibox.widget.textbox (" - ")
 
+local function styled_textbox(text, font_size, margins)
+    return wibox.widget {
+        text = text,
+        font = 'MesloLGS Nerd Font ' .. font_size,
+        widget = wibox.widget.textbox,
+        margins = margins
+    }
+end
+
+local cpu_icon = styled_textbox('  ', 11, 2)
+local gpu_icon = styled_textbox('󰢮 ', 16, 1)
+local mem_icon = styled_textbox('   ', 11, 2)
+local temp_icon = styled_textbox('  ', 11, 1)
+local psu_icon = styled_textbox(' 󰚥 ', 11, 1)
+
 
 local cpu = lain.widget.cpu {
     settings = function()
@@ -236,96 +242,12 @@ mytextclock:connect_signal("button::press",
 ---------------------------------------------------------------------
 --------------------  Custom Notification Center  -------------------
 
--- This awful.wibar will be placed at the bottom and contain the notifications.
--- local notif_wb = awful.wibar {
---     position = "bottom",
---     height   = 48,
---     visible  = #naughty.active > 0,
--- }
 
--- notif_wb:setup {
---     nil,
---     {
---         base_layout = wibox.widget {
---             spacing_widget = wibox.widget {
---                 orientation = "vertical",
---                 span_ratio  = 0.5,
---                 widget      = wibox.widget.separator,
---             },
---             forced_height = 30,
---             spacing       = 3,
---             layout        = wibox.layout.flex.horizontal
---         },
---         widget_template = {
---             {
---                 naughty.widget.icon,
---                 {
---                     naughty.widget.title,
---                     naughty.widget.message,
---                     {
---                         layout = wibox.widget {
---                             -- Adding the wibox.widget allows to share a
---                             -- single instance for all spacers.
---                             spacing_widget = wibox.widget {
---                                 orientation = "vertical",
---                                 span_ratio  = 0.9,
---                                 widget      = wibox.widget.separator,
---                             },
---                             spacing = 3,
---                             layout  = wibox.layout.flex.horizontal
---                         },
---                         widget = naughty.list.widgets,
---                     },
---                     layout = wibox.layout.align.vertical
---                 },
---                 spacing = 10,
---                 fill_space = true,
---                 layout  = wibox.layout.fixed.horizontal
---             },
---             margins = 5,
---             widget  = wibox.container.margin
---         },
---         widget = naughty.list.notifications,
---     },
---     -- Add a button to dismiss all notifications, because why not.
---     {
---         {
---             text   = "Dismiss all",
---             halign = "center",
---             valign = "center",
---             widget = wibox.widget.textbox
---         },
---         buttons = gears.table.join(
---             awful.button({ }, 1, function() naughty.destroy_all_notifications() end)
---         ),
---         forced_width       = 75,
---         shape              = gears.shape.rounded_bar,
---         shape_border_width = 1,
---         shape_border_color = beautiful.bg_highlight,
---         widget = wibox.container.background
---     },
---     layout = wibox.layout.align.horizontal
--- }
-
--- -- We don't want to have that bar all the time, only when there is content.
--- naughty.connect_signal("property::active", function()
---     notif_wb.visible = #naughty.active > 0
--- end)
 
 ---------------------------------------------------------------------
 --------------------  Custom Notification Center  -------------------
 
 
-    -- ruled.notification.connect_signal('request::rules', function()
-    --     ruled.notification.append_rule {
-    --         rule = { },
-    --         properties = {
-    --             screen = awful.screen.preferred,
-    --             implicit_timeout = 5,
-    --             position = "top_center", -- Defina como "top_center"
-    --         }
-    --     }
-    -- end)
 
 
 --------------------  Notification Custom Preset  -------------------
@@ -809,7 +731,8 @@ awful.tag.add(" Media (4) ", {
     ------------------------------------------------------------------------------------------------
                         tbox_separator_space,
             
-                wibox.widget.textbox('  '),
+                cpu_icon,
+                -- wibox.widget.textbox('  '),
                 wibox.widget.textbox('CPU '),
                 -- cpu.widget,
                 awful.widget.watch('bash -c "sh /home/jkyon/ShellScript/dwmBlocksCpuUsage"', 1),
@@ -817,7 +740,8 @@ awful.tag.add(" Media (4) ", {
                         tbox_separator_space,
                 awful.widget.watch('bash -c "sh /home/jkyon/ShellScript/awesomeWidget-CPU-freq-monitor.sh"', 1),
                         tbox_separator_space,
-                wibox.widget.textbox('  '),
+                -- wibox.widget.textbox('  '),
+                temp_icon,
                 awful.widget.watch('bash -c "sh /home/jkyon/ShellScript/dwmBlocksCpuTemp"', 1),
                         tbox_separator_space,
     ------------------------------------------------------------------------------------------------            
@@ -831,21 +755,25 @@ awful.tag.add(" Media (4) ", {
     ------------------------------------------------------------------------------------------------            
                 wibox.widget.textbox(' | '),
     ------------------------------------------------------------------------------------------------
-                wibox.widget.textbox('   '),  --  
+                -- wibox.widget.textbox('   '),
+                mem_icon,
+
                 mem.widget,
                 ram_widget({ color_used = '#cba6f7', color_buf = '#444444' }),
     ------------------------------------------------------------------------------------------------            
                 wibox.widget.textbox(' | '),
     ------------------------------------------------------------------------------------------------
                 
-                wibox.widget.textbox(' 󰢮 '),  --  
+                -- wibox.widget.textbox(' 󰢮 '),
+                gpu_icon,
 
-            wibox.widget.textbox(' GPU '),
+            wibox.widget.textbox('GPU '),
             awful.widget.watch('bash -c "sh ~/ShellScript/awesomeWidget-gpu0usage-fast.sh"', 1),
                     tbox_separator_space,
             awful.widget.watch('bash -c "sh ~/ShellScript/awesomeWidget-gpu0freq.sh"', 1),
                     tbox_separator_space,
-            wibox.widget.textbox('  '),
+            -- wibox.widget.textbox('  '),
+            temp_icon,
             awful.widget.watch('bash -c "sh ~/ShellScript/awesomeWidget-gpu0temp.sh"', 1),
                 
     --            tbox_separator_space,
@@ -862,10 +790,16 @@ awful.tag.add(" Media (4) ", {
     ------------------------------------------------------------------------------------------------            
                 wibox.widget.textbox(' | '),
     ------------------------------------------------------------------------------------------------            
-                wibox.widget.textbox(' 󰚥 '),
+                -- wibox.widget.textbox(' 󰚥 '),
+                psu_icon,
                 wibox.widget.textbox(' PSU '),
                 awful.widget.watch('bash -c "sh ~/ShellScript/awesomeWidget-PSU-monitor.sh"', 1),
                         tbox_separator_space,
+                        -- wibox.widget.textbox('  '),
+                temp_icon,
+                awful.widget.watch('bash -c "sh /home/jkyon/ShellScript/awesomeWidget-PSU-temp-monitor.sh"', 1),
+                        tbox_separator_space,
+
     ------------------------------------------------------------------------------------------------            
                 wibox.widget.textbox(' | '),
     ------------------------------------------------------------------------------------------------
@@ -885,6 +819,7 @@ awful.tag.add(" Media (4) ", {
                 -- todo_widget(),
                 
                         tbox_separator_space,
+                        dnd_widget,
                         tbox_separator_space,
                 
                 wibox.widget.systray(),
@@ -952,7 +887,8 @@ awful.tag.add(" Media (4) ", {
                         tbox_separator_space,
                         tbox_separator_space,
             
-                wibox.widget.textbox('  '),
+                -- wibox.widget.textbox('  '),
+                cpu_icon,
                 wibox.widget.textbox('CPU '),
                 -- cpu.widget,
                 awful.widget.watch('bash -c "sh /home/jkyon/ShellScript/dwmBlocksCpuUsage"', 1),
@@ -971,14 +907,16 @@ awful.tag.add(" Media (4) ", {
     ------------------------------------------------------------------------------------------------            
                 wibox.widget.textbox(' | '),
     ------------------------------------------------------------------------------------------------
-                wibox.widget.textbox('   '),  --  
+                -- wibox.widget.textbox('   '),  --  
+                mem_icon,
                 mem.widget,
                 -- ram_widget({ color_used = '#cba6f7', color_buf = '#444444' }),
     ------------------------------------------------------------------------------------------------            
                 wibox.widget.textbox(' | '),
     ------------------------------------------------------------------------------------------------
                 
-                wibox.widget.textbox(' 󰢮 '),  --  
+                -- wibox.widget.textbox(' 󰢮 '),  --  
+                gpu_icon,
 
             wibox.widget.textbox(' GPU '),
             awful.widget.watch('bash -c "sh ~/ShellScript/awesomeWidget-gpu0usage-fast.sh"', 1),
@@ -1077,6 +1015,7 @@ awful.tag.add(" Media (4) ", {
     --            mykeyboardlayout,
 
                 internet_widget,
+                -- dnd_widget,
 
                         tbox_separator_space,
 
@@ -1088,7 +1027,8 @@ awful.tag.add(" Media (4) ", {
     ------------------------------------------------------------------------------------------------
                         tbox_separator_space,
             
-                wibox.widget.textbox('  '),
+                -- wibox.widget.textbox('  '),
+                cpu_icon,
                 wibox.widget.textbox('CPU '),
                 -- cpu.widget,
                 awful.widget.watch('bash -c "sh /home/jkyon/ShellScript/dwmBlocksCpuUsage"', 1),
@@ -1096,7 +1036,8 @@ awful.tag.add(" Media (4) ", {
                         tbox_separator_space,
                 awful.widget.watch('bash -c "sh /home/jkyon/ShellScript/awesomeWidget-CPU-freq-monitor.sh"', 1),
                         tbox_separator_space,
-                wibox.widget.textbox('  '),
+                -- wibox.widget.textbox('  '),
+                temp_icon,
                 awful.widget.watch('bash -c "sh /home/jkyon/ShellScript/dwmBlocksCpuTemp"', 1),
     --                     tbox_separator_space,
     -- ------------------------------------------------------------------------------------------------            
@@ -1110,21 +1051,24 @@ awful.tag.add(" Media (4) ", {
     ------------------------------------------------------------------------------------------------            
                 wibox.widget.textbox(' | '),
     ------------------------------------------------------------------------------------------------
-                wibox.widget.textbox('   '),  --  
+                -- wibox.widget.textbox('   '),  --  
+                mem_icon,
                 mem.widget,
                 -- ram_widget({ color_used = '#cba6f7', color_buf = '#444444' }),
     ------------------------------------------------------------------------------------------------            
                 wibox.widget.textbox(' | '),
     ------------------------------------------------------------------------------------------------
                 
-                wibox.widget.textbox(' 󰢮 '),  --  
+                -- wibox.widget.textbox(' 󰢮 '),  --  
+                gpu_icon,
 
             wibox.widget.textbox(' GPU '),
             awful.widget.watch('bash -c "sh ~/ShellScript/awesomeWidget-gpu0usage-fast.sh"', 1),
                     tbox_separator_space,
             awful.widget.watch('bash -c "sh ~/ShellScript/awesomeWidget-gpu0freq.sh"', 1),
                     tbox_separator_space,
-            wibox.widget.textbox('  '),
+            -- wibox.widget.textbox('  '),
+            temp_icon,
             awful.widget.watch('bash -c "sh ~/ShellScript/awesomeWidget-gpu0temp.sh"', 1),
                 
     --            tbox_separator_space,
@@ -1141,9 +1085,14 @@ awful.tag.add(" Media (4) ", {
     ------------------------------------------------------------------------------------------------            
                 wibox.widget.textbox(' | '),
     ------------------------------------------------------------------------------------------------            
-                wibox.widget.textbox(' 󰚥 '),
+                -- wibox.widget.textbox(' 󰚥 '),
+                psu_icon,
                 wibox.widget.textbox(' PSU '),
                 awful.widget.watch('bash -c "sh ~/ShellScript/awesomeWidget-PSU-monitor.sh"', 1),
+                        tbox_separator_space,
+                -- wibox.widget.textbox('  '),
+                temp_icon,
+                awful.widget.watch('bash -c "sh /home/jkyon/ShellScript/awesomeWidget-PSU-temp-monitor.sh"', 1),
                         tbox_separator_space,
     ------------------------------------------------------------------------------------------------            
                 wibox.widget.textbox(' | '),
@@ -1759,46 +1708,6 @@ awful.rules.rules = {
 -- Z
 -- 
                 
-    --         -- Floating clients.
-    --         { rule_any = {
-    --             instance = {
-    --       "DTA",  -- Firefox addon DownThemAll.
-    --       "copyq",  -- Includes session name in class.
-    --       "pinentry",
-    --     },
-    --     class = {
-    --       "Arandr",
-    --       "Blueman-manager",
-    --       "Gpick",
-    --       "Kruler",
-    --       "MessageWin",  -- kalarm.
-    --       "Sxiv",
-    --       "Tor Browser", -- Needs a fixed window size to avoid fingerprinting by screen size.
-    --       "Wpa_gui",
-    --       "veromix",
-    --       "xtightvncviewer"},
-
-    --     -- Note that the name property shown in xprop might be set slightly after creation of the client
-    --     -- and the name shown there might not match defined rules here.
-    --     name = {
-    --       "Event Tester",  -- xev.
-    --     },
-    --     role = {
-    --       "AlarmWindow",  -- Thunderbird's calendar.
-    --       "ConfigManager",  -- Thunderbird's about:config.
-    --       "pop-up",       -- e.g. Google Chrome's (detached) Developer Tools.
-    --     }
-    --   }, properties = { floating = true }},
-
-    -- -- Add titlebars to normal clients and dialogs
-    -- { rule_any = {type = { "normal", "dialog" }
-    --  },    properties = { titlebars_enabled = true },
-    --        placement = awful.placement.centered
-    -- },
-
-    -- Set Firefox to always map on the tag named "2" on screen 1.
-    -- { rule = { class = "Firefox" },
-    --   properties = { screen = 1, tag = "2" } },
 }
 
 -- }}}
@@ -1809,19 +1718,6 @@ client.connect_signal("manage", function (c)
     -- Set the windows at the slave,
     -- i.e. put it at the end of others instead of setting it master.
     -- if not awesome.startup then awful.client.setslave(c) end
-
-
----------------------------------------------------------------
----------------------  Rounded corners??  ---------------------
-
---     client.connect_signal("manage", function(c)
---     c.shape = function(cr, w, h)
---         gears.shape.rounded_rect(cr, w, h, 10)
---     end
--- end)
-
----------------------  Rounded corners??  ---------------------
----------------------------------------------------------------
 
 
     if awesome.startup
@@ -1906,10 +1802,3 @@ gears.timer {
 -- beautiful.wallpaper = "/home/jkyon/Pictures/Wallpapers/LinuxWallpapers/multi-monitor-wallpapers.jpg"
 
 awful.spawn.with_shell("sh /home/jkyon/.dotfiles/.config/awesome/AwesomeWMstartupApps.sh")
-
-
--- timed = rubato.timed {
---     intro = 0.1,
---     duration = 0.3
--- }
--- timed.target = 1
