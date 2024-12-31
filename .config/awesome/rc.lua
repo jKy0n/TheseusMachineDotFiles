@@ -53,6 +53,9 @@ local logout_menu_widget = require("awesome-wm-widgets.logout-menu-widget.logout
 local internet_widget = require("jkyon-widgets.internet_widget")
 
 
+local dock = require("dock")
+
+
 -- Enable hotkeys help widget for VIM and other apps
 -- when client with a matching name is opened:
 require("awful.hotkeys_popup.keys")
@@ -196,8 +199,8 @@ local function styled_textbox(text, font_size, margins)
 end
 
 local cpu_icon = styled_textbox('  ', 11, 2)
-local gpu_icon = styled_textbox('󰢮 ', 16, 1)
 local mem_icon = styled_textbox('   ', 11, 2)
+local gpu_icon = styled_textbox(' 󰢮 ', 16, 1)
 local temp_icon = styled_textbox('  ', 11, 1)
 local psu_icon = styled_textbox(' 󰚥 ', 11, 1)
 
@@ -228,7 +231,7 @@ local temp = lain.widget.temp({
 local cw = calendar_widget({
     theme = 'naughty',
     placement = 'top_right',
-    start_sunday = true,
+    start_sunday = false,
     radius = 8,
 --  with customized next/previous (see table above)
     previous_month_button = 1,
@@ -377,6 +380,12 @@ awful.tag.add(" etc (5) ", {
     selected = false
 })
 
+awful.tag.add(" Study (6) ", {
+    layout = awful.layout.suit.tile.left,
+    screen = 1,
+    selected = false
+})
+
 -- awful.tag.add(" Games (X) ", {
 --     layout = awful.layout.suit.tile.left,
 --     screen = 1,
@@ -451,17 +460,17 @@ awful.tag.add(" Search (2) ", {
     selected = true
 })
 
-awful.tag.add(" BackUp (3) ", {
+awful.tag.add(" Media (3) ", {
     layout = awful.layout.suit.tile,
     screen = 3,
     selected = false
 })
 
-awful.tag.add(" Media (4) ", {
-    layout = awful.layout.suit.tile,
-    screen = 3,
-    selected = false
-})
+-- awful.tag.add(" BackUp (4) ", {
+--     layout = awful.layout.suit.tile,
+--     screen = 3,
+--     selected = false
+-- })
 
 -- awful.tag.add(" Sound (5) ", {
 --     layout = awful.layout.suit.tile,
@@ -731,7 +740,7 @@ awful.tag.add(" Media (4) ", {
     ------------------------------------------------------------------------------------------------
                         tbox_separator_space,
             
-                cpu_icon,
+                    cpu_icon,
                 -- wibox.widget.textbox('  '),
                 wibox.widget.textbox('CPU '),
                 -- cpu.widget,
@@ -741,7 +750,7 @@ awful.tag.add(" Media (4) ", {
                 awful.widget.watch('bash -c "sh /home/jkyon/ShellScript/awesomeWidget-CPU-freq-monitor.sh"', 1),
                         tbox_separator_space,
                 -- wibox.widget.textbox('  '),
-                temp_icon,
+                    temp_icon,
                 awful.widget.watch('bash -c "sh /home/jkyon/ShellScript/dwmBlocksCpuTemp"', 1),
                         tbox_separator_space,
     ------------------------------------------------------------------------------------------------            
@@ -773,7 +782,7 @@ awful.tag.add(" Media (4) ", {
             awful.widget.watch('bash -c "sh ~/ShellScript/awesomeWidget-gpu0freq.sh"', 1),
                     tbox_separator_space,
             -- wibox.widget.textbox('  '),
-            temp_icon,
+                temp_icon,
             awful.widget.watch('bash -c "sh ~/ShellScript/awesomeWidget-gpu0temp.sh"', 1),
                 
     --            tbox_separator_space,
@@ -791,12 +800,12 @@ awful.tag.add(" Media (4) ", {
                 wibox.widget.textbox(' | '),
     ------------------------------------------------------------------------------------------------            
                 -- wibox.widget.textbox(' 󰚥 '),
-                psu_icon,
+                    psu_icon,
                 wibox.widget.textbox(' PSU '),
                 awful.widget.watch('bash -c "sh ~/ShellScript/awesomeWidget-PSU-monitor.sh"', 1),
                         tbox_separator_space,
                         -- wibox.widget.textbox('  '),
-                temp_icon,
+                    temp_icon,
                 awful.widget.watch('bash -c "sh /home/jkyon/ShellScript/awesomeWidget-PSU-temp-monitor.sh"', 1),
                         tbox_separator_space,
 
@@ -819,7 +828,7 @@ awful.tag.add(" Media (4) ", {
                 -- todo_widget(),
                 
                         tbox_separator_space,
-                        dnd_widget,
+                dnd_widget,
                         tbox_separator_space,
                 
                 wibox.widget.systray(),
@@ -1498,21 +1507,42 @@ awful.rules.rules = {
 -- A
 --
         { rule = { class = "Alacritty" },
-        properties = { titlebars_enabled = false } },
+        properties = { titlebars_enabled = false },},
 
         { rule_any = { class = {"ark"} },
         properties = { floating = true,
         placement = awful.placement.centered },},
 
-        { rule_any = { class = {"arandr"} },
+        { rule_any = { class = {"Arandr"} },
         properties = { floating = true,
         placement = awful.placement.centered },},
 -- B
 --
-        { rule = { class = "Back In Time" },
-        properties = { floating = true,
-        placement = awful.placement.centered,
-        tag = screen[3].tags[3] },},
+        -- { rule = { class = "Back In Time" },
+        -- properties = { floating = true,
+        -- placement = awful.placement.centered,
+        -- tag = screen[3].tags[3] },},
+
+        { rule = { class = "Back In Time" }, -- Altere o class conforme necessário
+            properties = { floating = true,
+                callback = function(c)
+                    -- Defina o monitor (tela)
+                    local screen_index = 3 -- Substitua pelo índice do monitor desejado
+                    -- Crie uma nova tag volátil
+                    local tag_name = " BackUp " -- Nome da nova tag
+                    local new_tag = awful.tag.add(tag_name, {
+                        screen = screen_index,
+                        layout = awful.layout.suit.tile,
+                        -- Torna a tag volátil
+                        volatile = true, })
+                    -- Adiciona o número da tag no nome
+                    local tag_index = new_tag.index
+                    new_tag.name = tag_name .. "(".. tag_index ..") "
+                    -- Mova o cliente para a nova tag
+                    c:move_to_tag(new_tag)
+                    -- Alterna para a nova tag
+                    new_tag:view_only()
+                end,},},
 -- C
 --
 -- D
@@ -1546,7 +1576,7 @@ awful.rules.rules = {
         { rule = { class = "Google-chrome" },
         properties = { floating = false,
         placement = awful.placement.centered,
-        tag = screen[3].tags[4] },},
+        tag = screen[3].tags[3] },},
         
         { rule = { class = "gnome-calculator" },
         properties = { floating = true,
@@ -1574,10 +1604,14 @@ awful.rules.rules = {
 --
 -- K
 --
+        { rule = { name = "kclock" },
+        properties = { floating = true,
+        placement = awful.placement.centered },},    
+
         { rule = { name = "KDE Connect" },
         properties = { floating = true,
         placement = awful.placement.centered,
-        tag = screen[3].tags[3] },},    
+        tag = screen[1].tags[5] },},    
 -- L
 --
         { rule = { name = "Lutris" },
@@ -1603,6 +1637,27 @@ awful.rules.rules = {
         placement = awful.placement.centered },},
 -- O
 --
+        { rule = { name = "OBS *" }, -- Altere o class conforme necessário
+            properties = { floating = false,
+                callback = function(c)
+                    -- Defina o monitor (tela)
+                    local screen_index = 3 -- Substitua pelo índice do monitor desejado
+                    -- Crie uma nova tag volátil
+                    local tag_name = " OBS " -- Nome da nova tag
+                    local new_tag = awful.tag.add(tag_name, {
+                        screen = screen_index,
+                        layout = awful.layout.suit.tile,
+                        -- Torna a tag volátil
+                        volatile = true, })
+                    -- Adiciona o número da tag no nome
+                    local tag_index = new_tag.index
+                    new_tag.name = tag_name .. "(".. tag_index ..") "
+                    -- Mova o cliente para a nova tag
+                    c:move_to_tag(new_tag)
+                    -- Alterna para a nova tag
+                    new_tag:view_only()
+                end,},},
+
         { rule_any = { class = {"obsidian", "obsidian"} },
         properties = { floating = false,
         tag = screen[1].tags[4]       },},
@@ -1635,6 +1690,13 @@ awful.rules.rules = {
         },},
 -- Q
 -- 
+        { rule = { class = "qt5ct" },
+        properties = { floating = true,
+        placement = awful.placement.centered },},
+
+        { rule = { class = "qt6ct" },
+        properties = { floating = true,
+        placement = awful.placement.centered },},
 -- R
 --      
         { rule = { class = "rambox" },
@@ -1654,21 +1716,42 @@ awful.rules.rules = {
         properties = { floating = true,
         placement = awful.placement.centered,},},
 
-        { rule = { class = "steam" },
-        properties = { floating = true,
-        placement = awful.placement.centered },},
+        -- { rule = { class = "steam" },
+        -- properties = { floating = true,
+        -- placement = awful.placement.centered },},
 
-                { rule_any = { class = {" - News"} },
-                properties = { floating = true,
-                                placement = awful.placement.centered },},
+                -- { rule_any = { class = {" - News"} },
+                -- properties = { floating = true,
+                --                 placement = awful.placement.centered },},
 
-                { rule_any = { name = {"Friends List"} },
-                properties = { floating = false,
-                            placement = awful.placement.left },},
+                -- { rule_any = { name = {"Friends List"} },
+                -- properties = { floating = false,
+                --             placement = awful.placement.left },},
 
-                { rule_any = { name = {"steamwebhelper"} },
-                properties = { floating = true,
-                            placement = awful.placement.centered },},
+                -- { rule_any = { name = {"steamwebhelper"} },
+                -- properties = { floating = true,
+                --             placement = awful.placement.centered },},
+
+        { rule = { class = "steam" }, -- Altere o class conforme necessário
+            properties = { floating = false,
+                callback = function(c)
+                    -- Defina o monitor (tela)
+                    local screen_index = 1 -- Substitua pelo índice do monitor desejado
+                    -- Crie uma nova tag volátil
+                    local tag_name = " Steam " -- Nome da nova tag
+                    local new_tag = awful.tag.add(tag_name, {
+                        screen = screen_index,
+                        layout = awful.layout.suit.tile.left,
+                        -- Torna a tag volátil
+                        volatile = true, })
+                    -- Adiciona o número da tag no nome
+                    local tag_index = new_tag.index
+                    new_tag.name = tag_name .. "(".. tag_index ..") "
+                    -- Mova o cliente para a nova tag
+                    c:move_to_tag(new_tag)
+                    -- Alterna para a nova tag
+                    new_tag:view_only()
+            end,},},
 -- T
 --  
         { rule = { class = "Thunar" },
@@ -1686,9 +1769,30 @@ awful.rules.rules = {
 --
 -- V
 --
-        { rule_any = { class = {"virt-manager", "Virt-manager"} },
-        properties = { floating = true,
-        placement = awful.placement.centered,},},
+        -- { rule_any = { class = {"virt-manager", "Virt-manager"} },
+        -- properties = { floating = true,
+        -- placement = awful.placement.centered,},},
+
+        { rule_any = { class = {"virt-manager", "Virt-manager"} }, -- Altere o class conforme necessário
+            properties = { floating = true,
+                callback = function(c)
+                    -- Defina o monitor (tela)
+                    local screen_index = 1 -- Substitua pelo índice do monitor desejado
+                    -- Crie uma nova tag volátil
+                    local tag_name = " VirtManager " -- Nome da nova tag
+                    local new_tag = awful.tag.add(tag_name, {
+                        screen = screen_index,
+                        layout = awful.layout.suit.tile.left,
+                        -- Torna a tag volátil
+                        volatile = true, })
+                    -- Adiciona o número da tag no nome
+                    local tag_index = new_tag.index
+                    new_tag.name = tag_name .. "(".. tag_index ..") "
+                    -- Mova o cliente para a nova tag
+                    c:move_to_tag(new_tag)
+                    -- Alterna para a nova tag
+                    new_tag:view_only()
+            end,},},
 
         { rule_any = { class = {"code", "Code"} },     -- vsCode
         properties = { floating = true,
@@ -1784,6 +1888,9 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 
 -- jKyon Adds
 --
+
+-- Criar a dock
+-- dock()
 
 -- Notifications adjustments
 -- beautiful.notification_font = "sans 12"  -- Altere o tamanho conforme desejado
